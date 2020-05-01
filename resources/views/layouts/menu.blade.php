@@ -15,22 +15,22 @@
     <link rel="shortcut icon" href="/assets/images/flavicon.png" type="image/png">
         
     <!--====== Magnific Popup CSS ======-->
-    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/home/magnific-popup.css">
         
     <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/css/home/slick.css">
         
     <!--====== Line Icons CSS ======-->
-    <link rel="stylesheet" href="/assets/css/LineIcons.css">
+    <link rel="stylesheet" href="/css/home/LineIcons.css">
         
     <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home/bootstrap.min.css">
     
     <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="/assets/css/default.css">
+    <link rel="stylesheet" href="/css/home/default.css">
     
     <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/css/home/style.css">
     
 </head>
 
@@ -68,7 +68,7 @@
                     <nav class="navbar navbar-expand-lg">
                        
                         <a class="navbar-brand" href="#">
-                            <img src="assets/images/univoire_logo.jpg" alt="Logo">
+                            <img src="assets/images/univoire_logo2.png" alt="Logo">
                         </a>
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
@@ -162,32 +162,32 @@
 
 
     <!--====== Jquery js ======-->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="/js/home_page/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/js/home_page/vendor/modernizr-3.7.1.min.js"></script>
     
     <!--====== Bootstrap js ======-->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/js/home_page/popper.min.js"></script>
+    <script src="/js/home_page/bootstrap.min.js"></script>
     
     <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="/js/home_page/slick.min.js"></script>
     
     <!--====== Magnific Popup js ======-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/home_page/jquery.magnific-popup.min.js"></script>
     
     <!--====== Ajax Contact js ======-->
-    <script src="assets/js/ajax-contact.js"></script>
+    <script src="/js/home_page/ajax-contact.js"></script>
     
     <!--====== Isotope js ======-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="/js/home_page/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/home_page/isotope.pkgd.min.js"></script>
     
     <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="/js/home_page/jquery.easing.min.js"></script>
+    <script src="/js/home_page/scrolling-nav.js"></script>
     
     <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+    <script src="/js/home_page/main.js"></script>
     
 </body>
 
