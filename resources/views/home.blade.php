@@ -19,12 +19,12 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
-                                    <h1 class="title">Business is Now Digital</h1>
-                                    <p class="text">We blend insights and strategy to create digital products for forward-thinking organisations.</p>
-                                    <ul class="slider-btn rounded-buttons">
+                                    <h1 class="title">Rencontre</h1>
+                                    <p class="text">Faite la rencontre des personnes de votre communauté ou des personnes qui partage votre vision des affaires</p>
+                                    <!--ul class="slider-btn rounded-buttons">
                                         <li><a class="main-btn rounded-one" href="#">GET STARTED</a></li>
                                         <li><a class="main-btn rounded-two" href="#">DOWNLOAD</a></li>
-                                    </ul>
+                                    </ul-->
                                 </div>
                             </div>
                         </div> <!-- row -->
@@ -41,12 +41,12 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
-                                    <h1 class="title">Crafted for Business</h1>
-                                    <p class="text">We blend insights and strategy to create digital products for forward-thinking organisations.</p>
-                                    <ul class="slider-btn rounded-buttons">
+                                    <h1 class="title">Business</h1>
+                                    <p class="text">Faites des affaires et des associations dans le but de se concrétiser vos rêves d'entreprenariat</p>
+                                    <!--ul class="slider-btn rounded-buttons">
                                         <li><a class="main-btn rounded-one" href="#">GET STARTED</a></li>
                                         <li><a class="main-btn rounded-two" href="#">DOWNLOAD</a></li>
-                                    </ul>
+                                    </ul-->
                                 </div> <!-- slider-content -->
                             </div>
                         </div> <!-- row -->
@@ -63,12 +63,12 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
-                                    <h1 class="title">Based on Bootstrap 4</h1>
-                                    <p class="text">We blend insights and strategy to create digital products for forward-thinking organisations.</p>
-                                    <ul class="slider-btn rounded-buttons">
+                                    <h1 class="title">Evenement</h1>
+                                    <p class="text">Partagez de tous les moments de joies(mariage, anniversaire,..) et recevez le soutient de la communauté UNIVOIRE </p>
+                                    <!--ul class="slider-btn rounded-buttons">
                                         <li><a class="main-btn rounded-one" href="#">GET STARTED</a></li>
                                         <li><a class="main-btn rounded-two" href="#">DOWNLOAD</a></li>
-                                    </ul>
+                                    </ul-->
                                 </div> <!-- slider-content -->
                             </div>
                         </div> <!-- row -->
@@ -99,8 +99,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-10">
-                        <h3 class="title">Our Services</h3>
-                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!</p>
+                        <h3 class="title">Nos Services</h3>
+                        <p class="text"> Chercher des partenaires pour un projet professionnel ?  Autant de cas d’usages auxquels répond UNIVOIRE par le biais de la rencontre.</p>
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
@@ -108,14 +108,14 @@
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Graphics Design</a></h4>
+                            <h4 class="features-title"><a href="#">Profession</a></h4>
                             <div class="features-icon">
-                                <i class="lni lni-brush"></i>
+                                <i class="lni lni-briefcase"></i>
                                 <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
                             </div>
                         </div>
                         <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description for the ones who look for something new.</p>
+                            <p class="text">Partager votre savoir faire dans votre domaine. Faites vous des rélations dans le but de réaliser un projet qui vous tient à coeur.</p>
                             <a class="features-btn" href="#">LEARN MORE</a>
                         </div>
                     </div> <!-- single features -->
@@ -123,14 +123,14 @@
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Website Design</a></h4>
+                            <h4 class="features-title"><a href="#">Localisation</a></h4>
                             <div class="features-icon">
-                                <i class="lni lni-layout"></i>
+                                <i class="lni lni-map-marker"></i>
                                 <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
                             </div>
                         </div>
                         <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description for the ones who look for something new.</p>
+                            <p class="text">Retrouvez les membres de votre communauté (village, ville, department, ...).</p>
                             <a class="features-btn" href="#">LEARN MORE</a>
                         </div>
                     </div> <!-- single features -->
@@ -138,14 +138,14 @@
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Digital Marketing</a></h4>
+                            <h4 class="features-title"><a href="#">Info et evenement</a></h4>
                             <div class="features-icon">
-                                <i class="lni lni-bolt"></i>
+                                <i class="lni lni-bullhorn"></i>
                                 <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
                             </div>
                         </div>
                         <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description for the ones who look for something new.</p>
+                            <p class="text">Donnez et recevoir de vos nouvelles. Partagez vos moments joyeux avec toutes la communauté UNIVOIRE puis recevez leur soutient.</p>
                             <a class="features-btn" href="#">LEARN MORE</a>
                         </div>
                     </div> <!-- single features -->
@@ -450,59 +450,59 @@
                 <div class="col-lg-5">
                     <div class="faq-content mt-45">
                         <div class="about-title">
-                            <h6 class="sub-title">A Little More About Us</h6>
-                            <h4 class="title">Frequently Asked Questions <br> About Our Site</h4>
+                            <h6 class="sub-title">UN PEU PLUS SUR NOUS</h6>
+                            <h4 class="title">La plateforme UNIVOIRE est un espace de retrouvaille de tous les ivoiriens à travers le monde entier.</h4>
                         </div> <!-- faq title -->
                         <div class="about-accordion">
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
-                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Frequently Asked Question One</a>
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">UNIVOIRE : Pays</a>
                                     </div>
 
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.</p>
+                                            <p class="text">UNIVOIRE permettra à tous les adherents de retrouver les personnes qui vivent dans le même pays.</p>
                                         </div>
                                     </div> 
                                 </div> <!-- card -->
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Frequently Asked Question Two</a>
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">UNIVOIRE : Village</a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.</p>
+                                            <p class="text">UNIVOIRE permettra de reconnaitra ses origines et retrouver sa communauté villageoise, ce qui facilitera les activités des associations.</p>
                                         </div>
                                     </div>
                                 </div> <!-- card -->
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Frequently Asked Question Three</a>
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">UNIVOIRE : Métier</a>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.</p>
+                                            <p class="text">UNIVOIRE met un espace pour retrouver ceux qui ont pratiqué et qui continuent de pratiquer le mêtier les concernants. L’utilité sera de partager ses expériences , son parcours avec ceux qui sont intéressés</p>
                                         </div>
                                     </div>
                                 </div> <!-- card -->
                                 <div class="card">
                                     <div class="card-header" id="headingFore">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFore" aria-expanded="false" aria-controls="collapseFore">Frequently Asked Question Four</a>
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFore" aria-expanded="false" aria-controls="collapseFore">UNIVOIRE : Projet</a>
                                     </div>
                                     <div id="collapseFore" class="collapse" aria-labelledby="headingFore" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.</p>
+                                            <p class="text">les adherents de UNIVOIRE  pourront discuter sur un projet en ligne et le valider en ligne</p>
                                         </div>
                                     </div>
                                 </div> <!-- card -->
                                 <div class="card">
                                     <div class="card-header" id="headingFive">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Frequently Asked Question Five</a>
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">UNIVOIRE : Annonces</a>
                                     </div>
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <p class="text">Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.</p>
+                                            <p class="text">UNIVOIRE met en place un service qui servira d’annoncer des evenements  à venir à savoir mariage, décès , informations pratiques à jour afin de recevoire un soutient moral de la communauté</p>
                                         </div>
                                     </div>
                                 </div> <!-- card -->
@@ -528,8 +528,8 @@
             <div class="row justify-content-between">
                 <div class="col-xl-5 col-lg-6">
                     <div class="testimonial-left-content mt-45">
-                        <h6 class="sub-title">Testimonials</h6>
-                        <h4 class="title">What Clients Says <br> About Us</h4>
+                        <h6 class="sub-title">Témoignages</h6>
+                        <h4 class="title">Que disent les adhérents <br> à propos de UNIVOIRE</h4>
                         <ul class="testimonial-line">
                             <li></li>
                             <li></li>

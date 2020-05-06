@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
 
 <head>
     <meta charset="utf-8">
     
     <!--====== Title ======-->
-    <title>Smash - Bootstrap Business Template</title>
+    <title>UNIVOIRE</title>
     
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,22 +15,22 @@
     <link rel="shortcut icon" href="/assets/images/flavicon.png" type="image/png">
         
     <!--====== Magnific Popup CSS ======-->
-    <link rel="stylesheet" href="/css/home/magnific-popup.css">
+    <link rel="stylesheet" href="/css/main_theme/magnific-popup.css">
         
     <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="/css/home/slick.css">
+    <link rel="stylesheet" href="/css/main_theme/slick.css">
         
     <!--====== Line Icons CSS ======-->
-    <link rel="stylesheet" href="/css/home/LineIcons.css">
+    <link rel="stylesheet" href="/css/main_theme/LineIcons.css">
         
     <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="/css/home/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main_theme/bootstrap.min.css">
     
     <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="/css/home/default.css">
+    <link rel="stylesheet" href="/css/main_theme/default.css">
     
     <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="/css/home/style.css">
+    <link rel="stylesheet" href="/css/main_theme/style.css">
     
 </head>
 
@@ -80,12 +80,43 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item active"><a class="page-scroll" href="#home">Accueil</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#services">Services</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#portfolio">Nos relations</a></li>
-                                <!--li class="nav-item"><a class="page-scroll" href="#pricing">Pricing</a></li-->
-                                <li class="nav-item"><a class="page-scroll" href="#about">A propos</a></li>
-                                <!--li class="nav-item"><a class="page-scroll" href="#team">Team</a></li-->
-                                <!--li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li-->
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Localisation
+                                  </a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Pays</a>
+                                    <a class="dropdown-item" href="#">Regions</a>
+                                    <a class="dropdown-item" href="#">Departement</a>
+                                    <a class="dropdown-item" href="#">Villes</a>
+                                    <a class="dropdown-item" href="#">Villages</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Profession
+                                  </a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Métiers</a>
+                                    <a class="dropdown-item" href="#">Projets</a>
+                                  </div>
+                                </li>
+                                <!--li class="nav-item"><a class="page-scroll" href="#services">Pays</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#portfolio">Regions</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#pricin">Departement</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#about">Villes</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#tea">Villages</a></li-->
+                                <li class="nav-item"><a class="page-scroll" href="#contact">Nom de famille</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#contact">Evènement</a></li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Info
+                                  </a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Journaux</a>
+                                    <a class="dropdown-item" href="#">Chat</a>
+                                  </div>
+                                </li>
                             </ul>
                         </div>
                         
