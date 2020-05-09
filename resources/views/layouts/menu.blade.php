@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     
     <!--====== Title ======-->
-    <title>UNIVOIRE</title>
+    <title>Smash - Bootstrap Business Template</title>
     
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,22 +15,22 @@
     <link rel="shortcut icon" href="/assets/images/flavicon.png" type="image/png">
         
     <!--====== Magnific Popup CSS ======-->
-    <link rel="stylesheet" href="/css/main_theme/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
         
     <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="/css/main_theme/slick.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
         
     <!--====== Line Icons CSS ======-->
-    <link rel="stylesheet" href="/css/main_theme/LineIcons.css">
+    <link rel="stylesheet" href="/assets/css/LineIcons.css">
         
     <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="/css/main_theme/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     
     <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="/css/main_theme/default.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
     
     <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="/css/main_theme/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     
 </head>
 
@@ -68,7 +68,7 @@
                     <nav class="navbar navbar-expand-lg">
                        
                         <a class="navbar-brand" href="#">
-                            <img src="assets/images/univoire_logo2.png" alt="Logo">
+                            <img src="assets/images/univoire_logo.jpg" alt="Logo">
                         </a>
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,43 +80,12 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item active"><a class="page-scroll" href="#home">Accueil</a></li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                    Localisation
-                                  </a>
-                                  <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Pays</a>
-                                    <a class="dropdown-item" href="#">Regions</a>
-                                    <a class="dropdown-item" href="#">Departement</a>
-                                    <a class="dropdown-item" href="#">Villes</a>
-                                    <a class="dropdown-item" href="#">Villages</a>
-                                  </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                    Profession
-                                  </a>
-                                  <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Métiers</a>
-                                    <a class="dropdown-item" href="#">Projets</a>
-                                  </div>
-                                </li>
-                                <!--li class="nav-item"><a class="page-scroll" href="#services">Pays</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#portfolio">Regions</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#pricin">Departement</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#about">Villes</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#tea">Villages</a></li-->
-                                <li class="nav-item"><a class="page-scroll" href="#contact">Nom de famille</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#contact">Evènement</a></li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                    Info
-                                  </a>
-                                  <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Journaux</a>
-                                    <a class="dropdown-item" href="#">Chat</a>
-                                  </div>
-                                </li>
+                                <li class="nav-item"><a class="page-scroll" href="#services">Services</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#portfolio">Nos relations</a></li>
+                                <!--li class="nav-item"><a class="page-scroll" href="#pricing">Pricing</a></li-->
+                                <li class="nav-item"><a class="page-scroll" href="#about">A propos</a></li>
+                                <!--li class="nav-item"><a class="page-scroll" href="#team">Team</a></li-->
+                                <!--li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li-->
                             </ul>
                         </div>
                         
@@ -193,32 +162,32 @@
 
 
     <!--====== Jquery js ======-->
-    <script src="/js/home_page/vendor/jquery-1.12.4.min.js"></script>
-    <script src="/js/home_page/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
     
     <!--====== Bootstrap js ======-->
-    <script src="/js/home_page/popper.min.js"></script>
-    <script src="/js/home_page/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     
     <!--====== Slick js ======-->
-    <script src="/js/home_page/slick.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     
     <!--====== Magnific Popup js ======-->
-    <script src="/js/home_page/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
     
     <!--====== Ajax Contact js ======-->
-    <script src="/js/home_page/ajax-contact.js"></script>
+    <script src="assets/js/ajax-contact.js"></script>
     
     <!--====== Isotope js ======-->
-    <script src="/js/home_page/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/home_page/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     
     <!--====== Scrolling Nav js ======-->
-    <script src="/js/home_page/jquery.easing.min.js"></script>
-    <script src="/js/home_page/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
     
     <!--====== Main js ======-->
-    <script src="/js/home_page/main.js"></script>
+    <script src="assets/js/main.js"></script>
     
 </body>
 
