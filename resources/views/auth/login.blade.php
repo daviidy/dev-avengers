@@ -1,5 +1,5 @@
 @extends('layouts.auth')
-
+@section('title', 'Plateforme de la communauté ivoirienne')
 @section('content')
 
 
