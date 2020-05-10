@@ -321,7 +321,7 @@ transition: all 0.3s ease-out 0s;
     </nav>
     <!-- /navbar-item -->
 
-
+    {{--
     @if(\Route::current()->getName() !== 'welcome')
     <!-- ==============================================
      Site Branding Section
@@ -336,6 +336,7 @@ transition: all 0.3s ease-out 0s;
     <!-- .site-branding -->
 
     @endif
+    --}}
 
 
     @yield('content')
