@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Masha - Medium Social Network Redesigned</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Add your business website description here">
+    <meta name="keywords" content="Add your, business, website, keywords, here">
+    <meta name="author" content="Add your business, website, author here">
+
+    <!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+
+    <!-- ==============================================
+		CSS
+		=============================================== -->
+    <!-- Style-->
+    <link type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link type="text/css" href="css/app.css" rel="stylesheet" />
+
+    <!-- ==============================================
+		Feauture Detection
+		=============================================== -->
+    <script src="js/modernizr-custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+    <!-- ==============================================
+     Navigation Section
+     =============================================== -->
+
+    <nav class="navbar navbar-inverse navbar-toggleable-sm bg-success justify-content-between" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".dual-nav">
+	   <span class="navbar-toggler-icon"></span>
+	  </button>
+        <!-- Button -->
+        <div class="navbar-collapse collapse dual-nav">
+            <ul class="navbar-nav">
+                <!-- Search in right of nav -->
+                <li class="nav-item hidden-xs-down">
+                    <form class="top_search clearfix">
+                        <div class="top_search_con">
+                            <input class="s" placeholder="Search Here ..." type="text">
+                            <span class="top_search_icon"><i class="fa fa-search"></i></span>
+                            <input class="top_search_submit" type="submit">
+                        </div>
+                    </form>
+                </li>
+                <!-- Search Ends -->
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- /nav-item -->
+
+                <li class="nav-item dropdown hidden-xs mega-menu">
+                    <a href="javascript:;" data-toggle="dropdown" class="nav-link dropdown-toggle" aria-expanded="true">Mega </a>
+                    <ul class="dropdown-menu dropdown-menu-yamm">
+                        <li>
+                            <!-- Content container to add padding -->
+                            <div class="yamm-content">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 list-unstyled megamenu-list">
+                                        <h5 class="m-t-0">Description</h5>
+                                        <p class="text-muted font-13">
+                                            Medium Redesigned is a fully featured social network template built on top of awesome Bootstrap 4 Alpha 6, modern web technology HTML5, CSS3 and jQuery. It has many ready to use hand crafted components. The theme is fully responsive and easy to customize.
+                                            The code is super easy to understand and gives power to any developer to turn this theme into real web application.
+                                        </p>
+                                    </div>
+                                    <!-- /col-md-3 -->
+                                    <ul class="col-sm-6 col-md-3 list-unstyled megamenu-list">
+                                        <li>
+                                            <h5 class="m-t-0">Pages</h5>
+                                        </li>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="index-2.html">Home Page 2</a></li>
+                                        <li><a href="index-3.html">Home Page 3 </a></li>
+                                        <li><a href="index-4.html">Home Page 4 </a></li>
+                                        <li><a href="index-5-sidebar.html">Home Page 5 sidebar <span class="badge badge-danger">New</span></a></li>
+                                        <li><a href="newsfeed.html">News Feed <span class="badge badge-danger">New</span></a></li>
+                                    </ul>
+                                    <!-- /ul -->
+                                    <ul class="col-sm-6 col-md-3 list-unstyled megamenu-list">
+                                        <li>
+                                            <h5 class="m-t-0">&nbsp;</h5>
+                                        </li>
+                                        <li><a href="profile.html">Profile</a></li>
+                                        <li><a href="profile-2.html">Profile Page 2</a></li>
+                                        <li><a href="followers.html">Followers/Following</li>
+			  <li><a href="followers-2.html">Followers/Following 2</li>
+			 </ul><!-- /ul -->
+             <ul class="col-sm-6 col-md-2 list-unstyled megamenu-list">
+			  <li><h5 class="m-t-0">&nbsp;</h5></li>
+			  <li><a href="post.html">Post Page</li>
+			  <li><a href="post-2.html">Post Page 2</li>
+			 </ul><!-- /ul -->
+            
+			</div><!-- /row -->
+		   </div><!-- /yam-content -->
+		  </li><!-- /li -->
+	     </ul><!-- /ul -->
+        </li><!-- /li -->			
+	   </ul><!-- /ul -->
+      </div><!-- /navbar-collapse -->
+      <a href="/" class="navbar-brand mr-0 hidden-md-up"> MEDIUM</a>
+                                            <div class="navbar-collapse collapse dual-navv">
+                                                <ul class="nav navbar-nav ml-auto">
+
+                                                    <li class="nav-item dropdown mega-pills">
+                                                        <a href="" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+		   <i class="fa fa-th"></i> 
+		   <span class="label up p-a-0 warn"></span>
+		  </a>
+                                                        <!-- /nav-link -->
+                                                        <div class="dropdown-menu w-xl pull-right p-a-0">
+                                                            <div class="row no-gutter text-primary-hover">
+                                                                <div class="col-xs-4 b-r b-b">
+                                                                    <a class="p-a block text-center">
+		      <i class="fa fa-files-o text-muted m-v-sm"></i> 
+		      <span class="block">Stories</span>
+		     </a>
+                                                                </div>
+                                                                <!-- /col-xs-4 -->
+                                                                <div class="col-xs-4 b-r b-b">
+                                                                    <a class="p-a block text-center">
+			  <i class="fa fa-file-text-o text-muted m-v-sm"></i> 
+			  <span class="block">Series</span>
+			 </a>
+                                                                </div>
+                                                                <!-- /col-xs-4 -->
+                                                                <div class="col-xs-4 b-b">
+                                                                    <a class="p-a block text-center">
+			  <i class="fa fa-line-chart text-muted m-v-sm"></i> 
+			  <span class="block">Stats</span>
+		     </a>
+                                                                </div>
+                                                                <!-- /col-xs-4 -->
+                                                                <div class="col-xs-4 b-r">
+                                                                    <a class="p-a block text-center">
+			  <i class="fa fa-bookmark-o text-muted m-v-sm"></i> 
+			  <span class="block">Bookmarks</span>
+		     </a>
+                                                                </div>
+                                                                <!-- /col-xs-4 -->
+                                                                <div class="col-xs-4 b-r">
+                                                                    <a class="p-a block text-center">
+			  <i class="fa fa-file-archive-o text-muted m-v-sm"></i> 
+			  <span class="block">Publications</span>
+		     </a>
+                                                                </div>
+                                                                <!-- /col-xs-4 -->
+                                                                <div class="col-xs-4">
+                                                                    <a class="p-a block text-center">
+			  <i class="fa fa-heart text-muted m-v-sm"></i> 
+			  <span class="block">Interests</span>
+		     </a>
+                                                                </div>
+                                                                <!-- /col-xs-4 -->
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!-- /navbar-item -->
+
+                                                    <li class="nav-item dropdown mega-notification">
+                                                        <a href="" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+		   <i class="fa fa-bell-o"></i>			  
+		   <span class="label up p-a-0 danger"></span>
+		  </a>
+                                                        <div class="dropdown-menu pull-right w-xl no-bg no-border no-shadow">
+                                                            <div class="scrollable">
+                                                                <ul class="list-group list-group-gap m-a-0">
+                                                                    <li class="list-group-item dark-white box-shadow-z0 b">
+                                                                        <span class="pull-left m-r">
+			   <img src="img/users/3.jpg" alt="..." class="w-40 img-circle">
+			  </span>
+                                                                        <span class="clear block">Use awesome <a href="#" class="text-primary">animate.css</a><br>
+			   <small class="text-muted">10 minutes ago</small>
+			  </span>
+                                                                    </li>
+                                                                    <!-- /list-group-item -->
+                                                                    <li class="list-group-item dark-white box-shadow-z0 b">
+                                                                        <span class="pull-left m-r">
+			   <img src="img/users/5.jpg" alt="..." class="w-40 img-circle">
+			  </span>
+                                                                        <span class="clear block">
+			   <a href="#" class="text-primary">Kyle</a> Added you as friend<br>
+			   <small class="text-muted">2 hours ago</small>
+			  </span>
+                                                                    </li>
+                                                                    <!-- /list-group-item -->
+                                                                    <li class="list-group-item dark-white text-color box-shadow-z0 b">
+                                                                        <span class="pull-left m-r">
+			   <img src="img/users/4.jpg" alt="..." class="w-40 img-circle">
+			  </span>
+                                                                        <span class="clear block">
+			   <a href="#" class="text-primary">Jonathan</a> sent you a message<br>
+			   <small class="text-muted">1 day ago</small>
+			  </span>
+                                                                    </li>
+                                                                    <!-- /list-group-item -->
+
+                                                                </ul>
+                                                                <!-- /list-group -->
+                                                            </div>
+                                                            <!-- /scrollable -->
+                                                        </div>
+                                                        <!-- /dropdown-menu -->
+                                                    </li>
+                                                    <!-- /navbar-item -->
+
+                                                    <li class="nav-item dropdown mega-avatar">
+                                                        <a class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
+		   <span class="avatar w-32"><img src="img/users/2.jpg" class="w-full rounded" width="25" height="25" alt="..."></span>
+		   <i class="mini"></i>
+		   <!-- hidden-xs hides the username on small devices so only the image appears. -->
+		   <span class="hidden-xs">
+			Alex Grantte
+		   </span>
+		  </a>
+                                                        <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                                                            <a class="dropdown-item" href="#"><span>New Story</span></a>
+                                                            <a class="dropdown-item" href="#"><span>Become a Member</span></a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="profile.html"><span>Profile</span></a>
+                                                            <a class="dropdown-item" href="#"><span>Settings</span></a>
+                                                            <a class="dropdown-item" href="#">Need help?</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#">Sign out</a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- /navbar-item -->
+                                                </ul>
+                                                <!-- /nav -->
+                                            </div>
+                                            <!-- /navbar-collapse -->
+    </nav>
+    <!-- /navbar-item -->
+
+
+    <!-- ==============================================
+     Site Branding Section
+     =============================================== -->
+    <div class="site-branding">
+        <div class="container">
+            <h1 class="site-title"><a href="http://www.theleftvstheright.com" rel="home"> MEDIUM </a></h1>
+            <p class="site-description">Share your own ideas and opinions</p>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- .site-branding -->
+
+
+    <!-- ==============================================
+     Header Section
+     =============================================== -->
+
+    <section class="header remove-gap">
+        <div class="container-fluid">
+            <div class="row no-gap">
+
+                <div class="col-md-4">
+                    <a class="post" href="#" title="15 tips of understanding the world of fashion">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/1.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Fashion<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">15 tips of understanding the world of fashion</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author single-block-padding">
+                                    <img src="img/users/1.jpg" alt="..." />
+                                    <p class="lead">Michelle Kate</p>
+                                    <p class="read"><span class="heavy">1 day ago,</span>&nbsp;<span>8 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 40</li>
+                                        <li><i class="fa fa-eye"></i> 1k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author pull-right -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4">
+                    <a class="post" href="#" title="Top 5 tips to have a great vacation with your friends">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/2.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Travel<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Top 5 tips to have a great vacation with your friends</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/2.jpg" alt="..." />
+                                    <p class="lead">Alex Grantte</p>
+                                    <p class="read"><span class="heavy">1 day ago,</span>&nbsp;<span>4 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 10</li>
+                                        <li><i class="fa fa-eye"></i> 300</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4">
+                    <a class="post" href="#" title="Keeping our great veterans in our memories">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/3.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">War<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Keeping our great veterans in our memories</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/3.jpg" alt="..." />
+                                    <p class="lead">David Murlee</p>
+                                    <p class="read"><span class="heavy">1 day ago,</span>&nbsp;<span>5 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 20</li>
+                                        <li><i class="fa fa-eye"></i> 1.3k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container-fluid -->
+    </section>
+    <!-- /section -->
+
+
+    <!-- ==============================================
+     Posts Section
+     =============================================== -->
+
+    <section class="posts">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="fancy-title">
+                    <div class="fancy-title-center">
+                        <h2>MOST READ ARTICLES BY VIEWS</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="How the cloud can improve business">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/4.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Cloud<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">How the cloud can improve business</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/4.jpg" alt="..." />
+                                    <p class="lead">Jonathan Smart</p>
+                                    <p class="read"><span class="heavy">a month ago,</span>&nbsp;<span>7 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 400</li>
+                                        <li><i class="fa fa-eye"></i> 2.6k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="What it’s like to travel to Greece right now">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/5.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Travel<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">What it’s like to travel to Greece right now</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/5.jpg" alt="..." />
+                                    <p class="lead">Kyle Murray</p>
+                                    <p class="read"><span class="heavy">2 months ago,</span>&nbsp;<span>10 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 500</li>
+                                        <li><i class="fa fa-eye"></i> 2.6k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Improve your productivity with these 10 management tools">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/6.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Entrepreneur<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Improve your productivity with these 10 management tools</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/6.jpg" alt="..." />
+                                    <p class="lead">Victoria Stephens</p>
+                                    <p class="read"><span class="heavy">2 months ago,</span>&nbsp;<span>5 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 324</li>
+                                        <li><i class="fa fa-eye"></i> 1.8k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+            </div>
+            <!-- row -->
+            <div class="row">
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="How health & fitness can ease your pain">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/7.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Fitness<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">How health & fitness can ease your pain</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/7.jpg" alt="..." />
+                                    <p class="lead">Grace King</p>
+                                    <p class="read"><span class="heavy">a month ago,</span>&nbsp;<span>12 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 134</li>
+                                        <li><i class="fa fa-eye"></i> 1.8k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="A new generation of wireless headsets is here">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/8.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Business<span class="cat-comma">,</span></span>
+                                        <span class="t-entry-category">Technology<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">A new generation of wireless headsets is here</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/8.jpg" alt="..." />
+                                    <p class="lead">Danie Thames</p>
+                                    <p class="read"><span class="heavy">2 months ago,</span>&nbsp;<span>8 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 134</li>
+                                        <li><i class="fa fa-eye"></i> 1.8k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Master your mind in 5 minutes a day">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/9.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Lifestyle<span class="cat-comma">,</span></span>
+                                        <span class="t-entry-category">People<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Master your mind in 5 minutes a day</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/9.jpg" alt="..." />
+                                    <p class="lead">Ellen Johns</p>
+                                    <p class="read"><span class="heavy">3 months ago,</span>&nbsp;<span>6 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 424</li>
+                                        <li><i class="fa fa-eye"></i> 1.6k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+            </div>
+            <div class="row">
+
+                <div class="fancy-title">
+                    <div class="fancy-title-center">
+                        <h2>RECENT POSTS</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Organize your workflow with the available tech and software">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/10.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Technology<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Organize your workflow with the available tech and software</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/10.jpg" alt="..." />
+                                    <p class="lead">Charles Travis</p>
+                                    <p class="read"><span class="heavy">5 minutes ago,</span>&nbsp;<span>7 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 10</li>
+                                        <li><i class="fa fa-eye"></i> 27</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Stomach Cancer: causes, symptoms and treatment">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/11.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Health<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Stomach Cancer: causes, symptoms and treatment</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/11.jpg" alt="..." />
+                                    <p class="lead">Amanda Taylor</p>
+                                    <p class="read"><span class="heavy">10 minutes ago,</span>&nbsp;<span>10 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 110</li>
+                                        <li><i class="fa fa-eye"></i> 300</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Family values you can teach your children">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="img/blog/12.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Family<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Family values you can teach your children</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="img/users/12.jpg" alt="..." />
+                                    <p class="lead">Sean Hanity</p>
+                                    <p class="read"><span class="heavy">15 minutes ago,</span>&nbsp;<span>7 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 200</li>
+                                        <li><i class="fa fa-eye"></i> 1.2k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container-fluid -->
+    </section>
+    <!-- /section -->
+
+    <!-- ==============================================
+	 More Section
+	 =============================================== -->
+    <section class="more">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-md-2">
+                    <a href="#" class="kafe-btn kafe-btn-default"><i class="fa fa-spinner"></i> Read More</a>
+                </div>
+                <!-- /.col-lg-8 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /container -->
+    </section>
+    <!-- /w -->
+
+    <!-- ==============================================
+     Footer Section
+     =============================================== -->
+    <footer class="bottom-footer">
+        <div class="container">
+            <p><span>©2017 Medium.com</span></p>
+
+            <ul id="menu-footer-menu">
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <!-- /li -->
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <!-- /li -->
+                <li>
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <!-- /li -->
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <!-- /li -->
+            </ul>
+            <!-- /ul -->
+
+        </div>
+        <!-- /container -->
+    </footer>
+    <!-- /footer -->
+
+    <a id="scrollup">Scroll</a>
+
+    <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(".dual-nav").on('shown.bs.collapse', function() {
+            $(".dual-navv").collapse('show');
+        })
+        $(".dual-nav").on('hidden.bs.collapse', function() {
+            $(".dual-navv").collapse('hide');
+        })
+    </script>
+    <script src="js/medium.js"></script>
+
+</body>
+
+</html>

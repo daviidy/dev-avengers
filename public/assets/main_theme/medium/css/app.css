@@ -1,0 +1,9606 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Abhaya+Libre");
+/*
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* line 4, ../bower_components/font-awesome/scss/_core.scss */
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+
+/* line 5, ../bower_components/font-awesome/scss/_larger.scss */
+
+.fa-lg {
+    font-size: 1.33333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+/* line 10, ../bower_components/font-awesome/scss/_larger.scss */
+
+.fa-2x {
+    font-size: 2em;
+}
+
+/* line 11, ../bower_components/font-awesome/scss/_larger.scss */
+
+.fa-3x {
+    font-size: 3em;
+}
+
+/* line 12, ../bower_components/font-awesome/scss/_larger.scss */
+
+.fa-4x {
+    font-size: 4em;
+}
+
+/* line 13, ../bower_components/font-awesome/scss/_larger.scss */
+
+.fa-5x {
+    font-size: 5em;
+}
+
+/* line 3, ../bower_components/font-awesome/scss/_fixed-width.scss */
+
+.fa-fw {
+    width: 1.28571em;
+    text-align: center;
+}
+
+/* line 4, ../bower_components/font-awesome/scss/_list.scss */
+
+.fa-ul {
+    padding-left: 0;
+    margin-left: 2.14286em;
+    list-style-type: none;
+}
+
+/* line 8, ../bower_components/font-awesome/scss/_list.scss */
+
+.fa-ul>li {
+    position: relative;
+}
+
+/* line 10, ../bower_components/font-awesome/scss/_list.scss */
+
+.fa-li {
+    position: absolute;
+    left: -2.14286em;
+    width: 2.14286em;
+    top: 0.14286em;
+    text-align: center;
+}
+
+/* line 16, ../bower_components/font-awesome/scss/_list.scss */
+
+.fa-li.fa-lg {
+    left: -1.85714em;
+}
+
+/* line 4, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.fa-border {
+    padding: .2em .25em .15em;
+    border: solid 0.08em #eeeeee;
+    border-radius: .1em;
+}
+
+/* line 10, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.fa-pull-left {
+    float: left;
+}
+
+/* line 11, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.fa-pull-right {
+    float: right;
+}
+
+/* line 14, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.fa.fa-pull-left {
+    margin-right: .3em;
+}
+
+/* line 15, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.fa.fa-pull-right {
+    margin-left: .3em;
+}
+
+/* Deprecated as of 4.4.0 */
+
+/* line 19, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.pull-right {
+    float: right;
+}
+
+/* line 20, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.pull-left {
+    float: left;
+}
+
+/* line 23, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.fa.pull-left {
+    margin-right: .3em;
+}
+
+/* line 24, ../bower_components/font-awesome/scss/_bordered-pulled.scss */
+
+.fa.pull-right {
+    margin-left: .3em;
+}
+
+/* line 4, ../bower_components/font-awesome/scss/_animated.scss */
+
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+/* line 9, ../bower_components/font-awesome/scss/_animated.scss */
+
+.fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+    /* line 15, ../bower_components/font-awesome/scss/_animated.scss */
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    /* line 19, ../bower_components/font-awesome/scss/_animated.scss */
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes fa-spin {
+    /* line 26, ../bower_components/font-awesome/scss/_animated.scss */
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    /* line 30, ../bower_components/font-awesome/scss/_animated.scss */
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/* line 4, ../bower_components/font-awesome/scss/_rotated-flipped.scss */
+
+.fa-rotate-90 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* line 5, ../bower_components/font-awesome/scss/_rotated-flipped.scss */
+
+.fa-rotate-180 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* line 6, ../bower_components/font-awesome/scss/_rotated-flipped.scss */
+
+.fa-rotate-270 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+/* line 8, ../bower_components/font-awesome/scss/_rotated-flipped.scss */
+
+.fa-flip-horizontal {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+/* line 9, ../bower_components/font-awesome/scss/_rotated-flipped.scss */
+
+.fa-flip-vertical {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+/* line 18, ../bower_components/font-awesome/scss/_rotated-flipped.scss */
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+    filter: none;
+}
+
+/* line 4, ../bower_components/font-awesome/scss/_stacked.scss */
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+/* line 12, ../bower_components/font-awesome/scss/_stacked.scss */
+
+.fa-stack-1x,
+.fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* line 18, ../bower_components/font-awesome/scss/_stacked.scss */
+
+.fa-stack-1x {
+    line-height: inherit;
+}
+
+/* line 19, ../bower_components/font-awesome/scss/_stacked.scss */
+
+.fa-stack-2x {
+    font-size: 2em;
+}
+
+/* line 20, ../bower_components/font-awesome/scss/_stacked.scss */
+
+.fa-inverse {
+    color: white;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/* line 4, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-glass:before {
+    content: "\f000";
+}
+
+/* line 5, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-music:before {
+    content: "\f001";
+}
+
+/* line 6, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-search:before {
+    content: "\f002";
+}
+
+/* line 7, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-envelope-o:before {
+    content: "\f003";
+}
+
+/* line 8, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-heart:before {
+    content: "\f004";
+}
+
+/* line 9, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-star:before {
+    content: "\f005";
+}
+
+/* line 10, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-star-o:before {
+    content: "\f006";
+}
+
+/* line 11, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user:before {
+    content: "\f007";
+}
+
+/* line 12, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-film:before {
+    content: "\f008";
+}
+
+/* line 13, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-th-large:before {
+    content: "\f009";
+}
+
+/* line 14, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-th:before {
+    content: "\f00a";
+}
+
+/* line 15, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-th-list:before {
+    content: "\f00b";
+}
+
+/* line 16, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-check:before {
+    content: "\f00c";
+}
+
+/* line 19, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+    content: "\f00d";
+}
+
+/* line 20, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-search-plus:before {
+    content: "\f00e";
+}
+
+/* line 21, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-search-minus:before {
+    content: "\f010";
+}
+
+/* line 22, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-power-off:before {
+    content: "\f011";
+}
+
+/* line 23, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-signal:before {
+    content: "\f012";
+}
+
+/* line 25, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gear:before,
+.fa-cog:before {
+    content: "\f013";
+}
+
+/* line 26, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-trash-o:before {
+    content: "\f014";
+}
+
+/* line 27, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-home:before {
+    content: "\f015";
+}
+
+/* line 28, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-o:before {
+    content: "\f016";
+}
+
+/* line 29, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-clock-o:before {
+    content: "\f017";
+}
+
+/* line 30, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-road:before {
+    content: "\f018";
+}
+
+/* line 31, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-download:before {
+    content: "\f019";
+}
+
+/* line 32, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-o-down:before {
+    content: "\f01a";
+}
+
+/* line 33, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-o-up:before {
+    content: "\f01b";
+}
+
+/* line 34, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-inbox:before {
+    content: "\f01c";
+}
+
+/* line 35, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-play-circle-o:before {
+    content: "\f01d";
+}
+
+/* line 37, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-rotate-right:before,
+.fa-repeat:before {
+    content: "\f01e";
+}
+
+/* line 38, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-refresh:before {
+    content: "\f021";
+}
+
+/* line 39, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-list-alt:before {
+    content: "\f022";
+}
+
+/* line 40, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-lock:before {
+    content: "\f023";
+}
+
+/* line 41, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-flag:before {
+    content: "\f024";
+}
+
+/* line 42, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-headphones:before {
+    content: "\f025";
+}
+
+/* line 43, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-volume-off:before {
+    content: "\f026";
+}
+
+/* line 44, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-volume-down:before {
+    content: "\f027";
+}
+
+/* line 45, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-volume-up:before {
+    content: "\f028";
+}
+
+/* line 46, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-qrcode:before {
+    content: "\f029";
+}
+
+/* line 47, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-barcode:before {
+    content: "\f02a";
+}
+
+/* line 48, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tag:before {
+    content: "\f02b";
+}
+
+/* line 49, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tags:before {
+    content: "\f02c";
+}
+
+/* line 50, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-book:before {
+    content: "\f02d";
+}
+
+/* line 51, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bookmark:before {
+    content: "\f02e";
+}
+
+/* line 52, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-print:before {
+    content: "\f02f";
+}
+
+/* line 53, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-camera:before {
+    content: "\f030";
+}
+
+/* line 54, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-font:before {
+    content: "\f031";
+}
+
+/* line 55, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bold:before {
+    content: "\f032";
+}
+
+/* line 56, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-italic:before {
+    content: "\f033";
+}
+
+/* line 57, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-text-height:before {
+    content: "\f034";
+}
+
+/* line 58, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-text-width:before {
+    content: "\f035";
+}
+
+/* line 59, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-align-left:before {
+    content: "\f036";
+}
+
+/* line 60, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-align-center:before {
+    content: "\f037";
+}
+
+/* line 61, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-align-right:before {
+    content: "\f038";
+}
+
+/* line 62, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-align-justify:before {
+    content: "\f039";
+}
+
+/* line 63, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-list:before {
+    content: "\f03a";
+}
+
+/* line 65, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-dedent:before,
+.fa-outdent:before {
+    content: "\f03b";
+}
+
+/* line 66, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-indent:before {
+    content: "\f03c";
+}
+
+/* line 67, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-video-camera:before {
+    content: "\f03d";
+}
+
+/* line 70, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+    content: "\f03e";
+}
+
+/* line 71, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pencil:before {
+    content: "\f040";
+}
+
+/* line 72, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-map-marker:before {
+    content: "\f041";
+}
+
+/* line 73, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-adjust:before {
+    content: "\f042";
+}
+
+/* line 74, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tint:before {
+    content: "\f043";
+}
+
+/* line 76, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-edit:before,
+.fa-pencil-square-o:before {
+    content: "\f044";
+}
+
+/* line 77, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-share-square-o:before {
+    content: "\f045";
+}
+
+/* line 78, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-check-square-o:before {
+    content: "\f046";
+}
+
+/* line 79, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrows:before {
+    content: "\f047";
+}
+
+/* line 80, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-step-backward:before {
+    content: "\f048";
+}
+
+/* line 81, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fast-backward:before {
+    content: "\f049";
+}
+
+/* line 82, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-backward:before {
+    content: "\f04a";
+}
+
+/* line 83, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-play:before {
+    content: "\f04b";
+}
+
+/* line 84, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pause:before {
+    content: "\f04c";
+}
+
+/* line 85, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stop:before {
+    content: "\f04d";
+}
+
+/* line 86, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-forward:before {
+    content: "\f04e";
+}
+
+/* line 87, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fast-forward:before {
+    content: "\f050";
+}
+
+/* line 88, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-step-forward:before {
+    content: "\f051";
+}
+
+/* line 89, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-eject:before {
+    content: "\f052";
+}
+
+/* line 90, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-left:before {
+    content: "\f053";
+}
+
+/* line 91, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-right:before {
+    content: "\f054";
+}
+
+/* line 92, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-plus-circle:before {
+    content: "\f055";
+}
+
+/* line 93, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-minus-circle:before {
+    content: "\f056";
+}
+
+/* line 94, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-times-circle:before {
+    content: "\f057";
+}
+
+/* line 95, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-check-circle:before {
+    content: "\f058";
+}
+
+/* line 96, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-question-circle:before {
+    content: "\f059";
+}
+
+/* line 97, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-info-circle:before {
+    content: "\f05a";
+}
+
+/* line 98, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-crosshairs:before {
+    content: "\f05b";
+}
+
+/* line 99, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-times-circle-o:before {
+    content: "\f05c";
+}
+
+/* line 100, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-check-circle-o:before {
+    content: "\f05d";
+}
+
+/* line 101, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ban:before {
+    content: "\f05e";
+}
+
+/* line 102, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-left:before {
+    content: "\f060";
+}
+
+/* line 103, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-right:before {
+    content: "\f061";
+}
+
+/* line 104, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-up:before {
+    content: "\f062";
+}
+
+/* line 105, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-down:before {
+    content: "\f063";
+}
+
+/* line 107, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mail-forward:before,
+.fa-share:before {
+    content: "\f064";
+}
+
+/* line 108, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-expand:before {
+    content: "\f065";
+}
+
+/* line 109, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-compress:before {
+    content: "\f066";
+}
+
+/* line 110, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-plus:before {
+    content: "\f067";
+}
+
+/* line 111, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-minus:before {
+    content: "\f068";
+}
+
+/* line 112, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-asterisk:before {
+    content: "\f069";
+}
+
+/* line 113, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-exclamation-circle:before {
+    content: "\f06a";
+}
+
+/* line 114, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gift:before {
+    content: "\f06b";
+}
+
+/* line 115, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-leaf:before {
+    content: "\f06c";
+}
+
+/* line 116, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fire:before {
+    content: "\f06d";
+}
+
+/* line 117, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-eye:before {
+    content: "\f06e";
+}
+
+/* line 118, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-eye-slash:before {
+    content: "\f070";
+}
+
+/* line 120, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+    content: "\f071";
+}
+
+/* line 121, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-plane:before {
+    content: "\f072";
+}
+
+/* line 122, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-calendar:before {
+    content: "\f073";
+}
+
+/* line 123, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-random:before {
+    content: "\f074";
+}
+
+/* line 124, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-comment:before {
+    content: "\f075";
+}
+
+/* line 125, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-magnet:before {
+    content: "\f076";
+}
+
+/* line 126, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-up:before {
+    content: "\f077";
+}
+
+/* line 127, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-down:before {
+    content: "\f078";
+}
+
+/* line 128, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-retweet:before {
+    content: "\f079";
+}
+
+/* line 129, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-shopping-cart:before {
+    content: "\f07a";
+}
+
+/* line 130, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-folder:before {
+    content: "\f07b";
+}
+
+/* line 131, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-folder-open:before {
+    content: "\f07c";
+}
+
+/* line 132, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrows-v:before {
+    content: "\f07d";
+}
+
+/* line 133, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrows-h:before {
+    content: "\f07e";
+}
+
+/* line 135, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+    content: "\f080";
+}
+
+/* line 136, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-twitter-square:before {
+    content: "\f081";
+}
+
+/* line 137, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-facebook-square:before {
+    content: "\f082";
+}
+
+/* line 138, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-camera-retro:before {
+    content: "\f083";
+}
+
+/* line 139, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-key:before {
+    content: "\f084";
+}
+
+/* line 141, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gears:before,
+.fa-cogs:before {
+    content: "\f085";
+}
+
+/* line 142, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-comments:before {
+    content: "\f086";
+}
+
+/* line 143, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thumbs-o-up:before {
+    content: "\f087";
+}
+
+/* line 144, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thumbs-o-down:before {
+    content: "\f088";
+}
+
+/* line 145, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-star-half:before {
+    content: "\f089";
+}
+
+/* line 146, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-heart-o:before {
+    content: "\f08a";
+}
+
+/* line 147, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sign-out:before {
+    content: "\f08b";
+}
+
+/* line 148, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-linkedin-square:before {
+    content: "\f08c";
+}
+
+/* line 149, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thumb-tack:before {
+    content: "\f08d";
+}
+
+/* line 150, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-external-link:before {
+    content: "\f08e";
+}
+
+/* line 151, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sign-in:before {
+    content: "\f090";
+}
+
+/* line 152, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-trophy:before {
+    content: "\f091";
+}
+
+/* line 153, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-github-square:before {
+    content: "\f092";
+}
+
+/* line 154, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-upload:before {
+    content: "\f093";
+}
+
+/* line 155, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-lemon-o:before {
+    content: "\f094";
+}
+
+/* line 156, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+/* line 157, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-square-o:before {
+    content: "\f096";
+}
+
+/* line 158, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bookmark-o:before {
+    content: "\f097";
+}
+
+/* line 159, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-phone-square:before {
+    content: "\f098";
+}
+
+/* line 160, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+/* line 162, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+/* line 163, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+/* line 164, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-unlock:before {
+    content: "\f09c";
+}
+
+/* line 165, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-credit-card:before {
+    content: "\f09d";
+}
+
+/* line 167, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-feed:before,
+.fa-rss:before {
+    content: "\f09e";
+}
+
+/* line 168, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hdd-o:before {
+    content: "\f0a0";
+}
+
+/* line 169, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bullhorn:before {
+    content: "\f0a1";
+}
+
+/* line 170, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bell:before {
+    content: "\f0f3";
+}
+
+/* line 171, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-certificate:before {
+    content: "\f0a3";
+}
+
+/* line 172, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-o-right:before {
+    content: "\f0a4";
+}
+
+/* line 173, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-o-left:before {
+    content: "\f0a5";
+}
+
+/* line 174, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-o-up:before {
+    content: "\f0a6";
+}
+
+/* line 175, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-o-down:before {
+    content: "\f0a7";
+}
+
+/* line 176, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-left:before {
+    content: "\f0a8";
+}
+
+/* line 177, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-right:before {
+    content: "\f0a9";
+}
+
+/* line 178, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-up:before {
+    content: "\f0aa";
+}
+
+/* line 179, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-down:before {
+    content: "\f0ab";
+}
+
+/* line 180, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-globe:before {
+    content: "\f0ac";
+}
+
+/* line 181, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wrench:before {
+    content: "\f0ad";
+}
+
+/* line 182, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tasks:before {
+    content: "\f0ae";
+}
+
+/* line 183, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-filter:before {
+    content: "\f0b0";
+}
+
+/* line 184, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-briefcase:before {
+    content: "\f0b1";
+}
+
+/* line 185, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrows-alt:before {
+    content: "\f0b2";
+}
+
+/* line 187, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-group:before,
+.fa-users:before {
+    content: "\f0c0";
+}
+
+/* line 189, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chain:before,
+.fa-link:before {
+    content: "\f0c1";
+}
+
+/* line 190, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cloud:before {
+    content: "\f0c2";
+}
+
+/* line 191, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-flask:before {
+    content: "\f0c3";
+}
+
+/* line 193, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cut:before,
+.fa-scissors:before {
+    content: "\f0c4";
+}
+
+/* line 195, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-copy:before,
+.fa-files-o:before {
+    content: "\f0c5";
+}
+
+/* line 196, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-paperclip:before {
+    content: "\f0c6";
+}
+
+/* line 198, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-save:before,
+.fa-floppy-o:before {
+    content: "\f0c7";
+}
+
+/* line 199, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-square:before {
+    content: "\f0c8";
+}
+
+/* line 202, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+/* line 203, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-list-ul:before {
+    content: "\f0ca";
+}
+
+/* line 204, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-list-ol:before {
+    content: "\f0cb";
+}
+
+/* line 205, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-strikethrough:before {
+    content: "\f0cc";
+}
+
+/* line 206, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-underline:before {
+    content: "\f0cd";
+}
+
+/* line 207, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-table:before {
+    content: "\f0ce";
+}
+
+/* line 208, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-magic:before {
+    content: "\f0d0";
+}
+
+/* line 209, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-truck:before {
+    content: "\f0d1";
+}
+
+/* line 210, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pinterest:before {
+    content: "\f0d2";
+}
+
+/* line 211, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pinterest-square:before {
+    content: "\f0d3";
+}
+
+/* line 212, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-google-plus-square:before {
+    content: "\f0d4";
+}
+
+/* line 213, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-google-plus:before {
+    content: "\f0d5";
+}
+
+/* line 214, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-money:before {
+    content: "\f0d6";
+}
+
+/* line 215, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-caret-down:before {
+    content: "\f0d7";
+}
+
+/* line 216, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-caret-up:before {
+    content: "\f0d8";
+}
+
+/* line 217, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-caret-left:before {
+    content: "\f0d9";
+}
+
+/* line 218, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-caret-right:before {
+    content: "\f0da";
+}
+
+/* line 219, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-columns:before {
+    content: "\f0db";
+}
+
+/* line 221, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-unsorted:before,
+.fa-sort:before {
+    content: "\f0dc";
+}
+
+/* line 223, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-down:before,
+.fa-sort-desc:before {
+    content: "\f0dd";
+}
+
+/* line 225, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-up:before,
+.fa-sort-asc:before {
+    content: "\f0de";
+}
+
+/* line 226, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+/* line 227, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+
+/* line 229, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-rotate-left:before,
+.fa-undo:before {
+    content: "\f0e2";
+}
+
+/* line 231, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-legal:before,
+.fa-gavel:before {
+    content: "\f0e3";
+}
+
+/* line 233, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-dashboard:before,
+.fa-tachometer:before {
+    content: "\f0e4";
+}
+
+/* line 234, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-comment-o:before {
+    content: "\f0e5";
+}
+
+/* line 235, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-comments-o:before {
+    content: "\f0e6";
+}
+
+/* line 237, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-flash:before,
+.fa-bolt:before {
+    content: "\f0e7";
+}
+
+/* line 238, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sitemap:before {
+    content: "\f0e8";
+}
+
+/* line 239, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-umbrella:before {
+    content: "\f0e9";
+}
+
+/* line 241, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-paste:before,
+.fa-clipboard:before {
+    content: "\f0ea";
+}
+
+/* line 242, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-lightbulb-o:before {
+    content: "\f0eb";
+}
+
+/* line 243, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-exchange:before {
+    content: "\f0ec";
+}
+
+/* line 244, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cloud-download:before {
+    content: "\f0ed";
+}
+
+/* line 245, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cloud-upload:before {
+    content: "\f0ee";
+}
+
+/* line 246, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user-md:before {
+    content: "\f0f0";
+}
+
+/* line 247, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stethoscope:before {
+    content: "\f0f1";
+}
+
+/* line 248, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-suitcase:before {
+    content: "\f0f2";
+}
+
+/* line 249, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bell-o:before {
+    content: "\f0a2";
+}
+
+/* line 250, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-coffee:before {
+    content: "\f0f4";
+}
+
+/* line 251, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cutlery:before {
+    content: "\f0f5";
+}
+
+/* line 252, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-text-o:before {
+    content: "\f0f6";
+}
+
+/* line 253, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-building-o:before {
+    content: "\f0f7";
+}
+
+/* line 254, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hospital-o:before {
+    content: "\f0f8";
+}
+
+/* line 255, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ambulance:before {
+    content: "\f0f9";
+}
+
+/* line 256, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-medkit:before {
+    content: "\f0fa";
+}
+
+/* line 257, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fighter-jet:before {
+    content: "\f0fb";
+}
+
+/* line 258, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-beer:before {
+    content: "\f0fc";
+}
+
+/* line 259, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-h-square:before {
+    content: "\f0fd";
+}
+
+/* line 260, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-plus-square:before {
+    content: "\f0fe";
+}
+
+/* line 261, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-double-left:before {
+    content: "\f100";
+}
+
+/* line 262, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-double-right:before {
+    content: "\f101";
+}
+
+/* line 263, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-double-up:before {
+    content: "\f102";
+}
+
+/* line 264, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-double-down:before {
+    content: "\f103";
+}
+
+/* line 265, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-left:before {
+    content: "\f104";
+}
+
+/* line 266, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-right:before {
+    content: "\f105";
+}
+
+/* line 267, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-up:before {
+    content: "\f106";
+}
+
+/* line 268, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angle-down:before {
+    content: "\f107";
+}
+
+/* line 269, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-desktop:before {
+    content: "\f108";
+}
+
+/* line 270, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-laptop:before {
+    content: "\f109";
+}
+
+/* line 271, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tablet:before {
+    content: "\f10a";
+}
+
+/* line 273, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mobile-phone:before,
+.fa-mobile:before {
+    content: "\f10b";
+}
+
+/* line 274, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-circle-o:before {
+    content: "\f10c";
+}
+
+/* line 275, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-quote-left:before {
+    content: "\f10d";
+}
+
+/* line 276, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-quote-right:before {
+    content: "\f10e";
+}
+
+/* line 277, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-spinner:before {
+    content: "\f110";
+}
+
+/* line 278, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-circle:before {
+    content: "\f111";
+}
+
+/* line 280, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mail-reply:before,
+.fa-reply:before {
+    content: "\f112";
+}
+
+/* line 281, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-github-alt:before {
+    content: "\f113";
+}
+
+/* line 282, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-folder-o:before {
+    content: "\f114";
+}
+
+/* line 283, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-folder-open-o:before {
+    content: "\f115";
+}
+
+/* line 284, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-smile-o:before {
+    content: "\f118";
+}
+
+/* line 285, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-frown-o:before {
+    content: "\f119";
+}
+
+/* line 286, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-meh-o:before {
+    content: "\f11a";
+}
+
+/* line 287, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gamepad:before {
+    content: "\f11b";
+}
+
+/* line 288, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-keyboard-o:before {
+    content: "\f11c";
+}
+
+/* line 289, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-flag-o:before {
+    content: "\f11d";
+}
+
+/* line 290, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-flag-checkered:before {
+    content: "\f11e";
+}
+
+/* line 291, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-terminal:before {
+    content: "\f120";
+}
+
+/* line 292, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-code:before {
+    content: "\f121";
+}
+
+/* line 294, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+    content: "\f122";
+}
+
+/* line 297, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+    content: "\f123";
+}
+
+/* line 298, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-location-arrow:before {
+    content: "\f124";
+}
+
+/* line 299, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-crop:before {
+    content: "\f125";
+}
+
+/* line 300, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-code-fork:before {
+    content: "\f126";
+}
+
+/* line 302, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-unlink:before,
+.fa-chain-broken:before {
+    content: "\f127";
+}
+
+/* line 303, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-question:before {
+    content: "\f128";
+}
+
+/* line 304, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-info:before {
+    content: "\f129";
+}
+
+/* line 305, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-exclamation:before {
+    content: "\f12a";
+}
+
+/* line 306, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-superscript:before {
+    content: "\f12b";
+}
+
+/* line 307, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-subscript:before {
+    content: "\f12c";
+}
+
+/* line 308, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-eraser:before {
+    content: "\f12d";
+}
+
+/* line 309, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-puzzle-piece:before {
+    content: "\f12e";
+}
+
+/* line 310, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-microphone:before {
+    content: "\f130";
+}
+
+/* line 311, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-microphone-slash:before {
+    content: "\f131";
+}
+
+/* line 312, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-shield:before {
+    content: "\f132";
+}
+
+/* line 313, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-calendar-o:before {
+    content: "\f133";
+}
+
+/* line 314, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fire-extinguisher:before {
+    content: "\f134";
+}
+
+/* line 315, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-rocket:before {
+    content: "\f135";
+}
+
+/* line 316, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-maxcdn:before {
+    content: "\f136";
+}
+
+/* line 317, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-circle-left:before {
+    content: "\f137";
+}
+
+/* line 318, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-circle-right:before {
+    content: "\f138";
+}
+
+/* line 319, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-circle-up:before {
+    content: "\f139";
+}
+
+/* line 320, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chevron-circle-down:before {
+    content: "\f13a";
+}
+
+/* line 321, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-html5:before {
+    content: "\f13b";
+}
+
+/* line 322, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-css3:before {
+    content: "\f13c";
+}
+
+/* line 323, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-anchor:before {
+    content: "\f13d";
+}
+
+/* line 324, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-unlock-alt:before {
+    content: "\f13e";
+}
+
+/* line 325, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bullseye:before {
+    content: "\f140";
+}
+
+/* line 326, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ellipsis-h:before {
+    content: "\f141";
+}
+
+/* line 327, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ellipsis-v:before {
+    content: "\f142";
+}
+
+/* line 328, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-rss-square:before {
+    content: "\f143";
+}
+
+/* line 329, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-play-circle:before {
+    content: "\f144";
+}
+
+/* line 330, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ticket:before {
+    content: "\f145";
+}
+
+/* line 331, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-minus-square:before {
+    content: "\f146";
+}
+
+/* line 332, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-minus-square-o:before {
+    content: "\f147";
+}
+
+/* line 333, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-level-up:before {
+    content: "\f148";
+}
+
+/* line 334, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-level-down:before {
+    content: "\f149";
+}
+
+/* line 335, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-check-square:before {
+    content: "\f14a";
+}
+
+/* line 336, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pencil-square:before {
+    content: "\f14b";
+}
+
+/* line 337, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-external-link-square:before {
+    content: "\f14c";
+}
+
+/* line 338, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-share-square:before {
+    content: "\f14d";
+}
+
+/* line 339, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-compass:before {
+    content: "\f14e";
+}
+
+/* line 341, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+    content: "\f150";
+}
+
+/* line 343, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+    content: "\f151";
+}
+
+/* line 345, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+    content: "\f152";
+}
+
+/* line 347, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-euro:before,
+.fa-eur:before {
+    content: "\f153";
+}
+
+/* line 348, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gbp:before {
+    content: "\f154";
+}
+
+/* line 350, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-dollar:before,
+.fa-usd:before {
+    content: "\f155";
+}
+
+/* line 352, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-rupee:before,
+.fa-inr:before {
+    content: "\f156";
+}
+
+/* line 356, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+    content: "\f157";
+}
+
+/* line 359, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+    content: "\f158";
+}
+
+/* line 361, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-won:before,
+.fa-krw:before {
+    content: "\f159";
+}
+
+/* line 363, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bitcoin:before,
+.fa-btc:before {
+    content: "\f15a";
+}
+
+/* line 364, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file:before {
+    content: "\f15b";
+}
+
+/* line 365, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-text:before {
+    content: "\f15c";
+}
+
+/* line 366, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-alpha-asc:before {
+    content: "\f15d";
+}
+
+/* line 367, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-alpha-desc:before {
+    content: "\f15e";
+}
+
+/* line 368, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-amount-asc:before {
+    content: "\f160";
+}
+
+/* line 369, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-amount-desc:before {
+    content: "\f161";
+}
+
+/* line 370, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-numeric-asc:before {
+    content: "\f162";
+}
+
+/* line 371, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sort-numeric-desc:before {
+    content: "\f163";
+}
+
+/* line 372, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thumbs-up:before {
+    content: "\f164";
+}
+
+/* line 373, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thumbs-down:before {
+    content: "\f165";
+}
+
+/* line 374, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-youtube-square:before {
+    content: "\f166";
+}
+
+/* line 375, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-youtube:before {
+    content: "\f167";
+}
+
+/* line 376, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-xing:before {
+    content: "\f168";
+}
+
+/* line 377, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-xing-square:before {
+    content: "\f169";
+}
+
+/* line 378, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-youtube-play:before {
+    content: "\f16a";
+}
+
+/* line 379, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-dropbox:before {
+    content: "\f16b";
+}
+
+/* line 380, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stack-overflow:before {
+    content: "\f16c";
+}
+
+/* line 381, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+/* line 382, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-flickr:before {
+    content: "\f16e";
+}
+
+/* line 383, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-adn:before {
+    content: "\f170";
+}
+
+/* line 384, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bitbucket:before {
+    content: "\f171";
+}
+
+/* line 385, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bitbucket-square:before {
+    content: "\f172";
+}
+
+/* line 386, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tumblr:before {
+    content: "\f173";
+}
+
+/* line 387, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tumblr-square:before {
+    content: "\f174";
+}
+
+/* line 388, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-long-arrow-down:before {
+    content: "\f175";
+}
+
+/* line 389, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-long-arrow-up:before {
+    content: "\f176";
+}
+
+/* line 390, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-long-arrow-left:before {
+    content: "\f177";
+}
+
+/* line 391, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-long-arrow-right:before {
+    content: "\f178";
+}
+
+/* line 392, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-apple:before {
+    content: "\f179";
+}
+
+/* line 393, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-windows:before {
+    content: "\f17a";
+}
+
+/* line 394, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-android:before {
+    content: "\f17b";
+}
+
+/* line 395, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-linux:before {
+    content: "\f17c";
+}
+
+/* line 396, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-dribbble:before {
+    content: "\f17d";
+}
+
+/* line 397, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-skype:before {
+    content: "\f17e";
+}
+
+/* line 398, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-foursquare:before {
+    content: "\f180";
+}
+
+/* line 399, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-trello:before {
+    content: "\f181";
+}
+
+/* line 400, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-female:before {
+    content: "\f182";
+}
+
+/* line 401, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-male:before {
+    content: "\f183";
+}
+
+/* line 403, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gittip:before,
+.fa-gratipay:before {
+    content: "\f184";
+}
+
+/* line 404, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sun-o:before {
+    content: "\f185";
+}
+
+/* line 405, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-moon-o:before {
+    content: "\f186";
+}
+
+/* line 406, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-archive:before {
+    content: "\f187";
+}
+
+/* line 407, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bug:before {
+    content: "\f188";
+}
+
+/* line 408, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-vk:before {
+    content: "\f189";
+}
+
+/* line 409, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-weibo:before {
+    content: "\f18a";
+}
+
+/* line 410, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-renren:before {
+    content: "\f18b";
+}
+
+/* line 411, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pagelines:before {
+    content: "\f18c";
+}
+
+/* line 412, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stack-exchange:before {
+    content: "\f18d";
+}
+
+/* line 413, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-o-right:before {
+    content: "\f18e";
+}
+
+/* line 414, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-arrow-circle-o-left:before {
+    content: "\f190";
+}
+
+/* line 416, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+    content: "\f191";
+}
+
+/* line 417, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-dot-circle-o:before {
+    content: "\f192";
+}
+
+/* line 418, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wheelchair:before {
+    content: "\f193";
+}
+
+/* line 419, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-vimeo-square:before {
+    content: "\f194";
+}
+
+/* line 421, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-turkish-lira:before,
+.fa-try:before {
+    content: "\f195";
+}
+
+/* line 422, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-plus-square-o:before {
+    content: "\f196";
+}
+
+/* line 423, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-space-shuttle:before {
+    content: "\f197";
+}
+
+/* line 424, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-slack:before {
+    content: "\f198";
+}
+
+/* line 425, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-envelope-square:before {
+    content: "\f199";
+}
+
+/* line 426, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wordpress:before {
+    content: "\f19a";
+}
+
+/* line 427, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-openid:before {
+    content: "\f19b";
+}
+
+/* line 430, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+    content: "\f19c";
+}
+
+/* line 432, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+    content: "\f19d";
+}
+
+/* line 433, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-yahoo:before {
+    content: "\f19e";
+}
+
+/* line 434, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-google:before {
+    content: "\f1a0";
+}
+
+/* line 435, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-reddit:before {
+    content: "\f1a1";
+}
+
+/* line 436, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-reddit-square:before {
+    content: "\f1a2";
+}
+
+/* line 437, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stumbleupon-circle:before {
+    content: "\f1a3";
+}
+
+/* line 438, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stumbleupon:before {
+    content: "\f1a4";
+}
+
+/* line 439, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-delicious:before {
+    content: "\f1a5";
+}
+
+/* line 440, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-digg:before {
+    content: "\f1a6";
+}
+
+/* line 441, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pied-piper-pp:before {
+    content: "\f1a7";
+}
+
+/* line 442, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pied-piper-alt:before {
+    content: "\f1a8";
+}
+
+/* line 443, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-drupal:before {
+    content: "\f1a9";
+}
+
+/* line 444, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-joomla:before {
+    content: "\f1aa";
+}
+
+/* line 445, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-language:before {
+    content: "\f1ab";
+}
+
+/* line 446, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fax:before {
+    content: "\f1ac";
+}
+
+/* line 447, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-building:before {
+    content: "\f1ad";
+}
+
+/* line 448, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-child:before {
+    content: "\f1ae";
+}
+
+/* line 449, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-paw:before {
+    content: "\f1b0";
+}
+
+/* line 450, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-spoon:before {
+    content: "\f1b1";
+}
+
+/* line 451, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cube:before {
+    content: "\f1b2";
+}
+
+/* line 452, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cubes:before {
+    content: "\f1b3";
+}
+
+/* line 453, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-behance:before {
+    content: "\f1b4";
+}
+
+/* line 454, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-behance-square:before {
+    content: "\f1b5";
+}
+
+/* line 455, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-steam:before {
+    content: "\f1b6";
+}
+
+/* line 456, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-steam-square:before {
+    content: "\f1b7";
+}
+
+/* line 457, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-recycle:before {
+    content: "\f1b8";
+}
+
+/* line 459, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-automobile:before,
+.fa-car:before {
+    content: "\f1b9";
+}
+
+/* line 461, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cab:before,
+.fa-taxi:before {
+    content: "\f1ba";
+}
+
+/* line 462, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tree:before {
+    content: "\f1bb";
+}
+
+/* line 463, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-spotify:before {
+    content: "\f1bc";
+}
+
+/* line 464, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-deviantart:before {
+    content: "\f1bd";
+}
+
+/* line 465, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-soundcloud:before {
+    content: "\f1be";
+}
+
+/* line 466, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-database:before {
+    content: "\f1c0";
+}
+
+/* line 467, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-pdf-o:before {
+    content: "\f1c1";
+}
+
+/* line 468, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-word-o:before {
+    content: "\f1c2";
+}
+
+/* line 469, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-excel-o:before {
+    content: "\f1c3";
+}
+
+/* line 470, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-powerpoint-o:before {
+    content: "\f1c4";
+}
+
+/* line 473, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+    content: "\f1c5";
+}
+
+/* line 475, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+    content: "\f1c6";
+}
+
+/* line 477, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+    content: "\f1c7";
+}
+
+/* line 479, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+    content: "\f1c8";
+}
+
+/* line 480, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-file-code-o:before {
+    content: "\f1c9";
+}
+
+/* line 481, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-vine:before {
+    content: "\f1ca";
+}
+
+/* line 482, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-codepen:before {
+    content: "\f1cb";
+}
+
+/* line 483, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-jsfiddle:before {
+    content: "\f1cc";
+}
+
+/* line 488, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+    content: "\f1cd";
+}
+
+/* line 489, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-circle-o-notch:before {
+    content: "\f1ce";
+}
+
+/* line 492, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
+    content: "\f1d0";
+}
+
+/* line 494, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ge:before,
+.fa-empire:before {
+    content: "\f1d1";
+}
+
+/* line 495, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-git-square:before {
+    content: "\f1d2";
+}
+
+/* line 496, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-git:before {
+    content: "\f1d3";
+}
+
+/* line 499, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+    content: "\f1d4";
+}
+
+/* line 500, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tencent-weibo:before {
+    content: "\f1d5";
+}
+
+/* line 501, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-qq:before {
+    content: "\f1d6";
+}
+
+/* line 503, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wechat:before,
+.fa-weixin:before {
+    content: "\f1d7";
+}
+
+/* line 505, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-send:before,
+.fa-paper-plane:before {
+    content: "\f1d8";
+}
+
+/* line 507, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+    content: "\f1d9";
+}
+
+/* line 508, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-history:before {
+    content: "\f1da";
+}
+
+/* line 509, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-circle-thin:before {
+    content: "\f1db";
+}
+
+/* line 510, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-header:before {
+    content: "\f1dc";
+}
+
+/* line 511, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-paragraph:before {
+    content: "\f1dd";
+}
+
+/* line 512, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sliders:before {
+    content: "\f1de";
+}
+
+/* line 513, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-share-alt:before {
+    content: "\f1e0";
+}
+
+/* line 514, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-share-alt-square:before {
+    content: "\f1e1";
+}
+
+/* line 515, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bomb:before {
+    content: "\f1e2";
+}
+
+/* line 517, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+    content: "\f1e3";
+}
+
+/* line 518, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tty:before {
+    content: "\f1e4";
+}
+
+/* line 519, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-binoculars:before {
+    content: "\f1e5";
+}
+
+/* line 520, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-plug:before {
+    content: "\f1e6";
+}
+
+/* line 521, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-slideshare:before {
+    content: "\f1e7";
+}
+
+/* line 522, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-twitch:before {
+    content: "\f1e8";
+}
+
+/* line 523, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-yelp:before {
+    content: "\f1e9";
+}
+
+/* line 524, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-newspaper-o:before {
+    content: "\f1ea";
+}
+
+/* line 525, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wifi:before {
+    content: "\f1eb";
+}
+
+/* line 526, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-calculator:before {
+    content: "\f1ec";
+}
+
+/* line 527, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-paypal:before {
+    content: "\f1ed";
+}
+
+/* line 528, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-google-wallet:before {
+    content: "\f1ee";
+}
+
+/* line 529, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-visa:before {
+    content: "\f1f0";
+}
+
+/* line 530, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-mastercard:before {
+    content: "\f1f1";
+}
+
+/* line 531, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-discover:before {
+    content: "\f1f2";
+}
+
+/* line 532, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-amex:before {
+    content: "\f1f3";
+}
+
+/* line 533, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-paypal:before {
+    content: "\f1f4";
+}
+
+/* line 534, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-stripe:before {
+    content: "\f1f5";
+}
+
+/* line 535, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bell-slash:before {
+    content: "\f1f6";
+}
+
+/* line 536, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bell-slash-o:before {
+    content: "\f1f7";
+}
+
+/* line 537, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-trash:before {
+    content: "\f1f8";
+}
+
+/* line 538, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-copyright:before {
+    content: "\f1f9";
+}
+
+/* line 539, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-at:before {
+    content: "\f1fa";
+}
+
+/* line 540, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-eyedropper:before {
+    content: "\f1fb";
+}
+
+/* line 541, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-paint-brush:before {
+    content: "\f1fc";
+}
+
+/* line 542, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-birthday-cake:before {
+    content: "\f1fd";
+}
+
+/* line 543, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-area-chart:before {
+    content: "\f1fe";
+}
+
+/* line 544, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pie-chart:before {
+    content: "\f200";
+}
+
+/* line 545, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-line-chart:before {
+    content: "\f201";
+}
+
+/* line 546, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-lastfm:before {
+    content: "\f202";
+}
+
+/* line 547, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-lastfm-square:before {
+    content: "\f203";
+}
+
+/* line 548, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-toggle-off:before {
+    content: "\f204";
+}
+
+/* line 549, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-toggle-on:before {
+    content: "\f205";
+}
+
+/* line 550, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bicycle:before {
+    content: "\f206";
+}
+
+/* line 551, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bus:before {
+    content: "\f207";
+}
+
+/* line 552, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ioxhost:before {
+    content: "\f208";
+}
+
+/* line 553, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-angellist:before {
+    content: "\f209";
+}
+
+/* line 554, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc:before {
+    content: "\f20a";
+}
+
+/* line 557, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+    content: "\f20b";
+}
+
+/* line 558, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-meanpath:before {
+    content: "\f20c";
+}
+
+/* line 559, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-buysellads:before {
+    content: "\f20d";
+}
+
+/* line 560, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-connectdevelop:before {
+    content: "\f20e";
+}
+
+/* line 561, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-dashcube:before {
+    content: "\f210";
+}
+
+/* line 562, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-forumbee:before {
+    content: "\f211";
+}
+
+/* line 563, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-leanpub:before {
+    content: "\f212";
+}
+
+/* line 564, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sellsy:before {
+    content: "\f213";
+}
+
+/* line 565, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-shirtsinbulk:before {
+    content: "\f214";
+}
+
+/* line 566, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-simplybuilt:before {
+    content: "\f215";
+}
+
+/* line 567, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-skyatlas:before {
+    content: "\f216";
+}
+
+/* line 568, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cart-plus:before {
+    content: "\f217";
+}
+
+/* line 569, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cart-arrow-down:before {
+    content: "\f218";
+}
+
+/* line 570, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-diamond:before {
+    content: "\f219";
+}
+
+/* line 571, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ship:before {
+    content: "\f21a";
+}
+
+/* line 572, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user-secret:before {
+    content: "\f21b";
+}
+
+/* line 573, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-motorcycle:before {
+    content: "\f21c";
+}
+
+/* line 574, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-street-view:before {
+    content: "\f21d";
+}
+
+/* line 575, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-heartbeat:before {
+    content: "\f21e";
+}
+
+/* line 576, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-venus:before {
+    content: "\f221";
+}
+
+/* line 577, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mars:before {
+    content: "\f222";
+}
+
+/* line 578, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mercury:before {
+    content: "\f223";
+}
+
+/* line 580, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-intersex:before,
+.fa-transgender:before {
+    content: "\f224";
+}
+
+/* line 581, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-transgender-alt:before {
+    content: "\f225";
+}
+
+/* line 582, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-venus-double:before {
+    content: "\f226";
+}
+
+/* line 583, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mars-double:before {
+    content: "\f227";
+}
+
+/* line 584, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-venus-mars:before {
+    content: "\f228";
+}
+
+/* line 585, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mars-stroke:before {
+    content: "\f229";
+}
+
+/* line 586, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mars-stroke-v:before {
+    content: "\f22a";
+}
+
+/* line 587, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mars-stroke-h:before {
+    content: "\f22b";
+}
+
+/* line 588, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-neuter:before {
+    content: "\f22c";
+}
+
+/* line 589, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-genderless:before {
+    content: "\f22d";
+}
+
+/* line 590, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-facebook-official:before {
+    content: "\f230";
+}
+
+/* line 591, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pinterest-p:before {
+    content: "\f231";
+}
+
+/* line 592, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-whatsapp:before {
+    content: "\f232";
+}
+
+/* line 593, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-server:before {
+    content: "\f233";
+}
+
+/* line 594, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user-plus:before {
+    content: "\f234";
+}
+
+/* line 595, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user-times:before {
+    content: "\f235";
+}
+
+/* line 597, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hotel:before,
+.fa-bed:before {
+    content: "\f236";
+}
+
+/* line 598, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-viacoin:before {
+    content: "\f237";
+}
+
+/* line 599, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-train:before {
+    content: "\f238";
+}
+
+/* line 600, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-subway:before {
+    content: "\f239";
+}
+
+/* line 601, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-medium:before {
+    content: "\f23a";
+}
+
+/* line 603, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-yc:before,
+.fa-y-combinator:before {
+    content: "\f23b";
+}
+
+/* line 604, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-optin-monster:before {
+    content: "\f23c";
+}
+
+/* line 605, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-opencart:before {
+    content: "\f23d";
+}
+
+/* line 606, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-expeditedssl:before {
+    content: "\f23e";
+}
+
+/* line 609, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
+    content: "\f240";
+}
+
+/* line 611, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+    content: "\f241";
+}
+
+/* line 613, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-battery-2:before,
+.fa-battery-half:before {
+    content: "\f242";
+}
+
+/* line 615, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+    content: "\f243";
+}
+
+/* line 617, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-battery-0:before,
+.fa-battery-empty:before {
+    content: "\f244";
+}
+
+/* line 618, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mouse-pointer:before {
+    content: "\f245";
+}
+
+/* line 619, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-i-cursor:before {
+    content: "\f246";
+}
+
+/* line 620, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-object-group:before {
+    content: "\f247";
+}
+
+/* line 621, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-object-ungroup:before {
+    content: "\f248";
+}
+
+/* line 622, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sticky-note:before {
+    content: "\f249";
+}
+
+/* line 623, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-sticky-note-o:before {
+    content: "\f24a";
+}
+
+/* line 624, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-jcb:before {
+    content: "\f24b";
+}
+
+/* line 625, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-cc-diners-club:before {
+    content: "\f24c";
+}
+
+/* line 626, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-clone:before {
+    content: "\f24d";
+}
+
+/* line 627, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-balance-scale:before {
+    content: "\f24e";
+}
+
+/* line 628, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hourglass-o:before {
+    content: "\f250";
+}
+
+/* line 630, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+    content: "\f251";
+}
+
+/* line 632, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+    content: "\f252";
+}
+
+/* line 634, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+    content: "\f253";
+}
+
+/* line 635, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hourglass:before {
+    content: "\f254";
+}
+
+/* line 637, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+    content: "\f255";
+}
+
+/* line 639, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+    content: "\f256";
+}
+
+/* line 640, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-scissors-o:before {
+    content: "\f257";
+}
+
+/* line 641, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-lizard-o:before {
+    content: "\f258";
+}
+
+/* line 642, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-spock-o:before {
+    content: "\f259";
+}
+
+/* line 643, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-pointer-o:before {
+    content: "\f25a";
+}
+
+/* line 644, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hand-peace-o:before {
+    content: "\f25b";
+}
+
+/* line 645, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-trademark:before {
+    content: "\f25c";
+}
+
+/* line 646, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-registered:before {
+    content: "\f25d";
+}
+
+/* line 647, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-creative-commons:before {
+    content: "\f25e";
+}
+
+/* line 648, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gg:before {
+    content: "\f260";
+}
+
+/* line 649, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gg-circle:before {
+    content: "\f261";
+}
+
+/* line 650, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tripadvisor:before {
+    content: "\f262";
+}
+
+/* line 651, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-odnoklassniki:before {
+    content: "\f263";
+}
+
+/* line 652, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-odnoklassniki-square:before {
+    content: "\f264";
+}
+
+/* line 653, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-get-pocket:before {
+    content: "\f265";
+}
+
+/* line 654, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wikipedia-w:before {
+    content: "\f266";
+}
+
+/* line 655, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-safari:before {
+    content: "\f267";
+}
+
+/* line 656, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-chrome:before {
+    content: "\f268";
+}
+
+/* line 657, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-firefox:before {
+    content: "\f269";
+}
+
+/* line 658, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-opera:before {
+    content: "\f26a";
+}
+
+/* line 659, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-internet-explorer:before {
+    content: "\f26b";
+}
+
+/* line 661, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-tv:before,
+.fa-television:before {
+    content: "\f26c";
+}
+
+/* line 662, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-contao:before {
+    content: "\f26d";
+}
+
+/* line 663, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-500px:before {
+    content: "\f26e";
+}
+
+/* line 664, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-amazon:before {
+    content: "\f270";
+}
+
+/* line 665, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-calendar-plus-o:before {
+    content: "\f271";
+}
+
+/* line 666, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-calendar-minus-o:before {
+    content: "\f272";
+}
+
+/* line 667, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-calendar-times-o:before {
+    content: "\f273";
+}
+
+/* line 668, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-calendar-check-o:before {
+    content: "\f274";
+}
+
+/* line 669, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-industry:before {
+    content: "\f275";
+}
+
+/* line 670, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-map-pin:before {
+    content: "\f276";
+}
+
+/* line 671, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-map-signs:before {
+    content: "\f277";
+}
+
+/* line 672, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-map-o:before {
+    content: "\f278";
+}
+
+/* line 673, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-map:before {
+    content: "\f279";
+}
+
+/* line 674, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-commenting:before {
+    content: "\f27a";
+}
+
+/* line 675, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-commenting-o:before {
+    content: "\f27b";
+}
+
+/* line 676, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-houzz:before {
+    content: "\f27c";
+}
+
+/* line 677, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-vimeo:before {
+    content: "\f27d";
+}
+
+/* line 678, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-black-tie:before {
+    content: "\f27e";
+}
+
+/* line 679, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fonticons:before {
+    content: "\f280";
+}
+
+/* line 680, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-reddit-alien:before {
+    content: "\f281";
+}
+
+/* line 681, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-edge:before {
+    content: "\f282";
+}
+
+/* line 682, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-credit-card-alt:before {
+    content: "\f283";
+}
+
+/* line 683, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-codiepie:before {
+    content: "\f284";
+}
+
+/* line 684, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-modx:before {
+    content: "\f285";
+}
+
+/* line 685, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fort-awesome:before {
+    content: "\f286";
+}
+
+/* line 686, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-usb:before {
+    content: "\f287";
+}
+
+/* line 687, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-product-hunt:before {
+    content: "\f288";
+}
+
+/* line 688, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-mixcloud:before {
+    content: "\f289";
+}
+
+/* line 689, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-scribd:before {
+    content: "\f28a";
+}
+
+/* line 690, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pause-circle:before {
+    content: "\f28b";
+}
+
+/* line 691, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pause-circle-o:before {
+    content: "\f28c";
+}
+
+/* line 692, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stop-circle:before {
+    content: "\f28d";
+}
+
+/* line 693, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-stop-circle-o:before {
+    content: "\f28e";
+}
+
+/* line 694, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-shopping-bag:before {
+    content: "\f290";
+}
+
+/* line 695, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-shopping-basket:before {
+    content: "\f291";
+}
+
+/* line 696, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-hashtag:before {
+    content: "\f292";
+}
+
+/* line 697, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bluetooth:before {
+    content: "\f293";
+}
+
+/* line 698, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bluetooth-b:before {
+    content: "\f294";
+}
+
+/* line 699, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-percent:before {
+    content: "\f295";
+}
+
+/* line 700, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-gitlab:before {
+    content: "\f296";
+}
+
+/* line 701, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wpbeginner:before {
+    content: "\f297";
+}
+
+/* line 702, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wpforms:before {
+    content: "\f298";
+}
+
+/* line 703, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-envira:before {
+    content: "\f299";
+}
+
+/* line 704, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-universal-access:before {
+    content: "\f29a";
+}
+
+/* line 705, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wheelchair-alt:before {
+    content: "\f29b";
+}
+
+/* line 706, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-question-circle-o:before {
+    content: "\f29c";
+}
+
+/* line 707, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-blind:before {
+    content: "\f29d";
+}
+
+/* line 708, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-audio-description:before {
+    content: "\f29e";
+}
+
+/* line 709, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-volume-control-phone:before {
+    content: "\f2a0";
+}
+
+/* line 710, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-braille:before {
+    content: "\f2a1";
+}
+
+/* line 711, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-assistive-listening-systems:before {
+    content: "\f2a2";
+}
+
+/* line 713, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+    content: "\f2a3";
+}
+
+/* line 716, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+    content: "\f2a4";
+}
+
+/* line 717, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-glide:before {
+    content: "\f2a5";
+}
+
+/* line 718, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-glide-g:before {
+    content: "\f2a6";
+}
+
+/* line 720, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-signing:before,
+.fa-sign-language:before {
+    content: "\f2a7";
+}
+
+/* line 721, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-low-vision:before {
+    content: "\f2a8";
+}
+
+/* line 722, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-viadeo:before {
+    content: "\f2a9";
+}
+
+/* line 723, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-viadeo-square:before {
+    content: "\f2aa";
+}
+
+/* line 724, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-snapchat:before {
+    content: "\f2ab";
+}
+
+/* line 725, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-snapchat-ghost:before {
+    content: "\f2ac";
+}
+
+/* line 726, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-snapchat-square:before {
+    content: "\f2ad";
+}
+
+/* line 727, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-pied-piper:before {
+    content: "\f2ae";
+}
+
+/* line 728, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-first-order:before {
+    content: "\f2b0";
+}
+
+/* line 729, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-yoast:before {
+    content: "\f2b1";
+}
+
+/* line 730, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-themeisle:before {
+    content: "\f2b2";
+}
+
+/* line 732, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+    content: "\f2b3";
+}
+
+/* line 734, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-fa:before,
+.fa-font-awesome:before {
+    content: "\f2b4";
+}
+
+/* line 735, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-handshake-o:before {
+    content: "\f2b5";
+}
+
+/* line 736, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-envelope-open:before {
+    content: "\f2b6";
+}
+
+/* line 737, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-envelope-open-o:before {
+    content: "\f2b7";
+}
+
+/* line 738, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-linode:before {
+    content: "\f2b8";
+}
+
+/* line 739, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-address-book:before {
+    content: "\f2b9";
+}
+
+/* line 740, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-address-book-o:before {
+    content: "\f2ba";
+}
+
+/* line 742, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-vcard:before,
+.fa-address-card:before {
+    content: "\f2bb";
+}
+
+/* line 744, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+    content: "\f2bc";
+}
+
+/* line 745, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user-circle:before {
+    content: "\f2bd";
+}
+
+/* line 746, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user-circle-o:before {
+    content: "\f2be";
+}
+
+/* line 747, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-user-o:before {
+    content: "\f2c0";
+}
+
+/* line 748, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-id-badge:before {
+    content: "\f2c1";
+}
+
+/* line 750, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-drivers-license:before,
+.fa-id-card:before {
+    content: "\f2c2";
+}
+
+/* line 752, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+    content: "\f2c3";
+}
+
+/* line 753, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-quora:before {
+    content: "\f2c4";
+}
+
+/* line 754, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-free-code-camp:before {
+    content: "\f2c5";
+}
+
+/* line 755, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-telegram:before {
+    content: "\f2c6";
+}
+
+/* line 758, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+    content: "\f2c7";
+}
+
+/* line 760, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+    content: "\f2c8";
+}
+
+/* line 762, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+    content: "\f2c9";
+}
+
+/* line 764, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+    content: "\f2ca";
+}
+
+/* line 766, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+    content: "\f2cb";
+}
+
+/* line 767, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-shower:before {
+    content: "\f2cc";
+}
+
+/* line 770, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+    content: "\f2cd";
+}
+
+/* line 771, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-podcast:before {
+    content: "\f2ce";
+}
+
+/* line 772, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-window-maximize:before {
+    content: "\f2d0";
+}
+
+/* line 773, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-window-minimize:before {
+    content: "\f2d1";
+}
+
+/* line 774, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-window-restore:before {
+    content: "\f2d2";
+}
+
+/* line 776, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-times-rectangle:before,
+.fa-window-close:before {
+    content: "\f2d3";
+}
+
+/* line 778, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+    content: "\f2d4";
+}
+
+/* line 779, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-bandcamp:before {
+    content: "\f2d5";
+}
+
+/* line 780, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-grav:before {
+    content: "\f2d6";
+}
+
+/* line 781, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-etsy:before {
+    content: "\f2d7";
+}
+
+/* line 782, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-imdb:before {
+    content: "\f2d8";
+}
+
+/* line 783, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-ravelry:before {
+    content: "\f2d9";
+}
+
+/* line 784, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-eercast:before {
+    content: "\f2da";
+}
+
+/* line 785, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-microchip:before {
+    content: "\f2db";
+}
+
+/* line 786, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-snowflake-o:before {
+    content: "\f2dc";
+}
+
+/* line 787, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-superpowers:before {
+    content: "\f2dd";
+}
+
+/* line 788, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-wpexplorer:before {
+    content: "\f2de";
+}
+
+/* line 789, ../bower_components/font-awesome/scss/_icons.scss */
+
+.fa-meetup:before {
+    content: "\f2e0";
+}
+
+/* line 4, ../bower_components/font-awesome/scss/_screen-reader.scss */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* line 52, ../bower_components/font-awesome/scss/_mixins.scss */
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+/*      font size         */
+
+/* transition */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+/* line 3, ../scss/_base.scss */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* line 12, ../scss/_base.scss */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* line 16, ../scss/_base.scss */
+
+body {
+    line-height: 1;
+}
+
+/* line 20, ../scss/_base.scss */
+
+blockquote,
+q {
+    quotes: none;
+}
+
+/* line 25, ../scss/_base.scss */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/* line 30, ../scss/_base.scss */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* line 35, ../scss/_base.scss */
+
+.no-select {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+/* line 46, ../scss/_base.scss */
+
+html,
+body {
+    overflow-x: hidden;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Typography
+---------------------------------------------------------------------- */
+
+/* line 56, ../scss/_base.scss */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2C3E50;
+    letter-spacing: 1px;
+}
+
+/* line 62, ../scss/_base.scss */
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+}
+
+/* line 66, ../scss/_base.scss */
+
+h1 {
+    font-size: 30px;
+    line-height: 54px;
+}
+
+/* line 67, ../scss/_base.scss */
+
+h2 {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+/* line 68, ../scss/_base.scss */
+
+h3 {
+    font-size: 22px;
+    line-height: 44px;
+}
+
+/* line 69, ../scss/_base.scss */
+
+h4 {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+/* line 70, ../scss/_base.scss */
+
+h5 {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* line 71, ../scss/_base.scss */
+
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* line 73, ../scss/_base.scss */
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    line-height: 24px;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* line 80, ../scss/_base.scss */
+
+p img {
+    margin: 0;
+}
+
+/* line 81, ../scss/_base.scss */
+
+p.lead {
+    font-size: 21px;
+    line-height: 27px;
+    color: #555;
+}
+
+/* line 83, ../scss/_base.scss */
+
+em {
+    font-style: italic;
+}
+
+/* line 84, ../scss/_base.scss */
+
+strong {
+    font-weight: 700;
+    color: #333;
+}
+
+/* line 85, ../scss/_base.scss */
+
+small {
+    font-size: 80%;
+}
+
+/* line 87, ../scss/_base.scss */
+
+hr.mint {
+    background: #16A085;
+    border: 0;
+    width: 100px;
+    height: 3px;
+    clear: both;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Links
+---------------------------------------------------------------------- */
+
+/* line 98, ../scss/_base.scss */
+
+a {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+/* line 112, ../scss/_base.scss */
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    text-decoration: none;
+    outline: 0;
+    color: #16A085 !important;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+/* line 123, ../scss/_base.scss */
+
+p a,
+p a:visited {
+    line-height: inherit;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Lists
+---------------------------------------------------------------------- */
+
+/* line 128, ../scss/_base.scss */
+
+ul,
+ol {
+    margin: 0;
+}
+
+/* line 129, ../scss/_base.scss */
+
+ul {
+    list-style: none outside;
+}
+
+/* line 130, ../scss/_base.scss */
+
+ol {
+    list-style: decimal;
+}
+
+/* line 131, ../scss/_base.scss */
+
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+    margin-left: 10px;
+}
+
+/* line 132, ../scss/_base.scss */
+
+ul.square {
+    list-style: square outside;
+}
+
+/* line 133, ../scss/_base.scss */
+
+ul.circle {
+    list-style: circle outside;
+}
+
+/* line 134, ../scss/_base.scss */
+
+ul.disc {
+    list-style: disc outside;
+}
+
+/* line 138, ../scss/_base.scss */
+
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+    line-height: 24px;
+}
+
+/* line 139, ../scss/_base.scss */
+
+li {
+    line-height: 24px;
+}
+
+/* line 140, ../scss/_base.scss */
+
+ul.large li {
+    line-height: 21px;
+}
+
+/* line 141, ../scss/_base.scss */
+
+li p {
+    line-height: 24px;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Kafe Button Styles
+---------------------------------------------------------------------- */
+
+/* line 147, ../scss/_base.scss */
+
+.kafe-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1.4;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    khtml-user-select: none;
+    webkit-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* line 169, ../scss/_base.scss */
+
+.kafe-btn-default {
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: #fff;
+    margin-top: 10px;
+    padding: 13px 31px;
+}
+
+/* line 181, ../scss/_base.scss */
+
+.kafe-btn-mint {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 13px 31px;
+    color: #fff;
+    background: #05cb95;
+    letter-spacing: 1px;
+}
+
+/* line 192, ../scss/_base.scss */
+
+.kafe-btn-mint-small {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 6px 11px;
+    color: #fff;
+    background: #05cb95;
+    letter-spacing: 1px;
+}
+
+/* line 202, ../scss/_base.scss */
+
+.kafe-btn-default:hover {
+    background-color: #fff;
+    color: #2C3E50 !important;
+    text-decoration: none;
+}
+
+/* line 208, ../scss/_base.scss */
+
+.kafe-btn-mint:hover {
+    color: #fff !important;
+    background: #0de5ab;
+    text-decoration: none;
+}
+
+/* line 214, ../scss/_base.scss */
+
+.kafe-btn-mint-small:hover {
+    color: #fff !important;
+    background: #0de5ab;
+    text-decoration: none;
+}
+
+/* line 220, ../scss/_base.scss */
+
+body.greybg {
+    overflow-x: hidden;
+    background-color: #EEEEEE;
+}
+
+/* line 225, ../scss/_base.scss */
+
+.col-lg-8.white-2 {
+    display: block;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0 0 0 1 rgba(0, 0, 0, 0.6);
+}
+
+/* line 237, ../scss/_base.scss */
+
+.white-blogpage,
+.col-lg-8.white {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    margin-top: -80px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1 rgba(0, 0, 0, 0.6);
+}
+
+/* line 249, ../scss/_base.scss */
+
+.full-width {
+    width: 100%;
+}
+
+/* line 2, ../scss/_nav.scss */
+
+a {
+    cursor: pointer;
+    outline: 0;
+}
+
+/* ==========================================================================
+   Search Section Start
+   ========================================================================== */
+
+/* line 11, ../scss/_nav.scss */
+
+#mainNav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    background: #1ab394 !important;
+    font-size: 12px;
+    /* ================================
+     Top Search
+     ================================ */
+    /* ================================
+     Mega Dropdown
+     ================================ */
+    /* ================================
+     Mega Pills Dropdown
+     ================================ */
+    /* ================================
+     Notification
+     ================================ */
+    /* ================================
+     Avatar
+     ================================ */
+}
+
+/* line 22, ../scss/_nav.scss */
+
+#mainNav .top_search {
+    height: 33px;
+    position: relative;
+}
+
+/* line 26, ../scss/_nav.scss */
+
+#mainNav .top_search .top_search_con {
+    background: #fff;
+    height: 30px;
+    border: 1px solid #E4E4E4 !important;
+    border-radius: 50px;
+    width: 100%;
+}
+
+/* line 33, ../scss/_nav.scss */
+
+#mainNav .top_search .top_search_con input[type="text"] {
+    background: none !important;
+    border: medium none;
+    height: 100%;
+    width: 130px !important;
+    padding: 1px 20px 0 40px;
+    color: #818B8D !important;
+    font-size: 12px !important;
+    font-weight: 700;
+    outline: none;
+    transition: .5s ease-out;
+}
+
+/* line 45, ../scss/_nav.scss */
+
+#mainNav .top_search .top_search_con input[type="text"]:focus {
+    background: none !important;
+    border: medium none;
+    height: 100%;
+    width: 200px !important;
+    padding: 1px 20px 0 40px;
+    color: #818B8D !important;
+    font-size: 12px;
+    outline: none;
+}
+
+/* line 55, ../scss/_nav.scss */
+
+#mainNav .top_search .top_search_icon {
+    color: #1ab394 !important;
+    font-size: 1em;
+    left: 15px;
+    position: absolute;
+    top: 4px;
+}
+
+/* line 62, ../scss/_nav.scss */
+
+#mainNav .top_search .top_search_submit {
+    border: medium none;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    left: 12px;
+    opacity: 0;
+    top: 9px;
+}
+
+/* line 72, ../scss/_nav.scss */
+
+#mainNav .nav-item a.nav-link {
+    text-transform: uppercase;
+}
+
+/* line 78, ../scss/_nav.scss */
+
+#mainNav .nav-item a.nav-link:hover,
+#mainNav .nav-item a.nav-link:focus,
+#mainNav .nav-item a.nav-link:active,
+#mainNav .nav-item a.nav-link.active {
+    color: #fff !important;
+}
+
+/* line 87, ../scss/_nav.scss */
+
+#mainNav .mega-menu .nav-link {
+    color: #fff;
+}
+
+/* line 93, ../scss/_nav.scss */
+
+#mainNav .mega-menu .nav-link:hover,
+#mainNav .mega-menu .nav-link:focus,
+#mainNav .mega-menu .nav-link:active,
+#mainNav .mega-menu .nav-link.active {
+    color: #fff !important;
+}
+
+/* line 97, ../scss/_nav.scss */
+
+#mainNav .mega-menu .text-muted {
+    color: #777777 !important;
+}
+
+/* line 101, ../scss/_nav.scss */
+
+#mainNav .mega-menu.dropdown {
+    position: static;
+    color: #fff;
+}
+
+/* line 105, ../scss/_nav.scss */
+
+#mainNav .mega-menu .dropdown-menu-yamm {
+    left: auto;
+    padding: 0;
+    width: 70%;
+    z-index: 1000 !important;
+}
+
+/* line 111, ../scss/_nav.scss */
+
+#mainNav .mega-menu.dropdown-menu {
+    z-index: 1000 !important;
+    padding: 4px 0;
+    box-shadow: 0 1px 3px rgba(49, 58, 70, 0.2);
+    border: 1px solid rgba(152, 166, 173, 0.15);
+}
+
+/* line 117, ../scss/_nav.scss */
+
+#mainNav .mega-menu.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000 !important;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1em !important;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+/* line 139, ../scss/_nav.scss */
+
+#mainNav .mega-menu .yamm-content {
+    padding: 20px;
+}
+
+/* line 142, ../scss/_nav.scss */
+
+#mainNav .m-t-0 {
+    margin-top: 0 !important;
+}
+
+/* line 145, ../scss/_nav.scss */
+
+#mainNav .mega-menu h5 {
+    font-size: font-size-blockquote;
+    letter-spacing: 0.1em;
+    color: #666f7b;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+/* line 152, ../scss/_nav.scss */
+
+#mainNav .font-13 {
+    font-size: 13px !important;
+}
+
+/* line 155, ../scss/_nav.scss */
+
+#mainNav .mega-menu p {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+}
+
+/* line 161, ../scss/_nav.scss */
+
+#mainNav .list-unstyled {
+    list-style: none;
+}
+
+/* line 164, ../scss/_nav.scss */
+
+#mainNav .megamenu-list li a {
+    display: block;
+    font-family: 'Abhaya Libre', serif;
+    color: #858686 !important;
+    font-size: 16px;
+    font-weight: 300 !important;
+    letter-spacing: 0.06em;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+/* line 174, ../scss/_nav.scss */
+
+#mainNav .megamenu-list li a:hover {
+    color: #1ab394 !important;
+    text-decoration: none;
+}
+
+/* line 178, ../scss/_nav.scss */
+
+#mainNav .megamenu-list li a i {
+    width: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    /* line 186, ../scss/_nav.scss */
+    #mainNav .mega-menu.dropdown-menu {
+        z-index: 0 !important;
+    }
+}
+
+/* line 195, ../scss/_nav.scss */
+
+#mainNav .mega-pills .nav-link i {
+    color: #fff;
+}
+
+/* line 199, ../scss/_nav.scss */
+
+#mainNav .mega-pills .label.up {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+/* line 207, ../scss/_nav.scss */
+
+#mainNav .mega-pills .p-a-0 {
+    padding: 0 0 !important;
+}
+
+/* line 211, ../scss/_nav.scss */
+
+#mainNav .mega-pills .accent {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #a88add !important;
+}
+
+/* line 215, ../scss/_nav.scss */
+
+#mainNav .mega-pills .warn {
+    background-color: #fcc100;
+}
+
+/* line 218, ../scss/_nav.scss */
+
+#mainNav .mega-pills .w-xl {
+    width: 320px;
+    position: absolute;
+    top: 118% !important;
+}
+
+/* line 223, ../scss/_nav.scss */
+
+#mainNav .mega-pills .text-color {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* line 226, ../scss/_nav.scss */
+
+#mainNav .mega-pills .row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* line 230, ../scss/_nav.scss */
+
+#mainNav .mega-pills .row.no-gutter [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* line 234, ../scss/_nav.scss */
+
+#mainNav .mega-pills .b-b {
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+/* line 237, ../scss/_nav.scss */
+
+#mainNav .mega-pills .b-r {
+    border-right: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+/* line 240, ../scss/_nav.scss */
+
+#mainNav .mega-pills .p-a {
+    padding: 1.5rem !important;
+}
+
+/* line 243, ../scss/_nav.scss */
+
+#mainNav .mega-pills .block {
+    display: block;
+}
+
+/* line 246, ../scss/_nav.scss */
+
+#mainNav .mega-pills .no-gutter .col-xs-4 {
+    float: left;
+    width: 33.333333%;
+}
+
+/* line 250, ../scss/_nav.scss */
+
+#mainNav .mega-pills .no-gutter a {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 13px;
+    color: #777777 !important;
+}
+
+/* line 255, ../scss/_nav.scss */
+
+#mainNav .mega-pills .no-gutter a:hover {
+    color: #1ab394 !important;
+}
+
+/* line 265, ../scss/_nav.scss */
+
+#mainNav .mega-notification .nav-link i {
+    color: #fff;
+}
+
+/* line 268, ../scss/_nav.scss */
+
+#mainNav .mega-notification .danger {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #ef193c !important;
+}
+
+/* line 272, ../scss/_nav.scss */
+
+#mainNav .mega-notification .label.up {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+/* line 280, ../scss/_nav.scss */
+
+#mainNav .mega-notification .p-a-0 {
+    padding: 0 0 !important;
+}
+
+/* line 283, ../scss/_nav.scss */
+
+#mainNav .mega-notification .pull-right {
+    float: right;
+}
+
+/* line 286, ../scss/_nav.scss */
+
+#mainNav .mega-notification .no-bg {
+    background: 0 0 !important;
+}
+
+/* line 289, ../scss/_nav.scss */
+
+#mainNav .mega-notification .no-shadow {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* line 293, ../scss/_nav.scss */
+
+#mainNav .mega-notification .w-xl {
+    width: 320px;
+    position: absolute;
+    top: 118% !important;
+}
+
+/* line 298, ../scss/_nav.scss */
+
+#mainNav .mega-notification .no-border {
+    border-color: transparent;
+    border-width: 0;
+}
+
+/* line 302, ../scss/_nav.scss */
+
+#mainNav .mega-notification div.dropdown-menu {
+    left: 10px;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1rem;
+    color: #373a3c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem;
+}
+
+/* line 318, ../scss/_nav.scss */
+
+#mainNav .mega-notification .dropdown-menu.pull-right {
+    left: auto;
+    right: 0;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+}
+
+/* line 326, ../scss/_nav.scss */
+
+#mainNav .mega-notification .scrollable {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* line 331, ../scss/_nav.scss */
+
+#mainNav .mega-notification .dropdown-menu .list-group-item {
+    font-size: .875rem;
+    color: #555555 !important;
+    font-weight: 300;
+}
+
+/* line 336, ../scss/_nav.scss */
+
+#mainNav .mega-notification .list-group.list-group-gap {
+    background: 0 0;
+}
+
+/* line 339, ../scss/_nav.scss */
+
+#mainNav .mega-notification .list-group {
+    border-radius: 3px;
+    background: #fff;
+}
+
+/* line 343, ../scss/_nav.scss */
+
+#mainNav .mega-notification .m-a-0 {
+    margin: 0 0 !important;
+}
+
+/* line 346, ../scss/_nav.scss */
+
+#mainNav .mega-notification .list-group {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+/* line 350, ../scss/_nav.scss */
+
+#mainNav .mega-notification .list-group-gap .list-group-item:first-child {
+    border-top-color: rgba(120, 130, 140, 0.065);
+}
+
+/* line 353, ../scss/_nav.scss */
+
+#mainNav .mega-notification .list-group-gap .list-group-item {
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+/* line 357, ../scss/_nav.scss */
+
+#mainNav .mega-notification .b {
+    border-color: rgba(120, 130, 140, 0.13);
+    background-clip: padding-box;
+}
+
+/* line 361, ../scss/_nav.scss */
+
+#mainNav .mega-notification .dark-white,
+#mainNav .mega-notification .white {
+    background-color: #fff;
+}
+
+/* line 364, ../scss/_nav.scss */
+
+#mainNav .mega-notification .m-r {
+    margin-right: 1rem;
+}
+
+/* line 367, ../scss/_nav.scss */
+
+#mainNav .mega-notification .pull-left {
+    float: left;
+}
+
+/* line 370, ../scss/_nav.scss */
+
+#mainNav .mega-notification .w-40 {
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+}
+
+/* line 375, ../scss/_nav.scss */
+
+#mainNav .mega-notification .text-primary,
+#mainNav .mega-notification .text-primary-hover .active>a,
+#mainNav .mega-notification .text-primary-hover a:hover {
+    color: #1ab394 !important;
+}
+
+/* line 385, ../scss/_nav.scss */
+
+#mainNav .mega-avatar .nav-link span {
+    color: #fff !important;
+}
+
+/* line 388, ../scss/_nav.scss */
+
+#mainNav .mega-avatar .avatar {
+    display: inline-block !important;
+}
+
+/* line 391, ../scss/_nav.scss */
+
+#mainNav .mega-avatar .w-32 {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+}
+
+/* line 396, ../scss/_nav.scss */
+
+#mainNav .mega-avatar .avatar {
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 500px;
+}
+
+/* line 405, ../scss/_nav.scss */
+
+#mainNav .mega-avatar .mini {
+    position: absolute;
+    top: 4px;
+    left: 37px;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: #28bebd !important;
+    font-size: 24px;
+    line-height: 2em;
+    border: 1px solid #fff;
+}
+
+@media (min-width: 767px) {
+    /* line 419, ../scss/_nav.scss */
+    #mainNav .mega-avatar .mini {
+        position: absolute;
+        top: 4px;
+    }
+}
+
+/* line 424, ../scss/_nav.scss */
+
+#mainNav .mega-avatar .w {
+    width: 200px;
+    position: absolute;
+    top: 118% !important;
+}
+
+/* line 429, ../scss/_nav.scss */
+
+#mainNav .mega-avatar .w a {
+    font-size: 12px !important;
+    color: #555555 !important;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   Dropdown Menu
+   ========================================================================== */
+
+/* line 445, ../scss/_nav.scss */
+
+.dropdown-toggle::after {
+    color: #fff;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .3em;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+}
+
+/* line 457, ../scss/_nav.scss */
+
+.dropdown-menu.pull-right {
+    left: auto;
+    right: 0;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+}
+
+/* line 465, ../scss/_nav.scss */
+
+.mega-pills>li.dropdown-menu,
+.mega-notification>div.dropdown-menu,
+.mega-avatar>li.dropdown-menu {
+    left: 0;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1rem;
+    color: #373a3c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem;
+}
+
+@media (max-width: 767px) {
+    /* line 482, ../scss/_nav.scss */
+    .dropdown-menu.pull-right {
+        position: relative;
+        left: -10px !important;
+    }
+    /* line 486, ../scss/_nav.scss */
+    .w-xl {
+        width: 300px !important;
+    }
+    /* line 489, ../scss/_nav.scss */
+    .list-group-gap .list-group-item:first-child {
+        border-top-color: 0px rgba(120, 130, 140, 0.065);
+    }
+}
+
+/* line 493, ../scss/_nav.scss */
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    color: #373a3c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+
+/* line 505, ../scss/_nav.scss */
+
+.dropdown-item:hover {
+    background: #eee;
+}
+
+/* ==========================================================================
+   Site Branding
+   ========================================================================== */
+
+/* line 513, ../scss/_nav.scss */
+
+.site-branding {
+    padding: 2rem 0rem;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+
+/* line 519, ../scss/_nav.scss */
+
+.site-branding .site-title {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 0px;
+    font-size: 1.9rem !important;
+    font-weight: 600;
+    line-height: 1;
+    color: #d65456 !important;
+}
+
+/* line 528, ../scss/_nav.scss */
+
+.site-branding .site-title a {
+    color: #d65456 !important;
+    text-decoration: none;
+}
+
+/* line 533, ../scss/_nav.scss */
+
+.site-branding .site-title a:hover {
+    color: #1ab394 !important;
+    text-decoration: none;
+    transition: 5s ease;
+}
+
+/* line 539, ../scss/_nav.scss */
+
+.site-branding .site-description {
+    font-family: 'Abhaya Libre', serif;
+    color: #666f7b !important;
+    font-size: 0.6875rem;
+    letter-spacing: 1.5px;
+    margin: 10px 0 0 0px;
+    text-transform: uppercase;
+}
+
+/* line 2, ../scss/_nav-2.scss */
+
+a {
+    cursor: pointer;
+    outline: 0;
+}
+
+/* ==========================================================================
+   Search Section Start
+   ========================================================================== */
+
+/* line 12, ../scss/_nav-2.scss */
+
+#mainNav-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    background: #1ab394 !important;
+    font-size: 12px;
+    /* ================================
+     Top Search
+     ================================ */
+    /* ================================
+     Mega Dropdown
+     ================================ */
+    /* ================================
+     Mega Pills Dropdown
+     ================================ */
+    /* ================================
+     Notification
+     ================================ */
+    /* ================================
+     Avatar
+     ================================ */
+}
+
+/* line 20, ../scss/_nav-2.scss */
+
+#mainNav-2 .navbar-brand {
+    color: #fff;
+}
+
+/* line 26, ../scss/_nav-2.scss */
+
+#mainNav-2 .navbar-brand:hover,
+#mainNav-2 .navbar-brand:focus,
+#mainNav-2 .navbar-brand:active,
+#mainNav-2 .navbar-brand.active {
+    color: #fff !important;
+}
+
+/* line 34, ../scss/_nav-2.scss */
+
+#mainNav-2 .top_search {
+    height: 33px;
+    position: relative;
+    top: 5px;
+}
+
+/* line 39, ../scss/_nav-2.scss */
+
+#mainNav-2 .top_search .top_search_con {
+    background: #fff;
+    height: 30px;
+    border: 1px solid #E4E4E4 !important;
+    border-radius: 50px;
+    width: 100%;
+}
+
+/* line 46, ../scss/_nav-2.scss */
+
+#mainNav-2 .top_search .top_search_con input[type="text"] {
+    background: none !important;
+    border: medium none;
+    height: 100%;
+    width: 500px !important;
+    padding: 1px 20px 0 40px;
+    color: #818B8D !important;
+    font-size: 12px !important;
+    font-weight: 700;
+    outline: none;
+    transition: .5s ease-out;
+}
+
+/* line 58, ../scss/_nav-2.scss */
+
+#mainNav-2 .top_search .top_search_con input[type="text"]:focus {
+    background: none !important;
+    border: medium none;
+    height: 100%;
+    width: 600px !important;
+    padding: 1px 20px 0 40px;
+    color: #818B8D !important;
+    font-size: 12px;
+    outline: none;
+}
+
+/* line 68, ../scss/_nav-2.scss */
+
+#mainNav-2 .top_search .top_search_icon {
+    color: #1ab394 !important;
+    font-size: 14px;
+    left: 15px;
+    position: absolute;
+    top: 4px;
+}
+
+/* line 75, ../scss/_nav-2.scss */
+
+#mainNav-2 .top_search .top_search_submit {
+    border: medium none;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    left: 12px;
+    opacity: 0;
+    top: 9px;
+}
+
+/* line 85, ../scss/_nav-2.scss */
+
+#mainNav-2 .nav-item a.nav-link {
+    text-transform: uppercase;
+}
+
+/* line 91, ../scss/_nav-2.scss */
+
+#mainNav-2 .nav-item a.nav-link:hover,
+#mainNav-2 .nav-item a.nav-link:focus,
+#mainNav-2 .nav-item a.nav-link:active,
+#mainNav-2 .nav-item a.nav-link.active {
+    color: #fff !important;
+}
+
+/* line 100, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu .nav-link {
+    color: #fff;
+}
+
+/* line 106, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu .nav-link:hover,
+#mainNav-2 .mega-menu .nav-link:focus,
+#mainNav-2 .mega-menu .nav-link:active,
+#mainNav-2 .mega-menu .nav-link.active {
+    color: #fff !important;
+}
+
+/* line 110, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu .text-muted {
+    color: #777777 !important;
+}
+
+/* line 114, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu.dropdown {
+    position: static;
+    color: #fff;
+}
+
+/* line 118, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu .dropdown-menu-yamm {
+    right: auto;
+    padding: 0;
+    width: 70%;
+    z-index: 1000 !important;
+}
+
+/* line 124, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu .dropdown-menu.pull-right {
+    left: auto;
+    right: 240px;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+}
+
+/* line 132, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu.dropdown-menu {
+    z-index: 1000 !important;
+    padding: 4px 0;
+    box-shadow: 0 1px 3px rgba(49, 58, 70, 0.2);
+    border: 1px solid rgba(152, 166, 173, 0.15);
+}
+
+/* line 138, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu.dropdown-menu {
+    position: relative;
+    left: 150px !important;
+    top: 100%;
+    z-index: 1000 !important;
+    display: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1em !important;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+/* line 159, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu .yamm-content {
+    padding: 20px;
+}
+
+/* line 162, ../scss/_nav-2.scss */
+
+#mainNav-2 .m-t-0 {
+    margin-top: 0 !important;
+}
+
+/* line 165, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu h5 {
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: #666f7b;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+/* line 172, ../scss/_nav-2.scss */
+
+#mainNav-2 .font-13 {
+    font-size: 13px !important;
+}
+
+/* line 175, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-menu p {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+}
+
+/* line 181, ../scss/_nav-2.scss */
+
+#mainNav-2 .list-unstyled {
+    list-style: none;
+}
+
+/* line 184, ../scss/_nav-2.scss */
+
+#mainNav-2 .megamenu-list li a {
+    display: block;
+    font-family: 'Abhaya Libre', serif;
+    color: #858686 !important;
+    font-size: 16px;
+    font-weight: 300 !important;
+    letter-spacing: 0.06em;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+/* line 194, ../scss/_nav-2.scss */
+
+#mainNav-2 .megamenu-list li a:hover {
+    color: #1ab394 !important;
+    text-decoration: none;
+}
+
+/* line 198, ../scss/_nav-2.scss */
+
+#mainNav-2 .megamenu-list li a i {
+    width: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    /* line 206, ../scss/_nav-2.scss */
+    #mainNav-2 .mega-menu.dropdown-menu {
+        z-index: 0 !important;
+    }
+}
+
+/* line 215, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .nav-link i {
+    color: #fff;
+}
+
+/* line 219, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .label.up {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+/* line 227, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .p-a-0 {
+    padding: 0 0 !important;
+}
+
+/* line 231, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .accent {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #a88add !important;
+}
+
+/* line 235, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .warn {
+    background-color: #fcc100;
+}
+
+/* line 238, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .w-xl {
+    width: 320px;
+    position: absolute;
+    top: 118% !important;
+}
+
+/* line 243, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .text-color {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* line 246, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* line 250, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .row.no-gutter [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* line 254, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .b-b {
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+/* line 257, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .b-r {
+    border-right: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+/* line 260, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .p-a {
+    padding: 1.5rem !important;
+}
+
+/* line 263, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .block {
+    display: block;
+}
+
+/* line 266, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .no-gutter .col-xs-4 {
+    float: left;
+    width: 33.333333%;
+}
+
+/* line 270, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .no-gutter a {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 13px;
+    color: #777777 !important;
+}
+
+/* line 275, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-pills .no-gutter a:hover {
+    color: #1ab394 !important;
+}
+
+/* line 285, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .nav-link i {
+    color: #fff;
+}
+
+/* line 288, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .danger {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #ef193c !important;
+}
+
+/* line 292, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .label.up {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    min-width: 4px;
+    min-height: 4px;
+}
+
+/* line 300, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .p-a-0 {
+    padding: 0 0 !important;
+}
+
+/* line 303, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .pull-right {
+    float: right;
+}
+
+/* line 306, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .no-bg {
+    background: 0 0 !important;
+}
+
+/* line 309, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .no-shadow {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* line 313, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .w-xl {
+    width: 320px;
+    position: absolute;
+    top: 118% !important;
+}
+
+/* line 318, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .no-border {
+    border-color: transparent;
+    border-width: 0;
+}
+
+/* line 322, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification div.dropdown-menu {
+    left: 10px;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1rem;
+    color: #373a3c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem;
+}
+
+/* line 338, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .dropdown-menu.pull-right {
+    left: auto;
+    right: 0;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+}
+
+/* line 346, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .scrollable {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* line 351, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .dropdown-menu .list-group-item {
+    font-size: .875rem;
+    color: #555555 !important;
+    font-weight: 300;
+}
+
+/* line 356, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .list-group.list-group-gap {
+    background: 0 0;
+}
+
+/* line 359, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .list-group {
+    border-radius: 3px;
+    background: #fff;
+}
+
+/* line 363, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .m-a-0 {
+    margin: 0 0 !important;
+}
+
+/* line 366, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .list-group {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+/* line 370, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .list-group-gap .list-group-item:first-child {
+    border-top-color: rgba(120, 130, 140, 0.065);
+}
+
+/* line 373, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .list-group-gap .list-group-item {
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+/* line 377, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .b {
+    border-color: rgba(120, 130, 140, 0.13);
+    background-clip: padding-box;
+}
+
+/* line 381, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .dark-white,
+#mainNav-2 .mega-notification .white {
+    background-color: #fff;
+}
+
+/* line 384, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .m-r {
+    margin-right: 1rem;
+}
+
+/* line 387, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .pull-left {
+    float: left;
+}
+
+/* line 390, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .w-40 {
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center;
+}
+
+/* line 395, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-notification .text-primary,
+#mainNav-2 .mega-notification .text-primary-hover .active>a,
+#mainNav-2 .mega-notification .text-primary-hover a:hover {
+    color: #1ab394 !important;
+}
+
+/* line 405, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-avatar .nav-link span {
+    color: #fff !important;
+}
+
+/* line 408, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-avatar .avatar {
+    display: inline-block !important;
+}
+
+/* line 411, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-avatar .w-32 {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+}
+
+/* line 416, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-avatar .avatar {
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 500px;
+}
+
+/* line 425, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-avatar .mini {
+    position: absolute;
+    top: 4px;
+    left: 37px;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: #28bebd !important;
+    font-size: 24px;
+    line-height: 2em;
+    border: 1px solid #fff;
+}
+
+@media (min-width: 767px) {
+    /* line 439, ../scss/_nav-2.scss */
+    #mainNav-2 .mega-avatar .mini {
+        position: absolute;
+        top: 4px;
+    }
+}
+
+/* line 444, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-avatar .w {
+    width: 200px;
+    position: absolute;
+    top: 118% !important;
+}
+
+/* line 449, ../scss/_nav-2.scss */
+
+#mainNav-2 .mega-avatar .w a {
+    font-size: 12px !important;
+    color: #555555 !important;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+    /* line 460, ../scss/_nav-2.scss */
+    #mainNav-2 {
+        padding: 1rem 1rem;
+    }
+}
+
+/* ==========================================================================
+   Dropdown Menu
+   ========================================================================== */
+
+/* line 469, ../scss/_nav-2.scss */
+
+.dropdown-toggle::after {
+    color: #fff;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .3em;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+}
+
+/* line 481, ../scss/_nav-2.scss */
+
+.dropdown-menu.pull-right {
+    left: auto;
+    right: 0;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+}
+
+/* line 489, ../scss/_nav-2.scss */
+
+.mega-pills>li.dropdown-menu,
+.mega-notification>div.dropdown-menu,
+.mega-avatar>li.dropdown-menu {
+    left: 0;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1rem;
+    color: #373a3c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem;
+}
+
+@media (max-width: 767px) {
+    /* line 506, ../scss/_nav-2.scss */
+    .dropdown-menu.pull-right {
+        position: relative;
+        left: -10px !important;
+    }
+    /* line 510, ../scss/_nav-2.scss */
+    .w-xl {
+        width: 300px !important;
+    }
+    /* line 513, ../scss/_nav-2.scss */
+    .list-group-gap .list-group-item:first-child {
+        border-top-color: 0px rgba(120, 130, 140, 0.065);
+    }
+}
+
+/* line 517, ../scss/_nav-2.scss */
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    color: #373a3c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+
+/* line 529, ../scss/_nav-2.scss */
+
+.dropdown-item:hover {
+    background: #eee;
+}
+
+/* ==========================================================================
+   Site Branding
+   ========================================================================== */
+
+/* line 537, ../scss/_nav-2.scss */
+
+.site-branding {
+    padding: 2rem 0rem;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+
+/* line 543, ../scss/_nav-2.scss */
+
+.site-branding .site-title {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 0px;
+    font-size: 1.9rem !important;
+    font-weight: 600;
+    line-height: 1;
+    color: #d65456 !important;
+}
+
+/* line 552, ../scss/_nav-2.scss */
+
+.site-branding .site-title a {
+    color: #d65456 !important;
+    text-decoration: none;
+}
+
+/* line 557, ../scss/_nav-2.scss */
+
+.site-branding .site-title a:hover {
+    color: #1ab394 !important;
+    text-decoration: none;
+    transition: 5s ease;
+}
+
+/* line 563, ../scss/_nav-2.scss */
+
+.site-branding .site-description {
+    font-family: 'Abhaya Libre', serif;
+    color: #313131;
+    font-size: 0.6875rem;
+    letter-spacing: 1.5px;
+    margin: 10px 0 0 0px;
+    text-transform: uppercase;
+}
+
+/* line 1, ../scss/_footer.scss */
+
+.bottom-footer {
+    background: #111111;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* line 8, ../scss/_footer.scss */
+
+.bottom-footer p {
+    font-family: 'Abhaya Libre', serif;
+    color: #525252;
+    float: left;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+
+/* line 17, ../scss/_footer.scss */
+
+.bottom-footer ul {
+    float: right;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/* line 23, ../scss/_footer.scss */
+
+.bottom-footer ul li {
+    font-family: 'Abhaya Libre', serif;
+    color: #6b6b6b;
+    float: left;
+    margin: 2px 5px;
+    font-family: lato;
+}
+
+/* line 30, ../scss/_footer.scss */
+
+.bottom-footer ul li a {
+    font-family: 'Abhaya Libre', serif;
+    color: #6b6b6b;
+    font-size: 14px;
+    float: left;
+    padding: 2px 5px;
+}
+
+/* line 37, ../scss/_footer.scss */
+
+.bottom-footer ul li a:hover {
+    color: #fff;
+}
+
+/* line 43, ../scss/_footer.scss */
+
+#scrollup {
+    background: url("../img/arrow.png") no-repeat 0px 0px;
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 14px;
+    right: 3%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-indent: 100%;
+    cursor: pointer;
+}
+
+/* ------------------ */
+
+/* More Section
+--------------------- */
+
+/* line 62, ../scss/_footer.scss */
+
+.more {
+    padding: 70px;
+    text-align: center;
+}
+
+/* line 67, ../scss/_footer.scss */
+
+.kafe-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1.4;
+    cursor: pointer;
+    background-image: none;
+    border-radius: 4px;
+    khtml-user-select: none;
+    webkit-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* line 89, ../scss/_footer.scss */
+
+.kafe-btn-default {
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 1px;
+    color: #1ab394;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    border: 1px solid #1ab394;
+    margin-top: 10px;
+    padding: 13px 31px;
+}
+
+/* line 101, ../scss/_footer.scss */
+
+.kafe-btn-default:hover {
+    background-color: #1ab394;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* line 107, ../scss/_footer.scss */
+
+.kafe-btn-mint {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 23px;
+    padding: 13px 31px;
+    color: #fff;
+    background: #05cb95;
+    letter-spacing: 1px;
+}
+
+/* line 119, ../scss/_footer.scss */
+
+.kafe-btn-mint:hover {
+    color: #fff !important;
+    background: #0de5ab;
+    text-decoration: none;
+}
+
+/* line 125, ../scss/_footer.scss */
+
+.full-width {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Footer Section Media Queries */
+    /* line 131, ../scss/_footer.scss */
+    .bottom-footer p {
+        text-align: center !important;
+        float: center !important;
+    }
+    /* line 135, ../scss/_footer.scss */
+    #scrollup {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+/* ==========================================================================
+   Header Section Start
+   ========================================================================== */
+
+/* line 5, ../scss/_index.scss */
+
+.header.remove-gap {
+    padding-top: 0;
+    overflow: hidden;
+}
+
+/* line 10, ../scss/_index.scss */
+
+.header.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* line 15, ../scss/_index.scss */
+
+.header.no-gap {
+    margin: 0;
+}
+
+/* line 19, ../scss/_index.scss */
+
+.header div.col-md-4,
+.header div.col-md-6 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* line 26, ../scss/_index.scss */
+
+.header .creative-post {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+/* line 32, ../scss/_index.scss */
+
+.header .creative-img {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+/* line 38, ../scss/_index.scss */
+
+.header .creative-post img.bg {
+    height: 343 !important;
+    width: 100%;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+/* line 47, ../scss/_index.scss */
+
+.header .creative-post:hover img.bg {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* line 55, ../scss/_index.scss */
+
+.header .fancy-post-overlay {
+    background: rgba(7, 7, 7, 0.46) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* line 65, ../scss/_index.scss */
+
+.header .t-overlay-text {
+    margin: 0 auto;
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* line 75, ../scss/_index.scss */
+
+.header .t-overlay-textt {
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff !important;
+}
+
+/* line 80, ../scss/_index.scss */
+
+.header .small-block-padding {
+    padding: 5px 16px 16px 16px;
+}
+
+/* line 83, ../scss/_index.scss */
+
+.header .single-block-padding {
+    padding: 36px 36px 36px 36px;
+}
+
+/* line 86, ../scss/_index.scss */
+
+.header .t-entry {
+    width: 100%;
+}
+
+/* line 89, ../scss/_index.scss */
+
+.header .tmb-overlay-text-left {
+    text-align: left;
+}
+
+/* line 92, ../scss/_index.scss */
+
+.header .t-entry-meta {
+    font-family: 'Abhaya Libre', serif;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    line-height: 1.75;
+    font-size: 15px;
+    color: #fff !important;
+}
+
+/* line 101, ../scss/_index.scss */
+
+.header .bookmark i {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    line-height: 1.75;
+    font-size: 15px;
+    color: #fff !important;
+}
+
+/* line 109, ../scss/_index.scss */
+
+.header .author {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    padding: 5px 16px 16px 36px;
+}
+
+/* line 115, ../scss/_index.scss */
+
+.header .font-weight-700 {
+    font-weight: 700 !important;
+}
+
+/* line 118, ../scss/_index.scss */
+
+.header .t-entry-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* line 122, ../scss/_index.scss */
+
+.header .author img {
+    width: 35px;
+    height: 35px;
+}
+
+/* line 126, ../scss/_index.scss */
+
+.header .meta {
+    float: right;
+    width: 100%;
+}
+
+/* line 130, ../scss/_index.scss */
+
+.header ul.meta {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+/* line 136, ../scss/_index.scss */
+
+.header .meta li {
+    color: #ffffff !important;
+}
+
+/* line 139, ../scss/_index.scss */
+
+.header ul.meta li {
+    font-family: 'Abhaya Libre', serif;
+    color: #a0a0a0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700 !important;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+/* line 148, ../scss/_index.scss */
+
+.header .author p.lead {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff !important;
+    position: relative;
+    top: -39px;
+    left: 45px;
+    font-weight: 700 !important;
+    font-size: 15px;
+}
+
+/* line 157, ../scss/_index.scss */
+
+.header .author p.read {
+    font-family: 'Abhaya Libre', serif;
+    color: #fff !important;
+    position: relative;
+    top: -50px;
+    left: 45px;
+    font-weight: 200 !important;
+    font-size: 12px;
+}
+
+/* line 166, ../scss/_index.scss */
+
+.header .author p.read .heavy {
+    font-weight: 700 !important;
+}
+
+@media (max-width: 767px) {
+    /* line 173, ../scss/_index.scss */
+    .author {
+        display: inline-block;
+        position: relative;
+        top: 35px !important;
+        padding: 5px 16px 16px 36px;
+    }
+    /* line 179, ../scss/_index.scss */
+    .author img {
+        width: 25px;
+        height: 25px;
+    }
+    /* line 183, ../scss/_index.scss */
+    ul.meta {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0 0 5px !important;
+        padding: 0;
+    }
+    /* line 189, ../scss/_index.scss */
+    .header ul.meta li {
+        padding-right: 5px !important;
+        font-size: 11px !important;
+    }
+}
+
+/* ==========================================================================
+   Posts Section Start
+   ========================================================================== */
+
+/* line 202, ../scss/_index.scss */
+
+.posts .fancy-title {
+    float: left;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/* line 209, ../scss/_index.scss */
+
+.posts .fancy-title-center {
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+}
+
+/* line 214, ../scss/_index.scss */
+
+.posts .fancy-title-center h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #666f7b !important;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    width: 100%;
+}
+
+/* line 224, ../scss/_index.scss */
+
+.posts .creative-post {
+    margin-top: 20px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+/* line 231, ../scss/_index.scss */
+
+.posts .creative-img {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+/* line 237, ../scss/_index.scss */
+
+.posts .creative-post img.bg {
+    height: 343 !important;
+    width: 100%;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+/* line 247, ../scss/_index.scss */
+
+.posts .fancy-post-overlay {
+    background: rgba(7, 7, 7, 0.46) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+/* line 261, ../scss/_index.scss */
+
+.posts .creative-post:hover img.bg,
+.posts .fancy-post-overlay:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/* line 266, ../scss/_index.scss */
+
+.posts .t-overlay-text {
+    margin: 0 auto;
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* line 276, ../scss/_index.scss */
+
+.posts .t-overlay-textt {
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff !important;
+}
+
+/* line 281, ../scss/_index.scss */
+
+.posts .small-block-padding {
+    padding: 5px 16px 16px 16px;
+}
+
+/* line 284, ../scss/_index.scss */
+
+.posts .single-block-padding {
+    padding: 36px 36px 36px 36px;
+}
+
+/* line 287, ../scss/_index.scss */
+
+.posts .t-entry {
+    width: 100%;
+}
+
+/* line 290, ../scss/_index.scss */
+
+.posts .tmb-overlay-text-left {
+    text-align: left;
+}
+
+/* line 293, ../scss/_index.scss */
+
+.posts .t-entry-meta {
+    font-family: 'Abhaya Libre', serif;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    line-height: 1.75;
+    font-size: 15px;
+    color: #fff !important;
+}
+
+/* line 302, ../scss/_index.scss */
+
+.posts .bookmark i {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    line-height: 1.75;
+    font-size: 15px;
+    color: #fff !important;
+}
+
+/* line 310, ../scss/_index.scss */
+
+.posts .author {
+    display: inline-block;
+    position: relative;
+    top: 55px;
+    padding: 5px 16px 16px 36px;
+}
+
+/* line 316, ../scss/_index.scss */
+
+.posts .font-weight-700 {
+    font-weight: 700 !important;
+}
+
+/* line 319, ../scss/_index.scss */
+
+.posts .t-entry-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* line 323, ../scss/_index.scss */
+
+.posts .author img {
+    width: 35px;
+    height: 35px;
+}
+
+/* line 327, ../scss/_index.scss */
+
+.posts .meta {
+    float: right;
+    width: 100%;
+}
+
+/* line 331, ../scss/_index.scss */
+
+.posts ul.meta {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+/* line 337, ../scss/_index.scss */
+
+.posts .meta li {
+    color: #ffffff !important;
+}
+
+/* line 340, ../scss/_index.scss */
+
+.posts ul.meta li {
+    font-family: 'Abhaya Libre', serif;
+    color: #a0a0a0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700 !important;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+/* line 349, ../scss/_index.scss */
+
+.posts .author p.lead {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff !important;
+    position: relative;
+    top: -39px;
+    left: 45px;
+    font-weight: 700 !important;
+    font-size: 15px;
+}
+
+/* line 358, ../scss/_index.scss */
+
+.posts .author p.read {
+    font-family: 'Abhaya Libre', serif;
+    color: #fff !important;
+    position: relative;
+    top: -50px;
+    left: 45px;
+    font-weight: 200 !important;
+    font-size: 12px;
+}
+
+/* line 367, ../scss/_index.scss */
+
+.posts .author p.read .heavy {
+    font-weight: 700 !important;
+}
+
+@media (max-width: 767px) {
+    /* line 374, ../scss/_index.scss */
+    .author {
+        display: inline-block;
+        position: relative;
+        top: 35px !important;
+        padding: 5px 4px 16px 36px !important;
+    }
+    /* line 380, ../scss/_index.scss */
+    .author img {
+        width: 15px;
+        height: 15px;
+    }
+    /* line 384, ../scss/_index.scss */
+    .author p.lead {
+        color: #fff !important;
+        position: relative;
+        top: -39px;
+        left: 45px;
+        font-weight: 700 !important;
+        font-size: 12px;
+    }
+    /* line 392, ../scss/_index.scss */
+    .author p.read {
+        color: #fff !important;
+        position: relative;
+        top: -56px;
+        left: 45px;
+        font-weight: 200 !important;
+        font-size: 9px;
+    }
+    /* line 400, ../scss/_index.scss */
+    ul.meta {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0 0 0px !important;
+        padding-right: 5px !important;
+    }
+    /* line 406, ../scss/_index.scss */
+    ul.meta li {
+        padding-right: 2px !important;
+        font-size: 11px !important;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Page - Index 2
+---------------------------------------------------------------------- */
+
+/* line 5, ../scss/_index-2.scss */
+
+.posts-2 {
+    width: 100%;
+    background: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+/* line 12, ../scss/_index-2.scss */
+
+.posts-2 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #858686;
+}
+
+/* line 20, ../scss/_index-2.scss */
+
+.card {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 5px rgba(49, 58, 70, 0.4);
+}
+
+/* line 27, ../scss/_index-2.scss */
+
+.card .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #1ab394 !important;
+    font-size: 16px;
+    line-height: 1 !important;
+}
+
+/* line 36, ../scss/_index-2.scss */
+
+.card .card-title a:hover {
+    color: #858686 !important;
+}
+
+/* line 40, ../scss/_index-2.scss */
+
+.card .card-text {
+    font-family: 'Abhaya Libre', serif;
+    color: #858686 !important;
+}
+
+/* line 44, ../scss/_index-2.scss */
+
+.card .card-text a {
+    color: #1ab394 !important;
+}
+
+/* line 48, ../scss/_index-2.scss */
+
+.card a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+/* line 53, ../scss/_index-2.scss */
+
+.card hr {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+    height: 1px;
+    background: #eee;
+}
+
+/* line 60, ../scss/_index-2.scss */
+
+.card .card-footer {
+    background-color: #fff !important;
+    border-top: none !important;
+}
+
+/* line 64, ../scss/_index-2.scss */
+
+.card .card-footer div.col-sm-6 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* line 68, ../scss/_index-2.scss */
+
+.card .author-2 img {
+    width: 25px;
+    height: 25px;
+}
+
+/* line 72, ../scss/_index-2.scss */
+
+.card .author-2 span {
+    position: relative;
+    top: -10px;
+}
+
+/* line 76, ../scss/_index-2.scss */
+
+.card ul.bottom_data,
+.card ul.author-2 {
+    margin-bottom: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* line 81, ../scss/_index-2.scss */
+
+.card ul.bottom_data {
+    position: relative;
+    top: 8px;
+}
+
+/* line 86, ../scss/_index-2.scss */
+
+.card ul.bottom_data li:first-child {
+    padding-left: 0px;
+    border-right: none;
+}
+
+/* line 91, ../scss/_index-2.scss */
+
+.card ul.bottom_data li {
+    font-family: 'Abhaya Libre', serif;
+    color: #858686 !important;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px !important;
+    font-weight: normal;
+    line-height: 1;
+    float: left;
+    padding: 0px 8px;
+}
+
+/* line 103, ../scss/_index-2.scss */
+
+.card ul.author-2 li {
+    font-family: 'Abhaya Libre', serif;
+    color: #1ab394 !important;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px !important;
+    font-weight: normal;
+    line-height: 1;
+    float: left;
+    padding: 0px 5px;
+}
+
+/* line 115, ../scss/_index-2.scss */
+
+.card ul.bottom_data li .fa {
+    margin-right: 3px !important;
+}
+
+/* line 119, ../scss/_index-2.scss */
+
+.card ul.bottom_data li:last-child {
+    padding-right: 0px;
+    border-right: none;
+}
+
+/* line 123, ../scss/_index-2.scss */
+
+.card br.break {
+    opacity: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    /* line 130, ../scss/_index-2.scss */
+    .card-footer .author-2,
+    .card-footer .bottom_data.pull-right {
+        text-align: center !important;
+    }
+    /* line 133, ../scss/_index-2.scss */
+    ul.bottom_data li {
+        font-family: 'Varela Round', sans-serif;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 0px !important;
+        font-weight: normal;
+        line-height: 1;
+        float: left;
+        padding: 0px 8px;
+    }
+}
+
+/* line 1, ../scss/_index-3.scss */
+
+div.blog-row {
+    padding-top: 15px;
+}
+
+/* line 4, ../scss/_index-3.scss */
+
+div.blog-row .blog-col {
+    padding-bottom: 15px;
+}
+
+/* line 7, ../scss/_index-3.scss */
+
+div.blog-row .blog-relative {
+    position: relative;
+}
+
+/* line 10, ../scss/_index-3.scss */
+
+div.blog-row .blog-hover .blog-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* line 14, ../scss/_index-3.scss */
+
+div.blog-row .blog-col .blog-image {
+    margin-bottom: 30px;
+}
+
+/* line 17, ../scss/_index-3.scss */
+
+div.blog-row .blog-vgradient-black-lg::before,
+div.blog-row .blog-vgradient-black-sm::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    z-index: 1;
+}
+
+/* line 27, ../scss/_index-3.scss */
+
+div.blog-row .blog-hover .blog-image .blog-img {
+    height: 320px;
+    width: 750px;
+}
+
+/* line 31, ../scss/_index-3.scss */
+
+div.blog-row .blog-hover .blog-image * {
+    position: inherit;
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    -o-transition: transform .6s;
+    -ms-transition: transform .6s;
+    -khtml-transition: transform .6s;
+    transition: transform .6s;
+    z-index: 2;
+}
+
+/* line 41, ../scss/_index-3.scss */
+
+div.blog-row .blog-col .blog-content {
+    background: linear-gradient(rgba(34, 34, 34, 0.55), rgba(34, 34, 34, 0.55)) !important;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 14px;
+    z-index: 2;
+}
+
+/* line 54, ../scss/_index-3.scss */
+
+div.blog-row .blog-col .blog-content .blog-user {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px;
+    color: #dae2e8;
+    margin: 0;
+}
+
+/* line 60, ../scss/_index-3.scss */
+
+div.blog-row .blog-col .blog-content .blog-user em {
+    position: relative;
+    top: -10px;
+}
+
+/* line 65, ../scss/_index-3.scss */
+
+div.blog-row a h5 {
+    padding-top: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* line 73, ../scss/_index-3.scss */
+
+div.blog-row .blog-content a:hover {
+    text-decoration: none;
+}
+
+/* line 76, ../scss/_index-3.scss */
+
+div.blog-row .blog-col .blog-content .blog-detail {
+    margin-bottom: 0;
+}
+
+/* line 79, ../scss/_index-3.scss */
+
+div.blog-row .blog-col .blog-content .blog-detail .blog-detail-text {
+    padding-right: 10px;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* line 85, ../scss/_index-3.scss */
+
+div.blog-row .blog-col .blog-content .blog-detail .blog-detail-text i {
+    color: #fff;
+    margin-right: 5px;
+}
+
+/* animations */
+
+/* line 96, ../scss/_index-3.scss */
+
+.blog-hover {
+    /* Hover effects */
+}
+
+/* line 97, ../scss/_index-3.scss */
+
+.blog-hover .blog-image {
+    position: relative;
+    overflow: hidden !important;
+}
+
+/* line 101, ../scss/_index-3.scss */
+
+.blog-hover .blog-image * {
+    position: inherit;
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    -o-transition: transform .6s;
+    -ms-transition: transform .6s;
+    -khtml-transition: transform .6s;
+    transition: transform .6s;
+    z-index: 2;
+}
+
+/* line 112, ../scss/_index-3.scss */
+
+.blog-hover .blog-image img {
+    z-index: 0;
+}
+
+/* line 117, ../scss/_index-3.scss */
+
+.blog-hover.blog-hover:hover {
+    /* scale effect */
+}
+
+/* line 121, ../scss/_index-3.scss */
+
+.blog-hover.blog-hover:hover.blog-hover-scale .blog-image img {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -khtml-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    overflow: hidden !important;
+}
+
+/* line 1, ../scss/_index-4.scss */
+
+.tr-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* line 9, ../scss/_index-4.scss */
+
+.tr-section .tr-post {
+    position: relative;
+}
+
+/* line 12, ../scss/_index-4.scss */
+
+.tr-section .entry-header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* line 16, ../scss/_index-4.scss */
+
+.tr-section .entry-header:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* line 26, ../scss/_index-4.scss */
+
+.tr-section .entry-thumbnail {
+    z-index: -1;
+}
+
+/* line 29, ../scss/_index-4.scss */
+
+.tr-section .tr-post .entry-header img {
+    width: 100%;
+    height: 200px;
+}
+
+/* line 33, ../scss/_index-4.scss */
+
+.tr-section .tr-post .post-content {
+    font-size: 14px;
+    color: #88898a;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+/* line 39, ../scss/_index-4.scss */
+
+.tr-section .post-content .author-post {
+    width: 55px;
+    margin-top: -45px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* line 47, ../scss/_index-4.scss */
+
+.tr-section .post-content .author-post img {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+}
+
+/* line 53, ../scss/_index-4.scss */
+
+.tr-section .entry-meta,
+.tr-section .entry-meta a {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 13px;
+    color: #858686 !important;
+    font-weight: 500;
+}
+
+/* line 59, ../scss/_index-4.scss */
+
+.tr-section .entry-meta {
+    overflow: hidden;
+}
+
+/* line 62, ../scss/_index-4.scss */
+
+.tr-section .entry-meta ul,
+.tr-section .feed ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* line 67, ../scss/_index-4.scss */
+
+.tr-section .entry-meta>ul>li {
+    margin-right: 30px;
+    position: relative;
+}
+
+/* line 71, ../scss/_index-4.scss */
+
+.tr-section .entry-meta ul li {
+    float: left;
+}
+
+/* line 74, ../scss/_index-4.scss */
+
+.tr-section .entry-meta>ul>li+li:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -15px;
+    width: 5px;
+    height: 5px;
+    margin-top: -3px;
+    border-radius: 100%;
+    background-color: #c8cacc;
+}
+
+/* line 85, ../scss/_index-4.scss */
+
+.tr-section .entry-meta li ul li:first-child {
+    margin-right: 10px;
+}
+
+/* line 88, ../scss/_index-4.scss */
+
+.tr-section h2 {
+    line-height: 0.8 !important;
+    margin-bottom: 20px !important;
+}
+
+/* line 92, ../scss/_index-4.scss */
+
+.tr-section a.entry-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1ab394 !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 15px;
+    line-height: 0 !important;
+}
+
+/* line 101, ../scss/_index-4.scss */
+
+.tr-section p {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+}
+
+/* line 105, ../scss/_index-4.scss */
+
+.tr-section .read-more {
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+/* line 109, ../scss/_index-4.scss */
+
+.tr-section .continue-reading a {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 12px;
+    color: #858686 !important;
+    text-transform: uppercase;
+}
+
+/* line 115, ../scss/_index-4.scss */
+
+.tr-section .continue-reading i {
+    font-size: 18px;
+    margin-left: 10px;
+    float: right;
+    margin-top: 3px;
+}
+
+/* line 121, ../scss/_index-4.scss */
+
+.tr-section .feed li {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px;
+    float: left;
+    color: #858686 !important;
+    margin-right: 10px;
+}
+
+/* line 128, ../scss/_index-4.scss */
+
+.tr-section .feed li i {
+    margin-right: 3px;
+}
+
+/* line 131, ../scss/_index-4.scss */
+
+.tr-section .feed li a {
+    font-family: 'Abhaya Libre', serif;
+    color: #858686 !important;
+    padding: 5px;
+}
+
+/* line 138, ../scss/_index-4.scss */
+
+.tr-ad {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* line 143, ../scss/_index-4.scss */
+
+.ad-before {
+    position: relative;
+}
+
+/* line 146, ../scss/_index-4.scss */
+
+.tr-ad img {
+    width: 100%;
+}
+
+/* line 149, ../scss/_index-4.scss */
+
+.ad-before:after {
+    position: absolute;
+    content: "AD";
+    right: 0;
+    top: 0px;
+    width: 25px;
+    height: 20px;
+    padding: 5px;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 12px;
+    color: #fff;
+    background-color: #1ab394;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Widget User
+   ========================================================================== */
+
+/* line 7, ../scss/_newsfeed.scss */
+
+.widget-info-one .widget-avatar-img img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+}
+
+/* line 14, ../scss/_newsfeed.scss */
+
+.widget-info-one .inner {
+    padding: 15px 10px 5px 10px;
+}
+
+/* line 17, ../scss/_newsfeed.scss */
+
+.widget-info-one .widget-avatar,
+.widget-info-one .widget-avatar img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+    height: 53px;
+    width: 53px;
+    margin-right: 4px;
+}
+
+/* line 25, ../scss/_newsfeed.scss */
+
+.widget-info-one h5 {
+    font-family: 'Abhaya Libre', serif;
+    color: #65CEA7;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* line 32, ../scss/_newsfeed.scss */
+
+.widget-info-one .subtitle {
+    display: block;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+}
+
+/* line 37, ../scss/_newsfeed.scss */
+
+.widget-info-one .card-footer {
+    background: #65CEA7 !important;
+    border: none;
+    color: #fff;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    height: 60px;
+}
+
+/* line 47, ../scss/_newsfeed.scss */
+
+.widget-info-one ul.post-view {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+/* line 54, ../scss/_newsfeed.scss */
+
+.widget-info-one ul.post-view li {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    width: 33.33%;
+    float: left;
+}
+
+/* line 62, ../scss/_newsfeed.scss */
+
+.widget-info-one ul.post-view li a {
+    text-decoration: none;
+}
+
+/* line 65, ../scss/_newsfeed.scss */
+
+.widget-info-one ul.post-view li a i {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+/* ==========================================================================
+   Widget User Details
+   ========================================================================== */
+
+/* line 78, ../scss/_newsfeed.scss */
+
+.widget-info-two ul.list-group li {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+}
+
+/* ==========================================================================
+   Post Area
+   ========================================================================== */
+
+/* line 89, ../scss/_newsfeed.scss */
+
+.box {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* line 94, ../scss/_newsfeed.scss */
+
+.box .no-border {
+    font-family: 'Abhaya Libre', serif;
+    border-color: transparent;
+    border-width: 0;
+}
+
+/* line 99, ../scss/_newsfeed.scss */
+
+.box .box-footer {
+    padding: 1rem;
+}
+
+/* line 102, ../scss/_newsfeed.scss */
+
+.box .btn-info {
+    font-family: 'Abhaya Libre', serif;
+    color: #fff;
+    background-color: #1ab394 !important;
+    border-color: #1ab394 !important;
+}
+
+/* line 108, ../scss/_newsfeed.scss */
+
+.box .nav-sm .nav-link {
+    padding: .25rem .75rem;
+}
+
+/* ==========================================================================
+   People you may know
+   ========================================================================== */
+
+/* line 118, ../scss/_newsfeed.scss */
+
+.box-typical {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    border: solid 1px #d8e2e7;
+    margin: 0 0 20px;
+    height: 280px;
+}
+
+/* line 126, ../scss/_newsfeed.scss */
+
+.box-typical .box-typical-header-sm {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+    color: #777777 !important;
+    padding: 12px 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* line 134, ../scss/_newsfeed.scss */
+
+.box-typical .people-rel-list {
+    padding: 0 0 20px;
+}
+
+/* line 137, ../scss/_newsfeed.scss */
+
+.box-typical .people-rel-list .people-rel-list-photos {
+    padding: 0 5px 12px 15px;
+    zoom: 1;
+}
+
+/* line 141, ../scss/_newsfeed.scss */
+
+.box-typical .people-rel-list ul.people-rel-list-photos {
+    list-style: none;
+}
+
+/* line 144, ../scss/_newsfeed.scss */
+
+.box-typical .people-rel-list .people-rel-list-photos li {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/* line 148, ../scss/_newsfeed.scss */
+
+.box-typical .people-rel-list .people-rel-list-photos img {
+    display: block;
+    width: 46px;
+    height: 46px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* line 155, ../scss/_newsfeed.scss */
+
+.box-typical .people-rel-list .site-header-search {
+    width: auto;
+    margin: 0 15px;
+    height: 34px;
+    padding: 2px 0 0;
+}
+
+/* line 161, ../scss/_newsfeed.scss */
+
+.box-typical .site-header-search input[type="text"] {
+    font-family: 'Abhaya Libre', serif;
+    width: 100%;
+    padding: 4px 0 0 14px;
+    border: none;
+    background: 0 0;
+    font-size: .875rem;
+    font-weight: 600;
+    color: #343434;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/* line 173, ../scss/_newsfeed.scss */
+
+.box-typical .people-rel-list .site-header-search button {
+    line-height: 32px;
+}
+
+/* line 176, ../scss/_newsfeed.scss */
+
+.box-typical .site-header-search button {
+    display: block;
+    position: relative;
+    right: -180px;
+    top: -25px;
+    width: 35px;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: #adb7be;
+    border: none;
+    background: 0 0;
+    font-size: .9375rem;
+}
+
+/* ==========================================================================
+   Feeds
+   ========================================================================== */
+
+/* line 195, ../scss/_newsfeed.scss */
+
+.feed .tr-post .entry-header img {
+    width: 100%;
+    height: 300px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+/* line 5, ../scss/_page-post.scss */
+
+header.masthead {
+    margin-bottom: 50px;
+    background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/blog/5.jpg") no-repeat center center;
+    background-color: #777777;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* line 16, ../scss/_page-post.scss */
+
+header.masthead .post-heading {
+    padding: 100px 0 50px;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    /* line 16, ../scss/_page-post.scss */
+    header.masthead .post-heading {
+        padding: 150px 0;
+    }
+}
+
+/* line 24, ../scss/_page-post.scss */
+
+header.masthead .post-heading h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* line 33, ../scss/_page-post.scss */
+    header.masthead .post-heading h1 {
+        font-size: 25px;
+    }
+}
+
+/* ==========================================================================
+   Article Section
+   ========================================================================== */
+
+/* line 45, ../scss/_page-post.scss */
+
+body.greybg {
+    overflow-x: hidden;
+    background-color: #EEEEEE;
+}
+
+/* line 52, ../scss/_page-post.scss */
+
+article .white-blogpage {
+    padding: 30px 20px 30px;
+}
+
+/* line 55, ../scss/_page-post.scss */
+
+article .white-blogpage {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    margin-top: -110px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1 rgba(0, 0, 0, 0.6);
+}
+
+/* line 67, ../scss/_page-post.scss */
+
+article .post-top-sec {
+    padding: 10px 0 0px 0;
+}
+
+/* line 71, ../scss/_page-post.scss */
+
+article h4 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 18px;
+}
+
+/* line 78, ../scss/_page-post.scss */
+
+article .post-top-sec h5 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 15px !important;
+    letter-spacing: 1px;
+}
+
+/* line 86, ../scss/_page-post.scss */
+
+article .post-top-sec .small-hr {
+    margin: 8px auto;
+    border-bottom: 1px solid #FDFDFD;
+    width: 100%;
+}
+
+/* line 92, ../scss/_page-post.scss */
+
+article .post-top-sec p {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #858686;
+    font-size: 12px !important;
+    letter-spacing: 1px;
+}
+
+/* line 100, ../scss/_page-post.scss */
+
+article p {
+    font-family: 'Abhaya Libre', serif;
+    line-height: 1.5;
+    margin: 30px 0;
+    color: #858686;
+    font-size: 17px;
+}
+
+/* line 106, ../scss/_page-post.scss */
+
+article p a {
+    text-decoration: underline;
+}
+
+/* line 116, ../scss/_page-post.scss */
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+}
+
+/* line 121, ../scss/_page-post.scss */
+
+article a {
+    font-family: 'Abhaya Libre', serif;
+    color: #333333;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+/* line 126, ../scss/_page-post.scss */
+
+article a:hover,
+article a:focus {
+    color: #1ab394;
+}
+
+/* line 133, ../scss/_page-post.scss */
+
+article a img:hover,
+article a img:focus {
+    cursor: zoom-in;
+}
+
+/* line 137, ../scss/_page-post.scss */
+
+article blockquote {
+    font-family: 'Abhaya Libre', serif;
+    font-style: italic;
+    color: #858686;
+    letter-spacing: 1px;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    border-left: .25rem solid #eceeef;
+}
+
+/* line 147, ../scss/_page-post.scss */
+
+article ul li {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #868585 !important;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Header Section
+---------------------------------------------------------------------- */
+
+/* line 5, ../scss/_page-post-2.scss */
+
+header.page-post-2 {
+    background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/blog/5.jpg") no-repeat center center fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    color: #fff;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* line 24, ../scss/_page-post-2.scss */
+
+header.page-post-2 .post-heading {
+    padding: 100px 0 50px;
+    color: white;
+}
+
+@media only screen and (min-width: 767px) {
+    /* line 24, ../scss/_page-post-2.scss */
+    header.page-post-2 .post-heading {
+        padding: 150px 0;
+    }
+}
+
+/* line 31, ../scss/_page-post-2.scss */
+
+header.page-post-2 .post-heading p.entry-meta {
+    color: #adaeb3;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* line 40, ../scss/_page-post-2.scss */
+
+header.page-post-2 .post-heading p.entry-meta a {
+    border: none;
+    color: #1ab394;
+    font-style: normal;
+}
+
+/* line 45, ../scss/_page-post-2.scss */
+
+header.page-post-2 .post-heading h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* line 54, ../scss/_page-post-2.scss */
+    header.page-post-2 .post-heading h1 {
+        font-size: 25px;
+    }
+    /* line 57, ../scss/_page-post-2.scss */
+    header.page-post-2 .post-heading .subheading {
+        font-size: 20px;
+    }
+}
+
+/* ==========================================================================
+   Header Avatar Section
+   ========================================================================== */
+
+/* line 67, ../scss/_page-post-2.scss */
+
+.header-avatar {
+    margin-bottom: -110px;
+    position: relative;
+    top: -40px;
+    text-align: center;
+}
+
+/* line 73, ../scss/_page-post-2.scss */
+
+.header-avatar img {
+    border: 7px solid #f5f5f6;
+    border-radius: 50%;
+    float: none;
+    height: 80px;
+    width: 80px;
+}
+
+/* line 80, ../scss/_page-post-2.scss */
+
+.header-avatar p {
+    color: #adaeb3;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Article Section
+   ========================================================================== */
+
+/* line 96, ../scss/_page-post-2.scss */
+
+article.entry-content {
+    border: 20px solid #f5f5f6;
+    padding: 10% 0%;
+}
+
+/* line 101, ../scss/_page-post-2.scss */
+
+article.entry-content h4 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 18px;
+}
+
+/* line 108, ../scss/_page-post-2.scss */
+
+article.entry-content .h5 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 15px !important;
+    letter-spacing: 1px;
+}
+
+/* line 117, ../scss/_page-post-2.scss */
+
+article.entry-content p {
+    font-family: 'Abhaya Libre', serif;
+    line-height: 1.5;
+    margin: 30px 0;
+    color: #858686;
+    font-size: 17px;
+}
+
+/* line 123, ../scss/_page-post-2.scss */
+
+article.entry-content p a {
+    text-decoration: underline;
+}
+
+/* line 133, ../scss/_page-post-2.scss */
+
+article.entry-content h1,
+article.entry-content h2,
+article.entry-content h3,
+article.entry-content h4,
+article.entry-content h5,
+article.entry-content h6 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+}
+
+/* line 138, ../scss/_page-post-2.scss */
+
+article.entry-content a {
+    font-family: 'Abhaya Libre', serif;
+    color: #333333;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+/* line 143, ../scss/_page-post-2.scss */
+
+article.entry-content a:hover,
+article.entry-content a:focus {
+    color: #1ab394;
+}
+
+/* line 150, ../scss/_page-post-2.scss */
+
+article.entry-content a img:hover,
+article.entry-content a img:focus {
+    cursor: zoom-in;
+}
+
+/* line 154, ../scss/_page-post-2.scss */
+
+article.entry-content blockquote {
+    font-family: 'Abhaya Libre', serif;
+    font-style: italic;
+    color: #858686;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    border-left: .25rem solid #eceeef;
+}
+
+/* line 163, ../scss/_page-post-2.scss */
+
+article.entry-content ul li {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #868585 !important;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Banner Comment Section
+---------------------------------------------------------------------- */
+
+/* line 176, ../scss/_page-post-2.scss */
+
+.banner-comment {
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/blog/10.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 30px;
+}
+
+/* line 197, ../scss/_page-post-2.scss */
+
+.banner-comment h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* line 206, ../scss/_page-post-2.scss */
+    .banner-comment h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    /* line 211, ../scss/_page-post-2.scss */
+    .banner-comment h2 {
+        font-size: 20px;
+    }
+}
+
+/* ==========================================================================
+   Article Section 2
+   ========================================================================== */
+
+/* line 220, ../scss/_page-post-2.scss */
+
+article.entry-content-2 {
+    border: 20px solid #f5f5f6;
+    padding: 4% 0%;
+}
+
+/* line 225, ../scss/_page-post-2.scss */
+
+article.entry-content-2 h4 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 18px;
+}
+
+/* line 232, ../scss/_page-post-2.scss */
+
+article.entry-content-2 .h5 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 15px !important;
+    letter-spacing: 1px;
+}
+
+/* line 241, ../scss/_page-post-2.scss */
+
+article.entry-content-2 p {
+    font-family: 'Abhaya Libre', serif;
+    line-height: 1.5;
+    margin: 30px 0;
+    color: #858686;
+    font-size: 17px;
+}
+
+/* line 247, ../scss/_page-post-2.scss */
+
+article.entry-content-2 p a {
+    text-decoration: underline;
+}
+
+/* line 253, ../scss/_page-post-2.scss */
+
+article.entry-content-2 a {
+    font-family: 'Abhaya Libre', serif;
+    color: #333333;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+/* line 258, ../scss/_page-post-2.scss */
+
+article.entry-content-2 a:hover,
+article.entry-content-2 a:focus {
+    color: #1ab394;
+}
+
+/* line 265, ../scss/_page-post-2.scss */
+
+article.entry-content-2 a img:hover,
+article.entry-content-2 a img:focus {
+    cursor: zoom-in;
+}
+
+/* line 269, ../scss/_page-post-2.scss */
+
+article.entry-content-2 blockquote {
+    font-family: 'Abhaya Libre', serif;
+    font-style: italic;
+    color: #858686;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    border-left: .25rem solid #eceeef;
+}
+
+/* line 278, ../scss/_page-post-2.scss */
+
+article.entry-content-2 ul li {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #868585 !important;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* line 289, ../scss/_page-post-2.scss */
+    article.entry-content h4 {
+        padding-top: 40px !important;
+    }
+    /* line 293, ../scss/_page-post-2.scss */
+    p {
+        margin-bottom: 0px !important;
+    }
+}
+
+/* ==========================================================================
+   Post comments section
+   ========================================================================== */
+
+/* line 302, ../scss/_page-post-2.scss */
+
+.post-comments {
+    background: #f5f5f6 !important;
+    padding-top: 10px;
+    /* Styling for the contactform */
+}
+
+/* line 306, ../scss/_page-post-2.scss */
+
+.post-comments .comments-list-notification {
+    background-color: #fff;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 314, ../scss/_page-post-2.scss */
+
+.post-comments .comments-list-notification h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* line 322, ../scss/_page-post-2.scss */
+
+.post-comments .comments-list {
+    background-color: #fff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 330, ../scss/_page-post-2.scss */
+
+.post-comments .comments-list-title {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* line 337, ../scss/_page-post-2.scss */
+
+.post-comments .comments .comment {
+    list-style: none;
+    margin-top: 30px;
+}
+
+/* line 341, ../scss/_page-post-2.scss */
+
+.post-comments .comment-body {
+    overflow: hidden;
+}
+
+/* line 344, ../scss/_page-post-2.scss */
+
+.post-comments .author-avatar {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+/* line 349, ../scss/_page-post-2.scss */
+
+.post-comments .comment-content {
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+/* line 353, ../scss/_page-post-2.scss */
+
+.post-comments .author-name {
+    text-transform: uppercase;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1ab394;
+    margin-right: 15px;
+}
+
+/* line 361, ../scss/_page-post-2.scss */
+
+.post-comments .author-time {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #858686;
+}
+
+/* line 367, ../scss/_page-post-2.scss */
+
+.post-comments p {
+    font-family: 'Abhaya Libre', serif;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #858686;
+    font-size: 17px;
+}
+
+/* line 374, ../scss/_page-post-2.scss */
+
+.post-comments a.comment-reply-link {
+    font-family: 'Abhaya Libre', serif;
+    color: #333333;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+/* line 381, ../scss/_page-post-2.scss */
+
+.post-comments a.comment-reply-link:hover,
+.post-comments a.comment-reply-link:focus {
+    text-decoration: none;
+    color: #1ab394;
+}
+
+/* line 387, ../scss/_page-post-2.scss */
+
+.post-comments #contactform {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+/* line 393, ../scss/_page-post-2.scss */
+
+.post-comments #contactform label {
+    position: relative;
+    z-index: 13;
+    padding-left: 10px;
+    color: #2C3E50;
+}
+
+/* line 400, ../scss/_page-post-2.scss */
+
+.post-comments #contactform label {
+    line-height: 50px;
+}
+
+/* line 404, ../scss/_page-post-2.scss */
+
+.post-comments #contactform textarea {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: 50px;
+    margin-top: -50px;
+    line-height: 50px;
+    font-size: 1em;
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 100%;
+    color: #666666;
+    background: #ffffff;
+    border: 2px solid #eeeeee;
+}
+
+/* line 420, ../scss/_page-post-2.scss */
+
+.post-comments #contactform textarea {
+    line-height: 25px;
+    width: 100%;
+    min-height: 120px;
+}
+
+/* line 426, ../scss/_page-post-2.scss */
+
+.post-comments #contactform input.input-verify {
+    padding-left: 55px;
+}
+
+/* line 432, ../scss/_page-post-2.scss */
+
+.post-comments #contactform input:focus,
+.post-comments #contactform textarea:focus,
+.post-comments #contactform select:focus {
+    border: 2px solid #25E6B1;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+/* line 5, ../scss/_profile.scss */
+
+.profile-bg-picture {
+    background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/blog/13.jpg") no-repeat center center fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    color: #fff;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   user-section
+   ========================================================================== */
+
+/* line 26, ../scss/_profile.scss */
+
+.user-section .profile-user-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    position: relative;
+    top: -50px;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+/* line 35, ../scss/_profile.scss */
+
+.user-section .m-r-15 {
+    margin-right: 15px !important;
+}
+
+/* line 38, ../scss/_profile.scss */
+
+.user-section .pull-left {
+    float: left !important;
+}
+
+/* line 41, ../scss/_profile.scss */
+
+.user-section .thumb-lg {
+    height: 88px;
+    width: 88px;
+}
+
+/* line 45, ../scss/_profile.scss */
+
+.user-section .media-body,
+.user-section .media-left,
+.user-section .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+/* line 49, ../scss/_profile.scss */
+
+.user-section .media-body {
+    width: 10000px;
+}
+
+/* line 52, ../scss/_profile.scss */
+
+.user-section .media-body h4 {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 23px !important;
+    color: #1ab394;
+}
+
+/* line 56, ../scss/_profile.scss */
+
+.user-section .media-body h4 .m-b-5 {
+    margin-bottom: 5px !important;
+}
+
+/* line 59, ../scss/_profile.scss */
+
+.user-section .media-body h4 .m-t-5 {
+    margin-top: 5px !important;
+}
+
+/* line 63, ../scss/_profile.scss */
+
+.user-section .media-body p {
+    font-family: 'Abhaya Libre', serif;
+}
+
+/* line 65, ../scss/_profile.scss */
+
+.user-section .media-body p .font-13 {
+    font-size: 14px !important;
+}
+
+/* line 68, ../scss/_profile.scss */
+
+.user-section .media-body p .text-muted {
+    color: #98a6ad !important;
+    font-size: 14px !important;
+}
+
+/* line 73, ../scss/_profile.scss */
+
+.user-section .m-b-0 {
+    margin-bottom: 0 !important;
+}
+
+/* line 76, ../scss/_profile.scss */
+
+.user-section .btn-success {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px !important;
+    background-color: #1ab394 !important;
+    border: 1px solid #1ab394 !important;
+}
+
+/* line 82, ../scss/_profile.scss */
+
+.user-section .m-r-5 {
+    margin-right: 5px !important;
+}
+
+/* ==========================================================================
+   Table Section
+   ========================================================================== */
+
+/* line 94, ../scss/_profile.scss */
+
+.tbl {
+    display: table;
+    width: 90%;
+    position: relative;
+    left: 10px;
+    border-collapse: collapse;
+    background: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(49, 58, 70, 0.2);
+}
+
+/* line 104, ../scss/_profile.scss */
+
+.tbl .tbl-row {
+    display: table-row;
+}
+
+/* line 107, ../scss/_profile.scss */
+
+.tbl .tbl-cell:first-child {
+    border-left: none;
+}
+
+/* line 110, ../scss/_profile.scss */
+
+.tbl .tbl-cell {
+    vertical-align: middle;
+    border-left: solid 1px #d8e2e7;
+    padding: 12px 10px;
+}
+
+/* line 115, ../scss/_profile.scss */
+
+.tbl .tbl-cell {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px !important;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* line 122, ../scss/_profile.scss */
+
+.tbl .number {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+   About User Section
+   ========================================================================== */
+
+/* line 134, ../scss/_profile.scss */
+
+.about-user .card-title {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px !important;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Header Section
+---------------------------------------------------------------------- */
+
+/* line 5, ../scss/_profile-2.scss */
+
+header.profile-3 {
+    background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/blog/13.jpg") no-repeat center center fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    color: #fff;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* line 24, ../scss/_profile-2.scss */
+
+header.profile-3 .content {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* line 28, ../scss/_profile-2.scss */
+
+header.profile-3 .content .social-description {
+    display: inline-block;
+    max-width: 150px;
+    width: 145px;
+    text-align: center;
+    margin: 15px 0 0px;
+}
+
+/* line 35, ../scss/_profile-2.scss */
+
+header.profile-3 .content .social-description i {
+    margin-bottom: 15px;
+}
+
+/* line 39, ../scss/_profile-2.scss */
+
+header.profile-3 .content .social-description h2 {
+    font-family: 'Abhaya Libre', serif;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* line 45, ../scss/_profile-2.scss */
+
+header.profile-3 .content .social-description p {
+    font-family: 'Abhaya Libre', serif;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   Header Avatar Section
+   ========================================================================== */
+
+/* line 60, ../scss/_profile-2.scss */
+
+.header-avatar {
+    margin-bottom: -110px;
+    position: relative;
+    top: -40px;
+    text-align: center;
+}
+
+/* line 66, ../scss/_profile-2.scss */
+
+.header-avatar img {
+    border: 7px solid #f5f5f6;
+    border-radius: 50%;
+    float: none;
+    height: 80px;
+    width: 80px;
+}
+
+/* line 73, ../scss/_profile-2.scss */
+
+.header-avatar p {
+    color: #adaeb3;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Entry Content Section
+   ========================================================================== */
+
+/* line 88, ../scss/_profile-2.scss */
+
+.entry-content {
+    border: 20px solid #f5f5f6;
+    padding: 5% 0%;
+}
+
+/* line 92, ../scss/_profile-2.scss */
+
+.entry-content .title {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 24px !important;
+}
+
+/* line 97, ../scss/_profile-2.scss */
+
+.entry-content .description {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 17px !important;
+    color: #777777;
+}
+
+@media only screen and (max-width: 768px) {
+    /* line 105, ../scss/_profile-2.scss */
+    header.profile-3 {
+        height: 105vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* line 116, ../scss/_profile-2.scss */
+    .entry-content h3 {
+        padding-top: 40px !important;
+    }
+    /* line 120, ../scss/_profile-2.scss */
+    p {
+        margin-bottom: 0px !important;
+    }
+}
+
+/* line 1, ../scss/_followers.scss */
+
+.nav-tabs .nav-link {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+    color: #3b4354;
+}
+
+/* ==========================================================================
+   User Section
+   ========================================================================== */
+
+/* line 12, ../scss/_followers.scss */
+
+.followers .card-profile .media {
+    margin-top: 0;
+}
+
+/* line 15, ../scss/_followers.scss */
+
+.followers .card-profile .media .media-left {
+    padding-right: 15px;
+}
+
+/* line 18, ../scss/_followers.scss */
+
+.followers .card-profile .media .media-object {
+    width: 48px;
+    padding: 2px;
+    border: 2px solid #eaecf0;
+}
+
+/* line 23, ../scss/_followers.scss */
+
+.followers .media-object {
+    display: block;
+}
+
+/* line 26, ../scss/_followers.scss */
+
+.followers .media-body {
+    display: table-cell;
+    vertical-align: top;
+    width: 10000px;
+}
+
+/* line 31, ../scss/_followers.scss */
+
+.followers .media-heading {
+    font-family: 'Abhaya Libre', serif;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3b4354;
+}
+
+/* line 39, ../scss/_followers.scss */
+
+.followers .media-usermeta {
+    font-family: 'Abhaya Libre', serif;
+    margin-top: 4px;
+    color: #909bb1;
+}
+
+/* line 44, ../scss/_followers.scss */
+
+.followers .media-usermeta i {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: baseline;
+}
+
+/* line 49, ../scss/_followers.scss */
+
+.followers .card-options {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* line 56, ../scss/_followers.scss */
+
+.followers .card-options>li {
+    display: block;
+    float: left;
+    list-style: none;
+}
+
+/* line 61, ../scss/_followers.scss */
+
+.followers .card-options>li>a {
+    color: #bdc3d1;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}
+
+/* line 67, ../scss/_followers.scss */
+
+.followers .card-options>li>a>i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* line 71, ../scss/_followers.scss */
+
+.followers .people-info .row {
+    margin: 0;
+}
+
+/* line 74, ../scss/_followers.scss */
+
+.followers .people-info .col-sm-4 {
+    padding: 0;
+    font-size: 12px;
+}
+
+/* line 78, ../scss/_followers.scss */
+
+.followers .people-info .col-sm-4:first-child>.info-group {
+    margin-left: 0;
+}
+
+/* line 81, ../scss/_followers.scss */
+
+.followers .people-info .info-group {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #f9fafb;
+    margin-left: 1px;
+}
+
+/* line 88, ../scss/_followers.scss */
+
+.followers .people-info .info-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: #3b4354;
+}
+
+/* line 98, ../scss/_followers.scss */
+
+.followers .people-info .row+.row {
+    margin-top: 1px;
+}
+
+/* line 101, ../scss/_followers.scss */
+
+.followers .people-info h4 {
+    font-family: 'Abhaya Libre', serif;
+    margin: 9px 0 8px;
+    font-weight: 500;
+    color: #259dab;
+    font-size: 15px;
+}
+
+/* line 1, ../scss/_followers-2.scss */
+
+.nav-tabs .nav-link {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+}
+
+/* ==========================================================================
+   User Section
+   ========================================================================== */
+
+/* line 12, ../scss/_followers-2.scss */
+
+.following .card-box {
+    padding: 20px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+/* line 22, ../scss/_followers-2.scss */
+
+.following .widget-user img {
+    height: 72px;
+    float: left;
+}
+
+/* line 26, ../scss/_followers-2.scss */
+
+.following .widget-user .wid-u-info {
+    margin-left: 90px;
+}
+
+/* line 29, ../scss/_followers-2.scss */
+
+.following .widget-user .wid-u-info p,
+.following .widget-user .wid-u-info h4 {
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* line 35, ../scss/_followers-2.scss */
+
+.following .widget-user .wid-u-info h4 {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+    color: #1ab394;
+}
+
+/* line 40, ../scss/_followers-2.scss */
+
+.following .widget-user .wid-u-info p {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 14px;
+}
+
+/* line 44, ../scss/_followers-2.scss */
+
+.following .widget-user .wid-u-info small {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 16px;
+}
+
+/* line 48, ../scss/_followers-2.scss */
+
+.following .font-600 {
+    font-weight: 600;
+}
+
+/* line 51, ../scss/_followers-2.scss */
+
+.following .m-b-5 {
+    margin-bottom: 5px !important;
+}
+
+/* line 54, ../scss/_followers-2.scss */
+
+.following .m-t-0 {
+    margin-top: 0px !important;
+}
+
+/* line 57, ../scss/_followers-2.scss */
+
+.following .text-muted {
+    color: #98a6ad !important;
+}
+
+/* line 60, ../scss/_followers-2.scss */
+
+.following .font-13 {
+    font-size: 13px !important;
+}
+
+/* line 63, ../scss/_followers-2.scss */
+
+.following b {
+    font-weight: 600;
+}
