@@ -62,6 +62,13 @@ border-radius: 4px;
 transition: all 0.3s ease-out 0s;
 }
 
+@media screen and (max-width: 600px)
+{
+    #login_item{
+        margin-top: 2rem;
+    }
+}
+
         </style>
 
 
@@ -304,7 +311,7 @@ transition: all 0.3s ease-out 0s;
                 <!-- /navbar-item -->
 
                 @guest
-                <li><a class="solid" href="/login">Se connecter</a></li>
+                <li id="login_item"><a class="solid" href="/login">Se connecter</a></li>
                 @endguest
             </ul>
             <!-- /nav -->

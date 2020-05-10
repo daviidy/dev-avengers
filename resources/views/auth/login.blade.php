@@ -8,7 +8,7 @@
     <!-- ==============================================
 	 Header Section
 	 =============================================== -->
-    <section class="login">
+    <section style="height: 100vh;" class="login">
         <div class="container">
             <div class="banner-content">
 

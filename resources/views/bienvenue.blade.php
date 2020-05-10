@@ -184,9 +184,11 @@ header.masha p{font-size:14px;}
          <div class="post-heading">
 		  <h1>UNIVOIRE</h1>
 		 <p>Plateforme de la communauté ivoirienne</p>
+         <!--
 		  <sup>
 		   <span class="badge badge-pill badge-danger">version 1.0</span>
 		  </sup>
+      -->
          </div><!-- /.post-heading -->
         </div><!-- /.col-lg-8 -->
 
@@ -196,7 +198,8 @@ header.masha p{font-size:14px;}
 
 
      <div class="styles__LearningPreferencesStyled-vgii8s-0 hctgoS">
-    <div class="styles__CategoryButtons-vgii8s-1 cOgYqw"><a class="styles__CategoryButton-vgii8s-2 cKlrlm" href="#">
+    <div class="row styles__CategoryButtons-vgii8s-1 cOgYqw">
+        <a class="mb-4 col-sm-12 col md-4 styles__CategoryButton-vgii8s-2 cKlrlm" href="#">
             <div class="styles__CategoryButton_Icon-vgii8s-3 dIrmfa"><svg width="161" height="147" viewBox="0 0 161 147" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M135.204 119.528H25.7964C23.7044 119.518 22.011 117.804 22 115.686V28.842C22.011 26.724 23.7044 25.01 25.7964 25H135.168C137.26 25.01 138.953 26.724 138.964 28.842V115.686C138.954 117.789 137.283 119.497 135.206 119.528H135.204ZM29.301 35.087H68.3656Z"
@@ -215,7 +218,8 @@ header.masha p{font-size:14px;}
                       stroke-width="2.93" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg></div>
             <h6 class="MuiTypography-root jss16 jss592 jss7  MuiTypography-h6 MuiTypography-alignCenter">Connectez-vous à vos parents</h6>
-        </a><a class="styles__CategoryButton-vgii8s-2 cKlrlm" href="#">
+        </a>
+        <a class="mb-4 col-sm-12 col md-4 styles__CategoryButton-vgii8s-2 cKlrlm" href="#">
             <div class="styles__CategoryButton_Icon-vgii8s-3 dIrmfa"><svg width="164" height="144" viewBox="0 0 164 144" fill="none">
                     <rect x="20" y="82" width="135" height="36" rx="18" fill="#FFCDB2"></rect>
                     <rect x="41" y="112" width="95" height="6" fill="#ED956E"></rect>
@@ -233,7 +237,8 @@ header.masha p{font-size:14px;}
                       stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg></div>
             <h6 class="MuiTypography-root jss16 jss593 jss7  MuiTypography-h6 MuiTypography-alignCenter">Construisez des projets ensemble</h6>
-        </a><a class="styles__CategoryButton-vgii8s-2 cKlrlm" href="#">
+        </a>
+        <a class="mb-4 col-sm-12 col md-4 styles__CategoryButton-vgii8s-2 cKlrlm" href="#">
             <div class="styles__CategoryButton_Icon-vgii8s-3 dIrmfa"><svg width="162" height="145" viewBox="0 0 162 145" fill="none">
                     <path d="M21 21L25.5 9L38.5 2H115L127 7L135.5 19V138L106 116H39.5L27 110.5L21 96.5V21Z" fill="#F8F8FF"></path>
                     <path
@@ -245,8 +250,9 @@ header.masha p{font-size:14px;}
                 </svg></div>
             <h6 class="MuiTypography-root jss16 jss594 jss7  MuiTypography-h6 MuiTypography-alignCenter">Discutez librement</h6>
         </a></div>
-    <div class="MuiBox-root jss596"><a href="/login" style="flex: 1 1 0%;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss483 jss597 jss479  MuiButton-disableElevation MuiButton-fullWidth" tabindex="0" type="button"><span
-                  class="MuiButton-label">Inscrivez-vous</span></button></a></div>
+    <div class="row MuiBox-root jss596">
+        <a href="/login" style="flex: 1 1 0%;"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss483 jss597 jss479  MuiButton-disableElevation MuiButton-fullWidth" tabindex="0" type="button"><span
+                  class="col-12 MuiButton-label">Inscrivez-vous</span></button></a></div>
 </div>
 
     {{--
