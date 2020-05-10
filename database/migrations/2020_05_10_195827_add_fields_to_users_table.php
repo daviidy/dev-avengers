@@ -57,7 +57,7 @@ class AddFieldsToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('last_name')->;
+            $table->dropColumn('last_name');
             $table->dropColumn('traditional_first_name');
             $table->dropColumn('other_name');
             $table->dropColumn('birth_country');
