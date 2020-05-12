@@ -69,6 +69,17 @@ transition: all 0.3s ease-out 0s;
     }
 }
 
+@media screen and (max-width: 768px)
+{
+    a.solid{
+        padding: 10px 3px;
+        font-size: 10px;
+    }
+    .navbar-toggleable-sm .navbar-nav {
+        font-size: smaller !important;
+    }
+}
+
         </style>
 
 
@@ -393,7 +404,7 @@ transition: all 0.3s ease-out 0s;
         })
     </script>
     <script src="/assets/main_theme/medium/js/medium.js"></script>
-    
+
     <!--COPYRIGTH SCRIPT-->
     <script type="text/javascript">
         var date = new Date();
