@@ -882,7 +882,7 @@ a.navbar-brand:hover {
 }
 
 .modal-meta-top .img-poster a.kafe-btn-mint-small {
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Montserrat', sans-serif !important;
     margin-left: 0px;
     color: #fff !important;
     border-radius: 3px;
@@ -1347,7 +1347,7 @@ a.navbar-brand:hover {
 }
 
 .tr-section .tr-post .post-content a.kafe-btn-mint-small {
-    font-family: 'Abhaya Libre', serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px;
 }
 
@@ -1450,7 +1450,7 @@ a.navbar-brand:hover {
 }
 
 .box .kafe-btn-mint-small {
-    font-family: 'Abhaya Libre', serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px;
 }
 
@@ -2557,7 +2557,7 @@ a.navbar-brand:hover {
 }
 
 .form-signin .form-signin-heading {
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 24px;
     color: #fff;
 }
@@ -2607,7 +2607,7 @@ a.navbar-brand:hover {
 
 .btn-dark {
     border-radius: 0;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);
@@ -2623,7 +2623,8 @@ a.navbar-brand:hover {
 
 @media (max-width: 768px) {
     .login {
-        height: 130vh;
+        height: 100%;
         width: 100%;
     }
 }
+

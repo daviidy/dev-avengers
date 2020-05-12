@@ -349,7 +349,7 @@ transition: all 0.3s ease-out 0s;
      =============================================== -->
     <footer class="bottom-footer">
         <div class="container">
-            <p><span>©2017 Medium.com</span></p>
+            <p>©<span id="year">2017</span> Medium.com</p>
 
             <ul id="menu-footer-menu">
                 <li>
@@ -393,6 +393,13 @@ transition: all 0.3s ease-out 0s;
         })
     </script>
     <script src="/assets/main_theme/medium/js/medium.js"></script>
+    
+    <!--COPYRIGTH SCRIPT-->
+    <script type="text/javascript">
+        var date = new Date();
+        var annee = date.getFullYear();
+        document.getElementById('year').innerHTML = annee;
+    </script>
 
 </body>
 

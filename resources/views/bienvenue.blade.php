@@ -156,8 +156,8 @@ header.masha .post-heading{padding:100px 0 50px;color:white;}
 header.masha .post-heading{padding:150px 0;}
 }
 header.masha h1{font-family:'Montserrat', sans-serif;font-weight:700;font-size:60px;color:#fff;}
-header.masha p{font-family:'Abhaya Libre', serif;color:#fff;font-size:16px;text-align:center;letter-spacing:1px;}
-header.masha sup{font-family:'Abhaya Libre', serif;color:#fff;font-size:20px;text-align:center;}
+header.masha p{font-family:'Montserrat', sans-serif;color:#fff;font-size:16px;text-align:center;letter-spacing:1px;}
+header.masha sup{font-family:'Montserrat', sans-serif;color:#fff;font-size:20px;text-align:center;}
 @media only screen and (max-width: 768px){
 header.masha h1{font-size:40px;}
 }
@@ -165,6 +165,14 @@ header.masha h1{font-size:40px;}
 header.masha h1{font-size:22px;}
 header.masha p{font-size:14px;}
 }
+h6, .MuiButton-root{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.jss7{
+  font-size: 16px !important;
+}
+
 
 </style>
 
