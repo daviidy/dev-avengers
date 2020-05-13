@@ -93,7 +93,7 @@ h1,h6{font-size:22px;font-weight:400;margin:0 0 16px;padding:0;}
 }
 .zeta{font-size:13px;line-height:18px;}
 p{font-size:15px;font-weight:400;line-height:1.6;margin:16px 0;}
-.text-left{text-align:left!important;}
+.text-left{text-align:left!important; font-family: 'Montserrat', sans-serif;}
 .text-center{text-align:center!important;}
 .text-weight--bold{font-weight:700;}
 .text-weight--medium{font-weight:500;}
@@ -103,8 +103,8 @@ p{font-size:15px;font-weight:400;line-height:1.6;margin:16px 0;}
 .btn:focus,.btn:active:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
 .btn:hover,.btn:focus{color:#ffffff;text-decoration:none;}
 .btn:active{outline:0;background-image:none;}
-.btn-default{color:#ffffff;background-color:#111111;}
-.btn-default:hover,.btn-default:active{background-color:#111111;}
+.btn-default{color:#ffffff;background-color:#8a4711;}
+.btn-default:hover,.btn-default:active{background-color:#D86000;}
 .btn-block-level{width:100%;}
 .pill{height:24px;border-radius:24px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;font-size:13px;line-height:1;padding-right:12px;padding-left:12px;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-decoration:none;background-color:#eaeaea;color:#767676;}
 a .pill,a:hover .pill{text-decoration:none;}
@@ -271,10 +271,11 @@ p{margin-bottom:0px!important;}
 .user-section .thumb-lg{height:88px;width:88px;}
 .user-section .media-body{display:table-cell;vertical-align:top;}
 .user-section .media-body{width:10000px;}
-.user-section .media-body h4{font-family:'Abhaya Libre', serif;font-size:23px!important;color:#1ab394;}
-.user-section .media-body p{font-family:'Abhaya Libre', serif;}
+.user-section .media-body h4{font-family:'Montserrat', sans-serif;font-size:23px!important;color:#1ab394;}
+.user-section .media-body p{font-family:'Montserrat', sans-serif;}
 .user-section .m-b-0{margin-bottom:0!important;}
-.user-section .btn-success{font-family:'Abhaya Libre', serif;font-size:14px!important;background-color:#1ab394!important;border:1px solid #1ab394!important;}
+.user-section .btn-success{font-family:'Montserrat', sans-serif;font-size:14px!important;background-color:#D86000
+!important;border:1px solid #D86000!important;}
 .user-section .m-r-5{margin-right:5px!important;}
 @media only screen and (max-width: 768px){
 p{margin-bottom:0px!important;}
@@ -390,9 +391,9 @@ div,h4,p,a,img,i,section{margin:0;padding:0;border:0;font-size:100%;font:inherit
 section{display:block;}
 h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
 h4{font-size:18px;line-height:36px;}
-p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+p{font-family:'Montserrat', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
 a{color:#fff;text-decoration:none;outline:0;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
-a:hover,a:focus,a:active,a.active{text-decoration:none;outline:0;color:#16A085!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+a:hover,a:focus,a:active,a.active{text-decoration:none;outline:0;color:#D86000!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
 ul{margin:0;}
 ul{list-style:none outside;}
 li{line-height:24px;}
@@ -407,14 +408,14 @@ p{margin-bottom:0px!important;}
 @media only screen and (max-width: 768px){
 p{margin-bottom:0px!important;}
 }
-.nav-tabs .nav-link{font-family:'Abhaya Libre', serif;font-size:16px;color:#3b4354;}
+.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;color:#3b4354;}
 .followers .card-profile .media{margin-top:0;}
 .followers .card-profile .media .media-left{padding-right:15px;}
 .followers .card-profile .media .media-object{width:48px;padding:2px;border:2px solid #eaecf0;}
 .followers .media-object{display:block;}
 .followers .media-body{display:table-cell;vertical-align:top;width:10000px;}
-.followers .media-heading{font-family:'Abhaya Libre', serif;margin-top:5px;margin-bottom:2px;font-size:16px;font-weight:700;color:#3b4354;}
-.followers .media-usermeta{font-family:'Abhaya Libre', serif;margin-top:4px;color:#909bb1;}
+.followers .media-heading{font-family:'Montserrat', sans-serif;margin-top:5px;margin-bottom:2px;font-size:16px;font-weight:700;color:#3b4354;}
+.followers .media-usermeta{font-family:'Montserrat', sans-serif;margin-top:4px;color:#909bb1;}
 .followers .media-usermeta i{display:inline-block;margin-right:5px;vertical-align:baseline;}
 .followers .card-options{position:absolute;top:15px;right:20px;padding:0;margin:0;}
 .followers .card-options > li{display:block;float:left;list-style:none;}
@@ -423,11 +424,11 @@ p{margin-bottom:0px!important;}
 .followers .people-info .row{margin:0;}
 .followers .people-info .col-sm-4{padding:0;font-size:12px;}
 .followers .people-info .col-sm-4:first-child > .info-group{margin-left:0;}
-.followers .people-info .info-group{font-family:'Abhaya Libre', serif;font-size:14px;padding:15px;background-color:#f9fafb;margin-left:1px;}
-.followers .people-info .info-group label{display:block;margin-bottom:5px;text-transform:uppercase;font-family:'Abhaya Libre', serif;font-weight:700;font-size:11px;letter-spacing:.5px;color:#3b4354;}
+.followers .people-info .info-group{font-family:'Montserrat', sans-serif;font-size:14px;padding:15px;background-color:#f9fafb;margin-left:1px;}
+.followers .people-info .info-group label{display:block;margin-bottom:5px;text-transform:uppercase;font-family:'Montserrat', sans-serif;font-weight:700;font-size:11px;letter-spacing:.5px;color:#3b4354;}
 .followers .people-info .row + .row{margin-top:1px;}
-.followers .people-info h4{font-family:'Abhaya Libre', serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
-.nav-tabs .nav-link{font-family:'Abhaya Libre', serif;font-size:16px;}
+.followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
+.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
 
 </style>
 
@@ -515,34 +516,37 @@ p{margin-bottom:0px!important;}
 
                             <div class="user-badges text-left">
 
-                                <label>Badge</label>
-                                <div class="user-badges-container">
-                                    <p class="zeta no-badge-message text-secondary">
-                                        You don't have any badges yet :(
-                                    </p>
+                                <div class="form-group">
+                                <label for="user_username">
+                                    Username <span class="text-secondary"></span>
+                                </label>
+                                <input class="form-control" type="text" value="daviidy" name="user[username]" id="user_username">
 
-                                    <ul class="user-badges-list user-badges-list--hidden js-other-badges">
-                                        <li class="user-badges-list__item user-badges-list__item--text">
-                                            <a id="qa-no-badge" data-remote="true" rel="nofollow" data-method="put" href="/account/badges/0">None</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <div class="help-block text-secondary">
+                                    <p>https://unsplash.com/@<strong>daviidy</strong></p>
+                                </div> <!-- close .help-block -->
+                            </div> 
                             </div>
 
                         </div>
 
                         <div class="col-xs-12 col-sm-8">
                             <div class="form-group">
-                                <label for="user_first_name">First name</label>
+                                <label for="user_first_name">Nom de famille</label>
                                 <input class="form-control" type="text" value="David" name="user[first_name]" id="user_first_name">
 
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
-                                <label for="user_last_name">Last name</label>
+                                <label for="user_last_name">Prénoms</label>
                                 <input class="form-control" type="text" value="Yao" name="user[last_name]" id="user_last_name">
 
                             </div> <!-- close .form-group -->
+                            <div class="form-group">
+                                <label for="user_last_name">Autre Nom</label>
+                                <input class="form-control" type="text" value="Yao" name="user[last_name]" id="user_last_name">
+
+                            </div>
 
                             <div class="form-group">
                                 <label for="user_email">
@@ -554,7 +558,7 @@ p{margin-bottom:0px!important;}
                         </div> <!-- close .col -->
                     </div> <!-- close .row -->
 
-                    <div class="row">
+                    <!--div class="row">
                         <div class="col-xs-12">
                             <div class="form-group">
                                 <label for="user_username">
@@ -564,27 +568,27 @@ p{margin-bottom:0px!important;}
 
                                 <div class="help-block text-secondary">
                                     <p>https://unsplash.com/@<strong>daviidy</strong></p>
-                                </div> <!-- close .help-block -->
+                                </div> <!-- close .help-block ->
+                            </div> <!-- close .form-group ->
+                        </div--> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Pays de naissance
+                                </label>
+                                <input class="form-control" placeholder="Pays de naissance" type="text" name="user[url]" id="user_url">
+
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Personal site/portfolio
+                                    Etat de naissance
                                 </label>
-                                <input class="form-control" placeholder="https://" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" id="user_url">
 
-                            </div> <!-- close .form-group -->
-                        </div> <!-- close .col -->
-
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group">
-                                <label for="user_location">Location</label>
-
-                                <div class="input-group">
-                                    <input class="form-control" type="text" name="user[location]" id="user_location">
-                                </div>
 
 
                             </div> <!-- close .form-group -->
@@ -592,88 +596,277 @@ p{margin-bottom:0px!important;}
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
-                                <label for="user_instagram_username">Instagram username</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-addon">@</div>
-                                    <input class="form-control" type="text" name="user[instagram_username]" id="user_instagram_username">
-                                </div>
-
-
-
-                                <div class="help-block text-secondary">
-                                    <p>So that we can feature you on <a href="https://instagram.com/unsplash">@unsplash</a></p>
-                                </div> <!-- close .help-block -->
-                            </div> <!-- close .form-group -->
-                        </div> <!-- close .col -->
-
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group">
-                                <label for="twitter_username">Twitter username</label>
-                                <input type="hidden" name="user[twitter_account_attributes][id]" id="user_twitter_account_attributes_id">
-                                <div class="input-group">
-                                    <div class="input-group-addon">@</div>
-                                    <input type="text" name="user[twitter_account_attributes][username]" id="twitter_username" class="form-control">
-                                </div>
-
-                                <div class="help-block text-secondary">
-                                    <p>So that we can feature you on <a href="https://twitter.com/unsplash">@unsplash</a></p>
-                                </div> <!-- close .help-block -->
-                            </div> <!-- close .form-group -->
-                        </div> <!-- close .col -->
-
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group">
-                                <label for="user_bio">Bio</label>
-
-                                <div class="input-with-counter js-character-count-container">
-                                    <textarea class="form-control" rows="4" data-character-count="250" name="user[bio]" id="user_bio"></textarea>
-                                    <div class="character-count character-count--textarea js-character-count">250</div>
-                                </div>
-
-
-                            </div> <!-- close .form-group -->
-                        </div> <!-- close .col -->
-
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group">
-                                <label for="user_interests">
-                                    Interests <span class="text-secondary">(maximum 5)</span>
+                                <label for="user_url">
+                                    Ville de naissance
                                 </label>
-                                <input type="text" name="user[user_tags_set][custom_tags]" id="user_interests" value="" class="form-control" data-taggable="true" style="display: none;">
-                                <div id="user_interests_tagsinput" class="tagsinput" style="width: 100%; min-height: 100%; height: 100%;">
-                                    <div id="user_interests_addTag"><input id="user_interests_tag" value="" data-default="add a tag" placeholder="add a tag" class="ui-autocomplete-input" autocomplete="off" style="width: 200px;"></div>
-                                    <div class="tags_clear"></div>
-                                </div>
-                                <div class="help-block text-secondary">
-                                    <p>Your interests are generated from the types of photos you like, collect, and contribute.</p>
-                                </div> <!-- close .help-block -->
+                                <input class="form-control" placeholder="Ville de naissance" type="text" name="user[url]" id="user_url">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-                    </div> <!-- close .row -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Ville
+                                </label>
+                                <input class="form-control" placeholder="Ville" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Pays de résidence
+                                </label>
+                                <input class="form-control" placeholder="Pays de résidence" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Ville de résidence
+                                </label>
+                                <input class="form-control" placeholder="Ville de résidence" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Etat de résidence
+                                </label>
+                                <input class="form-control" placeholder="Etat de résidence" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Code Postal
+                                </label>
+                                <input class="form-control" placeholder="Code Postal" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Situation matrimonial
+                                </label>
+                                <input class="form-control" placeholder="Situation matrimonial" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nombre d'enfant
+                                </label>
+                                <input class="form-control" placeholder="Nombre d'enfant" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Numéro de téléphone
+                                </label>
+                                <input class="form-control" placeholder="Numéro de téléphone" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+
+                        <!--Father-->
+
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group">
+                            	<hr>
+                                <h1 for="user_url" style="text-align: center;">
+                                    Profil du père
+                                </h1>
+                                <hr>
+                                
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        
+
+                            <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nom du père
+                                </label>
+                                <input class="form-control" placeholder="Nom du père" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Prénoms du père
+                                </label>
+                                <input class="form-control" placeholder="Prénoms du père" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Autre noms du père
+                                </label>
+                                <input class="form-control" placeholder="Autre noms du père" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Pays de résidence du père
+                                </label>
+                                <input class="form-control" placeholder="Pays de résidence du père" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Ville de résidence du père
+                                </label>
+                                <input class="form-control" placeholder="Ville de résidence du père" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nombre d'enfant du père
+                                </label>
+                                <input class="form-control" placeholder="Nombre d'enfant du père" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <!--End Father-->
+
+                        <!--Mother-->
+
+                        
+
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group">
+                            	<hr>
+                                <h1 for="user_url" style="text-align: center;">
+                                    Profil de la mère
+                                </h1>
+                                <hr>
+                                
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        
+
+                            <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nom de la mère
+                                </label>
+                                <input class="form-control" placeholder="Nom de la mère" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Prénoms de la mère
+                                </label>
+                                <input class="form-control" placeholder="Prénoms de la mère" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Autre noms de la mère
+                                </label>
+                                <input class="form-control" placeholder="Autre noms de la mère" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Pays de résidence de la mère
+                                </label>
+                                <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Ville de résidence de la mère
+                                </label>
+                                <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="user[url]" id="user_url">
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Nombre d'enfant de la mère
+                                </label>
+                                <input class="form-control" placeholder="Nombre d'enfant de la mère" type="text" name="user[url]" id="user_url">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+                        <!--End mother-->
+
+
 
                     <div class="row">
                         <div class="col-xs-12">
-                            <h6 class="delta text-weight--medium">Messaging</h6>
                             <div class="form-group">
-                                <div class="checkbox checkbox--with-helper">
-                                    <label for="user_allow_messages">
-                                        <input name="user[allow_messages]" type="hidden" value="0"><input type="checkbox" value="1" checked="checked" name="user[allow_messages]" id="user_allow_messages">
-                                        Display a 'Message' button on your profile
-                                    </label>
-                                    <div class="label__helper">
-                                        <span class="text-secondary">Messages will be sent to your email</span>
-                                    </div>
-                                </div> <!-- close .checkbox -->
-                            </div> <!-- close .form-group -->
-                        </div> <!-- close .col -->
-                    </div> <!-- close .row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <input type="submit" name="commit" value="Update account" class="btn btn-default btn-block-level" data-disable-with="···">
+                                <input type="submit" name="commit" value="Enregistrez les modifications" class="btn btn-default btn-block-level" data-disable-with="···">
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
                     </div> <!-- close .row -->
@@ -711,215 +904,6 @@ p{margin-bottom:0px!important;}
 
 
 
-<section class="posts-2 followers">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-
-                <ul class="nav nav-tabs" role="tablist" id="myTabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#followers" role="tab" data-toggle="tab" aria-expanded="true">Followers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#following" role="tab" data-toggle="tab" aria-expanded="false">Following</a>
-                    </li>
-                </ul>
-                <br><br>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active show" id="followers" aria-expanded="true">
-
-                        <div class="card card-profile">
-                            <div class="card-block">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Victoria Stephens</h4>
-                                        <p class="media-usermeta"><i class="fa fa-briefcase"></i> Regional Finance Manager</p>
-                                    </div>
-                                </div><!-- media -->
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-
-                                <div class="people-info">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Location</label>
-                                                San Francisco, CA, USA
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Email</label>
-                                                christina.hill@email.com
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Phone</label>
-                                                386-7521860
-                                            </div>
-                                        </div>
-                                    </div><!-- row -->
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Followers</label>
-                                                <h4>1,348</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Following</label>
-                                                <h4>232</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                        </div>
-                                    </div><!-- row -->
-                                </div><!-- panel-info -->
-                            </div><!-- card-block -->
-                        </div><!-- card -->
-
-                        <div class="card card-profile">
-                            <div class="card-block">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Grace King</h4>
-                                        <p class="media-usermeta"><i class="fa fa-briefcase"></i> Software Engineer</p>
-                                    </div>
-                                </div><!-- media -->
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i></a></li>
-                                </ul>
-                                <div class="people-info">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Location</label>
-                                                Sydney, Australia
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Email</label>
-                                                <i class="fa fa-envelope mr5"></i> floyd.romero@email.com
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Phone</label>
-                                                (012) 345 6789
-                                            </div>
-                                        </div>
-                                    </div><!-- row -->
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Followers</label>
-                                                <h4>1,348</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Following</label>
-                                                <h4>232</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                        </div>
-                                    </div><!-- row -->
-                                </div><!-- panel-info -->
-                            </div><!-- card-block -->
-                        </div><!-- card -->
-
-                    </div><!-- tabpanel -->
-                    <div role="tabpanel" class="tab-pane fade" id="following" aria-expanded="false">
-
-                        <div class="card card-profile">
-                            <div class="card-block">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Danie Thames</h4>
-                                        <p class="media-usermeta"><i class="fa fa-briefcase"></i> Interior Designer</p>
-                                    </div>
-                                </div><!-- media -->
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i></a></li>
-                                </ul>
-
-                                <div class="people-info">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Location</label>
-                                                Cebu City, Philippines
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Email</label>
-                                                nicholas.hinkle@email.com
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Phone</label>
-                                                (012) 345 6789
-                                            </div>
-                                        </div>
-                                    </div><!-- row -->
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Followers</label>
-                                                <h4>508</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Following</label>
-                                                <h4>3, 800</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                        </div>
-                                    </div><!-- row -->
-                                </div><!-- panel-info -->
-                            </div><!-- card-block -->
-                        </div><!-- card -->
-
-                    </div><!-- tabpanel -->
-                </div>
-
-            </div>
-        </div>
-        <!--/ row -->
-    </div>
-    <!--/ container -->
-</section>
-
-
+@include('includes.profit');
 
 @endsection

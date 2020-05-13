@@ -35,7 +35,7 @@ justify-content: center;
 section{display:block;}
 small{font-size:80%;}
 img{border-style:none;}
-button{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;}
+button{font-family:'Montserrat', sans-serif;font-size:100%;line-height:1.15;margin:0;}
 button{overflow:visible;}
 button{text-transform:none;}
 button,html [type="button"]{-webkit-appearance:button;}
@@ -142,10 +142,10 @@ p{margin-bottom:0px!important;}
 .user-section .thumb-lg{height:88px;width:88px;}
 .user-section .media-body{display:table-cell;vertical-align:top;}
 .user-section .media-body{width:10000px;}
-.user-section .media-body h4{font-family:'Abhaya Libre', serif;font-size:23px!important;color:#1ab394;}
-.user-section .media-body p{font-family:'Abhaya Libre', serif;}
+.user-section .media-body h4{font-family:'Montserrat', sans-serif;font-size:23px!important;color:#1ab394;}
+.user-section .media-body p{font-family:'Montserrat', sans-serif;}
 .user-section .m-b-0{margin-bottom:0!important;}
-.user-section .btn-success{font-family:'Abhaya Libre', serif;font-size:14px!important;background-color:#1ab394!important;border:1px solid #1ab394!important;}
+.user-section .btn-success{font-family:'Montserrat', sans-serif;font-size:14px!important;background-color:#D86000!important;border:1px solid #D86000!important;}
 .user-section .m-r-5{margin-right:5px!important;}
 @media only screen and (max-width: 768px){
 p{margin-bottom:0px!important;}
@@ -166,7 +166,7 @@ a{text-decoration:none;}
 @media (min-width:992px){
 .profile-page .avatar-container{display:none;}
 }
-.field-value{color:#333;font-family:Open Sans;font-size:1rem;letter-spacing:.11px;line-height:1.5em;padding-bottom:1.25em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.field-value{color:#333;font-family:'Montserrat', sans-serif;font-size:1rem;letter-spacing:.11px;line-height:1.5em;padding-bottom:1.25em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 @media (min-width:992px){
 .field-value{padding-bottom:1.875em;}
 }
@@ -190,7 +190,7 @@ input:invalid:focus{outline:0;}
 .ss-avatar-upload-wrapper .ss-avatar-progress-bar .ss-avatar-progress-bar-animation:after{animation:move 2s linear infinite;}
 .ss-avatar-upload-wrapper .ss-avatar-input{display:none;}
 .ss-avatar-error-message{color:red;font-size:.8rem;margin-top:-1em;margin-bottom:1em;text-align:center;display:none;}
-.ss-page-title{color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;}
+.ss-page-title{font-family: 'Montserrat', sans-serif;color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;}
 .ss-profile-info{border-radius:8px;background-color:#fff;box-shadow:0 10px 20px 0 rgba(0,0,0,.1);padding:1.875em 1.25em;margin-bottom:3.13em;}
 @media (min-width:480px){
 .ss-profile-info{padding:1.875em;}
@@ -200,17 +200,21 @@ input:invalid:focus{outline:0;}
 }
 .ss-profile-details{border-bottom:1px solid #dfdfdf;padding-bottom:1.875em;}
 .ss-profile-social{padding-top:3.125em;}
+.bot{
+border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 1.875em;
+    }
 @media (min-width:992px){
 .ss-profile-social{padding-top:2.5em;}
 }
-.ss-social-title{color:#2c313b;font-size:1.375rem;font-weight:700;letter-spacing:.16px;line-height:1.18em;}
+.ss-social-title{color:#2c313b;font-size:1.375rem;font-weight:700;letter-spacing:.16px;line-height:1.18em;font-family: 'Montserrat', sans-serif;}
 @media (min-width:768px){
 .ss-social-title{color:#333;}
 }
 @media (min-width:992px){
 .ss-social-title{font-size:1.25rem;line-height:1.2em;letter-spacing:.14px;}
 }
-.ss-social-subtitle{color:#62686e;font-size:.875rem;letter-spacing:.1px;line-height:1.286em;padding:.71em 0 2.14em;}
+.ss-social-subtitle{font-family: 'Montserrat', sans-serif;color:#62686e;font-size:.875rem;letter-spacing:.1px;line-height:1.286em;padding:.71em 0 2.14em;}
 @media (min-width:768px){
 .ss-social-subtitle{padding-bottom:2.14em;}
 }
@@ -247,22 +251,22 @@ input:invalid:focus{outline:0;}
 .ss-flex-item:nth-of-type(2n-1){padding-right:.9375em;}
 }
 .ss-item-flex-full{width:100%;}
-.ss-field-label{color:#62686e;font-size:.875rem;letter-spacing:.1px;line-height:1.286em;padding:.714em .3125em .714em 0;}
-.ss-field-label-large{color:#2c313b;font-size:1.5rem;font-weight:700;padding-bottom:.5em;}
+.ss-field-label{font-family: 'Montserrat', sans-serif; color:#62686e;font-size:.875rem;letter-spacing:.1px;line-height:1.286em;padding:.714em .3125em .714em 0;}
+.ss-field-label-large{font-family: 'Montserrat', sans-serif;color:#2c313b;font-size:1.5rem;font-weight:700;padding-bottom:.5em;}
 .ss-empty-value{color:#95989d;}
 .ss-field-privacy-notice{border-radius:9.5px;background-color:#f5f5f5;font-size:.75rem;letter-spacing:.09px;line-height:1.417em;color:#95989d;padding:.416em .833em;}
 .ss-field-privacy-notice .ss-lock{height:.625rem;}
 .ss-icon-facebook{background-size:inherit;text-indent:1.5625em;}
-.ss-edit-profile-button{display:inline-block;background-color:#2a8cf8;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
+.ss-edit-profile-button{font-family: 'Montserrat', sans-serif;display:inline-block;background-color:#D86000;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
 .ss-edit-profile-button:focus{outline:0;}
-.ss-edit-profile-button:hover{background-color:#1d519f;}
+.ss-edit-profile-button:hover{background-color:#ffffff;border: 2px solid #D86000;}
 @media (min-width:768px){
-.ss-edit-profile-button{padding-left:74px;padding-right:74px;max-width:16em;}
+.ss-edit-profile-button{padding-left:40px;padding-right:40px;max-width:16em;}
 }
 @media (min-width:992px){
 .ss-two-column-page .ss-content-wrapper{width:75%;}
 }
-.ss-two-column-page .ss-page-title{color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;margin:0;}
+.ss-two-column-page .ss-page-title{color:#2c313b;font-size:1.875rem;font-weight:700;letter-spacing:.21px;line-height:1.167em;padding-bottom:1em;margin:0;font-family: 'Montserrat', sans-serif;}
 .lazyload{opacity:0;}
 .lazyloaded{opacity:1;transition:opacity .3s;}
 
@@ -376,7 +380,7 @@ h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
 h4{font-size:18px;line-height:36px;}
 p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
 a{color:#fff;text-decoration:none;outline:0;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
-a:hover,a:focus,a:active,a.active{text-decoration:none;outline:0;color:#16A085!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+a:hover,a:focus,a:active,a.active{text-decoration:none;outline:0;color:#D86000!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
 ul{margin:0;}
 ul{list-style:none outside;}
 li{line-height:24px;}
@@ -391,14 +395,14 @@ p{margin-bottom:0px!important;}
 @media only screen and (max-width: 768px){
 p{margin-bottom:0px!important;}
 }
-.nav-tabs .nav-link{font-family:'Abhaya Libre', serif;font-size:16px;color:#3b4354;}
+.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;color:#3b4354;}
 .followers .card-profile .media{margin-top:0;}
 .followers .card-profile .media .media-left{padding-right:15px;}
 .followers .card-profile .media .media-object{width:48px;padding:2px;border:2px solid #eaecf0;}
 .followers .media-object{display:block;}
 .followers .media-body{display:table-cell;vertical-align:top;width:10000px;}
-.followers .media-heading{font-family:'Abhaya Libre', serif;margin-top:5px;margin-bottom:2px;font-size:16px;font-weight:700;color:#3b4354;}
-.followers .media-usermeta{font-family:'Abhaya Libre', serif;margin-top:4px;color:#909bb1;}
+.followers .media-heading{font-family:'Montserrat', sans-serif;margin-top:5px;margin-bottom:2px;font-size:16px;font-weight:700;color:#3b4354;}
+.followers .media-usermeta{font-family:'Montserrat', sans-serif;margin-top:4px;color:#909bb1;}
 .followers .media-usermeta i{display:inline-block;margin-right:5px;vertical-align:baseline;}
 .followers .card-options{position:absolute;top:15px;right:20px;padding:0;margin:0;}
 .followers .card-options > li{display:block;float:left;list-style:none;}
@@ -407,11 +411,11 @@ p{margin-bottom:0px!important;}
 .followers .people-info .row{margin:0;}
 .followers .people-info .col-sm-4{padding:0;font-size:12px;}
 .followers .people-info .col-sm-4:first-child > .info-group{margin-left:0;}
-.followers .people-info .info-group{font-family:'Abhaya Libre', serif;font-size:14px;padding:15px;background-color:#f9fafb;margin-left:1px;}
-.followers .people-info .info-group label{display:block;margin-bottom:5px;text-transform:uppercase;font-family:'Abhaya Libre', serif;font-weight:700;font-size:11px;letter-spacing:.5px;color:#3b4354;}
+.followers .people-info .info-group{font-family:'Montserrat', sans-serif;font-size:14px;padding:15px;background-color:#f9fafb;margin-left:1px;}
+.followers .people-info .info-group label{display:block;margin-bottom:5px;text-transform:uppercase;font-family:'Montserrat', sans-serif;font-weight:700;font-size:11px;letter-spacing:.5px;color:#3b4354;}
 .followers .people-info .row + .row{margin-top:1px;}
-.followers .people-info h4{font-family:'Abhaya Libre', serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
-.nav-tabs .nav-link{font-family:'Abhaya Libre', serif;font-size:16px;}
+.followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
+.nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
 
 </style>
 
@@ -477,80 +481,174 @@ p{margin-bottom:0px!important;}
                     </div>
                 </div>
                 <div class="ss-flex">
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Date Of Birth:
+                    <!--div class="ss-flex-item">
+                        <div class="ss-field-label">Date de naissance:
                             <span class="ss-field-privacy-notice">
                                 <img class="ss-lock lazyloaded" data-src="https://static.mindvalley.com/public/assets/2019/04/padlock.svg" alt="date of birth lock" src="https://static.mindvalley.com/public/assets/2019/04/padlock.svg">
                                 This info is kept private </span>
                         </div>
                         <div class="field-value ss-empty-value">
                             Your date of birth goes here </div>
-                    </div>
-                    <div class="ss-flex-item">
+                    </div-->
+                    <!--div class="ss-flex-item">
                         <div class="ss-field-label">Language:</div>
                         <div class="field-value">
                         </div>
+                    </div-->
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Ville de naissance:</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">City:</div>
+                        <div class="ss-field-label">Pays de naissance</div>
                         <div class="field-value ss-empty-value">
-                            The city you reside in </div>
-                    </div>
-                    <div class="ss-flex-item">
-                        <div class="ss-field-label">Country:</div>
-                        <div class="field-value ss-empty-value">
-                            The country you reside in </div>
+                            
+                        </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Profession:</div>
                         <div class="field-value ss-empty-value">
-                            The work that you do </div>
+                            
+                        </div>
                     </div>
-                    <div class="ss-flex-item">
+                    <!--div class="ss-flex-item">
                         <div class="ss-field-label">Industry:</div>
                         <div class="field-value ss-empty-value">
                             The industry of your profession </div>
+                    </div-->
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Pays de résidence</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Etat de résidence</div>
+                        <div class="field-value ss-empty-value">
+                             
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Ville de résidence</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Code Postal</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Situation matrimonial</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Nombre d'enfant</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Numéro de téléphone</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                     <div class="ss-item-flex-full">
                         <div class="ss-field-label">Short Bio:</div>
                         <div class="field-value bio-field ss-empty-value">
-                            Your bio goes here </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ss-profile-social bot">
+                <div class="ss-social-title">Info sur le père</div>
+                <div class="ss-social-subtitle"></div>
+                <div class="ss-flex">
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Nom du père</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Prénoms du père</div>
+                        <div class="field-value ss-empty-value">
+                             
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Autre noms du père</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Pays de résidence du père</div>
+                        <div class="field-value ss-empty-value">
+                             
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Ville de résidence du père</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Nombre d'enfant du père</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="ss-profile-social">
-                <div class="ss-social-title">Your Social Links</div>
-                <div class="ss-social-subtitle">For Mindvalley members to connect with you</div>
+                <div class="ss-social-title">Info sur la Mère</div>
+                <div class="ss-social-subtitle"></div>
                 <div class="ss-flex">
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Your Website:</div>
-                        <div class="field-value social text-input-icon ss-empty-value lazyloaded" data-bg="https://static.mindvalley.com/public/assets/2019/04/ico-web.svg"
-                          style="background-image: url(&quot;https://static.mindvalley.com/public/assets/2019/04/ico-web.svg&quot;);">
-                            Your website URL </div>
+                        <div class="ss-field-label">Nom de la Mère</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Facebook Profile:</div>
-                        <div class="field-value social text-input-icon ss-icon-facebook ss-empty-value lazyloaded" data-bg="https://static.mindvalley.com/public/assets/2019/04/ico-facebook.svg"
-                          style="background-image: url(&quot;https://static.mindvalley.com/public/assets/2019/04/ico-facebook.svg&quot;);">
-                            Your Facebook URL </div>
+                        <div class="ss-field-label">Prénoms de la Mère</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Twitter Profile:</div>
-                        <div class="field-value social text-input-icon ss-empty-value lazyloaded" data-bg="https://static.mindvalley.com/public/assets/2019/04/ico-twitter.svg"
-                          style="background-image: url(&quot;https://static.mindvalley.com/public/assets/2019/04/ico-twitter.svg&quot;);">
-                            Your Twitter URL </div>
+                        <div class="ss-field-label">Autre noms de la Mère</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">LinkedIn Profile:</div>
-                        <div class="field-value social text-input-icon ss-empty-value lazyloaded" data-bg="https://static.mindvalley.com/public/assets/2019/04/ico-linkedin.svg"
-                          style="background-image: url(&quot;https://static.mindvalley.com/public/assets/2019/04/ico-linkedin.svg&quot;);">
-                            Your LinkedIn URL </div>
+                        <div class="ss-field-label">Pays de résidence de la Mère</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Instagram Profile:</div>
-                        <div class="field-value social text-input-icon ss-empty-value lazyloaded" data-bg="https://assets.mindvalley.com/api/v1/assets/bff67605-6bb5-4509-9974-f27d77f7af90.svg"
-                          style="background-image: url(&quot;https://assets.mindvalley.com/api/v1/assets/bff67605-6bb5-4509-9974-f27d77f7af90.svg&quot;);">
-                            Your Instagram URL </div>
+                        <div class="ss-field-label">Ville de résidence de la Mère</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Nombre d'enfant de la Mère</div>
+                        <div class="field-value ss-empty-value">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -559,218 +657,7 @@ p{margin-bottom:0px!important;}
     </div>
 </div>
 
-
-
-
-<section class="posts-2 followers">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-
-                <ul class="nav nav-tabs" role="tablist" id="myTabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#followers" role="tab" data-toggle="tab" aria-expanded="true">Followers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#following" role="tab" data-toggle="tab" aria-expanded="false">Following</a>
-                    </li>
-                </ul>
-                <br><br>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active show" id="followers" aria-expanded="true">
-
-                        <div class="card card-profile">
-                            <div class="card-block">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Victoria Stephens</h4>
-                                        <p class="media-usermeta"><i class="fa fa-briefcase"></i> Regional Finance Manager</p>
-                                    </div>
-                                </div><!-- media -->
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-
-                                <div class="people-info">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Location</label>
-                                                San Francisco, CA, USA
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Email</label>
-                                                christina.hill@email.com
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Phone</label>
-                                                386-7521860
-                                            </div>
-                                        </div>
-                                    </div><!-- row -->
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Followers</label>
-                                                <h4>1,348</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Following</label>
-                                                <h4>232</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                        </div>
-                                    </div><!-- row -->
-                                </div><!-- panel-info -->
-                            </div><!-- card-block -->
-                        </div><!-- card -->
-
-                        <div class="card card-profile">
-                            <div class="card-block">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Grace King</h4>
-                                        <p class="media-usermeta"><i class="fa fa-briefcase"></i> Software Engineer</p>
-                                    </div>
-                                </div><!-- media -->
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i></a></li>
-                                </ul>
-                                <div class="people-info">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Location</label>
-                                                Sydney, Australia
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Email</label>
-                                                <i class="fa fa-envelope mr5"></i> floyd.romero@email.com
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Phone</label>
-                                                (012) 345 6789
-                                            </div>
-                                        </div>
-                                    </div><!-- row -->
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Followers</label>
-                                                <h4>1,348</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Following</label>
-                                                <h4>232</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                        </div>
-                                    </div><!-- row -->
-                                </div><!-- panel-info -->
-                            </div><!-- card-block -->
-                        </div><!-- card -->
-
-                    </div><!-- tabpanel -->
-                    <div role="tabpanel" class="tab-pane fade" id="following" aria-expanded="false">
-
-                        <div class="card card-profile">
-                            <div class="card-block">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Danie Thames</h4>
-                                        <p class="media-usermeta"><i class="fa fa-briefcase"></i> Interior Designer</p>
-                                    </div>
-                                </div><!-- media -->
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i></a></li>
-                                </ul>
-
-                                <div class="people-info">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Location</label>
-                                                Cebu City, Philippines
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Email</label>
-                                                nicholas.hinkle@email.com
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Phone</label>
-                                                (012) 345 6789
-                                            </div>
-                                        </div>
-                                    </div><!-- row -->
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Followers</label>
-                                                <h4>508</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="info-group">
-                                                <label>Following</label>
-                                                <h4>3, 800</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                        </div>
-                                    </div><!-- row -->
-                                </div><!-- panel-info -->
-                            </div><!-- card-block -->
-                        </div><!-- card -->
-
-                    </div><!-- tabpanel -->
-                </div>
-
-            </div>
-        </div>
-        <!--/ row -->
-    </div>
-    <!--/ container -->
-</section>
-
+@include('includes.profit');
 
 
 @endsection
