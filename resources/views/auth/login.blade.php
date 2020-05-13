@@ -15,6 +15,7 @@
                 <h1><!--i class="fa fa-smile"></i--> <img src="/assets/main_theme/medium/img/logo.png" width="200"></h1>
                 <form method="POST" action="{{ route('login') }}" class="form-signin">
                     <h3 class="form-signin-heading">Connectez-vous</h3>
+                    @csrf
                     <div class="form-group">
                         <input name="email" type="text" class="form-control" placeholder="Email">
                     </div>

@@ -44,7 +44,7 @@ class User extends Authenticatable
         'father_children_number',
         'mother_last_name',
         'mother_traditional_first_name',
-        'mother_other_name'
+        'mother_other_name',
         'mother_birth_country',
         'mother_birth_state',
         'mother_birth_state',

@@ -3,6 +3,14 @@
 
 @section('content')
 
+<style media="screen">
+    @media screen and (min-width: 768px)
+    {
+        .ss-content-wrapper{
+            margin: 5rem;
+        }
+    }
+</style>
 
 <style media="screen">
 .profile-bg-picture {
@@ -578,7 +586,7 @@ p{margin-bottom:0px!important;}
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img class="media-object rounded-circle" src="img/users/6.jpg" alt="">
+                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
                                         </a>
                                     </div>
                                     <div class="media-body">
@@ -638,7 +646,7 @@ p{margin-bottom:0px!important;}
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img class="media-object rounded-circle" src="img/users/7.jpg" alt="">
+                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
                                         </a>
                                     </div>
                                     <div class="media-body">
@@ -699,7 +707,7 @@ p{margin-bottom:0px!important;}
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img class="media-object rounded-circle" src="img/users/8.jpg" alt="">
+                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
                                         </a>
                                     </div>
                                     <div class="media-body">

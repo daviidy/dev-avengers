@@ -15,10 +15,11 @@
                 <h1><!--i class="fa fa-smile"></i--> <img src="/assets/main_theme/medium/img/logo.png" width="200"> </h1>
                 <form method="POST" action="{{ route('register') }}" class="form-signin">
                     <h3 class="form-signin-heading">Inscrivez-vous</h3>
+                    @csrf
                     <div class="form-group">
-                        <input name="name" type="text" class="form-control" placeholder="Noms">
+                        <input name="name" type="text" class="form-control" placeholder="Nom d'utilisateur">
                     </div>
-                    
+
                     @error('name')
                     <div class="alert alert-danger">
                         <strong>{{message}}</strong>
@@ -27,7 +28,7 @@
                     <div class="form-group">
                         <input name="email" type="text" class="form-control" placeholder="Email">
                     </div>
-                    
+
                     @error('email')
                     <div class="alert alert-danger">
                         <strong>{{message}}</strong>
@@ -47,8 +48,8 @@
 
                     <div class="form-group">
                         <input name="traditional_first_name" type="text" class="form-control" placeholder="Nom de famille">
-                        <input name="last_name" type="text" class="form-control" placeholder="Prenoms">
-                        <input name="other_name" type="text" class="form-control" placeholder="Autre Noms">
+                        <input name="last_name" type="text" class="form-control" placeholder="Prénoms">
+                        <input name="other_name" type="text" class="form-control" placeholder="Autre Nom">
                     </div>
 
                     <div class="form-group">
