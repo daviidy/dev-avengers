@@ -4572,6 +4572,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* line 12, ../scss/_base.scss */
@@ -4795,7 +4796,7 @@ a:active,
 a.active {
     text-decoration: none;
     outline: 0;
-    color: #16A085 !important;
+    color: #D86000 !important;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
     -o-transition: 0.5s all ease;

@@ -71,107 +71,107 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
 
 <!--style pour le jumbotron-->
 <style media="screen">
-/*! CSS Used from: http://www.themashabrand.com/templates/Masha/bower_components/bootstrap/dist/css/bootstrap.css */
-header{display:block;}
-h1{font-size:2em;margin:0.67em 0;}
-sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
-sup{top:-0.5em;}
-@media print{
-*,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
-p{orphans:3;widows:3;}
-.badge{border:1px solid #000;}
-}
-*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
-h1{margin-top:0;margin-bottom:.5rem;}
-p{margin-top:0;margin-bottom:1rem;}
-h1{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
-h1{font-size:2.5rem;}
-.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
-@media (min-width: 576px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 768px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 992px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 1200px){
-.container{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 576px){
-.container{width:540px;max-width:100%;}
-}
-@media (min-width: 768px){
-.container{width:720px;max-width:100%;}
-}
-@media (min-width: 992px){
-.container{width:960px;max-width:100%;}
-}
-@media (min-width: 1200px){
-.container{width:1140px;max-width:100%;}
-}
-.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
-@media (min-width: 576px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 768px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 992px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-@media (min-width: 1200px){
-.row{margin-right:-15px;margin-left:-15px;}
-}
-.col-md-10,.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
-@media (min-width: 576px){
-.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 768px){
-.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 992px){
-.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 1200px){
-.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
-}
-@media (min-width: 768px){
-.col-md-10{-webkit-box-flex:0;-webkit-flex:0 0 83.333333%;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}
-.offset-md-1{margin-left:8.333333%;}
-}
-@media (min-width: 992px){
-.col-lg-8{-webkit-box-flex:0;-webkit-flex:0 0 66.666667%;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
-.offset-lg-2{margin-left:16.666667%;}
-}
-.badge{display:inline-block;padding:0.25em 0.4em;font-size:75%;font-weight:bold;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.25rem;}
-.badge:empty{display:none;}
-.badge-pill{padding-right:0.6em;padding-left:0.6em;border-radius:10rem;}
-.badge-danger{background-color:#d9534f;}
-/*! CSS Used from: http://www.themashabrand.com/templates/Masha/css/app.css */
-header.masha{background:linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("https://images.unsplash.com/photo-1537344845089-c7f47b3210ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;background-size:cover;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;color:#fff;height:65vh;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
-header.masha .post-heading{padding:100px 0 50px;color:white;}
-@media only screen and (min-width: 767px){
-header.masha .post-heading{padding:150px 0;}
-}
-header.masha h1{font-family:'Montserrat', sans-serif;font-weight:700;font-size:60px;color:#fff;}
-header.masha p{font-family:'Montserrat', sans-serif;color:#fff;font-size:16px;text-align:center;letter-spacing:1px;}
-header.masha sup{font-family:'Montserrat', sans-serif;color:#fff;font-size:20px;text-align:center;}
-@media only screen and (max-width: 768px){
-header.masha h1{font-size:40px;}
-}
-@media only screen and (max-width: 420px){
-header.masha h1{font-size:22px;}
-header.masha p{font-size:14px;}
-}
-h6, .MuiButton-root{
-  font-family: 'Montserrat', sans-serif !important;
-}
+    /*! CSS Used from: http://www.themashabrand.com/templates/Masha/bower_components/bootstrap/dist/css/bootstrap.css */
+    header{display:block;}
+    h1{font-size:2em;margin:0.67em 0;}
+    sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+    sup{top:-0.5em;}
+    @media print{
+    *,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+    p{orphans:3;widows:3;}
+    .badge{border:1px solid #000;}
+    }
+    *,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
+    h1{margin-top:0;margin-bottom:.5rem;}
+    p{margin-top:0;margin-bottom:1rem;}
+    h1{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+    h1{font-size:2.5rem;}
+    .container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+    @media (min-width: 576px){
+    .container{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 768px){
+    .container{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 992px){
+    .container{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 1200px){
+    .container{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 576px){
+    .container{width:540px;max-width:100%;}
+    }
+    @media (min-width: 768px){
+    .container{width:720px;max-width:100%;}
+    }
+    @media (min-width: 992px){
+    .container{width:960px;max-width:100%;}
+    }
+    @media (min-width: 1200px){
+    .container{width:1140px;max-width:100%;}
+    }
+    .row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+    @media (min-width: 576px){
+    .row{margin-right:-15px;margin-left:-15px;}
+    }
+    @media (min-width: 768px){
+    .row{margin-right:-15px;margin-left:-15px;}
+    }
+    @media (min-width: 992px){
+    .row{margin-right:-15px;margin-left:-15px;}
+    }
+    @media (min-width: 1200px){
+    .row{margin-right:-15px;margin-left:-15px;}
+    }
+    .col-md-10,.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+    @media (min-width: 576px){
+    .col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 768px){
+    .col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 992px){
+    .col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 1200px){
+    .col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+    }
+    @media (min-width: 768px){
+    .col-md-10{-webkit-box-flex:0;-webkit-flex:0 0 83.333333%;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}
+    .offset-md-1{margin-left:8.333333%;}
+    }
+    @media (min-width: 992px){
+    .col-lg-8{-webkit-box-flex:0;-webkit-flex:0 0 66.666667%;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+    .offset-lg-2{margin-left:16.666667%;}
+    }
+    .badge{display:inline-block;padding:0.25em 0.4em;font-size:75%;font-weight:bold;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.25rem;}
+    .badge:empty{display:none;}
+    .badge-pill{padding-right:0.6em;padding-left:0.6em;border-radius:10rem;}
+    .badge-danger{background-color:#d9534f;}
+    /*! CSS Used from: http://www.themashabrand.com/templates/Masha/css/app.css */
+    header.masha{background:linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("https://images.unsplash.com/photo-1537344845089-c7f47b3210ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;background-size:cover;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;color:#fff;height:65vh;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+    header.masha .post-heading{padding:100px 0 50px;color:white;}
+    @media only screen and (min-width: 767px){
+    header.masha .post-heading{padding:150px 0;}
+    }
+    header.masha h1{font-family:'Montserrat', sans-serif;font-weight:700;font-size:60px;color:#fff;}
+    header.masha p{font-family:'Montserrat', sans-serif;color:#fff;font-size:16px;text-align:center;letter-spacing:1px;}
+    header.masha sup{font-family:'Montserrat', sans-serif;color:#fff;font-size:20px;text-align:center;}
+    @media only screen and (max-width: 768px){
+    header.masha h1{font-size:40px;}
+    }
+    @media only screen and (max-width: 420px){
+    header.masha h1{font-size:22px;}
+    header.masha p{font-size:14px;}
+    }
+    h6, .MuiButton-root{
+      font-family: 'Montserrat', sans-serif !important;
+    }
 
-.jss7{
-  font-size: 16px !important;
-}
+    .jss7{
+      font-size: 16px !important;
+    }
 
 
 </style>

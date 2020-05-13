@@ -46,39 +46,39 @@
         <!--bouton login-->
         <style media="screen">
         a.solid {
-background-color: #fff;
-border-color: #fff;
-color: #007808;
-padding: 10px 16px;
-font-size: 16px;
-text-transform: uppercase;
-font-weight: 700;
-border: 2px solid;
-border-radius: 4px;
--webkit-transition: all 0.3s ease-out 0s;
--moz-transition: all 0.3s ease-out 0s;
--ms-transition: all 0.3s ease-out 0s;
--o-transition: all 0.3s ease-out 0s;
-transition: all 0.3s ease-out 0s;
-}
+            background-color: #fff;
+            border-color: #fff;
+            color: #007808;
+            padding: 10px 16px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+            border: 2px solid;
+            border-radius: 4px;
+            -webkit-transition: all 0.3s ease-out 0s;
+            -moz-transition: all 0.3s ease-out 0s;
+            -ms-transition: all 0.3s ease-out 0s;
+            -o-transition: all 0.3s ease-out 0s;
+            transition: all 0.3s ease-out 0s;
+            }
 
-@media screen and (max-width: 600px)
-{
-    #login_item{
-        margin-top: 2rem;
-    }
-}
+            @media screen and (max-width: 600px)
+            {
+                #login_item{
+                    margin-top: 2rem;
+                }
+            }
 
-@media screen and (max-width: 768px)
-{
-    a.solid{
-        padding: 10px 3px;
-        font-size: 10px;
-    }
-    .navbar-toggleable-sm .navbar-nav {
-        font-size: smaller !important;
-    }
-}
+            @media screen and (max-width: 768px)
+            {
+                a.solid{
+                    padding: 10px 3px;
+                    font-size: 10px;
+                }
+                .navbar-toggleable-sm .navbar-nav {
+                    font-size: smaller !important;
+                }
+            }
 
         </style>
 

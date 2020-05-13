@@ -84,12 +84,12 @@
                     </div>
 
                     <div class="form-group">
-                        <input name="father_traditional_first_name" type="text" class="form-control" placeholder="Nom de la mère">
-                        <input name="father_last_name" type="text" class="form-control" placeholder="Prénoms de la mère">
-                        <input name="father_other_name" type="text" class="form-control" placeholder="Autre noms de la mère">
-                        <input id="search_input" name="father_birth_country" type="text" class="form-control" placeholder="Pays de résidence de la mère">
-                        <input id="search_input" name="father_town" type="text" class="form-control" placeholder="Ville de résidence de la mère">
-                        <input name="father_children_number" type="text" class="form-control" placeholder="Nombre d'enfant de la mère">
+                        <input name="mother_traditional_first_name" type="text" class="form-control" placeholder="Nom de la mère">
+                        <input name="mother_last_name" type="text" class="form-control" placeholder="Prénoms de la mère">
+                        <input name="mother_other_name" type="text" class="form-control" placeholder="Autre noms de la mère">
+                        <input id="search_input" name="mother_birth_country" type="text" class="form-control" placeholder="Pays de résidence de la mère">
+                        <input id="search_input" name="mother_town" type="text" class="form-control" placeholder="Ville de résidence de la mère">
+                        <input name="mother_children_number" type="text" class="form-control" placeholder="Nombre d'enfant de la mère">
                     </div>
 
                     <button class="kafe-btn kafe-btn-mint btn-block" type="submit" name="subm">Se connecter</button>
