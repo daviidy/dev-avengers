@@ -12,7 +12,7 @@
         <div class="container">
             <div class="banner-content">
 
-                <h1><i class="fa fa-smile"></i> UNIVOIRE</h1>
+                <h1><!--i class="fa fa-smile"></i--> <img src="/assets/main_theme/medium/img/logo.png" width="200"></h1>
                 <form method="POST" action="{{ route('login') }}" class="form-signin">
                     <h3 class="form-signin-heading">Connectez-vous</h3>
                     <div class="form-group">

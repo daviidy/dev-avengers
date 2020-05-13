@@ -6640,6 +6640,15 @@ a {
     font-family: lato;
 }
 
+@media screen and (max-width: 767px)
+{
+    .bottom-footer ul,.bottom-footer ul li{
+        float: none !important;
+        text-align: center;
+    }
+    
+}
+
 /* line 30, ../scss/_footer.scss */
 
 .bottom-footer ul li a {
@@ -6760,7 +6769,7 @@ a {
     /* line 131, ../scss/_footer.scss */
     .bottom-footer p {
         text-align: center !important;
-        float: center !important;
+        float: none !important;
     }
     /* line 135, ../scss/_footer.scss */
     #scrollup {
