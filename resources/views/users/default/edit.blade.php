@@ -15,7 +15,7 @@ img{border:0;}
 svg:not(:root){overflow:hidden;}
 input,textarea{font-family:inherit;font-size:100%;margin:0;padding:0;}
 input{line-height:normal;}
-input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+input[type="submit"]{-webkit-appearance:button;cursor:pointer;border-radius: 20px;width: 50%;}
 input[type="checkbox"]{box-sizing:border-box;padding:0;}
 input::-moz-focus-inner{border:0;padding:0;}
 textarea{overflow:auto;vertical-align:top;}
@@ -106,6 +106,14 @@ p{font-size:15px;font-weight:400;line-height:1.6;margin:16px 0;}
 .btn-default{color:#ffffff;background-color:#8a4711;}
 .btn-default:hover,.btn-default:active{background-color:#D86000;}
 .btn-block-level{width:100%;}
+@media screen and (max-width: 768px)
+    {
+        .btn-block-level{width: 262px!important;}
+        .text-right{text-align: center !important;}
+
+    }
+    .sub{text-align: center !important;}
+
 .pill{height:24px;border-radius:24px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;font-size:13px;line-height:1;padding-right:12px;padding-left:12px;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-decoration:none;background-color:#eaeaea;color:#767676;}
 a .pill,a:hover .pill{text-decoration:none;}
 .pill .icon{padding-right:3px;margin-left:-3px;fill:#767676;}
@@ -250,7 +258,7 @@ small{font-size:80%;font-weight:normal;}
 .btn-success:disabled{background-color:#5cb85c;border-color:#5cb85c;}
 .btn-success:active{color:#fff;background-color:#449d44;background-image:none;border-color:#419641;}
 .media-body{-webkit-box-flex:1;-webkit-flex:1 1 0%;-ms-flex:1 1 0%;flex:1 1 0%;}
-.text-right{text-align:right!important;}
+.text-right{text-align:right;}
 .text-muted{color:#636c72!important;}
 /*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
 .fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
@@ -571,7 +579,8 @@ p{margin-bottom:0px!important;}
                                 </div> <!-- close .help-block ->
                             </div> <!-- close .form-group ->
                         </div--> <!-- close .col -->
-
+                    <div class="row">
+                    	
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
@@ -861,11 +870,11 @@ p{margin-bottom:0px!important;}
 
                         <!--End mother-->
 
-
+                    </div>
 
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="form-group">
+                            <div class="form-group sub">
                                 <input type="submit" name="commit" value="Enregistrez les modifications" class="btn btn-default btn-block-level" data-disable-with="···">
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->

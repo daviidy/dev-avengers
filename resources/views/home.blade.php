@@ -9,6 +9,7 @@
         .ss-content-wrapper{
             margin: 5rem;
         }
+        .text-right{text-align: center!important;}
     }
 </style>
 
@@ -121,7 +122,7 @@ small{font-size:80%;font-weight:normal;}
 .btn-success:disabled{background-color:#5cb85c;border-color:#5cb85c;}
 .btn-success:active{color:#fff;background-color:#449d44;background-image:none;border-color:#419641;}
 .media-body{-webkit-box-flex:1;-webkit-flex:1 1 0%;-ms-flex:1 1 0%;flex:1 1 0%;}
-.text-right{text-align:right!important;}
+.text-right{text-align:right;}
 .text-muted{color:#636c72!important;}
 /*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
 .fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
