@@ -9566,7 +9566,7 @@ a.bg-inverse:hover {
 }
 
 .text-right {
-    text-align: right !important;
+    text-align: right ;
 }
 
 .text-center {

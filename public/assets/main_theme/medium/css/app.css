@@ -6613,7 +6613,7 @@ a {
 /* line 8, ../scss/_footer.scss */
 
 .bottom-footer p {
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Montserrat', sans-serif;
     color: #525252;
     float: left;
     font-size: 13px;
@@ -6647,13 +6647,16 @@ a {
         float: none !important;
         text-align: center;
     }
-    
+    .bottom-footer ul li a {
+    font-size: 12px !important;
+    padding: 2px 3px !important;
+}
 }
 
 /* line 30, ../scss/_footer.scss */
 
 .bottom-footer ul li a {
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Montserrat', sans-serif;
     color: #6b6b6b;
     font-size: 14px;
     float: left;
@@ -6771,6 +6774,7 @@ a {
     .bottom-footer p {
         text-align: center !important;
         float: none !important;
+        font-family: 'Montserrat', sans-serif;
     }
     /* line 135, ../scss/_footer.scss */
     #scrollup {
