@@ -419,66 +419,22 @@ p{margin-bottom:0px!important;}
 
 </style>
 
-<header class="profile-bg-picture"></header>
-
-
-<section class="user-section">
-    <div class="container">
-        <div class="profile-user-box">
-            <div class="row">
-                <div class="col-sm-6">
-                    <span class="pull-left m-r-15"><img src="blob:https://beta.mindvalley.com/1cbb994b-9dca-4dea-86cd-057ec716788f" alt="" class="thumb-lg img-circle"></span>
-                    <div class="media-body">
-                        <h4 class="m-t-5 m-b-5 ellipsis">{{Auth::user()->name}}</h4>
-                        <p class="font-13"> User Experience Specialist</p>
-                        <p class="text-muted m-b-0"><small>California, United States</small></p>
-                    </div><!-- /media-body -->
-                </div><!-- /col-sm-6 -->
-                <div class="col-sm-6">
-                    <div class="text-right">
-                        <button type="button" class="btn btn-success waves-effect waves-light">
-                            <i class="fa fa-user m-r-5"></i> Modifier Profil
-                        </button>
-                    </div><!-- /text-right -->
-                </div><!-- /col-sm-6 -->
-            </div><!-- /row -->
-        </div>
-        <!--/ profile-user-box -->
-    </div><!-- /container -->
-</section>
+@include('includes.user_header')
 
 
 <div class="ss-content-wrapper">
-    <div class="ss-page-title">My Mindvalley Profile</div>
+    <div class="ss-page-title">Aperçu de vos informations</div>
     <div class="profile-page">
         <div class="ss-profile-info">
             <div class="ss-profile-details">
                 <div class="ss-flex">
                     <div class="ss-flex-item-info email">
                         <div class="ss-field-label-large">
-                            David </div>
+                            {{ucfirst(Auth::user()->name)}} </div>
                         <div class="field-value">
-                            yaodavidarmel@gmail.com </div>
+                            {{Auth::user()->email}} </div>
                     </div>
-                    <div class="ss-flex-item-info avatar">
-                        <div class="avatar-container">
-                            <div class="ss-avatar-upload-wrapper">
-                                <img class="ss-avatar lazyload" data-src="https://assets.mindvalley.com/api/v1/assets/1dedbbe8-22de-44a3-b9e9-5bfc8614dbb7.svg?transform=q_auto,w_270,h_270,c_fill" alt="avatar"
-                                  onerror="this.src='https://assets.mindvalley.com/api/v1/assets/1dedbbe8-22de-44a3-b9e9-5bfc8614dbb7.svg'" src="blob:https://beta.mindvalley.com/67a07aa8-4cc1-4d79-a785-e9ca425573fb">
-                                <form action="" method="post" enctype="multipart/form-data">
-                                    <p class="ss-edit-avatar">
-                                        Update Photo </p>
-                                    <input type="file" name="avatar-input" class="ss-avatar-input" accept="image/x-png,image/jpeg">
-                                </form>
-                                <div class="ss-avatar-progress-bar animate" style="display: none;">
-                                    Uploading Photo <span class="ss-avatar-progress-bar-animation" style="width: 100%;"></span>
-                                </div>
-                            </div>
 
-                            <div class="ss-avatar-error-message">
-                                Error updating the profile image</div>
-                        </div>
-                    </div>
                 </div>
                 <div class="ss-flex">
                     <!--div class="ss-flex-item">
@@ -498,19 +454,23 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de naissance:</div>
                         <div class="field-value ss-empty-value">
-                            
+                            @if(Auth::user()->birth_city)
+                            {{Auth::user()->birth_city}}
+                            @else
+                            Aucune ville renseignée
+                            @endif
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de naissance</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Profession:</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <!--div class="ss-flex-item">
@@ -521,49 +481,49 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Etat de résidence</div>
                         <div class="field-value ss-empty-value">
-                             
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Code Postal</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Situation matrimonial</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Numéro de téléphone</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-item-flex-full">
                         <div class="ss-field-label">Short Bio:</div>
                         <div class="field-value bio-field ss-empty-value">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -575,37 +535,37 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nom du père</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Prénoms du père</div>
                         <div class="field-value ss-empty-value">
-                             
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms du père</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence du père</div>
                         <div class="field-value ss-empty-value">
-                             
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence du père</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant du père</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -617,47 +577,47 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nom de la Mère</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Prénoms de la Mère</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms de la Mère</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence de la Mère</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence de la Mère</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant de la Mère</div>
                         <div class="field-value ss-empty-value">
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="ss-edit-profile-button" href="/profile/edit" rel="noopener">Edit profile</a>
+            <a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
         </div>
     </div>
 </div>
 
-@include('includes.profit');
+@include('includes.project_event');
 
 
 @endsection

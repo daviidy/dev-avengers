@@ -11,8 +11,10 @@
     <section class="login">
         <div class="container">
             <div class="banner-content">
+                <a href="/">
+                    <img src="/assets/main_theme/medium/img/logo.png" width="200">
+                </a>
 
-                <h1><!--i class="fa fa-smile"></i--> <img src="/assets/main_theme/medium/img/logo.png" width="200"> </h1>
                 <form method="POST" action="{{ route('register') }}" class="form-signin">
                     <h3 class="form-signin-heading">Inscrivez-vous</h3>
                     @csrf
@@ -45,7 +47,7 @@
                     <div class="form-group">
                         <input name="password_confirmation" type="password" class="form-control" placeholder="Confirmez le mot de passe">
                     </div>
-
+                    {{--
                     <div class="form-group">
                         <input name="traditional_first_name" type="text" class="form-control" placeholder="Nom de famille">
                         <input name="last_name" type="text" class="form-control" placeholder="Prénoms">
@@ -91,10 +93,10 @@
                         <input id="search_input" name="mother_town" type="text" class="form-control" placeholder="Ville de résidence de la mère">
                         <input name="mother_children_number" type="text" class="form-control" placeholder="Nombre d'enfant de la mère">
                     </div>
-
-                    <button class="kafe-btn kafe-btn-mint btn-block" type="submit" name="subm">Se connecter</button>
+                    --}}
+                    <button class="kafe-btn kafe-btn-mint btn-block" type="submit" name="subm">S'inscrire</button>
                     <br/>
-                    <a class="btn btn-dark " href="/register" role="button">Pas de compte ? Inscrivez-vous</a>
+                    <a class="btn btn-dark " href="/login" role="button">Déjà un compte ? Connectez-vous</a>
                     <a class="btn btn-dark " href="#" role="button">Mot de passe oublié</a>
                 </form>
 
