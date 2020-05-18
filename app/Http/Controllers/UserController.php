@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Auth;
+use Image;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -75,7 +76,30 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        if (Auth::check()) {
+            $user->update($request->all());
+
+            return redirect('/users/'.$user->id.'/edit')->with('status', 'Votre profil a été modifié avec succès');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+    //upload avatar with ajax
+    public function uploadAvatar(Request $req)
+    {
+              $user = User::find($req->id_user);
+              $user->update($req->all());
+
+                $image = $req->file('image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                Image::make($image)->save(storage_path('app/public/images/users/'.$filename));
+                $user->image = $filename;
+                $user->save();
+
+
+          return response()->json($user);
     }
 
     /**

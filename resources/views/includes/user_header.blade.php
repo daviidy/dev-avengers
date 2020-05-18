@@ -6,10 +6,10 @@
         <div class="profile-user-box">
             <div class="row">
                 <div class="col-sm-6">
-                    <span class="pull-left m-r-15"><img src="https://i.stack.imgur.com/nymzq.jpg?s=328&g=1" alt="{{ucfirst(Auth::user()->name)}}" class="thumb-lg img-circle"></span>
+                    <span class="pull-left m-r-15"><img src="/storage/images/users/{{Auth::user()->image}}" alt="{{ucfirst(Auth::user()->name)}}" class="thumb-lg img-circle"></span>
                     <div class="media-body">
                         <h4 class="m-t-5 m-b-5 ellipsis">{{Auth::user()->name}}</h4>
-                        <p class="font-13"> User Experience Specialist</p>
+                        <p class="font-13"> {{Auth::user()->job ? Auth::user()->job : 'Aucun métier renseigné'}}</p>
                         <p class="text-muted m-b-0"><small>California, United States</small></p>
                     </div><!-- /media-body -->
                 </div><!-- /col-sm-6 -->
