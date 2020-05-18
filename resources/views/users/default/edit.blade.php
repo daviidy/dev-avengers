@@ -437,6 +437,18 @@ p{margin-bottom:0px!important;}
 .followers .people-info .row + .row{margin-top:1px;}
 .followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
 .nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
+.form_style{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 20px;
+}
+.form_style_sec {margin: 5rem;}
+.header_form{background-color:#efeeee!important;}
+@media (max-width: 767px){
+
+	.form_style_sec {margin: 2rem;}
+	.arch .arch-right{text-align: center; margin-bottom: 15px;}
+}
 
 </style>
 
@@ -469,8 +481,8 @@ p{margin-bottom:0px!important;}
 </section>
 
 
-<section style="margin: 5rem;">
-    <div class="row">
+<section class="form_style_sec " >
+    <div class="row form_style">
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="arch">
@@ -528,7 +540,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_username">
                                     Username <span class="text-secondary"></span>
                                 </label>
-                                <input class="form-control" type="text" value="daviidy" name="user[username]" id="user_username">
+                                <input class="form-control" type="text" readonly value="daviidy" name="user[username]" id="user_username">
 
                                 <div class="help-block text-secondary">
                                     <p>https://unsplash.com/@<strong>daviidy</strong></p>
@@ -560,7 +572,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_email">
                                     Email address
                                 </label>
-                                <input class="form-control" type="email" value="yaodavidarmel@gmail.com" name="user[email]" id="user_email">
+                                <input class="form-control" readonly type="email" value="yaodavidarmel@gmail.com" name="user[email]" id="user_email">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -707,13 +719,12 @@ p{margin-bottom:0px!important;}
                         <!--Father-->
 
                         <div class="col-xs-12 col-sm-12">
-                            <div class="form-group">
+                            <div class="form-group header_form">
                             	<hr>
-                                <h1 for="user_url" style="text-align: center;">
-                                    Profil du père
-                                </h1>
-                                <hr>
-                                
+	                                <h1 for="user_url" style="text-align: center;">
+	                                    Profil du père
+	                                </h1>
+                                <hr>                                
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
                         
@@ -791,7 +802,7 @@ p{margin-bottom:0px!important;}
                         
 
                         <div class="col-xs-12 col-sm-12">
-                            <div class="form-group">
+                            <div class="form-group header_form">
                             	<hr>
                                 <h1 for="user_url" style="text-align: center;">
                                     Profil de la mère
