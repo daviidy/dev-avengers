@@ -452,44 +452,19 @@ p{margin-bottom:0px!important;}
 
 </style>
 
-<header class="profile-bg-picture"></header>
-
-
-<section class="user-section">
-    <div class="container">
-        <div class="profile-user-box">
-            <div class="row">
-                <div class="col-sm-6">
-                    <span class="pull-left m-r-15"><img src="blob:https://beta.mindvalley.com/1cbb994b-9dca-4dea-86cd-057ec716788f" alt="" class="thumb-lg img-circle"></span>
-                    <div class="media-body">
-                        <h4 class="m-t-5 m-b-5 ellipsis">{{Auth::user()->name}}</h4>
-                        <p class="font-13"> User Experience Specialist</p>
-                        <p class="text-muted m-b-0"><small>California, United States</small></p>
-                    </div><!-- /media-body -->
-                </div><!-- /col-sm-6 -->
-                <div class="col-sm-6">
-                    <div class="text-right">
-                        <button type="button" class="btn btn-success waves-effect waves-light">
-                            <i class="fa fa-user m-r-5"></i> Modifier Profil
-                        </button>
-                    </div><!-- /text-right -->
-                </div><!-- /col-sm-6 -->
-            </div><!-- /row -->
-        </div>
-        <!--/ profile-user-box -->
-    </div><!-- /container -->
-</section>
+@include('includes.user_header')
 
 
 <section class="form_style_sec " >
     <div class="row form_style">
 
         <div class="col-xs-12 col-sm-12 col-md-12">
+
             <div class="arch">
                 <div class="arch-left">
-                    <h1 class="margin-bottom delta text-weight--bold">Edit profile</h1>
+                    <h1 class="margin-bottom delta text-weight--bold">Modifier votre profil</h1>
                 </div> <!-- close .arch-left -->
-
+                {{--
                 <div class="arch-right">
                     <a href="https://help.unsplash.com/en/articles/3314707-why-do-i-need-to-confirm-my-account" class="link--no-underline">
                         <span class="pill pill--default"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24" class="icon">
@@ -512,7 +487,9 @@ p{margin-bottom:0px!important;}
                             Confirmation pending</span>
                     </a>
                 </div> <!-- close .arch-right -->
+                --}}
             </div> <!-- close .arch -->
+
 
 
 
@@ -521,31 +498,32 @@ p{margin-bottom:0px!important;}
                       value="bbMpoxP1932DrraVaAHqotMDQPc9PUdxreNo+yo7XlbAHHleLhFJvhDoyb4j7eZwkYurin1SkD6zUWoZozEtDg==">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 text-center">
-                            <a href="#" class="upload-circular-container profile-image-container js-general-uploader-pseudo-file-field">
-                                <div class="upload-circular">
-                                    <img ix-src="https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=128&amp;w=128" sizes="128px"
+                            <a id="openimgupload" class="upload-circular-container profile-image-container js-general-uploader-pseudo-file-field">
+                                <div id="uploaded_image" class="upload-circular">
+                                    <img sizes="128px"
                                       class="upload-circular__image upload-circular__image--large js-general-uploader-new-upload-target"
-                                      srcset="https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=100&amp;w=100 100w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=200&amp;w=200 200w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=300&amp;w=300 300w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=320&amp;w=320 320w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=400&amp;w=400 400w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=500&amp;w=500 500w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=576&amp;w=576 576w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=600&amp;w=600 600w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=640&amp;w=640 640w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=700&amp;w=700 700w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=720&amp;w=720 720w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=750&amp;w=750 750w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=768&amp;w=768 768w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=800&amp;w=800 800w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=900&amp;w=900 900w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=940&amp;w=940 940w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1000&amp;w=1000 1000w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1024&amp;w=1024 1024w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1080&amp;w=1080 1080w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1100&amp;w=1100 1100w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1140&amp;w=1140 1140w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1152&amp;w=1152 1152w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1200&amp;w=1200 1200w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1242&amp;w=1242 1242w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1300&amp;w=1300 1300w, https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=imgixjs-3.3.2&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=1366&amp;w=1366 1366w"
-                                      src="https://images.unsplash.com/profile-fb-1589371014-0a78edf93e74.jpg?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;h=128&amp;w=128" ix-initialized="ix-initialized">
+                                      src="/storage/images/users/{{Auth::user()->image}}">
                                     <div class="upload-circular__progress js-general-uploader-progress-target">
                                     </div> <!-- close .__progress -->
                                 </div> <!-- close .upload-circular -->
 
-                                <p class="text-center zeta js-edit-profile-image-trigger-text">Change profile image</p>
+                                <p class="text-center zeta js-edit-profile-image-trigger-text">Modifier l'image de profil</p>
+                                <input id="imgupload" hidden type="file" accept="image/jpeg,image/png">
+                                <input hidden type="text" name="user_id" value="{{Auth::user()->id}}">
                             </a> <!-- close .js -->
 
                             <div class="user-badges text-left">
 
                                 <div class="form-group">
                                 <label for="user_username">
-                                    Username <span class="text-secondary"></span>
+                                    Nom d'utilisateur <span class="text-secondary"></span>
                                 </label>
                                 <input class="form-control" type="text" readonly value="daviidy" name="user[username]" id="user_username">
 
                                 <div class="help-block text-secondary">
-                                    <p>https://unsplash.com/@<strong>daviidy</strong></p>
+                                    <p>https://unsplash.com/@<strong>{{Auth::user()->name}}</strong></p>
                                 </div> <!-- close .help-block -->
-                            </div> 
+                            </div>
                             </div>
 
                         </div>
@@ -592,7 +570,7 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group ->
                         </div--> <!-- close .col -->
                     <div class="row">
-                    	
+
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
@@ -725,9 +703,14 @@ p{margin-bottom:0px!important;}
 	                                    Profil du père
 	                                </h1>
                                 <hr>                                
+                                <h1 for="user_url" style="text-align: center;">
+                                    Profil du père
+                                </h1>
+                                <hr>
+
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-                        
+
 
                             <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
@@ -799,7 +782,7 @@ p{margin-bottom:0px!important;}
 
                         <!--Mother-->
 
-                        
+
 
                         <div class="col-xs-12 col-sm-12">
                             <div class="form-group header_form">
@@ -808,10 +791,10 @@ p{margin-bottom:0px!important;}
                                     Profil de la mère
                                 </h1>
                                 <hr>
-                                
+
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-                        
+
 
                             <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
@@ -923,7 +906,67 @@ p{margin-bottom:0px!important;}
 
 
 
+<script type="text/javascript">
 
-@include('includes.profit');
+$('#openimgupload').click(function(){ $('#imgupload').trigger('click'); });
+
+</script>
+
+<script>
+$(document).ready(function(){
+ $(document).on('change', '#imgupload', function(){
+  var name = document.getElementById("imgupload").files[0].name;
+  var form_data = new FormData();
+  var ext = name.split('.').pop().toLowerCase();
+  if(jQuery.inArray(ext, ['gif','png','jpg','jpeg']) == -1)
+  {
+   alert("Invalid Image File");
+  }
+  var oFReader = new FileReader();
+  oFReader.readAsDataURL(document.getElementById("imgupload").files[0]);
+  var f = document.getElementById("imgupload").files[0];
+  var fsize = f.size||f.fileSize;
+  if(fsize > 2000000)
+  {
+   alert("Image File Size is very big");
+  }
+  else
+  {
+      form_data.append("image", document.getElementById('imgupload').files[0]);
+      form_data.append("id_user", $('input[name=user_id]').val());
+
+      $.ajaxSetup({
+                 headers: {
+                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                 }
+             });
+
+   $.ajax({
+    url:"/uploadAvatar",
+    method:"POST",
+    data: form_data,
+    contentType: false,
+    cache: false,
+    processData: false,
+    beforeSend:function(){
+     $('#uploaded_image').html("<label class='text-success'>Image Uploading...</label>");
+    },
+    success:function(data)
+    {
+        console.log('ok');
+     $('#uploaded_image').html('<img sizes="128px" class="upload-circular__image upload-circular__image--large js-general-uploader-new-upload-target" src="/storage/images/users/'+data.image+'" alt="'+data.name+'">');
+ },
+ error: function (xhr, msg) {
+     console.log($('input[name=user_id]').val());
+   console.log(msg + '\n' + xhr.responseText);
+}
+   });
+  }
+ });
+});
+</script>
+
+
+@include('includes.project_event');
 
 @endsection
