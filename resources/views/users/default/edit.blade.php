@@ -437,14 +437,26 @@ p{margin-bottom:0px!important;}
 .followers .people-info .row + .row{margin-top:1px;}
 .followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
 .nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
+.form_style{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 20px;
+}
+.form_style_sec {margin: 5rem;}
+.header_form{background-color:#efeeee!important;}
+@media (max-width: 767px){
+
+	.form_style_sec {margin: 2rem;}
+	.arch .arch-right{text-align: center; margin-bottom: 15px;}
+}
 
 </style>
 
 @include('includes.user_header')
 
 
-<section style="margin: 5rem;">
-    <div class="row">
+<section class="form_style_sec " >
+    <div class="row form_style">
 
         <div class="col-xs-12 col-sm-12 col-md-12">
 
@@ -506,7 +518,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_username">
                                     Nom d'utilisateur <span class="text-secondary"></span>
                                 </label>
-                                <input class="form-control" type="text" value="daviidy" name="user[username]" id="user_username">
+                                <input class="form-control" type="text" readonly value="{{Auth::user()->name}}" name="user[username]" id="user_username">
 
                                 <div class="help-block text-secondary">
                                     <p>https://unsplash.com/@<strong>{{Auth::user()->name}}</strong></p>
@@ -538,7 +550,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_email">
                                     Email address
                                 </label>
-                                <input class="form-control" type="email" value="yaodavidarmel@gmail.com" name="user[email]" id="user_email">
+                                <input class="form-control" readonly type="email" value="{{Auth::user()->email}}" name="user[email]" id="user_email">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -564,7 +576,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de naissance
                                 </label>
-                                <input class="form-control" placeholder="Pays de naissance" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Pays de naissance" type="text" name="user[url]"  id="country">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -574,7 +586,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Etat de naissance
                                 </label>
-                                <input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" id="country_1">
 
 
 
@@ -586,7 +598,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville de naissance
                                 </label>
-                                <input class="form-control" placeholder="Ville de naissance" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Ville de naissance" type="text" name="user[url]" id="city" autocomplete="on" >
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -608,7 +620,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de résidence
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Pays de résidence" type="text" name="user[url]" id="country_2">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -630,7 +642,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Etat de résidence
                                 </label>
-                                <input class="form-control" placeholder="Etat de résidence" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Etat de résidence" type="text" name="user[url]" id="country_3">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -662,7 +674,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nombre d'enfant
                                 </label>
-                                <input class="form-control" placeholder="Nombre d'enfant" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nombre d'enfant" type="number" name="user[url]" id="user_url">
 
 
 
@@ -674,7 +686,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Numéro de téléphone
                                 </label>
-                                <input class="form-control" placeholder="Numéro de téléphone" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Numéro de téléphone" type="text" name="user[url]" id="phone">
 
 
 
@@ -685,13 +697,12 @@ p{margin-bottom:0px!important;}
                         <!--Father-->
 
                         <div class="col-xs-12 col-sm-12">
-                            <div class="form-group">
+                            <div class="form-group header_form">
                             	<hr>
-                                <h1 for="user_url" style="text-align: center;">
-                                    Profil du père
-                                </h1>
-                                <hr>
-
+	                                <h1 for="user_url" style="text-align: center;">
+	                                    Profil du père
+	                                </h1>
+                                <hr>                                
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
@@ -733,7 +744,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de résidence du père
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence du père" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Pays de résidence du père" type="text" name="user[url]" id="country_4">
 
 
 
@@ -755,7 +766,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nombre d'enfant du père
                                 </label>
-                                <input class="form-control" placeholder="Nombre d'enfant du père" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nombre d'enfant du père" type="number" name="user[url]" id="user_url">
 
 
 
@@ -769,13 +780,12 @@ p{margin-bottom:0px!important;}
 
 
                         <div class="col-xs-12 col-sm-12">
-                            <div class="form-group">
+                            <div class="form-group header_form">
                             	<hr>
                                 <h1 for="user_url" style="text-align: center;">
                                     Profil de la mère
                                 </h1>
                                 <hr>
-
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
@@ -817,7 +827,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de résidence de la mère
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="user[url]" id="country_5">
 
 
 
@@ -839,7 +849,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nombre d'enfant de la mère
                                 </label>
-                                <input class="form-control" placeholder="Nombre d'enfant de la mère" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nombre d'enfant de la mère" type="number" name="user[url]" id="user_url">
 
 
 
@@ -950,6 +960,31 @@ $(document).ready(function(){
 });
 </script>
 
+<script src="/plugin/build/js/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      
+      autoPlaceholder: "polite",
+      
+       hiddenInput: "mobile_tel",
+      
+       nationalMode: true,
+      
+       preferredCountries: ["ci", "fr"],
+       separateDialCode: true,
+      utilsScript: "/plugin/build/js/utils.js",
+    });
+  </script>
+<script src="/plugin/build/js/countrySelect.min.js"></script>
+<script>
+  $("#country").countrySelect();
+  $("#country_1").countrySelect();
+  $("#country_2").countrySelect();
+  $("#country_3").countrySelect();
+  $("#country_4").countrySelect();
+  $("#country_5").countrySelect();
+</script>
 
 @include('includes.project_event');
 
