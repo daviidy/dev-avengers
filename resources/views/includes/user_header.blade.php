@@ -14,7 +14,7 @@
                     </div><!-- /media-body -->
                 </div><!-- /col-sm-6 -->
                 <div class="col-sm-6">
-                    <div class="text-right">
+                    <div class="text-right float-right">
                         @if(\Route::current()->getName() == 'users.edit')
                         <a href="/home">
                             <button type="button" class="btn btn-success waves-effect waves-light">
