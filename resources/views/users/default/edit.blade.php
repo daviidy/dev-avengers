@@ -586,7 +586,25 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Etat de naissance
                                 </label>
-                                <input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" id="country_1">
+                                <!--input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" -->
+
+							      <select class="form-control" id="sel1" placeholder="Etat de naissance">
+							        <option>Abidjan</option>
+							        <option>Lacs</option>
+							        <option>Comoé</option>
+							        <option>Denguélé</option>
+							        <option>Gôh-Djiboua</option>
+							        <option>Lagunes</option>
+							        <option>Montagnes</option>
+							        <option>Sassandra-Marahoué</option>
+							        <option>Savanes</option>
+							        <option>Bas-Sassandra</option>
+							        <option>Vallée du Bandama</option>
+							        <option>Woroba</option>
+							        <option>Zanzan</option>
+							        <option>Yamoussoukro</option>
+							        
+							      </select>
 
 
 
@@ -642,7 +660,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Etat de résidence
                                 </label>
-                                <input class="form-control" placeholder="Etat de résidence" type="text" name="user[url]" id="country_3">
+                                <input class="form-control" placeholder="Etat de résidence" type="text" name="user[url]" >
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -979,12 +997,11 @@ $(document).ready(function(){
 <script src="/plugin/build/js/countrySelect.min.js"></script>
 <script>
   $("#country").countrySelect();
-  $("#country_1").countrySelect();
   $("#country_2").countrySelect();
-  $("#country_3").countrySelect();
   $("#country_4").countrySelect();
   $("#country_5").countrySelect();
 </script>
+
 
 @include('includes.project_event');
 
