@@ -494,8 +494,9 @@ p{margin-bottom:0px!important;}
 
 
             <div class="form">
-                <form class="edit_user" id="edit_user_4646744" action="/account" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="authenticity_token"
-                      value="bbMpoxP1932DrraVaAHqotMDQPc9PUdxreNo+yo7XlbAHHleLhFJvhDoyb4j7eZwkYurin1SkD6zUWoZozEtDg==">
+                <form class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post">
+                    @csrf
+                    {{method_field('patch')}}
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 text-center">
                             <a id="openimgupload" class="upload-circular-container profile-image-container js-general-uploader-pseudo-file-field">
@@ -518,10 +519,10 @@ p{margin-bottom:0px!important;}
                                 <label for="user_username">
                                     Nom d'utilisateur <span class="text-secondary"></span>
                                 </label>
-                                <input class="form-control" type="text" readonly value="{{Auth::user()->name}}" name="user[username]" id="user_username">
+                                <input class="form-control" type="text" readonly value="{{Auth::user()->name}}" name="name" id="user_username">
 
                                 <div class="help-block text-secondary">
-                                    <p>https://unsplash.com/@<strong>{{Auth::user()->name}}</strong></p>
+                                    <p>@<strong>{{Auth::user()->name}}</strong></p>
                                 </div> <!-- close .help-block -->
                             </div>
                             </div>
@@ -531,18 +532,18 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-8">
                             <div class="form-group">
                                 <label for="user_first_name">Nom de famille</label>
-                                <input class="form-control" type="text" value="David" name="user[first_name]" id="user_first_name">
+                                <input class="form-control" type="text" value="{{Auth::user()->last_name}}" name="last_name" id="user_first_name">
 
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
-                                <label for="user_last_name">Prénoms</label>
-                                <input class="form-control" type="text" value="Yao" name="user[last_name]" id="user_last_name">
+                                <label for="user_last_name">Prénom Traditionnel</label>
+                                <input class="form-control" type="text" value="{{Auth::user()->traditional_first_name}}" name="traditional_first_name" id="user_last_name">
 
                             </div> <!-- close .form-group -->
                             <div class="form-group">
-                                <label for="user_last_name">Autre Nom</label>
-                                <input class="form-control" type="text" value="Yao" name="user[last_name]" id="user_last_name">
+                                <label for="user_last_name">Autre prénom</label>
+                                <input class="form-control" type="text" value="{{Auth::user()->other_name}}" name="other_name" id="user_last_name">
 
                             </div>
 
@@ -550,7 +551,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_email">
                                     Email address
                                 </label>
-                                <input class="form-control" readonly type="email" value="{{Auth::user()->email}}" name="user[email]" id="user_email">
+                                <input class="form-control" readonly type="email" value="{{Auth::user()->email}}" name="email" id="user_email">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -720,7 +721,7 @@ p{margin-bottom:0px!important;}
 	                                <h1 for="user_url" style="text-align: center;">
 	                                    Profil du père
 	                                </h1>
-                                <hr>                                
+                                <hr>
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
@@ -982,13 +983,13 @@ $(document).ready(function(){
   <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
-      
+
       autoPlaceholder: "polite",
-      
+
        hiddenInput: "mobile_tel",
-      
+
        nationalMode: true,
-      
+
        preferredCountries: ["ci", "fr"],
        separateDialCode: true,
       utilsScript: "/plugin/build/js/utils.js",

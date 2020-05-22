@@ -74,4 +74,26 @@ class User extends Authenticatable
     public function isAdmin()    {
     return $this->type === self::ADMIN_TYPE;
     }
+
+
+    /**
+     * [users description]
+     * relationship many to many with Meetup model
+     * @return [array] [description]
+     */
+     public function meetups()
+     {
+         return $this->belongsToMany('App\Meetup');
+     }
+
+
+     /**
+      * [users description]
+      * relationship one to many with Meetup model
+      * @return [array] [description]
+      */
+      public function meetupOne()
+      {
+          return $this->hasMany('App\Meetup');
+      }
 }
