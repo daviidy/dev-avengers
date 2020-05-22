@@ -142,8 +142,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">Projets <span class="sr-only">(cette page)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Evenements <span class="sr-only">(cette page)</span></a>
+
+                <li class="nav-item dropdown">
+                    <a style="width: 125px;" class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
+                        Evenements
+                    </a>
+                    <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                        <a class="dropdown-item" href="{{route('meetups.create')}}"><span>Créer un événement</span></a>
+                        <a class="dropdown-item" href="{{route('meetups.index')}}"><span>Liste des événements</span></a>
+
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/">Nouvelles <span class="sr-only">(cette page)</span></a>
@@ -327,7 +335,7 @@
                         <a class="dropdown-item" href="#"><span>Créer un projet</span></a>
                         <a class="dropdown-item" href="#"><span>Créer un événement</span></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="profile.html"><span>Profil</span></a>
+                        <a class="dropdown-item" href="/home"><span>Profil</span></a>
                         <a class="dropdown-item" href="{{route('users.edit', Auth::user())}}"><span>Paramètres</span></a>
                         <a class="dropdown-item" href="#">Need help?</a>
                         <div class="dropdown-divider"></div>
