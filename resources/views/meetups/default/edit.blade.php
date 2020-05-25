@@ -426,17 +426,6 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 @keyframes fade-in-right{from{opacity:0;transform:translate(95%, -50%);}to{opacity:1;transform:translate(110%, -50%);}}
 </style>
 
-<!-- ==============================================
- Site Branding Section
- =============================================== -->
-<div class="site-branding">
-    <div class="container">
-        <h1 class="site-title"><a> Créer un événement </a></h1>
-    </div>
-    <!-- /container -->
-</div>
-<!-- .site-branding -->
-
 
 <div class="eds-layout__body" data-spec="eds-layout__body">
     <div>
