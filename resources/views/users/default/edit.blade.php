@@ -577,7 +577,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de naissance
                                 </label>
-                                <input class="form-control" placeholder="Pays de naissance" type="text" name="user[url]"  id="country">
+                                <input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -617,7 +617,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville de naissance
                                 </label>
-                                <input class="form-control" placeholder="Ville de naissance" type="text" name="user[url]" id="city" autocomplete="on" >
+                                <input class="form-control" placeholder="Ville de naissance" type="text" value="{{Auth::user()->birth_city}}" name="birth_city" id="city" autocomplete="on" >
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -627,7 +627,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville
                                 </label>
-                                <input class="form-control" placeholder="Ville" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Ville" type="text" name="town" id="user_url" value="{{Auth::user()->town}}">
 
 
 
@@ -639,7 +639,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de résidence
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence" type="text" name="user[url]" id="country_2">
+                                <input class="form-control" placeholder="Pays de résidence" type="text" name="living_country" id="country_2" value="{{Auth::user()->living_country}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -649,7 +649,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville de résidence
                                 </label>
-                                <input class="form-control" placeholder="Ville de résidence" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Ville de résidence" type="text" name="living_city" id="user_url" value="{{Auth::user()->living_city}}">
 
 
 
@@ -661,7 +661,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Etat de résidence
                                 </label>
-                                <input class="form-control" placeholder="Etat de résidence" type="text" name="user[url]" >
+                                <input class="form-control" placeholder="Etat de résidence" type="text" name="living_state"  value="{{Auth::user()->living_state}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -671,7 +671,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Code Postal
                                 </label>
-                                <input class="form-control" placeholder="Code Postal" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Code Postal" type="text" name="zip_code" id="user_url" value="{{Auth::user()->zip_code}}">
 
 
 
@@ -683,7 +683,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Situation matrimonial
                                 </label>
-                                <input class="form-control" placeholder="Situation matrimonial" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Situation matrimonial" type="text" name="marital_status" id="user_url" value="{{Auth::user()->marital_status}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -693,7 +693,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nombre d'enfant
                                 </label>
-                                <input class="form-control" placeholder="Nombre d'enfant" type="number" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nombre d'enfant" type="number" name="children_number" id="user_url" value="{{Auth::user()->children_number}}">
 
 
 
@@ -705,7 +705,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Numéro de téléphone
                                 </label>
-                                <input class="form-control" placeholder="Numéro de téléphone" type="text" name="user[url]" id="phone">
+                                <input class="form-control" placeholder="Numéro de téléphone" type="text" name="mobile_tel" id="phone" value="{{Auth::user()->mobile_tel}}">
 
 
 
@@ -731,7 +731,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nom du père
                                 </label>
-                                <input class="form-control" placeholder="Nom du père" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nom du père" type="text" name="father_traditional_first_name" id="user_url" value="{{Auth::user()->father_traditional_first_name}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -741,7 +741,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Prénoms du père
                                 </label>
-                                <input class="form-control" placeholder="Prénoms du père" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Prénoms du père" type="text" name="father_last_name" id="user_url" value="{{Auth::user()->father_last_name}}">
 
 
 
@@ -753,7 +753,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Autre noms du père
                                 </label>
-                                <input class="form-control" placeholder="Autre noms du père" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Autre noms du père" type="text" name="father_other_name" id="user_url" value="{{Auth::user()->father_other_name}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -763,7 +763,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de résidence du père
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence du père" type="text" name="user[url]" id="country_4">
+                                <input class="form-control" placeholder="Pays de résidence du père" type="text" name="father_birth_country" id="country_4" value="{{Auth::user()->father_birth_country}}">
 
 
 
@@ -775,7 +775,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville de résidence du père
                                 </label>
-                                <input class="form-control" placeholder="Ville de résidence du père" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Ville de résidence du père" type="text" name="father_town" id="user_url" value="{{Auth::user()->father_town}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -785,7 +785,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nombre d'enfant du père
                                 </label>
-                                <input class="form-control" placeholder="Nombre d'enfant du père" type="number" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nombre d'enfant du père" type="number" name="father_children_number" id="user_url" value="{{Auth::user()->father_children_number}}">
 
 
 
@@ -814,7 +814,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nom de la mère
                                 </label>
-                                <input class="form-control" placeholder="Nom de la mère" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nom de la mère" type="text" name="mother_traditional_first_name" id="user_url" value="{{Auth::user()->mother_traditional_first_name}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -824,7 +824,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Prénoms de la mère
                                 </label>
-                                <input class="form-control" placeholder="Prénoms de la mère" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Prénoms de la mère" type="text" name="mother_last_name" id="user_url" value="{{Auth::user()->mother_last_name}}">
 
 
 
@@ -836,7 +836,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Autre noms de la mère
                                 </label>
-                                <input class="form-control" placeholder="Autre noms de la mère" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Autre noms de la mère" type="text" name="mother_other_name" id="user_url" value="{{Auth::user()->mother_other_name}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -846,7 +846,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de résidence de la mère
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="user[url]" id="country_5">
+                                <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="mother_birth_country" id="country_5" value="{{Auth::user()->mother_birth_country}}">
 
 
 
@@ -858,7 +858,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville de résidence de la mère
                                 </label>
-                                <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="mother_birth_city" id="user_url" value="{{Auth::user()->mother_birth_city}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -868,7 +868,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Nombre d'enfant de la mère
                                 </label>
-                                <input class="form-control" placeholder="Nombre d'enfant de la mère" type="number" name="user[url]" id="user_url">
+                                <input class="form-control" placeholder="Nombre d'enfant de la mère" type="number" name="mother_children_number" id="user_url" value="{{Auth::user()->mother_children_number}}">
 
 
 

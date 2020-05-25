@@ -66,6 +66,15 @@ div,fieldset,form,h1,input,p{margin:0;padding:0;}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover{background-color:#f8f7fa;background-color:var(--eds-ui-100,#f8f7fa);border:1px solid #dbdae3;border:1px solid var(--eds-ui-300,#dbdae3);cursor:not-allowed;}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate .eds-checkbox__background,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover .eds-checkbox__background{background-color:#f8f7fa;background-color:var(--eds-ui-100,#f8f7fa);}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate .eds-checkbox__checkmark i path,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover .eds-checkbox__checkmark i path{stroke:#a9a8b3!important;stroke:var(--eds-ui-500,#a9a8b3)!important;}
+body{
+	background-color: #ececec8f!important;
+	/*background-image: url(/assets/main_theme/medium/img/event.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+
+}
+
+.form-1{display: none;}
 .eds-checkbox__input:disabled~.eds-checkbox__label{color:#a9a8b3;color:var(--eds-ui-500,#a9a8b3);cursor:not-allowed;}
 body .eds-text-color--grey-700{color:#4b4d63;}
 body .eds-text-color--grey-800{color:#39364f;}
@@ -167,7 +176,7 @@ body .eds-text-color--grey-900{color:#1e0a3c;}
 }
 .eds-field-styled__internal .eds-label__content{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .eds-field-styled__internal:hover .eds-label-primary{color:#6f7287;color:var(--eds-ui-600,#6f7287);}
-:root .eds-field-styled__internal .eds-field-styled__input{height:22px;}
+:root .eds-field-styled__internal .eds-field-styled__input{}
 .eds-field-styled__aside{color:#a9a8b3;color:var(--eds-ui-500,#a9a8b3);font-size:14px;height:24px;margin:auto 0;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
 .eds-field-styled__aside-prefix{margin-left:12px;}
 .eds-field-styled__annotation,.eds-field-styled__input,.eds-field-styled__input-container{-webkit-box-flex:1;flex:1;-ms-flex:1 1 0%;min-width:0;}
@@ -190,9 +199,9 @@ body .eds-text-color--grey-900{color:#1e0a3c;}
 .eds-field-styled--basic .eds-field-styled__internal .eds-field-styled__input{font-size:14px;}
 }
 .eds-field-styled--basic .eds-field-styled__internal .eds-field-styled__select-value{padding-top:12px;}
-.eds-field-styled--error .eds-field-styled__border-simulation,.eds-field-styled--error .eds-field-styled__border-simulation:hover{background:#c5162e;background:var(--eds-error,#c5162e);padding:1px;}
+.eds-field-styled--error .eds-field-styled__border-simulation,.eds-field-styled--error .eds-field-styled__border-simulation:hover{/*background:#c5162e;background:var(--eds-error,#c5162e);padding:1px;*/}
 .eds-field-styled--error .eds-field-styled__annotation{color:#c5162e;color:var(--eds-error-text,#c5162e);}
-.eds-field-styled--error .eds-field-styled__internal .eds-label-primary{color:#c5162e;color:var(--eds-error-text,#c5162e);}
+.eds-field-styled--error .eds-field-styled__internal .eds-label-primary{color:#000!important;color:var(--eds-error-text,#c5162e);}
 .eds-field-styled__select-wrapper{width:100%;height:46px;position:relative;}
 .eds-field-styled__select-value{color:#39364f;color:var(--eds-ui-800,#39364f);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;line-height:22px;padding:18px 12px 4px 14px;}
 .eds-field-styled__select-value-text{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
@@ -282,7 +291,7 @@ body .eds-text-color--grey-900{color:#1e0a3c;}
 .eds-l-lw-pad-left-2{padding-left:8px;}
 .eds-l-lw-pad-right-2{padding-right:8px;}
 }
-.eds-l-mar-bot-2{margin-bottom:8px;}
+.eds-l-mar-bot-2{margin-bottom:8px; display: inline-flex;}
 .eds-l-mar-right-4{margin-right:16px;}
 .eds-l-mar-top-4{margin-top:16px;}
 .eds-l-mar-bot-4{margin-bottom:16px;}
@@ -291,7 +300,12 @@ body .eds-text-color--grey-900{color:#1e0a3c;}
 .eds-l-mar-top-6{margin-top:24px;}
 .eds-l-mar-bot-8{margin-bottom:32px;}
 .eds-l-mar-top-10{margin-top:40px;}
-.eds-l-mar-bot-12{margin-bottom:48px;}
+.eds-l-mar-bot-12{margin-bottom:0px;}
+.box{
+	box-shadow: -2px 0px 4px 1px #e0e0e0;
+    padding: 20px;
+    border-radius: 15px;
+}
 body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-ui-200,var(--eds-ui-200,#eeedf2));}
 .eds-timepicker{position:relative;}
 .eds-text-bm,.eds-text-bs,.eds-text-hm{text-rendering:optimizeLegibility;}
@@ -413,7 +427,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 
 <div class="eds-layout__body" data-spec="eds-layout__body">
     <div>
-        <div class="eds-notification-bar--has-close eds-notification-bar eds-notification-bar--neutral" role="alert" data-spec="notification-bar">
+        <!--div class="eds-notification-bar--has-close eds-notification-bar eds-notification-bar--neutral" role="alert" data-spec="notification-bar">
             <div class="eds-notification-bar__icon"><i class="eds-vector-image eds-icon--small eds-vector-image--grey-700" data-spec="icon" aria-hidden="true"><svg viewBox="0 0 24 24">
                         <defs>
                             <path id="lock-fill_svg__a"
@@ -444,18 +458,18 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                       class="eds-btn--button eds-btn--none eds-btn--icon-only" type="button"><i class="eds-vector-image eds-icon--small eds-vector-image--grey-700 eds-vector-image--block" title="Fermer" data-spec="icon"><svg viewBox="0 0 24 24">
                                 <path d="M13.4 12l3.5-3.5-1.4-1.4-3.5 3.5-3.5-3.5-1.4 1.4 3.5 3.5-3.5 3.5 1.4 1.4 3.5-3.5 3.5 3.5 1.4-1.4z"></path>
                             </svg><span class="eds-is-hidden-accessible">Fermer</span></i></button></span></div>
-        </div>
+        </div-->
         <div class="eds-g-grid eds-l-pad-bot-12 eds-l-pad-top-5 eds-l-mar-top-5 eds-l-mar-bot-12">
             <form>
                 <div class="eds-g-group eds-l-mar-bot-8">
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true"><svg
+                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" style="display: none;"><svg
                               viewBox="0 0 24 24">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2v3h1V3h5v10H6v1h5v-1H9V3h5v2h1V2H2z"></path>
                                 <g fill-rule="evenodd" clip-rule="evenodd">
                                     <path d="M15 9h7v1h-7zM15 13h7v1h-7zM6 17h16v1H6zM6 21h16v1H6z"></path>
                                 </g>
                             </svg></i></div>
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-12-12 eds-g-cell-sw-10-12 eds-g-cell-lw-9-12 eds-g-cell-lg-8-12 eds-g-cell-ln-8-12 eds-g-cell-md-8-12 eds-g-offset-sw-1-12 eds-g-offset-md-0-12 eds-g-cell--has-overflow">
+                    <div class="eds-g-cell eds-vertical-group eds-g-cell-12-12 eds-g-cell-sw-10-12 eds-g-cell-lw-9-12 eds-g-cell-lg-8-12 eds-g-cell-ln-8-12 eds-g-cell-md-8-12 eds-g-offset-sw-1-12 eds-g-offset-md-0-12 eds-g-cell--has-overflow box">
                         <div>
                             <h1 class="eds-text-hm eds-text-color--grey-900">Infos de base</h1>
                             <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-lw-9-12 eds-g-cell-lg-9-12 eds-g-cell-ln-9-12 eds-g-cell-mw-9-12 eds-g-cell-md-1-1 eds-g-cell-mn-9-12 eds-g-cell-sw-9-12">
@@ -469,19 +483,21 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                         <div class="eds-field-styled__input-container">
                                             <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
                                                   data-spec="label-label"><span class="eds-label__content">Nom de l'événement</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
-                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div><input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
-                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="title" role="textbox" type="text" value="" placeholder="Soyez clair et précis.">
+                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
+                                                          <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
+                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="name" role="textbox" type="text" value="" placeholder="Soyez clair et précis.">
                                         </div>
                                     </div>
+                                    <input type="hidden" name="user_id">
                                 </div>
-                                <div class="eds-field__sub">
+                                <!--div class="eds-field__sub">
                                     <div class="eds-field__sub--left">
                                         <aside class="eds-field-styled__annotation eds-text-bs eds-fx--fade-in eds-l-pad-top-1" data-automation="eds-field-annotation" role="alert">Le titre est obligatoire.</aside>
                                     </div>
                                     <div class="eds-field__sub--right">
                                         <aside class="eds-field-styled__character-counter eds-text-bs eds-fx--fade-in eds-l-pad-top-1">0/75</aside>
                                     </div>
-                                </div>
+                                </div-->
                             </div>
                             <fieldset>
                                 <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-mn-4-12 eds-l-mn-pad-right-2 eds-l-md-pad-right-2 eds-l-mw-pad-right-2 eds-l-ln-pad-right-2 eds-l-lg-pad-right-2 eds-l-lw-pad-right-2">
@@ -494,8 +510,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                     <div class="eds-field-styled__select-wrapper"><span class="eds-field-styled__select-value"><span class="eds-field-styled__select-value-text">Type</span><span class="eds-field-styled__select-icon"><i
                                                                   class="eds-vector-image eds-icon--small" data-spec="icon" aria-hidden="true"><svg viewBox="0 0 24 24">
                                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10.2l5 5 5-5-1.4-1.4-3.6 3.6-3.6-3.6z"></path>
-                                                                    </svg></i></span></span><select aria-invalid="false" class="eds-field-styled__input eds-field-styled__select" data-automation="coyote-basicinfo-event-type" role="listbox"
-                                                          name="eventType">
+                                                                    </svg></i></span></span>
+                                                                    <select aria-invalid="false" class="eds-field-styled__input eds-field-styled__select" data-automation="coyote-basicinfo-event-type" role="listbox" name="type">
                                                             <option value="" data-spec="select-option">Type</option>
                                                             <option value="17" data-spec="select-option">Attraction</option>
                                                             <option value="100" data-spec="select-option">Autre</option>
@@ -523,6 +539,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                         </div>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="event-topic-subtopic eds-g-cell eds-g-cell-1-1 eds-g-cell-mn-8-12">
                                     <div
                                       class="eds-g-cell eds-g-cell-1-1 eds-g-cell-mn-1-2 eds-l-mn-pad-right-2 eds-l-md-pad-right-2 eds-l-mw-pad-right-2 eds-l-ln-pad-right-2 eds-l-lg-pad-right-2 eds-l-lw-pad-right-2 eds-l-mn-pad-left-2 eds-l-md-pad-left-2 eds-l-mw-pad-left-2 eds-l-ln-pad-left-2 eds-l-lg-pad-left-2 eds-l-lw-pad-left-2">
@@ -599,7 +616,9 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                         </div>
                                     </div>
                                 </div>
+                            -->
                             </fieldset>
+                            <!--
                             <div class="tagging-form-field__container">
                                 <div class="tagging-form-field__tags-input eds-l-mar-bot-4">
                                     <div class="eds-g-cell eds-g-cell-8-12 eds-l-pad-right-2">
@@ -647,6 +666,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     </aside>
                                 </div>
                             </div>
+                        -->
+                        <!--
                             <div>
                                 <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="input-field-wrapper" data-spec="input-field">
                                     <div class="eds-field-styled__border-simulation">
@@ -669,9 +690,10 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                         </div>
                     </div>
                 </div>
+            -->
                 <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
                 <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true"><svg
+                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1" style="display: none;"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" ><svg
                               viewBox="0 0 24 24">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M20 3c-1.1 0-2 .9-2 2H2v16h17.8c1.1 0 2.1-.9 2.1-2V5c.1-1.1-.8-2-1.9-2zm-.2 17H3V6h15v13h1c0-.6.4-1 1-1 .5 0 .9.4 1 .9-.1.6-.6 1.1-1.2 1.1zm1.2-2.7c-.3-.2-.6-.3-1-.3s-.7.1-1 .3V5c0-.6.4-1 1-1s1 .4 1 1v12.3z">
@@ -690,16 +712,33 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 <div class="eds-g-group">
                                     <div data-spec="coyote-basicinfo-location-event-picker" class="eds-g-cell eds-g-cell-1-1 eds-g-cell-md-8-12 eds-g-cell--has-overflow">
                                         <div class="radio-selector eds-l-mar-bot-5" role="radiogroup" data-spec="radio-selector">
-                                            <div class="radio-selector-label-wrap eds-l-mar-right-4" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900"
-                                                  for="segmented-venueType-0">Lieu<input type="radio" id="segmented-venueType-0" name="venueType" data-automation="segmented-venueType-0" data-spec="radio-selector-input" aria-checked="false" value=""
-                                                      checked=""></label></div>
-                                            <div class="radio-selector-label-wrap eds-l-mar-right-4" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900"
-                                                  for="segmented-venueType-1">Événement en ligne<input type="radio" id="segmented-venueType-1" name="venueType" data-automation="segmented-venueType-1" data-spec="radio-selector-input"
-                                                      aria-checked="false" value="online"></label></div>
-                                            <div class="radio-selector-label-wrap" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm radio-selector-label--checked"
+                                            <div class="radio-selector-label-wrap eds-l-mar-right-4 segmented" data-spec="radio-selector-item-padding">
+                                            	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900"
+                                                  for="segmented-venueType-0">Lieu
+                                                </label>
+                                                <input type="text" id="segmented-venueType-0" name="venueType" data-automation="segmented-venueType-0" data-spec="radio-selector-input" aria-checked="false" value=""
+                                                      checked="">
+                                            </div>
+
+                                            <div class="radio-selector-label-wrap eds-l-mar-right-4" data-spec="radio-selector-item-padding">
+                                            	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900 segmented-venueType-1"
+                                                  for="segmented-venueType-1">Événement en ligne
+                                                  </label>
+                                                  <input style="display: block;" type="text" id="segmented-venueType-1" name="venueType" data-automation="segmented-venueType-1" data-spec="radio-selector-input"
+                                                      aria-checked="false" value="online">
+                                              </div>
+                                            <!--div class="radio-selector-label-wrap" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm radio-selector-label--checked"
                                                   for="segmented-venueType-2">À venir<input type="radio" id="segmented-venueType-2" name="venueType" data-automation="segmented-venueType-2" data-spec="radio-selector-input" aria-checked="true"
-                                                      value="tba"></label></div>
+                                                      value="tba"></label></div-->
                                         </div>
+                                    </div>
+                                    <div class="form-group">
+	                                    <div style="display: none;" id="form-1">
+	                                       <input type="text" class="form-control" id="uname" placeholder="Adresse du lieu" name="" required>
+	                                    </div>
+	                                    <div class="form-2" id="form-2">
+	                                       <input type="url" class="form-control" id="uname1" placeholder="Lien du lieu" name="" required>
+	                                    </div>
                                     </div>
                                 </div>
                             </div><input type="hidden" value="0">
@@ -708,7 +747,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                 </div>
                 <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
                 <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true"><svg
+                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1" style="display: none;"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true"><svg
                               viewBox="0 0 24 24">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 4V2h-1v2H8V2H7v2H2v18h20V4h-5zm4 17H3V9h18v12zM3 8V5h4v1h1V5h8v1h1V5h4v3H3z"></path>
                                 <g fill-rule="evenodd" clip-rule="evenodd">
@@ -722,6 +761,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 <p class="eds-text-bm eds-text-color--grey-800"><span>Indiquez aux participants potentiels quand votre événement commence et se termine pour qu'ils puissent planifier au mieux leur venue.</span></p>
                             </div>
                         </div>
+                        <!--
                         <div class="eds-g-group eds-l-mar-top-5">
                             <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-md-1-2 eds-g-cell--has-overflow">
                                 <div class="radio-selector eds-l-mar-bot-5" role="radiogroup" data-spec="radio-selector">
@@ -734,6 +774,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
+                    -->
                         <p class="eds-text-bm">Les événements uniques ont lieu une seule fois et peuvent s'étendre sur plusieurs jours</p>
                         <div data-spec="event-date-time-pair">
                             <div class="eds-g-grid eds-l-mar-top-5 eds-l-mar-bot-2">
@@ -747,16 +788,21 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                                     <path d="M16.9 6.5v-2h-2v2h-6v-2h-2v2h-2v13h14v-13h-2zm0 11h-10v-7h10v7z"></path>
                                                                 </svg></i></span>
                                                         <div class="eds-field-styled__input-container">
-                                                            <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-startDate-label" for="event-startDate"
-                                                                  data-spec="label-label"><span class="eds-label__content">Début de l'événement</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span>
-                                                                            *</span><span class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div><input data-spec="input-field-input-element" aria-invalid="false" aria-required="true"
-                                                              class="eds-field-styled__input" id="event-startDate" name="event-startDate" role="textbox" type="text" value="30/06/2020">
+                                                            <div class="eds-field-styled__label-wrapper">
+                                                            	<label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-startDate-label" for="event-startDate"
+                                                                  data-spec="label-label">
+                                                                  <span class="eds-label__content">Début de l'événement</span>
+                                                              </label>
+                                                          </div>
+                                                          <input data-spec="input-field-input-element" aria-invalid="false" aria-required="true"
+                                                              class="eds-field-styled__input" id="event-startDate" name="begin_date" role="textbox" type="datetime-local" value="">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--
                                     <div class="eds-g-cell eds-g-cell--has-overflow eds-l-pad-right-2 eds-g-cell-12-12 eds-g-cell-sm-6-12">
                                         <div class="eds-timepicker">
                                             <div tabindex="-1">
@@ -779,6 +825,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             </div>
                                         </div>
                                     </div>
+                                -->
                                 </div>
                             </div>
                             <div class="eds-g-grid eds-l-mar-bot-2">
@@ -792,16 +839,21 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                                     <path d="M16.9 6.5v-2h-2v2h-6v-2h-2v2h-2v13h14v-13h-2zm0 11h-10v-7h10v7z"></path>
                                                                 </svg></i></span>
                                                         <div class="eds-field-styled__input-container">
-                                                            <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-endDate-label" for="event-endDate"
-                                                                  data-spec="label-label"><span class="eds-label__content">Fin de l'événement</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span>
-                                                                            *</span><span class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div><input data-spec="input-field-input-element" aria-invalid="false" aria-required="true"
-                                                              class="eds-field-styled__input" id="event-endDate" name="event-endDate" role="textbox" type="text" value="30/06/2020">
+                                                            <div class="eds-field-styled__label-wrapper">
+                                                            	<label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-endDate-label" for="event-endDate"
+                                                                  data-spec="label-label">
+                                                                  <span class="eds-label__content">Fin de l'événement</span>
+                                                              </label>
+                                                          </div>
+                                                          <input data-spec="input-field-input-element" aria-invalid="false" aria-required="true"
+                                                              class="eds-field-styled__input" id="event-endDate" name="end_date" role="textbox" type="datetime-local" value="">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--
                                     <div class="eds-g-cell eds-g-cell--has-overflow eds-l-pad-right-2 eds-g-cell-12-12 eds-g-cell-sm-6-12">
                                         <div class="eds-timepicker">
                                             <div tabindex="-1">
@@ -824,9 +876,11 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             </div>
                                         </div>
                                     </div>
+                                -->
                                 </div>
                             </div>
                         </div>
+                        <!-- 
                         <div>
                             <div class="eds-expansion-panel" data-spec="expansion-panel-button-wrapper">
                                 <div class="eds-btn-toggle eds-btn-toggle--is-pressed" data-spec="eds-btn-toggle"><button class="eds-btn--button eds-btn--none" type="button">
@@ -839,6 +893,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                             </div>
                             <div class="eds-expansion-panel__content" data-spec="expansion-panel-content">
                                 <div class="eds-l-mar-top-4" data-spec="advanced-settings__content">
+                                	
                                     <div class="eds-l-mar-bot-5">
                                         <div class="eds-text--left"><label class="eds-field-styled__label eds-is-hidden-accessible" for="displayStartDateTime" data-spec="label-label"><span class="eds-label__content">Afficher l'heure de
                                                     début.</span></label></div>
@@ -875,6 +930,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                     </span></label></div>
                                         </div>
                                     </div>
+                                
                                     <div class="eds-l-mar-top-6">
                                         <div class="eds-g-group">
                                             <div class="eds-g-cell eds-g-cell-12-12 eds-g-cell-sw-6-12">
@@ -1327,15 +1383,26 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
+                    -->
                     </div>
                 </div>
                 <div class="below-the-fold-indicator eds-l-pad-all-2 eds-bg-color--grey-800 below-the-fold-indicator--moved-up" data-spec="below-the-fold"><i class="eds-vector-image eds-icon--small eds-vector-image--white" data-spec="icon"
                       aria-hidden="true"><svg class="arrow-down_svg__eds-icon--down-arrow_svg" viewBox="0 0 24 24">
                             <path class="arrow-down_svg__eds-icon--down-arrow_base" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12 20l.2-.2 5.8-5.6-.7-.8-4.8 4.7V4h-1v14.1l-4.8-4.7-.7.7z"></path>
                         </svg></i></div>
+                        <button type="submit" class="btn btn-primary">Validez</button>
             </form>
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('.segmented').click(function() {
+    		$("#segmented-venueType-0").show();
+  		});
+	}
+</script>
 
 @endsection
