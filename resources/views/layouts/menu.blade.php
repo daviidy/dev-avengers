@@ -31,6 +31,8 @@
     <link type="text/css" href="/assets/main_theme/medium/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link type="text/css" href="/assets/main_theme/medium/css/app.css" rel="stylesheet" />
 
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
     <!-- ==============================================
 		Feauture Detection
 		=============================================== -->
@@ -445,6 +447,49 @@
         document.getElementById('year').innerHTML = annee;
     </script>
 
+
+    <!--quill js-->
+
+    <!-- Include the Quill library -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script src="/js/quill/image-resize.min.js"></script>
+  <script src="/js/quill/video-resize.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Initialize Quill editor -->
+  <script>
+  //sauvegarde des données du quill editor
+
+  //initialisation de l'editeur
+  var options = {
+  modules: {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['size', 'bold', 'italic', 'underline'],
+      ['image', 'code-block', 'video', 'blockquote', 'code', 'align', 'link'],
+      ['color'],
+      [{ list: 'ordered' }, { list: 'bullet' }]
+  ],
+  imageResize: {
+       modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
+   },
+   videoResize: {
+          modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
+      },
+   syntax: true,
+  },
+  placeholder: 'Ecrivez ici...',
+  theme: 'snow'  // or 'bubble'
+  };
+  var quill = new Quill('#site-description', options);
+  var quill2 = new Quill('#course-description', options);
+  var quillFreePlan = new Quill('#editor-pricing', options);
+  var quillSuscriptionPlan = new Quill('#editor-susplan', options);
+  var quillOnePlan = new Quill('#editor-oneplan', options);
+  var quillAbonnementPlan = new Quill('#editor-abplan', options);
+
+
     @if(session('status'))
       <!-- The Modal -->
       <div class="modal fade" id="myModal">
@@ -473,6 +518,7 @@
         });
     </script>
     @endif
+
 
 </body>
 
