@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Meetup extends Model
+class Project extends Model
 {
     /**
      * [protected description]
@@ -13,11 +13,12 @@ class Meetup extends Model
     protected $fillable = ['name',
                            'user_id',
                            'type',
-                           'place',
+                           'sector',
                            'begin_date',
                            'end_date',
-                           'image',
-                           'details'
+                           'description',
+                           'details',
+                           'price'
                          ];
 
 
@@ -42,6 +43,4 @@ class Meetup extends Model
          {
              return $this->belongsToMany('App\User');
          }
-
-
 }
