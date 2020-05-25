@@ -17,7 +17,8 @@ class Meetup extends Model
                            'begin_date',
                            'end_date',
                            'image',
-                           'details'
+                           'details',
+                           'link',
                          ];
 
 

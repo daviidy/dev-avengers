@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Meetup;
 use Auth;
 use App\User;
+use Image;
 use Illuminate\Http\Request;
 
 class MeetupController extends Controller
@@ -17,7 +18,7 @@ class MeetupController extends Controller
     public function index()
     {
         if (Auth::check()) {
-            $meetups = Meetup::orderby('id', 'asc')->paginate(30);
+            $meetups = Meetup::orderby('begin_date', 'asc')->paginate(30);
             return view('meetups.default.index', ['meetups' => $meetups]);
         }
         else {
@@ -49,6 +50,13 @@ class MeetupController extends Controller
     public function store(Request $request)
     {
         $meetup = Meetup::create($request->all());
+        if ($request->hasFile('image') ) {
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(storage_path('app/public/images/meetups/'.$filename));
+            $meetup->image = $filename;
+            $meetup->save();
+        }
         return redirect('meetups')->with('status', 'Votre événement a été crée avec succès');
     }
 
@@ -84,6 +92,13 @@ class MeetupController extends Controller
     public function update(Request $request, Meetup $meetup)
     {
         $meetup->update($request->all());
+        if ($request->hasFile('image') ) {
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->save(storage_path('app/public/images/meetups/'.$filename));
+            $meetup->image = $filename;
+            $meetup->save();
+        }
         return redirect()->back()->with('status', 'Votre événement a été modifié avec succès');
     }
 
