@@ -66,7 +66,7 @@ class ProjectController extends Controller
                 $filename = $file->getClientOriginalName();
                 $media = Multimedia::create([
                     'name' => $filename,
-                    'recording_id' => $recording->id,
+                    'project_id' => $project->id,
                 ]);
                 $file->move(storage_path('app/public/files/projects'), $filename);
               }
@@ -84,7 +84,7 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        return view('projects.default.show', ['meetup' => $project]);
+        return view('projects.default.show', ['project' => $project]);
     }
 
     /**
@@ -95,7 +95,7 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        return view('projects.default.edit', ['meetup' => $project]);
+        return view('projects.default.edit', ['project' => $project]);
     }
 
     /**
@@ -122,7 +122,7 @@ class ProjectController extends Controller
                 $filename = $file->getClientOriginalName();
                 $media = Multimedia::create([
                     'name' => $filename,
-                    'recording_id' => $recording->id,
+                    'project_id' => $project->id,
                 ]);
                 $file->move(storage_path('app/public/files/projects'), $filename);
               }

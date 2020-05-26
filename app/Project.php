@@ -16,7 +16,6 @@ class Project extends Model
                            'sector',
                            'begin_date',
                            'end_date',
-                           'description',
                            'details',
                            'price'
                          ];
@@ -43,4 +42,14 @@ class Project extends Model
          {
              return $this->belongsToMany('App\User');
          }
+
+         /**
+          * [users description]
+          * relationship one to many with Multimedia model
+          * @return [array] [description]
+          */
+          public function multimedias()
+          {
+              return $this->hasMany('App\Multimedia');
+          }
 }

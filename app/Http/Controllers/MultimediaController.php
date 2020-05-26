@@ -80,6 +80,7 @@ class MultimediaController extends Controller
      */
     public function destroy(Multimedia $multimedia)
     {
-        //
+        $multimedia->delete();
+        return redirect('multimedias')->with('status', 'Votre fichier a été supprimé avec succès');
     }
 }

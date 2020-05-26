@@ -62,6 +62,9 @@
   <!--fin highlight js-->
 
 
+  <!--file input-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.1/js/fileinput.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.1/css/fileinput.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -149,8 +152,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">Métiers <span class="sr-only">(cette page)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Projets <span class="sr-only">(cette page)</span></a>
+                <li class="nav-item dropdown">
+                    <a style="width: 90px;" class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
+                        Projets
+                    </a>
+                    <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                        <a class="dropdown-item" href="{{route('projects.create')}}"><span>Créer un projet</span></a>
+                        <a class="dropdown-item" href="{{route('projects.index')}}"><span>Liste des projets</span></a>
+
+                    </div>
                 </li>
 
                 <li class="nav-item dropdown">
