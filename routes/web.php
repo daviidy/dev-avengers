@@ -22,6 +22,7 @@ Auth::routes();
 Route::resource('users', 'UserController');
 Route::resource('meetups', 'MeetupController');
 Route::resource('projects', 'ProjectController');
+Route::resource('multimedias', 'MultimediaController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

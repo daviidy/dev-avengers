@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', $meetup->name)
+@section('title', $project->name)
 
 @section('content')
 
