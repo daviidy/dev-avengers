@@ -8,7 +8,7 @@
 aside{display:block;}
 a{background-color:transparent;}
 a:active,a:hover{outline:0;}
-h1{font-size:2em;margin:.67em 0;}
+h1{font-size:2em;margin:.67em 0;color: #007808;}
 svg:not(:root){overflow:hidden;}
 hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;}
 button,input,select{color:inherit;font:inherit;margin:0;}
@@ -66,12 +66,25 @@ div,fieldset,form,h1,input,p{margin:0;padding:0;}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover{background-color:#f8f7fa;background-color:var(--eds-ui-100,#f8f7fa);border:1px solid #dbdae3;border:1px solid var(--eds-ui-300,#dbdae3);cursor:not-allowed;}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate .eds-checkbox__background,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover .eds-checkbox__background{background-color:#f8f7fa;background-color:var(--eds-ui-100,#f8f7fa);}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate .eds-checkbox__checkmark i path,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover .eds-checkbox__checkmark i path{stroke:#a9a8b3!important;stroke:var(--eds-ui-500,#a9a8b3)!important;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 body{
+	font-family: 'Montserrat', sans-serif !important;
 	background-color: #ececec8f!important;
 	/*background-image: url(/assets/main_theme/medium/img/event.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;*/
 
+}
+
+.btn-primary{
+	background-color: #D86000 !important;
+	border-color: #D86000!important;
+}
+.btn-primary:hover{
+	background-color: #fff!important;
+	color: #000!important;
+	border-color: 
+	border: 3px solid #D86000!important;
 }
 
 .form-1{display: none;}
@@ -80,7 +93,7 @@ body{
 body .eds-text-color--grey-700{color:#4b4d63;}
 body .eds-text-color--grey-800{color:#39364f;}
 body .eds-bg-color--grey-800{background-color:#39364f;}
-body .eds-text-color--grey-900{color:#1e0a3c;}
+body .eds-text-color--grey-900{color:#007808;}
 .eds-text-bm,.eds-text-bs,.eds-text-hm{text-rendering:optimizeLegibility;}
 .eds-text-bm{font-size:1rem;line-height:1.5rem;font-weight:400;}
 @media (min-width:960px){
@@ -881,12 +894,12 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
-                       
+                       <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true" style="margin-bottom: 15px;">
                         <div>
-                        	<h1 class="eds-text-hm eds-text-color--grey-900">Image de l'evernement</h1>
+                        	<h1 class="eds-text-hm eds-text-color--grey-900">Image de l'événement</h1>
                         	
                         	<div>
-                        		<input type="image" src="/assets/main_theme/medium/img/blog/6.jpg"  width="100" height="100"> 
+                        		<input type="file" > 
                         	</div>
                             
                             <div class="eds-expansion-panel__content" data-spec="expansion-panel-content">
