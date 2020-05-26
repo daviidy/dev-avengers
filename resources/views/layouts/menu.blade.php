@@ -52,7 +52,15 @@
     <script src="/assets/main_theme/medium/js/modernizr-custom.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    
+
+    <!--highlight js-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/atom-one-dark.min.css">
+  <!--fin highlight js-->
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -326,7 +334,13 @@
 
                 <li class="nav-item dropdown mega-avatar">
                     <a class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
-                        <span class="avatar w-32"><img src="https://comman-ya.oschoolelearning.com/images/users/default/image.jpg" class="w-full rounded" width="25" height="25" alt="..."></span>
+                        <span class="avatar w-32">
+                            @if(Auth::user()->image == 'image.jpg')
+                            <img src="https://comman-ya.oschoolelearning.com/images/users/default/image.jpg" class="w-full rounded" width="25" height="25" alt="...">
+                            @else
+                            <img src="/storage/images/users/{{Auth::user()->image}}" class="w-full rounded" width="25" height="25" alt="...">
+                            @endif
+                        </span>
                         <i class="mini"></i>
                         <!-- hidden-xs hides the username on small devices so only the image appears. -->
                         <span class="hidden-xs">
@@ -395,7 +409,7 @@
      =============================================== -->
     <footer class="bottom-footer">
         <div class="container">
-            <p>©<span id="year">2017</span> Medium.com</p>
+            <p>©<span id="year">2017</span> Univoire</p>
 
             <ul id="menu-footer-menu">
                 <li>
@@ -448,77 +462,38 @@
     </script>
 
 
-    <!--quill js-->
 
-    <!-- Include the Quill library -->
-  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-  <script src="/js/quill/image-resize.min.js"></script>
-  <script src="/js/quill/video-resize.min.js"></script>
+{{--
+@if(session('status'))
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-  <!-- Initialize Quill editor -->
-  <script>
-  //sauvegarde des données du quill editor
-
-  //initialisation de l'editeur
-  var options = {
-  modules: {
-    toolbar: [
-      [{ header: [1, 2, false] }],
-      ['size', 'bold', 'italic', 'underline'],
-      ['image', 'code-block', 'video', 'blockquote', 'code', 'align', 'link'],
-      ['color'],
-      [{ list: 'ordered' }, { list: 'bullet' }]
-  ],
-  imageResize: {
-       modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
-   },
-   videoResize: {
-          modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
-      },
-   syntax: true,
-  },
-  placeholder: 'Ecrivez ici...',
-  theme: 'snow'  // or 'bubble'
-  };
-  var quill = new Quill('#site-description', options);
-  var quill2 = new Quill('#course-description', options);
-  var quillFreePlan = new Quill('#editor-pricing', options);
-  var quillSuscriptionPlan = new Quill('#editor-susplan', options);
-  var quillOnePlan = new Quill('#editor-oneplan', options);
-  var quillAbonnementPlan = new Quill('#editor-abplan', options);
-
-
-    @if(session('status'))
-      <!-- The Modal -->
-      <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-
-            <!-- Modal body -->
-            <div class="modal-body">
-              {{session('status')}}
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button style="background: #FC0254"; type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-            </div>
-
-          </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          {{session('status')}}
         </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button style="background: #FC0254"; type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+        </div>
+
       </div>
+    </div>
+  </div>
 
-      <script type="text/javascript">
-        $(window).on('load',function(){
-            $('#myModal').modal({
-              show: true
-          });
-        });
-    </script>
-    @endif
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal({
+          show: true
+      });
+    });
+</script>
+@endif
 
+--}}
 
 </body>
 

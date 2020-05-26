@@ -439,6 +439,17 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 @keyframes fade-in-right{from{opacity:0;transform:translate(95%, -50%);}to{opacity:1;transform:translate(110%, -50%);}}
 </style>
 
+<!-- ==============================================
+ Site Branding Section
+ =============================================== -->
+<div class="site-branding">
+    <div class="container">
+        <h1 class="site-title"><a> Créer un événement </a></h1>
+    </div>
+    <!-- /container -->
+</div>
+<!-- .site-branding -->
+
 
 <div class="eds-layout__body" data-spec="eds-layout__body">
     <div>
@@ -475,7 +486,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                             </svg><span class="eds-is-hidden-accessible">Fermer</span></i></button></span></div>
         </div-->
         <div class="eds-g-grid eds-l-pad-bot-12 eds-l-pad-top-5 eds-l-mar-top-5 eds-l-mar-bot-12">
-            <form>
+            <form id="information-container" enctype="multipart/form-data" method="post" action="{{route('meetups.store')}}">
+                @csrf
                 <div class="eds-g-group eds-l-mar-bot-8">
                     <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" style="display: none;"><svg
                               viewBox="0 0 24 24">
@@ -503,8 +515,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                               data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="name" role="textbox" type="text" value="" placeholder="Soyez clair et précis.">
                                         </div>
                                     </div>
-                                    <input type="hidden" name="user_id">
                                 </div>
+
                                 <!--div class="eds-field__sub">
                                     <div class="eds-field__sub--left">
                                         <aside class="eds-field-styled__annotation eds-text-bs eds-fx--fade-in eds-l-pad-top-1" data-automation="eds-field-annotation" role="alert">Le titre est obligatoire.</aside>
@@ -514,125 +526,32 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     </div>
                                 </div-->
                             </div>
-                            <fieldset>
-                                <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-mn-4-12 eds-l-mn-pad-right-2 eds-l-md-pad-right-2 eds-l-mw-pad-right-2 eds-l-ln-pad-right-2 eds-l-lg-pad-right-2 eds-l-lw-pad-right-2">
-                                    <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--basic" data-automation="coyote-basicinfo-event-type-wrapper" data-spec="coyote-basicinfo-event-type">
-                                        <div class="eds-field-styled__border-simulation">
-                                            <div class="eds-field-styled__internal">
-                                                <div class="eds-field-styled__input-container">
-                                                    <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-is-hidden-accessible" id="undefined-label" data-spec="label-label"><span
-                                                              class="eds-label__content">Type</span></label></div>
-                                                    <div class="eds-field-styled__select-wrapper"><span class="eds-field-styled__select-value"><span class="eds-field-styled__select-value-text">Type</span><span class="eds-field-styled__select-icon"><i
-                                                                  class="eds-vector-image eds-icon--small" data-spec="icon" aria-hidden="true"><svg viewBox="0 0 24 24">
-                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10.2l5 5 5-5-1.4-1.4-3.6 3.6-3.6-3.6z"></path>
-                                                                    </svg></i></span></span>
-                                                                    <select aria-invalid="false" class="eds-field-styled__input eds-field-styled__select" data-automation="coyote-basicinfo-event-type" role="listbox" name="type">
-                                                            <option value="" data-spec="select-option">Type</option>
-                                                            <option value="17" data-spec="select-option">Attraction</option>
-                                                            <option value="100" data-spec="select-option">Autre</option>
-                                                            <option value="18" data-spec="select-option">Camp, voyage ou retraite</option>
-                                                            <option value="6" data-spec="select-option">Concert ou spectacle</option>
-                                                            <option value="1" data-spec="select-option">Conférence</option>
-                                                            <option value="4" data-spec="select-option">Convention</option>
-                                                            <option value="15" data-spec="select-option">Course ou compétition d'endurance</option>
-                                                            <option value="8" data-spec="select-option">Dîner ou gala</option>
-                                                            <option value="5" data-spec="select-option">Festival ou foire</option>
-                                                            <option value="9" data-spec="select-option">Formation, cours ou atelier</option>
-                                                            <option value="14" data-spec="select-option">Jeu ou compétition</option>
-                                                            <option value="7" data-spec="select-option">Projection</option>
-                                                            <option value="12" data-spec="select-option">Rally</option>
-                                                            <option value="10" data-spec="select-option">Rencontre ou événement social</option>
-                                                            <option value="3" data-spec="select-option">Salon professionnel, grand public ou exposition</option>
-                                                            <option value="11" data-spec="select-option">Soirée ou activité sociale</option>
-                                                            <option value="19" data-spec="select-option">Séance de dédicaces</option>
-                                                            <option value="2" data-spec="select-option">Séminaire ou entretien</option>
-                                                            <option value="13" data-spec="select-option">Tournoi</option>
-                                                            <option value="16" data-spec="select-option">Visite</option>
-                                                        </select></div>
-                                                </div>
-                                            </div>
+
+                            <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
+                                <div class="eds-field-styled__border-simulation">
+                                    <div class="eds-field-styled__internal">
+                                        <div class="eds-field-styled__input-container">
+                                            <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
+                                                  data-spec="label-label"><span class="eds-label__content">Type</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
+                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
+                                                        <select class="eds-field-styled__input" name="type" role="listbox">
+                                                            <option value="Conférence">Conférence</option>
+                                                            <option value="Formation">Formation</option>
+                                                        </select>
                                         </div>
                                     </div>
                                 </div>
-                                <!--
-                                <div class="event-topic-subtopic eds-g-cell eds-g-cell-1-1 eds-g-cell-mn-8-12">
-                                    <div
-                                      class="eds-g-cell eds-g-cell-1-1 eds-g-cell-mn-1-2 eds-l-mn-pad-right-2 eds-l-md-pad-right-2 eds-l-mw-pad-right-2 eds-l-ln-pad-right-2 eds-l-lg-pad-right-2 eds-l-lw-pad-right-2 eds-l-mn-pad-left-2 eds-l-md-pad-left-2 eds-l-mw-pad-left-2 eds-l-ln-pad-left-2 eds-l-lg-pad-left-2 eds-l-lw-pad-left-2">
-                                        <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--basic" data-automation="select-field-wrapper" data-spec="event-topic">
-                                            <div class="eds-field-styled__border-simulation">
-                                                <div class="eds-field-styled__internal">
-                                                    <div class="eds-field-styled__input-container">
-                                                        <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-is-hidden-accessible" id="undefined-label" data-spec="label-label"><span
-                                                                  class="eds-label__content">Catégorie</span></label></div>
-                                                        <div class="eds-field-styled__select-wrapper"><span class="eds-field-styled__select-value"><span class="eds-field-styled__select-value-text">Religion et spiritualité</span><span
-                                                                  class="eds-field-styled__select-icon"><i class="eds-vector-image eds-icon--small" data-spec="icon" aria-hidden="true"><svg viewBox="0 0 24 24">
-                                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10.2l5 5 5-5-1.4-1.4-3.6 3.6-3.6-3.6z"></path>
-                                                                        </svg></i></span></span><select aria-invalid="false" class="eds-field-styled__input eds-field-styled__select" role="listbox" name="eventTopic">
-                                                                <option value="" data-spec="select-option">Catégorie</option>
-                                                                <option value="120" data-spec="select-option">Activités scolaires</option>
-                                                                <option value="105" data-spec="select-option">Arts du spectacle et de la scène</option>
-                                                                <option value="118" data-spec="select-option">Automobiles, bateaux et avions</option>
-                                                                <option value="199" data-spec="select-option">Autre</option>
-                                                                <option value="103" data-spec="select-option">Concerts et spectacles</option>
-                                                                <option value="115" data-spec="select-option">Famille et éducation</option>
-                                                                <option value="104" data-spec="select-option">Films et divertissement</option>
-                                                                <option value="116" data-spec="select-option">Fête et événement saisonnier</option>
-                                                                <option value="110" data-spec="select-option">Gastronomie</option>
-                                                                <option value="117" data-spec="select-option">Maison et mode de vie</option>
-                                                                <option value="106" data-spec="select-option">Mode et beauté</option>
-                                                                <option value="119" data-spec="select-option">Passions et loisirs</option>
-                                                                <option value="112" data-spec="select-option">Politique et gouvernement</option>
-                                                                <option value="114" data-spec="select-option">Religion et spiritualité</option>
-                                                                <option value="107" data-spec="select-option">Santé et bien-être</option>
-                                                                <option value="102" data-spec="select-option">Sciences et technologies</option>
-                                                                <option value="108" data-spec="select-option">Sports et fitness</option>
-                                                                <option value="109" data-spec="select-option">Voyages et activités de plein air</option>
-                                                                <option value="113" data-spec="select-option">Événement communautaire et culturel</option>
-                                                                <option value="101" data-spec="select-option">Événements professionnels</option>
-                                                                <option value="111" data-spec="select-option">Œuvres de bienfaisance</option>
-                                                            </select></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <input type="hidden" name="user_id" value="{{Auth::user()->id}}">
+                                <!--div class="eds-field__sub">
+                                    <div class="eds-field__sub--left">
+                                        <aside class="eds-field-styled__annotation eds-text-bs eds-fx--fade-in eds-l-pad-top-1" data-automation="eds-field-annotation" role="alert">Le titre est obligatoire.</aside>
                                     </div>
-                                    <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-mn-1-2 eds-l-mn-pad-left-2 eds-l-md-pad-left-2 eds-l-mw-pad-left-2 eds-l-ln-pad-left-2 eds-l-lg-pad-left-2 eds-l-lw-pad-left-2">
-                                        <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--basic" data-automation="select-field-wrapper" data-spec="event-sub-topic">
-                                            <div class="eds-field-styled__border-simulation">
-                                                <div class="eds-field-styled__internal">
-                                                    <div class="eds-field-styled__input-container">
-                                                        <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-is-hidden-accessible" id="undefined-label" data-spec="label-label"><span
-                                                                  class="eds-label__content">Sub-catégorie</span></label></div>
-                                                        <div class="eds-field-styled__select-wrapper"><span class="eds-field-styled__select-value"><span class="eds-field-styled__select-value-text">Sub-catégorie</span><span
-                                                                  class="eds-field-styled__select-icon"><i class="eds-vector-image eds-icon--small" data-spec="icon" aria-hidden="true"><svg viewBox="0 0 24 24">
-                                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10.2l5 5 5-5-1.4-1.4-3.6 3.6-3.6-3.6z"></path>
-                                                                        </svg></i></span></span><select aria-invalid="false" class="eds-field-styled__input eds-field-styled__select" role="listbox" name="eventSubTopic">
-                                                                <option value="" data-spec="select-option">Sub-catégorie</option>
-                                                                <option value="14011" data-spec="select-option">Agnosticism</option>
-                                                                <option value="14010" data-spec="select-option">Atheism</option>
-                                                                <option value="14099" data-spec="select-option">Autre</option>
-                                                                <option value="14005" data-spec="select-option">Buddisme</option>
-                                                                <option value="14001" data-spec="select-option">Christianisme</option>
-                                                                <option value="14014" data-spec="select-option">Folk Religions</option>
-                                                                <option value="14013" data-spec="select-option">Hinduism</option>
-                                                                <option value="14003" data-spec="select-option">Islam</option>
-                                                                <option value="14002" data-spec="select-option">Judaïsme</option>
-                                                                <option value="14004" data-spec="select-option">Mormonisme</option>
-                                                                <option value="14008" data-spec="select-option">Mysticisme et sciences occultes</option>
-                                                                <option value="14009" data-spec="select-option">New Age</option>
-                                                                <option value="14007" data-spec="select-option">Religions d'Orient</option>
-                                                                <option value="14015" data-spec="select-option">Shintoism</option>
-                                                                <option value="14006" data-spec="select-option">Sikhisme</option>
-                                                                <option value="14012" data-spec="select-option">Unaffiliated</option>
-                                                            </select></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="eds-field__sub--right">
+                                        <aside class="eds-field-styled__character-counter eds-text-bs eds-fx--fade-in eds-l-pad-top-1">0/75</aside>
                                     </div>
-                                </div>
-                            -->
-                            </fieldset>
+                                </div-->
+                            </div>
+
                             <!--
                             <div class="tagging-form-field__container">
                                 <div class="tagging-form-field__tags-input eds-l-mar-bot-4">
@@ -748,10 +667,10 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     </div>
                                     <div class="form-group">
 	                                    <div class="form-1" id="form-1">
-	                                       <input type="text" class="form-control" id="uname" placeholder="Adresse du lieu" name="place" required>
+	                                       <input type="text" class="form-control" id="uname" placeholder="Adresse du lieu" name="place">
 	                                    </div>
 	                                    <div class="form-2" id="form-2">
-	                                       <input type="url" class="form-control" id="uname1" placeholder="Lien du lieu" name="place" required>
+	                                       <input type="url" class="form-control" id="uname1" placeholder="Lien du lieu" name="link">
 	                                    </div>
                                     </div>
                                 </div>
@@ -894,31 +813,34 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
+
                        <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true" style="margin-bottom: 15px;">
+                        
                         <div>
                         	<h1 class="eds-text-hm eds-text-color--grey-900">Image de l'événement</h1>
-                        	
+
                         	<div>
-                        		<input type="file" > 
+                        		<input name="image" type="file" width="100" height="100">
+
                         	</div>
-                            
+
                             <div class="eds-expansion-panel__content" data-spec="expansion-panel-content">
                                 <div class="eds-l-mar-top-4" data-spec="advanced-settings__content">
-                                	
-                                    
-                                    
+
+
+
                                     <div class="eds-l-mar-top-6">
                                         <div class="eds-g-group">
                                             <div class="eds-g-cell eds-g-cell-12-12 eds-g-cell-sw-6-12 quill-0">
                                                 <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="select-field-wrapper" data-spec="select-field" style="display: block;">
                                                     <div class="eds-field-styled__border-simulation">
                                                         <div class="eds-field-styled__internal">
-                                                        	
+
                                                             <div class="eds-field-styled__input-container">
-                                                                
+
                                                                 <div class="eds-field-styled__select-wrapper">
-                                                                	<input type="hidden" name="reponses" value="">
-                                    									<div class="" id="editorFaq" style="height: 200px;">
+                                                                	<input type="hidden" name="details" value="">
+                                    									<div class="" id="editorDetails" style="height: 200px;">
 
                                     									</div>
                                                                 </div>
@@ -933,33 +855,46 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
-                 
+
                     </div>
                 </div>
                 <div class="below-the-fold-indicator eds-l-pad-all-2 eds-bg-color--grey-800 below-the-fold-indicator--moved-up" data-spec="below-the-fold"><i class="eds-vector-image eds-icon--small eds-vector-image--white" data-spec="icon"
                       aria-hidden="true"><svg class="arrow-down_svg__eds-icon--down-arrow_svg" viewBox="0 0 24 24">
                             <path class="arrow-down_svg__eds-icon--down-arrow_base" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12 20l.2-.2 5.8-5.6-.7-.8-4.8 4.7V4h-1v14.1l-4.8-4.7-.7.7z"></path>
                         </svg></i></div>
-                        <button type="submit" class="btn btn-primary">Validez</button>
+                        <button type="submit" class="btn btn-primary">Valider</button>
             </form>
         </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="/js/quill/image-resize.min.js"></script>
+<script src="/js/quill/video-resize.min.js"></script>
 
 
         <script>
-            var quillComment = new Quill('#editorFaq', {
-            modules: {
-                toolbar: [
-                ['bold', 'italic'],
-                ['link','align'],
-                ]
+        var options = {
+        modules: {
+          toolbar: [
+            [{ header: [1, 2, false] }],
+            ['size', 'bold', 'italic', 'underline'],
+            ['image','video', 'blockquote', 'align', 'link'],
+            ['color'],
+            [{ list: 'ordered' }, { list: 'bullet' }]
+        ],
+        imageResize: {
+             modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
+         },
+         videoResize: {
+                modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
             },
-            placeholder: 'Ajouter votre commentaire...',
-            theme: 'snow'
-            });
+         syntax: true,
+        },
+        placeholder: 'Ecrivez ici...',
+        theme: 'snow'  // or 'bubble'
+        };
+        var quill = new Quill('#editorDetails', options);
 
             //a la sumissio  du formulmaire ob recupêre
             //le contenu de la div qui a le texte riche
@@ -967,8 +902,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
             var form = document.getElementById('information-container');
             form.onsubmit = function() {
               // Populate hidden form on submit
-              var text = document.querySelector('input[name=reponses]');
-              text.value = quillComment.root.innerHTML;
+              var text = document.querySelector('input[name=details]');
+              text.value = quill.root.innerHTML;
 
             //   console.log("Submitted", $(form).serialize(), $(form).serializeArray());
 
@@ -978,8 +913,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
             };
           </script>
 <script>
-	
-		
+
+
   		$('.segmented label').click(function() {
   			$('.form-1').toggle('slow');
   			$('.form-2').hide();

@@ -454,6 +454,9 @@ p{margin-bottom:0px!important;}
 
 @include('includes.user_header')
 
+@if(session('status'))
+@include('includes.status')
+@endif
 
 <section class="form_style_sec " >
     <div class="row form_style">
@@ -604,7 +607,7 @@ p{margin-bottom:0px!important;}
 							        <option>Woroba</option>
 							        <option>Zanzan</option>
 							        <option>Yamoussoukro</option>
-							        
+
 							      </select>
 
 
