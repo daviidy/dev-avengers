@@ -181,10 +181,10 @@ p{margin-bottom:0px!important;}
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#">
-                                        @if($meetup->image !== 'image.jpg')
+                                        @if($meetup->user->image !== 'image.jpg')
                                             <img class="media-object rounded-circle" src="/storage/images/users/{{$meetup->user->image}}" alt="">
                                         @else
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
+                                            <img class="media-object rounded-circle" src="https://comman-ya.oschoolelearning.com/images/users/default/image.jpg" alt="">
                                         @endif
                                         </a>
                                     </div>
@@ -233,7 +233,7 @@ p{margin-bottom:0px!important;}
                                             </div>
                                         </div>
                                     </div><!-- row -->
-                                  
+
                                     <div class="row">
                                         <div class="col-sm-6 del">
                                             <div class="info-group ">
@@ -257,7 +257,7 @@ p{margin-bottom:0px!important;}
                                         </div>
                                         --}}
                                     </div><!-- row -->
-                                   
+
                                 </div><!-- panel-info -->
                             </div><!-- card-block -->
                         </div><!-- card -->
@@ -273,11 +273,11 @@ p{margin-bottom:0px!important;}
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#">
-                                        @if($meetup->image !== 'image.jpg')
-                                            <img class="media-object rounded-circle" src="/storage/images/users/{{$meetup->user->image}}" alt="">
-                                        @else
-                                            <img class="media-object rounded-circle" src="https://oschoolelearning.com/images/courses/logos/1580161319.png" alt="">
-                                        @endif
+                                            @if($meetup->user->image !== 'image.jpg')
+                                                <img class="media-object rounded-circle" src="/storage/images/users/{{$meetup->user->image}}" alt="">
+                                            @else
+                                                <img class="media-object rounded-circle" src="https://comman-ya.oschoolelearning.com/images/users/default/image.jpg" alt="">
+                                            @endif
                                         </a>
                                     </div>
                                     <div class="media-body">

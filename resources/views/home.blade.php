@@ -699,7 +699,9 @@ p{margin-bottom:0px!important;}
     </div>
 </div>
 
+{{--
 @include('includes.project_event');
+--}}
 
 
 @endsection

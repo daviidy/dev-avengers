@@ -17,7 +17,8 @@ class Project extends Model
                            'begin_date',
                            'end_date',
                            'details',
-                           'price'
+                           'price',
+                           'number_place'
                          ];
 
 
