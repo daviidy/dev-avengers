@@ -519,22 +519,29 @@ address{display:inline;font-style:normal;}
                 <div class="pageHead">
                     <div class="flex flex--column atMedium_flex--row flex--alignBottom pageHead-pageTitle">
                         <div class="flex-item flex-item--2 pageHead--titleArea">
-                            <p class="pageHead-pageTitleLabel text--medium text--secondary"><time class="eventStatusLabel" datetime="1590512400000"><span>mardi 26 mai 2020</span></time></p>
-                            <h1 class="pageHead-headline text--pageTitle">WEBINAR : Learn how to query databases with SQL</h1>
+                            <p class="pageHead-pageTitleLabel text--medium text--secondary"><time class="eventStatusLabel" datetime="1590512400000"><span>{{ Carbon\Carbon::parse($meetup->begin_date)->format('d-m-Y H:i') }} au {{ Carbon\Carbon::parse($meetup->end_date)->format('d-m-Y H:i') }}</span></time></p>
+                            <h1 class="pageHead-headline text--pageTitle">{{ucfirst($meetup->name)}}</h1>
                             <div class="flex flex--row flex--alignCenter event-host-info">
                                 <div class="flex-item flex-item--shrink"><a class="avatar avatar--person" role="img" aria-label="Lamiaa" href="/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/"
-                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/d/1/2/thumb_298203346.jpeg&quot;);"><span class="visibility--a11yHide">Lamiaa</span><img class="avatar-print"
-                                          src="https://secure.meetupstatic.com/photos/member/d/1/2/thumb_298203346.jpeg" alt="Lamiaa"></a></div>
-                                <div class="flex-item event-info-hosts-text valign--middle"><a href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/"><span><span class="">Hosted by <br> <span
-                                                  class="text--bold event-hosts-info-no-link">Lamiaa</span></span></span></a></div>
+                                      style="background-image: url(&quot;/storage/images/users/{{$meetup->user->image}}&quot;);"><span class="visibility--a11yHide">{{$meetup->user->name}}</span>
+									  <img class="avatar-print"
+                                          src="/storage/images/users/{{$meetup->user->image}}" alt="{{$meetup->user->name}}"></a></div>
+                                <div class="flex-item event-info-hosts-text valign--middle">
+                                    <a href="#">
+                                        <span>
+                                            <span class="">Hôte de l'événement <br>
+                                                <span
+                                                  class="text--bold event-hosts-info-no-link">
+                                                  {{$meetup->user->name}}
+                                              </span>
+                                              </span>
+                                          </span>
+                                      </a>
+                                  </div>
                             </div>
                         </div>
                         <div class="flex-item flex-item--shrink pageHead-pageActions"><button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
-                              data-e2e="event-header--share-btn"><svg data-swarm-icon="true" height="18" width="18" viewBox="0 0 18 18" class="padding--right-quarter">
-                                    <path
-                                      d="M8 3.415L6.707 4.707a1 1 0 01-1.414-1.414l3.003-3a1 1 0 011.414 0l2.997 3a1 1 0 11-1.414 1.414L10 3.413V9a1 1 0 11-2 0V3.415zM13.5 9a1 1 0 010-2H15a1 1 0 011 1v7.5a1 1 0 01-1 1H3a1 1 0 01-1-.989l-.085-7.5a1 1 0 011-1.011H4.55a1 1 0 110 2h-.624l.063 5.5H14V9h-.5z">
-                                    </path>
-                                </svg><span>Partager</span></button></div>
+                              data-e2e="event-header--share-btn"><span>Participer</span></button></div>
                     </div>
                 </div>
             </div>
@@ -545,23 +552,30 @@ address{display:inline;font-style:normal;}
             <div class="flex-item">
                 <div id="fixed"  class="sticky-ontheside">
                     <section  class="section eventSideBar">
-                        <div class="eventActionsMenu"></div><a class="event-group" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp">
+                        <div class="eventActionsMenu"></div>
+                        <a class="event-group" href="#">
                             <div class="chunk event-group-chunk">
                                 <div class="card card--initialHeight atLarge_card--flush card--flush event-group-card">
                                     <div>
                                         <div class="flex flex--row">
-                                            <div class="flex-item flex-item--shrink"><img class="event-group-photo" src="https://secure.meetupstatic.com/photos/event/9/e/6/3/highres_467620547.jpeg" alt="Le Wagon Paris - Coding Bootcamp"></div>
+                                            <div class="flex-item flex-item--shrink">
+                                                <img class="event-group-photo" src="/storage/images/meetups/{{$meetup->image}}" alt="{{$meetup->name}}"></div>
                                             <div class="flex-item event-group-content">
                                                 <div class="flex flex--column event-group-photoHeight">
-                                                    <div class="flex-item flex-item--shrink event-group-name"><span class="text--bold text--small display--inlineBlock">Le Wagon Paris - Coding Bootcamp</span></div>
-                                                    <div class="flex-item flex-item--shrink"><span class="groupPrivacyLabelTooltip text--secondary text--small">
-                                                            <div><span class="infoToggle-label"><span>Groupe public</span></span>
+                                                    <div class="flex-item flex-item--shrink event-group-name"><span class="text--bold text--small display--inlineBlock">{{$meetup->name}}</span></div>
+                                                    {{--
+                                                    <div class="flex-item flex-item--shrink">
+                                                        <span class="groupPrivacyLabelTooltip text--secondary text--small">
+                                                            <div>
+                                                                <span class="infoToggle-label"><span>Groupe public</span></span>
                                                                 <div class="popup">
                                                                     <div class="popup-trigger" aria-labelledby="privacy-info-tooltip"><button data-swarm-button="reset" data-swarm-size="default" data-icon="left" data-swarm-width="default"
                                                                           type="button"><span class="infoToggle-trigger align--center" role="img">?</span></button></div>
                                                                 </div>
                                                             </div>
-                                                        </span></div>
+                                                        </span>
+                                                    </div>
+                                                    --}}
                                                 </div>
                                             </div>
                                         </div>
@@ -578,15 +592,16 @@ address{display:inline;font-style:normal;}
                                             	<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24px" height="24px"><path d="M 7.5 1 C 3.917969 1 1 3.917969 1 7.5 C 1 11.082031 3.917969 14 7.5 14 C 11.082031 14 14 11.082031 14 7.5 C 14 3.917969 11.082031 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 4.457031 13 2 10.542969 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 7 3 L 7 8 L 10 8 L 10 7 L 8 7 L 8 3 Z"/ class="svg svg--clock svg-icon valign--middle"></svg>
                                             </span></div>
                                             <div class="flex-item">
-                                                <div class="eventTimeDisplay eventDateTime--hover"><time class="" datetime="1590512400000"><span class="eventTimeDisplay-startDate"><span>mardi 26 mai 2020</span><br><span
-                                                              class="eventTimeDisplay-startDate-time"><span>19:00</span></span></span><span class="eventTimeDisplay-endDate"> <span>à <span class="eventTimeDisplay-endDate-partialTime"><span>20:30
-                                                                        UTC+2</span></span></span></span></time>
+                                                <div class="eventTimeDisplay eventDateTime--hover"><time class="" datetime="1590512400000"><span class="eventTimeDisplay-startDate"><span>{{ Carbon\Carbon::parse($meetup->begin_date)->format('d-m-Y H:i') }}</span><br><span
+                                                              class="eventTimeDisplay-startDate-time"><span>au {{ Carbon\Carbon::parse($meetup->end_date)->format('d-m-Y H:i') }}</span></span></span></time>
                                                     <div>
+                                                        {{--
                                                         <div class="popup">
                                                             <div type="button" role="button" aria-label="open menu" aria-expanded="false" aria-haspopup="true" data-toggle="true" class="popup-trigger">
                                                                 <p class="link"><span>Ajouter à mon agenda</span></p>
                                                             </div>
                                                         </div>
+                                                        --}}
                                                     </div>
                                                 </div>
                                             </div>
@@ -598,14 +613,26 @@ address{display:inline;font-style:normal;}
                                             </span></div>
                                         <div class="flex-item valign--middle">
                                             <div class="chunk">
-                                                <p class="venueDisplay venueDisplay-venue-noVenue"><span>N'a pas encore de lieu</span></p>
+                                                <p class="venueDisplay venueDisplay-venue-noVenue">
+                                                    <span>
+                                                        @if($meetup->link !== null)
+                                                        Lien: {{$meetup->link}}
+                                                        @endif
+                                                        @if($meetup->place !== null)
+                                                        Lieu: {{$meetup->place}}
+                                                        @endif
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </section>
                             </div>
+                            {{--
                             <div class="event-report-wrapper margin--top align--center"><button data-swarm-button="reset" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button"
-                                  class="event-report-button text--small"><span>Signaler cet événement</span></button></div>
+                                  class="event-report-button text--small"><span>Signaler cet événement</span></button>
+                              </div>
+                              --}}
                         </div>
                     </section>
                 </div>
@@ -618,24 +645,15 @@ address{display:inline;font-style:normal;}
                                 <div class="photoCarousel--wrapper">
                                     <div class="photoCarousel margin--bottom padding--bottom">
                                         <div>
-                                            <div class="photoCarousel-photoContainer keepAspect--16-9" style="background-image: url(&quot;https://secure.meetupstatic.com/photos/event/6/a/9/c/highres_490287292.jpeg&quot;);"></div>
+                                            <div class="photoCarousel-photoContainer keepAspect--16-9" style="background-image: url(&quot;/storage/images/meetups/{{$meetup->image}}&quot;);"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <h2 class="text--sectionTitle text--bold padding--bottom"><span>Détails</span></h2>
                                 <div class="event-description runningText">
-                                    <p><span class="emoji-outer emoji-sizer"><span class="emoji-inner"
-                                              style="background: url(chrome-extension://immhpnclomdloikkpcefncmfgjbkojmh/emoji-data/sheet_apple_32.png);background-position:69.9764982373678% 46.00470035252644%;background-size:5418.75% 5418.75%"
-                                              data-codepoints="1f6a8"></span></span>En raison des mesures liées au confinement, cet atelier se déroulera à distance. Merci de vous inscrire par ici <span class="emoji-outer emoji-sizer"><span
-                                              class="emoji-inner"
-                                              style="background: url(chrome-extension://immhpnclomdloikkpcefncmfgjbkojmh/emoji-data/sheet_apple_32.png);background-position:28.025851938895418% 57.99059929494712%;background-size:5418.75% 5418.75%"
-                                              data-codepoints="1f449"></span></span><a class="link" href="https://lew.ag/sql-workshop" title="https://lew.ag/sql-workshop" target="__blank">https://lew.ag/sql-workshop</a><br><br>[WEBINAR EN ANGLAIS -
-                                        WEBINAR IN ENGLISH]<br><br>About this webinar<br><br>In a data-driven world discover SQL the standard language for relational database management. This workshop will cover most of the topics required for a
-                                        basic understanding of SQL. Use it to query a database and retrieve informations from it.<br><br>Format<br><br>This webinar will start with a 1-hour lecture to introduce the core concepts. You will then be
-                                        onboarded on Le Wagon e-learning platform and access the slides, a sum-up of key notions as well as exercices to keep practicing after the workshop.<br><br>Pre-requisite<br>No pre-requisite, this is a workshop
-                                        for beginners!<br><br>About Le Wagon<br><br>Through immersive coding bootcamps, Le Wagon teaches you the tech skills and product mindset you need to thrive. Our cutting-edge programs and world-class teachers
-                                        give you all the skills and tools needed to kick-start your tech career, upskill in your current job, or launch your own startup. Launched in 2014 in Paris, we are now running bootcamps in 38 cities of 22
-                                        countries all across the world.</p>
+                                    @if($meetup->details !== null)
+                                    {!!$meetup->details!!}
+                                    @endif
                                 </div>
                             </div>
                         </section>
@@ -643,9 +661,15 @@ address{display:inline;font-style:normal;}
                             <div class="attendees-sample">
                                 <div class="flex flex--row">
                                     <div class="flex-item">
-                                        <h3 class="attendees-sample-total text--sectionTitle text--bold padding--bottom"><span>Participants (25)</span></h3>
+                                        <h3 class="attendees-sample-total text--sectionTitle text--bold padding--bottom"><span>Participants ({{count($meetup->users)}})</span></h3>
                                     </div>
-                                    <div class="flex-item flex-item--shrink"><a class="attendees-sample-link link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/"><span>Voir tout</span></a></div>
+                                    {{--
+                                    <div class="flex-item flex-item--shrink">
+                                        <a class="attendees-sample-link link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/">
+                                            <span>Voir tout</span>
+                                        </a>
+                                    </div>
+                                    --}}
                                 </div>
                                 <div class="chunk">
                                     <p class="visibility--a11yHide"><span>Voir la liste des participants</span></p>
@@ -653,118 +677,24 @@ address{display:inline;font-style:normal;}
                                         <div class="hscroll atMedium_hscroll--unclip">
                                             <div class="hscroll-content">
                                                 <ul class="flex gridList gridList--autoHeight gridList--autoHeight--has4 _memberListing-module_gridList__3_lox flex--wrap">
+                                                    @if(count($meetup->users) > 0)
+                                                    @foreach($meetup->users as $user)
                                                     <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
                                                         <div class="gridList-itemInner">
                                                             <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/302310282/profile/"><span
                                                                       class="avatar avatar--large avatar--person" role="img" aria-label="Lamiaa"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/d/1/2/member_298203346.jpeg&quot;);"><span class="visibility--a11yHide">Lamiaa</span><img
-                                                                          class="avatar-print" src="https://secure.meetupstatic.com/photos/member/d/1/2/member_298203346.jpeg" alt="Lamiaa"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>Lamiaa</span></p>
+                                                                      style="background-image: url(&quot;/storage/images/users/{{$user->image}}&quot;);"><span class="visibility--a11yHide">Lamiaa</span><img
+                                                                          class="avatar-print" src="/storage/images/users/{{$user->image}}" alt="{{$user->name}}"></span>
+                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>{{$user->name}}</span></p>
                                                                     <div class="chunk groupMember-content">
                                                                         <p class="groupMember-role"><span
-                                                                              class="member-role member-role-type-coorganizer text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Co-organisateur</span></span></p>
+                                                                              class="member-role member-role-type-coorganizer text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span></p>
                                                                     </div>
                                                                 </a></div>
                                                         </div>
                                                     </li>
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/269632117/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="Simeon Lo"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/5/3/9/d/member_283161405.jpeg&quot;);"><span class="visibility--a11yHide">Simeon Lo</span><img
-                                                                          class="avatar-print" src="https://secure.meetupstatic.com/photos/member/5/3/9/d/member_283161405.jpeg" alt="Simeon Lo"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>Simeon<br>Lo</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span class="member-role member-role-type-member text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span>
-                                                                        </p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/301840760/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="Anne-Sophie Gommé"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/6/a/1/e/member_297087166.jpeg&quot;);"><span class="visibility--a11yHide">Anne-Sophie
-                                                                            Gommé</span><img class="avatar-print" src="https://secure.meetupstatic.com/photos/member/6/a/1/e/member_297087166.jpeg" alt="Anne-Sophie Gommé"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>Anne-Sophie<br>Gommé</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span class="member-role member-role-type-member text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span>
-                                                                        </p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/305360799/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="LÉVÈQUE Klara"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/c/d/2/member_298863282.jpeg&quot;);"><span class="visibility--a11yHide">LÉVÈQUE Klara</span><img
-                                                                          class="avatar-print" src="https://secure.meetupstatic.com/photos/member/c/d/2/member_298863282.jpeg" alt="LÉVÈQUE Klara"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>LÉVÈQUE<br>Klara</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span class="member-role member-role-type-member text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span>
-                                                                        </p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/302516363/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="kaid wafaa"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/7/5/7/f/member_298590079.jpeg&quot;);"><span class="visibility--a11yHide">kaid wafaa</span><img
-                                                                          class="avatar-print" src="https://secure.meetupstatic.com/photos/member/7/5/7/f/member_298590079.jpeg" alt="kaid wafaa"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>kaid<br>wafaa</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span class="member-role member-role-type-member text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span>
-                                                                        </p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/210763370/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="Victor B"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/5/5/b/8/member_268821944.jpeg&quot;);"><span class="visibility--a11yHide">Victor B</span><img
-                                                                          class="avatar-print" src="https://secure.meetupstatic.com/photos/member/5/5/b/8/member_268821944.jpeg" alt="Victor B"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>Victor<br>B</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span class="member-role member-role-type-member text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span>
-                                                                        </p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/306813774/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="Magali"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/b/2/e/2/member_298905794.jpeg&quot;);"><span class="visibility--a11yHide">Magali</span><img
-                                                                          class="avatar-print" src="https://secure.meetupstatic.com/photos/member/b/2/e/2/member_298905794.jpeg" alt="Magali"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>Magali</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span class="member-role member-role-type-member text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span>
-                                                                        </p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/35291472/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="José Barbosa"
-                                                                      style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/5/5/4/8/member_187581832.jpeg&quot;);"><span class="visibility--a11yHide">José Barbosa</span><img
-                                                                          class="avatar-print" src="https://secure.meetupstatic.com/photos/member/5/5/4/8/member_187581832.jpeg" alt="José Barbosa"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>José<br>Barbosa</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span class="member-role member-role-type-member text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span>
-                                                                        </p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
+                                                    @endforeach
+                                                    @endif
                                                 </ul>
                                             </div>
                                         </div>
@@ -776,12 +706,12 @@ address{display:inline;font-style:normal;}
                 </div>
                 <section class="section">
                     <div class="chunk">
-                        <div class="card card--initialHeight atLarge_card--flush card--flush seeAllMeetups padding--left padding--bottom border--none"><a href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/">
+                        <div class="card card--initialHeight atLarge_card--flush card--flush seeAllMeetups padding--left padding--bottom border--none"><a href="{{url('meetups')}}">
                                 <div class="flex flex--row">
-                                    <div class="flex-item flex-item--shrink valignChildren--center"><img class="event-group-photo" src="https://secure.meetupstatic.com/photos/event/9/e/6/3/highres_467620547.jpeg"
+                                    <div class="flex-item flex-item--shrink valignChildren--center"><img class="event-group-photo" src="/storage/images/users/{{$meetup->user->image}}"
                                           alt="Le Wagon Paris - Coding Bootcamp"></div>
                                     <div class="flex-item border--left valignChildren--center" align="left">
-                                        <p>Le Wagon Paris - Coding Bootcamp</p>
+                                        <p>{{$meetup->user->name}}</p>
                                         <p class="link"><span>Voir plus d'événements</span></p>
                                     </div>
                                     <div class="flex-item flex-item--shrink valignChildren--center"><span class="link"><svg preserveAspectRatio="xMinYMin meet" width="24" height="24" viewBox="0 0 24 24"
@@ -794,6 +724,7 @@ address{display:inline;font-style:normal;}
                 </section>
             </div>
         </div>
+        {{--
         <div class="relatedEvents padding--bottom"><span style="font-size: 0px;"></span>
             <div class="bounds bounds--wide margin--top">
                 <section class="section border--top">
@@ -991,14 +922,15 @@ address{display:inline;font-style:normal;}
                 </section>
             </div>
         </div>
+        --}}
     </div>
     <div class="_EventStickyFooter-module_footer__3fDH- stickyHeader sticky--bottom" style="">
         <div class="bounds bounds--wide">
             <div class="flex flex--row flex--spaceBetween flex--alignCenter _EventStickyFooter-module_footerContent__bOcM4" data-e2e="event-footer">
                 <div class="flex-item flex-item--shrink">
                     <div class="flex flex--column">
-                        <div class="flex-item" data-e2e="event-footer--date-time" data-e2e_timestamp="1590512400000"><span>mar. 26 mai</span> · <span>19:00 UTC+2</span></div>
-                        <div class="flex-item"><span class="text--bold">WEBINAR : Learn how to query databases with SQL</span></div>
+                        <div class="flex-item" data-e2e="event-footer--date-time" data-e2e_timestamp="1590512400000"><span>{{ Carbon\Carbon::parse($meetup->begin_date)->format('d-m-Y H:i') }} au {{ Carbon\Carbon::parse($meetup->end_date)->format('d-m-Y H:i') }}</span></div>
+                        <div class="flex-item"><span class="text--bold">{{ucfirst($meetup->name)}}</span></div>
                     </div>
                 </div>
                 <div class="flex-item flex-item--shrink">
@@ -1007,14 +939,23 @@ address{display:inline;font-style:normal;}
                             <div class="flex flex--row flex--alignCenter">
                                 <div class="flex-item flex-item--shrink">
                                     <div class="flex flex--column">
-                                        <div class="flex-item text--bold"><span data-e2e="event-footer--price-label"><span>GRATUIT</span></span></div>
-                                        <div class="flex-item"><span>175 places encore disponibles</span></div>
+                                        {{--
+                                        <div class="flex-item text--bold">
+                                            <span data-e2e="event-footer--price-label">
+                                                <span>GRATUIT</span>
+                                            </span>
+                                        </div>
+                                        --}}
+                                        <div class="flex-item">
+                                            <span>175 places encore disponibles</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="flex-item flex-item--shrink _EventStickyFooter-module_eventActions__1dOQN">
                             <div class="flex flex--row">
+                                {{--
                                 <div class="flex-item flex-item--shrink"><button data-swarm-button="neutral" data-swarm-size="large" data-icon="only" data-swarm-width="default" type="button" aria-label="Enregistrer l'événement"
                                       class="saveButton _saveEventButton-module_saveButton__2eemT saveButton--save _saveEventButton-module_newStyle__1WGCV gtmEventFooter--save-btn" data-e2e="event-footer--save-btn"><span><svg data-swarm-icon="true"
                                               height="24" width="24" viewBox="0 0 24 24">
@@ -1022,8 +963,16 @@ address{display:inline;font-style:normal;}
                                                   d="M5.458 22.004l1.25-7.284-5.293-5.16 7.314-1.062L12 1.87l3.271 6.628 7.314 1.063-5.292 5.159 1.249 7.284L12 18.564l-6.542 3.44zm1.328-1.828L12 17.436l5.214 2.74-.996-5.805 4.218-4.112-5.83-.847L12 4.13 9.393 9.412l-5.83.847 4.219 4.112-.996 5.805z">
                                                 </path>
                                             </svg></span></button></div>
-                                <div class="flex-item flex-item--shrink"><button data-swarm-button="primary" data-swarm-size="large" data-icon="left" data-swarm-width="default" type="button" data-e2e="event-footer--attend-btn"
-                                      class="gtmEventFooter--attend-btn"><span>Participer</span></button></div>
+                                            --}}
+                                <div class="flex-item flex-item--shrink">
+                                    <a href="/registerEvent">
+                                        <button data-swarm-button="primary" data-swarm-size="large" data-icon="left" data-swarm-width="default" type="button" data-e2e="event-footer--attend-btn"
+                                          class="gtmEventFooter--attend-btn">
+                                          <span>Participer</span>
+                                      </button>
+                                    </a>
+
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -1033,6 +982,7 @@ address{display:inline;font-style:normal;}
     </div>
 </main>
 
+<<<<<<< HEAD
 <!--script>
     $(function() {
             var offset = $(".sticky-ontheside").offset();
@@ -1112,5 +1062,7 @@ address{display:inline;font-style:normal;}
 
 </script>
 	
+=======
+>>>>>>> b8b959fcb606b494b94ff27d670b92e3055116e7
 
 @endsection
