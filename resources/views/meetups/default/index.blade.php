@@ -150,6 +150,9 @@ p{margin-bottom:0px!important;}
 .followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
 .nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
 .del{display: flex;}
+.del .fa{font-size:20px;}
+.del .fa-pencil-square-o{color: #007808}
+.del .fa-trash{color: #ff1100}
 </style>
 
 @if(session('status'))
@@ -205,7 +208,7 @@ p{margin-bottom:0px!important;}
 
                                 <div class="people-info">
                                     <div class="row">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             @if($meetup->link !== null)
                                             <div class="info-group">
                                                 <label>Lien</label>
@@ -220,36 +223,53 @@ p{margin-bottom:0px!important;}
                                             @endif
 
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="info-group">
                                                 <label>Email</label>
                                                 {{$meetup->user->email}}
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="info-group">
                                                 <label>Phone</label>
                                                 386-7521860
                                             </div>
                                         </div>
+                                        <div class="col-sm-3 del">
+                                            <div class="info-group ">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                        <!--button class="btn btn-success"> </button-->
+                                                </a>
+                                            </div>
+                                            <div class="info-group ">
+                                                <form action="">
+                                                    @csrf
+                                                    {{ method_field('delete') }}
+                                                    <i class="fa fa-trash"></i> 
+                                                </form>
+                                            </div>
+                                        </div>
+                                        
                                     </div><!-- row -->
-                                  
+                                   {{--
                                     <div class="row">
                                         <div class="col-sm-6 del">
                                             <div class="info-group ">
                                                 <a href="#">
-                                                    <button class="btn btn-success"><i class="fa fa-pencil-square-o"></i> Modifier</button>
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                    <!--button class="btn btn-success"> </button-->
                                                 </a>
                                             </div>
                                             <div class="info-group">
                                                 <form action="">
                                                     @csrf
                                                     {{ method_field('delete') }}
-                                                    <button class="btn btn-danger"><i class="fa fa-trash"></i> Supprimer</button>
+                                                    <button class="btn btn-danger"><i class="fa fa-trash"></i> </button>
                                                 </form>
                                             </div>
                                         </div>
-                                        {{--
+                                       
                                         <div class="col-sm-6">
                                             <div class="info-group">
                                                 <button class="btn btn-primary"></button>
@@ -325,24 +345,31 @@ p{margin-bottom:0px!important;}
                                             </div>
                                         </div>
                                     </div><!-- row -->
-                                    {{--
+                                 {{--
                                     <div class="row">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-6 del">
+                                            <div class="info-group ">
+                                                <a href="#">
+                                                    <button class="btn btn-success"><i class="fa fa-pencil-square-o"></i> Modifier</button>
+                                                </a>
+                                            </div>
                                             <div class="info-group">
-                                                <label>Followers</label>
-                                                <h4>1,348</h4>
+                                                <form action="">
+                                                    @csrf
+                                                    {{ method_field('delete') }}
+                                                    <button class="btn btn-danger"><i class="fa fa-trash"></i> Supprimer</button>
+                                                </form>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
+                                       
+                                        <div class="col-sm-6">
                                             <div class="info-group">
-                                                <label>Following</label>
-                                                <h4>232</h4>
+                                                <button class="btn btn-primary"></button>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                        </div>
+                                        --}}
                                     </div><!-- row -->
-                                    --}}
+                                
                                 </div><!-- panel-info -->
                             </div><!-- card-block -->
                         </div><!-- card -->
@@ -358,7 +385,5 @@ p{margin-bottom:0px!important;}
     </div>
     <!--/ container -->
 </section>
-
-
 
 @endsection

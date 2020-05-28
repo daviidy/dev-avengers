@@ -543,7 +543,7 @@ address{display:inline;font-style:normal;}
     <div class="bounds bounds--wide" id="eventHome--270355045">
         <div class="flex flex--column atLarge_flex--row atLarge_flex--rowReverse">
             <div class="flex-item">
-                <div id="fixed" class="sticky-ontheside">
+                <div id="fixed"  class="sticky-ontheside">
                     <section  class="section eventSideBar">
                         <div class="eventActionsMenu"></div><a class="event-group" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp">
                             <div class="chunk event-group-chunk">
@@ -1032,6 +1032,85 @@ address{display:inline;font-style:normal;}
         </div>
     </div>
 </main>
+
+<!--script>
+    $(function() {
+            var offset = $(".sticky-ontheside").offset();
+            var topPadding = 15;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $(".sticky-ontheside").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                }
+                 else {
+                    $(".sticky-ontheside").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+</script-->
+
+<script>
+	(function($) {
+    // var elementId = $('#follow_scroll')
+    // console.log($(window).width())
+    if($(window).width() < 700){
+    //     elementId.removeClass('follow-scroll')
+    console.log('petit ecrans ;p')
+    }else{
+    // else if((window).width() > 700)
+    // {
+        
+    var element = $('.sticky-ontheside'),
+        originalY = element.offset().top;
+    
+// Space between element and top of screen (when scrolling)
+    var topMargin = 100;
+// Should probably be set in CSS; but here just for emphasis
+    element.css('position', 'relative');
+    
+    $(window).on('scroll', function(event) {
+        var scrollTop = $(window).scrollTop();
+
+        //annalize of bottom space
+        var hT = $('#category-content').offset().top,
+        hH = $('#category-content').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+        if (wS > (300+hT+hH-wH)){
+            // stop scroll when we are over section
+
+            scrollTop = function(e){
+                e.preventDefault();
+                e.stopPropagation();
+            }
+          
+
+            // scrollTop = this.scrollTop()
+
+
+        //     console.log(hT+hH-wH-50)
+        // }else if(wS > (hT+hH+400-wH)){
+        //     scrollTop = function(e){
+        //         // e.preventDefault();
+        //         e.stopPropagation();
+        //     }
+        }
+
+
+        element.stop(false, false).animate({
+            top: scrollTop < originalY
+                    ? 0
+                    : scrollTop - originalY + topMargin
+        }, 210); // scroll duration
+    });
+}
+
+})(jQuery);
+
+</script>
 	
 
 @endsection
