@@ -10,7 +10,7 @@
                     <div class="media-body">
                         <h4 class="m-t-5 m-b-5 ellipsis">{{Auth::user()->name}}</h4>
                         <p class="font-13"> {{Auth::user()->job ? Auth::user()->job : 'Aucun métier renseigné'}}</p>
-                        <p class="text-muted m-b-0"><small>California, United States</small></p>
+                        <p class="text-muted m-b-0"><small>{{Auth::user()->job ? Auth::user()->living_city : 'Aucun lieu de résidence renseigné'}}</small></p>
                     </div><!-- /media-body -->
                 </div><!-- /col-sm-6 -->
                 <div class="col-sm-6">
