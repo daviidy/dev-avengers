@@ -815,9 +815,28 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                         </div>
 
                        <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true" style="margin-bottom: 15px;">
+
+                       <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
+	                       <div>
+	                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Nombre de places</h1>
+
+	                        	
+	                           <div class="eds-field-styled__border-simulation">
+	                                    <div class="eds-field-styled__internal">
+	                                        <div class="eds-field-styled__input-container">
+	                                            <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
+	                                                  data-spec="label-label"><span class="eds-label__content">Nombre de places</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
+	                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
+	                                                          <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
+	                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="place_number" role="textbox" type="number" value="" placeholder="25 04">
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                        </div>
+                        </div>
                         
                         <div>
-                        	<h1 class="eds-text-hm eds-text-color--grey-900">Image de l'événement</h1>
+                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'événement</h1>
 
                         	<div>
                         		<input name="image" type="file" width="100" height="100">
