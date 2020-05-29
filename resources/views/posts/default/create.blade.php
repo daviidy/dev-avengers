@@ -444,7 +444,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
  =============================================== -->
 <div class="site-branding">
     <div class="container">
-        <h1 class="site-title"><a> Créer une actualité </a></h1>
+        <h1 class="site-title"><a> Créer un article</a></h1>
     </div>
     <!-- /container -->
 </div>
@@ -500,7 +500,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                         <div>
                             <h1 class="eds-text-hm eds-text-color--grey-900">Infos de base</h1>
                             <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-lw-9-12 eds-g-cell-lg-9-12 eds-g-cell-ln-9-12 eds-g-cell-mw-9-12 eds-g-cell-md-1-1 eds-g-cell-mn-9-12 eds-g-cell-sw-9-12">
-                                <p class="eds-text-bm eds-text-color--grey-800"><span>Donnez un titre à votre actualité .</span></p>
+                                <p class="eds-text-bm eds-text-color--grey-800"><span>Donnez un titre à votre article .</span></p>
                             </div>
                         </div>
                         <div class="eds-l-mar-top-5">
@@ -836,14 +836,14 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                         </div -->
                         
                         <div>
-                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'actualité</h1>
+                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'article</h1>
 
                         	<div>
                         		<input name="image" type="file" width="100" height="100">
 
                         	</div>
 
-                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Contenu de l'actualité</h1>
+                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Contenu de l'article</h1>
 
                             <div class="eds-expansion-panel__content" data-spec="expansion-panel-content">
                                 <div class="eds-l-mar-top-4" data-spec="advanced-settings__content">
