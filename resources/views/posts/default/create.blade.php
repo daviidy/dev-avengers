@@ -444,7 +444,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
  =============================================== -->
 <div class="site-branding">
     <div class="container">
-        <h1 class="site-title"><a> Créer un événement </a></h1>
+        <h1 class="site-title"><a> Créer un article</a></h1>
     </div>
     <!-- /container -->
 </div>
@@ -486,7 +486,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                             </svg><span class="eds-is-hidden-accessible">Fermer</span></i></button></span></div>
         </div-->
         <div class="eds-g-grid eds-l-pad-bot-12 eds-l-pad-top-5 eds-l-mar-top-5 eds-l-mar-bot-12">
-            <form id="information-container" enctype="multipart/form-data" method="post" action="{{route('meetups.store')}}">
+            <form id="information-container" enctype="multipart/form-data" method="post" action="{{route('posts.store')}}">
                 @csrf
                 <div class="eds-g-group eds-l-mar-bot-8">
                     <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" style="display: none;"><svg
@@ -500,7 +500,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                         <div>
                             <h1 class="eds-text-hm eds-text-color--grey-900">Infos de base</h1>
                             <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-lw-9-12 eds-g-cell-lg-9-12 eds-g-cell-ln-9-12 eds-g-cell-mw-9-12 eds-g-cell-md-1-1 eds-g-cell-mn-9-12 eds-g-cell-sw-9-12">
-                                <p class="eds-text-bm eds-text-color--grey-800"><span>Nommez votre événement et expliquez aux participants potentiels pourquoi ils doivent absolument venir. Ajoutez des infos soulignant son caractère unique.</span></p>
+                                <p class="eds-text-bm eds-text-color--grey-800"><span>Donnez un titre à votre article .</span></p>
                             </div>
                         </div>
                         <div class="eds-l-mar-top-5">
@@ -509,10 +509,10 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     <div class="eds-field-styled__internal">
                                         <div class="eds-field-styled__input-container">
                                             <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
-                                                  data-spec="label-label"><span class="eds-label__content">Nom de l'événement</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
+                                                  data-spec="label-label"><span class="eds-label__content">Titre de l'actualité</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
                                                           class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
                                                           <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
-                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="name" role="textbox" type="text" value="" placeholder="Soyez clair et précis.">
+                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="title" role="textbox" type="text" value="" placeholder="Soyez clair et précis.">
                                         </div>
                                     </div>
                                 </div>
@@ -528,7 +528,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                             </div>
 
                             <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
-                                <div class="eds-field-styled__border-simulation">
+                                <!--div class="eds-field-styled__border-simulation">
                                     <div class="eds-field-styled__internal">
                                         <div class="eds-field-styled__input-container">
                                             <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
@@ -540,7 +540,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                         </select>
                                         </div>
                                     </div>
-                                </div>
+                                </div--->
                                 <input type="hidden" name="user_id" value="{{Auth::user()->id}}">
                                 <!--div class="eds-field__sub">
                                     <div class="eds-field__sub--left">
@@ -626,7 +626,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                 </div>
             -->
                 <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
-                <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
+                <!--div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
                     <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1" style="display: none;"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" ><svg
                               viewBox="0 0 24 24">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -657,12 +657,12 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900 segmented-venueType-1"
                                                   for="segmented-venueType-1">Événement en ligne
                                                   <!--input type="text" id="segmented-venueType-1" name="venueType" data-automation="segmented-venueType-1" data-spec="radio-selector-input"
-                                                      aria-checked="false" value="online"-->
+                                                      aria-checked="false" value="online"->
                                                   </label>
                                               </div>
                                             <!--div class="radio-selector-label-wrap" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm radio-selector-label--checked"
                                                   for="segmented-venueType-2">À venir<input type="radio" id="segmented-venueType-2" name="venueType" data-automation="segmented-venueType-2" data-spec="radio-selector-input" aria-checked="true"
-                                                      value="tba"></label></div-->
+                                                      value="tba"></label></div->
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -677,8 +677,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                             </div><input type="hidden" value="0">
                         </div>
                     </div>
-                </div>
-                <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
+                </div-->
+                <!--hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
                 <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
                     <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1" style="display: none;"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true"><svg
                               viewBox="0 0 24 24">
@@ -707,7 +707,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
-                    -->
+                    ->
                         <p class="eds-text-bm">Les événements uniques ont lieu une seule fois et peuvent s'étendre sur plusieurs jours</p>
                         <div data-spec="event-date-time-pair">
                             <div class="eds-g-grid eds-l-mar-top-5 eds-l-mar-bot-2">
@@ -758,7 +758,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             </div>
                                         </div>
                                     </div>
-                                -->
+                                ->
                                 </div>
                             </div>
                             <div class="eds-g-grid eds-l-mar-bot-2">
@@ -809,14 +809,14 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             </div>
                                         </div>
                                     </div>
-                                -->
+                                ->
                                 </div>
                             </div>
-                        </div>
+                        </div-->
 
                        <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true" style="margin-bottom: 15px;">
 
-                       <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
+                       <!--div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
 	                       <div>
 	                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Nombre de places</h1>
 
@@ -833,15 +833,17 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 	                                    </div>
 	                                </div>
 	                        </div>
-                        </div>
+                        </div -->
                         
                         <div>
-                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'événement</h1>
+                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'article</h1>
 
                         	<div>
                         		<input name="image" type="file" width="100" height="100">
 
                         	</div>
+
+                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Contenu de l'article</h1>
 
                             <div class="eds-expansion-panel__content" data-spec="expansion-panel-content">
                                 <div class="eds-l-mar-top-4" data-spec="advanced-settings__content">
@@ -858,8 +860,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                             <div class="eds-field-styled__input-container">
 
                                                                 <div class="eds-field-styled__select-wrapper">
-                                                                	<input type="hidden" name="details" value="">
-                                    									<div class="" id="editorDetails" style="height: 200px;">
+                                                                	<input type="hidden" name="content" value="">
+                                    									<div class="" id="editorContent" style="height: 200px;">
 
                                     									</div>
                                                                 </div>
@@ -874,14 +876,14 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
-
+                        <button type="submit" class="btn btn-primary">Valider</button>
                     </div>
                 </div>
                 <div class="below-the-fold-indicator eds-l-pad-all-2 eds-bg-color--grey-800 below-the-fold-indicator--moved-up" data-spec="below-the-fold"><i class="eds-vector-image eds-icon--small eds-vector-image--white" data-spec="icon"
                       aria-hidden="true"><svg class="arrow-down_svg__eds-icon--down-arrow_svg" viewBox="0 0 24 24">
                             <path class="arrow-down_svg__eds-icon--down-arrow_base" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12 20l.2-.2 5.8-5.6-.7-.8-4.8 4.7V4h-1v14.1l-4.8-4.7-.7.7z"></path>
                         </svg></i></div>
-                        <button type="submit" class="btn btn-primary">Valider</button>
+                        
             </form>
         </div>
     </div>
@@ -913,7 +915,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
         placeholder: 'Ecrivez ici...',
         theme: 'snow'  // or 'bubble'
         };
-        var quill = new Quill('#editorDetails', options);
+        var quill = new Quill('#editorContent', options);
 
             //a la sumissio  du formulmaire ob recupêre
             //le contenu de la div qui a le texte riche
@@ -921,7 +923,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
             var form = document.getElementById('information-container');
             form.onsubmit = function() {
               // Populate hidden form on submit
-              var text = document.querySelector('input[name=details]');
+              var text = document.querySelector('input[name=content]');
               text.value = quill.root.innerHTML;
 
             //   console.log("Submitted", $(form).serialize(), $(form).serializeArray());
@@ -931,18 +933,5 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
               return true;
             };
           </script>
-<script>
-
-
-  		$('.segmented label').click(function() {
-  			$('.form-1').toggle('slow');
-  			$('.form-2').hide();
-  		});
-  		$('.segmented-2 label').click(function() {
-  			$('.form-2').toggle('slow');
-  			$('.form-1').hide();
-  		});
-
-</script>
 
 @endsection

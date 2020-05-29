@@ -475,7 +475,8 @@ address{display:inline;font-style:normal;}
 [data-swarm-icon]{fill:var(--color-gray-7);}
 [data-swarm-width=grow]{width:100%;}
 }
-
+.fa-pencil-square-o{font-size:20px; color: #007808; margin-right: 20px;}
+.fa-trash{font-size:20px; color: #D86000; }
 </style>
 
 @if(session('status'))
@@ -534,7 +535,7 @@ address{display:inline;font-style:normal;}
 
                                 <div class="people-info">
                                     <div class="row">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             @if($project->sector !== null)
                                             <div class="info-group">
                                                 <label>Secteur</label>
@@ -549,16 +550,22 @@ address{display:inline;font-style:normal;}
                                             @endif
 
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="info-group">
                                                 <label>Email</label>
                                                 {{$project->user->email}}
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="info-group">
                                                 <label>Téléphone</label>
                                                 {{$project->user->mobile_tel}}
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="info-group">
+                                                <i class="fa fa-pencil-square-o"></i>
+                                                <i class="fa fa-trash"></i> 
                                             </div>
                                         </div>
                                     </div><!-- row -->
@@ -782,7 +789,7 @@ address{display:inline;font-style:normal;}
 
                             <div class="people-info">
                                 <div class="row">
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         @if($project->sector !== null)
                                         <div class="info-group">
                                             <label>Secteur</label>
@@ -797,18 +804,24 @@ address{display:inline;font-style:normal;}
                                         @endif
 
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         <div class="info-group">
                                             <label>Email</label>
                                             {{$project->user->email}}
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         <div class="info-group">
                                             <label>Téléphone</label>
                                             {{$project->user->mobile_tel}}
                                         </div>
                                     </div>
+                                    <div class="col-sm-3">
+                                            <div class="info-group">
+                                                <i class="fa fa-pencil-square-o"></i>
+                                                <i class="fa fa-trash"></i> 
+                                            </div>
+                                        </div>
                                 </div><!-- row -->
                                 {{--
                                 <div class="row">
