@@ -1,1065 +1,513 @@
 @extends('layouts.menu')
-@section('title', $meetup->name)
+@section('title', 'Vue article')
 
 @section('content')
 
+<!--style header-->
+<style media="screen">
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
+header{display:block;}
+h1{font-size:2em;margin:0.67em 0;}
+a{background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:active,a:hover{outline-width:0;}
+@media print{
+*,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a,a:visited{text-decoration:underline;}
+p{orphans:3;widows:3;}
+}
+*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
+h1{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+a{color:#0275d8;text-decoration:none;}
+a:focus,a:hover{color:#014c8c;text-decoration:underline;}
+a{-ms-touch-action:manipulation;touch-action:manipulation;}
+h1{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h1{font-size:2.5rem;}
+.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 768px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 992px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 1200px){
+.container{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 576px){
+.container{width:540px;max-width:100%;}
+}
+@media (min-width: 768px){
+.container{width:720px;max-width:100%;}
+}
+@media (min-width: 992px){
+.container{width:960px;max-width:100%;}
+}
+@media (min-width: 1200px){
+.container{width:1140px;max-width:100%;}
+}
+.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+@media (min-width: 576px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 768px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 992px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+@media (min-width: 1200px){
+.row{margin-right:-15px;margin-left:-15px;}
+}
+.col-md-10,.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 768px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 992px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 1200px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
+}
+@media (min-width: 768px){
+.col-md-10{-webkit-box-flex:0;-webkit-flex:0 0 83.333333%;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}
+.offset-md-1{margin-left:8.333333%;}
+}
+@media (min-width: 992px){
+.col-lg-8{-webkit-box-flex:0;-webkit-flex:0 0 66.666667%;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+.offset-lg-2{margin-left:16.666667%;}
+}
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
+div,span,h1,p,a,header,time{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+header{display:block;}
+h1{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
+h1{font-size:30px;line-height:54px;}
+p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+a{color:#fff;text-decoration:none;outline:0;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+a:hover,a:focus,a:active{text-decoration:none;outline:0;color:#16A085!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+p a,p a:visited{line-height:inherit;}
+a{cursor:pointer;outline:0;}
+a{cursor:pointer;outline:0;}
+header.page-post-2{background:linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("http://www.themashabrand.com/templates/Masha/Medium/img/blog/5.jpg") no-repeat center center fixed;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-attachment:scroll;color:#fff;height:65vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+header.page-post-2 .post-heading{padding:100px 0 50px;color:white;}
+@media only screen and (min-width: 767px){
+header.page-post-2 .post-heading{padding:150px 0;}
+}
+header.page-post-2 .post-heading p.entry-meta{color:#adaeb3;font-family:'Abhaya Libre', serif;font-size:13px;font-style:normal;letter-spacing:1px;margin-bottom:20px;text-transform:uppercase;}
+header.page-post-2 .post-heading p.entry-meta a{border:none;color:#1ab394;font-style:normal;}
+header.page-post-2 .post-heading h1{font-family:'Montserrat', sans-serif;font-weight:700;text-align:center;color:#fff;letter-spacing:1px;font-size:55px;}
+@media only screen and (max-width: 768px){
+header.page-post-2 .post-heading h1{font-size:25px;}
+}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
+}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
+}
+
+</style>
+
+<!--style header avatar-->
 
 <style media="screen">
-/*! CSS Used from: https://www.meetup.com/mu_static/fr-FR/main.424560b4.css */
-a,span,time{display:inline;}
-p,section,ul{display:block;margin:0;padding:0;}
-img{border:0;display:block;line-height:0;margin:0;padding:0;}
-li{margin:0;padding:0;}
-section{display:block;}
-address{display:inline;font-style:normal;}
-button{display:block;font-family:inherit;font-size:100%;line-height:1.45;}
-button{background:transparent;border-width:0;margin:0;padding:0;}
-h1,h2,h3,h4{font-size:16px;margin:0;padding:0;}
-.runningText{line-height:1.8;}
-.runningText p{margin-bottom:16px;max-width:40em;}
-.runningText p:last-child{margin-bottom:0;}
-a,button{color:inherit;text-decoration:none;}
-.bounds{-webkit-box-sizing:border-box;box-sizing:border-box;margin-left:auto;margin-right:auto;max-width:840px;width:100%;}
-.bounds--wide{max-width:1100px;}
-.chunk{display:block;padding-bottom:16px!important;padding-bottom:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.chunk{padding-bottom:20px!important;padding-bottom:var(--responsive-space)!important;}
-}
-@media only screen and (min-width:640px){
-.chunk{padding-bottom:18px!important;padding-bottom:var(--responsive-space);}
-}
-.flex{-webkit-box-align:flex;-ms-flex-align:flex;align-items:flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
-.flex,.flex-item{-webkit-box-sizing:border-box;box-sizing:border-box;}
-.flex-item{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;width:auto;min-width:0;padding-left:16px;padding-left:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.flex-item{padding-left:20px;padding-left:var(--responsive-space);}
-}
-@media only screen and (min-width:640px){
-.flex-item{padding-left:18px;padding-left:var(--responsive-space);}
-}
-.flex-item:first-child{padding-left:0;}
-.flex--row{-webkit-box-align:flex;-ms-flex-align:flex;align-items:flex;-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
-.flex--row>.flex-item{padding-left:16px !important;padding-left:var(--responsive-space);width:auto;}
-@media only screen and (min-width:840px){
-.flex--row>.flex-item{padding-left:20px !important;padding-left:var(--responsive-space);}
-}
-@media only screen and (min-width:640px){
-.flex--row>.flex-item{padding-left:18px !important;padding-left:var(--responsive-space);}
-}
-.flex--row>.flex-item:first-child{padding-left:0!important;}
-.flex--column{-webkit-box-align:flex;-ms-flex-align:flex;align-items:flex;-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:100%;}
-.flex--column>.flex-item{-ms-flex-preferred-size:auto;flex-basis:auto;padding-left:0;width:100%;}
-@media only screen and (min-width:640px){
-.atMedium_flex--row{-webkit-box-align:flex;-ms-flex-align:flex;align-items:flex;-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;height:auto;}
-.atMedium_flex--row>.flex-item{-ms-flex-preferred-size:0;flex-basis:0;padding-left:18px;padding-left:var(--responsive-space);width:auto;}
-@media only screen and (min-width:840px){
-.atMedium_flex--row>.flex-item{padding-left:20px;padding-left:var(--responsive-space);}
-}
-@media only screen and (min-width:640px){
-.atMedium_flex--row>.flex-item{padding-left:18px;padding-left:var(--responsive-space);}
-}
-.atMedium_flex--row>.flex-item:first-child{padding-left:0;}
-}
-@media only screen and (min-width:840px){
-.atLarge_flex--row{-webkit-box-align:flex;-ms-flex-align:flex;align-items:flex;-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;height:auto;}
-.atLarge_flex--row>.flex-item{-ms-flex-preferred-size:0;flex-basis:0;padding-left:20px;padding-left:var(--responsive-space);width:auto;}
-@media only screen and (min-width:640px){
-.atLarge_flex--row>.flex-item{padding-left:20px;padding-left:var(--responsive-space);}
-}
-.atLarge_flex--row>.flex-item:first-child{padding-left:0;}
-}
-.flex>.flex-item--2{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2;}
-.flex>.flex-item--shrink{-ms-flex-preferred-size:auto;flex-basis:auto;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0;width:auto;}
-.flex--noGutters>.flex-item,.flex--noGutters>.flex-item:first-child,.flex--noGutters>.flex-item:last-child{padding:0;}
-.flex--wrap{-ms-flex-wrap:wrap;flex-wrap:wrap;}
-@media only screen and (min-width:840px){
-.atLarge_flex--rowReverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;}
-@media only screen and (min-width:840px){
-.atLarge_flex--rowReverse>.flex-item:first-child{padding-left:20px;padding-left:var(--responsive-space);}
-}
-@media only screen and (min-width:640px){
-.atLarge_flex--rowReverse>.flex-item:first-child{padding-left:20px;padding-left:var(--responsive-space);}
-}
-.atLarge_flex--rowReverse>.flex-item:last-child{padding-left:0;}
-}
-.flex--flexEnd{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;}
-.flex--spaceBetween{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;}
-.flex--alignBottom{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;}
-.flex--alignCenter{-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
-.stripe{border-top:1px solid rgba(46,62,72,.12);background-color:#fff;margin-bottom:0;}
-.stripe:first-child{border-top:none;}
-.section{margin:0 16px;padding:32px 0 0 !important;}
-@media only screen and (min-width:840px){
-.section{padding:40px 0 0;}
-}
-@media only screen and (min-width:640px){
-.section{padding:36px 0 0;}
-}
-@media only screen and (min-width:840px){
-.section{margin:0 20px;}
-}
-@media only screen and (min-width:640px){
-.section{margin:0 18px;}
-}
-.hscrollGradient--hidden:before{display:none;}
-.hscroll{-webkit-overflow-scrolling:touch;-ms-overflow-style:scrollbar;overflow-x:scroll;}
-.hscroll::-webkit-scrollbar{display:none!important;}
-.hscroll-content{-webkit-box-sizing:content-box;box-sizing:content-box;white-space:nowrap;}
-@media only screen and (min-width:640px){
-.atMedium_hscroll--unclip{-webkit-overflow-scrolling:auto;-ms-overflow-style:auto;overflow-x:visible;}
-.atMedium_hscroll--unclip .hscroll-content{white-space:normal;}
-}
-.gridList{font-size:0;list-style:none;margin:0 -16px 0 0;padding:0;}
-.gridList-item{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;font-size:1rem;margin:0;vertical-align:top;width:50%;}
-.gridList-itemInner{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;padding:0 16px 16px 0;}
-.gridList--autoHeight{margin-left:-16px;margin-left:calc(var(--responsive-space)*-1);}
-@media only screen and (min-width:840px){
-.gridList--autoHeight{margin-left:-20px;margin-left:calc(var(--responsive-space)*-1);}
-}
-@media only screen and (min-width:640px){
-.gridList--autoHeight{margin-left:-18px;margin-left:calc(var(--responsive-space)*-1);}
-}
-.gridList--autoHeight>.gridList-item{width:auto;}
-.gridList--autoHeight:first-child{padding-left:16px;padding-left:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.gridList--autoHeight:first-child{padding-left:20px;padding-left:var(--responsive-space);}
-}
-@media only screen and (min-width:640px){
-.gridList--autoHeight:first-child{padding-left:18px;padding-left:var(--responsive-space);}
-}
-.gridList--autoHeight--has3>.gridList-item{-webkit-box-flex:0;-ms-flex:0 0 33.33333%;flex:0 0 33.33333%;max-width:33.33333%;}
-.gridList--autoHeight--has4>.gridList-item{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
-.hscroll-content{margin:0;padding:0;}
-.popup{display:inline-block;position:relative;}
-.popup-trigger{cursor:pointer;display:inline;}
-.avatar--person{background-color:#e4e9ed;background-position:center 42%;color:transparent;display:inline-block;font-size:0;height:36px!important;height:var(--responsiveMedia-m);position:relative;text-indent:100%;vertical-align:top;white-space:nowrap;width:36px!important;width:var(--responsiveMedia-m);}
-@media only screen and (min-width:840px){
-.avatar--person{width:45px!important;width:var(--responsiveMedia-m);}
-}
-@media only screen and (min-width:640px){
-.avatar--person{width:40px!important;width:var(--responsiveMedia-m);}
-}
-@media only screen and (min-width:840px){
-.avatar--person{height:45px!important;height:var(--responsiveMedia-m);}
-}
-@media only screen and (min-width:640px){
-.avatar--person{height:40px!important;height:var(--responsiveMedia-m);}
-}
-.avatar{/*background-color:#e4e9ed;*/background-position:center 42%;color:transparent;display:inline-block;font-size:0;height:36px;position:relative;text-indent:100%;vertical-align:top;white-space:nowrap;width:36px;}
-@media only screen and (min-width:840px){
-.avatar{width:45px!important;width:var(--responsiveMedia-m);}
-}
-@media only screen and (min-width:640px){
-.avatar{width:40px !important;width:var(--responsiveMedia-m);}
-}
-@media only screen and (min-width:840px){
-.avatar{height:45px!important;height:var(--responsiveMedia-m);}
-}
-@media only screen and (min-width:640px){
-.avatar{height:40px!important;height:var(--responsiveMedia-m);}
-}
-.avatar-print{display:none;speak:none;}
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
+img{border-style:none;}
 @media print{
-.avatar-print{display:block;width:100%;}
+*,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+p{orphans:3;widows:3;}
 }
-.avatar--small{height:24px!important;height:var(--responsiveMedia-s);width:24px;width:var(--responsiveMedia-s);}
-@media only screen and (min-width:840px){
-.avatar--small{width:30px!important;width:var(--responsiveMedia-s);}
+*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
+p{margin-top:0;margin-bottom:1rem;}
+img{vertical-align:middle;}
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
+div,p,img{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+.header-avatar{margin-bottom:-110px;position:relative;top:-40px;text-align:center;}
+.header-avatar img{border:7px solid #f5f5f6;border-radius:50%;float:none;height:80px;width:80px;}
+.header-avatar p{color:#adaeb3;font-family:'Abhaya Libre', serif;font-size:16px;font-weight:700;letter-spacing:1px;margin-bottom:0;text-transform:uppercase;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
 }
-@media only screen and (min-width:640px){
-.avatar--small{width:27px!important;width:var(--responsiveMedia-s);}
+.header-avatar{margin-bottom:-110px;position:relative;top:-40px;text-align:center;}
+.header-avatar img{border:7px solid #f5f5f6;border-radius:50%;float:none;height:80px;width:80px;}
+.header-avatar p{color:#adaeb3;font-family:'Abhaya Libre', serif;font-size:16px;font-weight:700;letter-spacing:1px;margin-bottom:0;text-transform:uppercase;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
 }
-@media only screen and (min-width:840px){
-.avatar--small{height:30px!important;height:var(--responsiveMedia-s);}
+
+</style>
+
+
+<!--style article-->
+
+<style media="screen">
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
+article{display:block;}
+strong{font-weight:inherit;}
+strong{font-weight:bolder;}
+@media print{
+*,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+p{orphans:3;widows:3;}
 }
-@media only screen and (min-width:640px){
-.avatar--small{height:27px!important;height:var(--responsiveMedia-s);}
+*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
+h4{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+h4{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h4{font-size:1.5rem;}
+.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.container{padding-right:15px;padding-left:15px;}
 }
-.avatar--large{height:56px!important;width:56px!important;}
-@media only screen and (min-width:640px){
-.avatar--large{height:72px!important;width:72px!important;}
+@media (min-width: 768px){
+.container{padding-right:15px;padding-left:15px;}
 }
-.avatar--person{border-radius:999px;-webkit-box-sizing:border-box;box-sizing:border-box;vertical-align:middle;}
-.avatar--noPhoto{background-color:#d2dae1;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;position:relative;text-indent:0;}
-.avatar--noPhoto,.avatarIcon--noPhoto{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
-.avatarIcon--noPhoto{height:100%;width:100%;}
-.avatarIcon--noPhoto svg{height:40%;opacity:.6;width:40%;}
-.card{background:#fff;background-clip:padding-box;background-size:cover;border:1px solid rgba(46,62,72,.12);border-radius:8px;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;min-height:160px;padding:16px 16px 0 !important;padding:var(--responsive-space) var(--responsive-space) 0;position:relative;white-space:normal;}
-@media only screen and (min-width:840px){
-.card{padding:20px 20px 0 !important;padding:var(--responsive-space) var(--responsive-space) 0;}
+@media (min-width: 992px){
+.container{padding-right:15px;padding-left:15px;}
 }
-@media only screen and (min-width:640px){
-.card{padding:18px 18px 0 !important;padding:var(--responsive-space) var(--responsive-space) 0;}
+@media (min-width: 1200px){
+.container{padding-right:15px;padding-left:15px;}
 }
-.card--initialHeight{min-height:0;}
-.card--flush{border-radius:0;border-width:0;margin-left:-16px;margin-left:calc(var(--responsive-space)*-1);margin-right:-16px;margin-right:calc(var(--responsive-space)*-1);}
-@media only screen and (min-width:840px){
-.card--flush{margin-right:-20px;margin-right:calc(var(--responsive-space)*-1);}
+@media (min-width: 576px){
+.container{width:540px;max-width:100%;}
 }
-@media only screen and (min-width:640px){
-.card--flush{margin-right:-18px;margin-right:calc(var(--responsive-space)*-1);}
+@media (min-width: 768px){
+.container{width:720px;max-width:100%;}
 }
-@media only screen and (min-width:840px){
-.card--flush{margin-left:-20px;margin-left:calc(var(--responsive-space)*-1);}
+@media (min-width: 992px){
+.container{width:960px;max-width:100%;}
 }
-@media only screen and (min-width:640px){
-.card--flush{margin-left:-18px;margin-left:calc(var(--responsive-space)*-1);}
+@media (min-width: 1200px){
+.container{width:1140px;max-width:100%;}
 }
-@media only screen and (min-width:840px){
-.atLarge_card--flush{border-radius:8px;border-width:1px;margin-left:0;margin-right:0;}
+.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+@media (min-width: 576px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-.card--hasHoverShadow{-webkit-transition:-webkit-box-shadow .25s cubic-bezier(.4,0,.2,1),-webkit-transform .25s cubic-bezier(.4,0,.2,1);transition:-webkit-box-shadow .25s cubic-bezier(.4,0,.2,1),-webkit-transform .25s cubic-bezier(.4,0,.2,1);transition:box-shadow .25s cubic-bezier(.4,0,.2,1),transform .25s cubic-bezier(.4,0,.2,1);transition:box-shadow .25s cubic-bezier(.4,0,.2,1),transform .25s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .25s cubic-bezier(.4,0,.2,1),-webkit-transform .25s cubic-bezier(.4,0,.2,1);}
-.card--hasHoverShadow:focus,.card--hasHoverShadow:hover{-webkit-box-shadow:0 0 4px 0 rgba(46,62,72,.12),0 4px 12px 0 rgba(46,62,72,.12);box-shadow:0 0 4px 0 rgba(46,62,72,.12),0 4px 12px 0 rgba(46,62,72,.12);-webkit-transform:translateY(-1px);transform:translateY(-1px);}
-.card--hasHoverShadow:focus,.card--hasHoverShadow:hover{-webkit-box-shadow:0 0 4px 0 rgba(46,62,72,.12),0 4px 12px 0 rgba(46,62,72,.12);box-shadow:0 0 4px 0 rgba(46,62,72,.12),0 4px 12px 0 rgba(46,62,72,.12);-webkit-transform:translateY(-1px);transform:translateY(-1px);}
-.svg{display:inline-block;}
-.svg-icon{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;font-size:0;position:relative;vertical-align:bottom;}
-.svg-icon{stroke:transparent;fill:rgba(46,62,72,.6);}
-.svg-icon use{pointer-events:none;}
-.infoToggle-trigger{background-color:rgba(46,62,72,.35);background-color:var(--c-textHint);border-radius:50%;color:#fff;color:var(--c-white);font-size:10px;height:15px;width:15px;}
-.infoToggle-label{display:inline-block;margin-right:4px;margin-right:var(--space-quarter);}
-.hscroll{overflow-y:hidden;}
-.card{position:static;}
-.text--smaller{font-size:12px;}
-.text--primary{color:#2e3e48;}
-.event-info.card,.groupMember.card{border-width:0;}
-.card--flushContent{padding:0!important;}
-.padding--right-quarter{padding-right:4px;padding-right:calc(var(--responsive-space)/4);}
-@media only screen and (min-width:840px){
-.padding--right-quarter{padding-right:5px;padding-right:calc(var(--responsive-space)/4);}
+@media (min-width: 768px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-@media only screen and (min-width:640px){
-.padding--right-quarter{padding-right:4.5px;padding-right:calc(var(--responsive-space)/4);}
+@media (min-width: 992px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-.padding--left-half{padding-left:8px;padding-left:calc(var(--responsive-space)/2);}
-@media only screen and (min-width:840px){
-.padding--left-half{padding-left:10px;padding-left:calc(var(--responsive-space)/2);}
+@media (min-width: 1200px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-@media only screen and (min-width:640px){
-.padding--left-half{padding-left:9px;padding-left:calc(var(--responsive-space)/2);}
+.col-md-10,.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-.link{cursor:pointer;}
-.text--ellipsisTwoLines{white-space:normal;-webkit-line-clamp:2;line-height:1.45!important;max-height:2.8em;}
-.text--ellipsisTwoLines{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical;}
-.avatarRow-item{height:56px;width:56px;margin-right:8px;}
-@media only screen and (min-width:640px){
-.avatarRow-item{height:72px;width:72px;margin-right:8px;}
+@media (min-width: 768px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-.avatarRow--stacked{padding-top:36px;padding-top:var(--responsiveMedia-m);}
-@media only screen and (min-width:840px){
-.avatarRow--stacked{padding-top:45px;padding-top:var(--responsiveMedia-m);}
+@media (min-width: 992px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-@media only screen and (min-width:640px){
-.avatarRow--stacked{padding-top:40px;padding-top:var(--responsiveMedia-m);}
+@media (min-width: 1200px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-.avatarRow--stacked .avatarRow-item{position:relative;margin-left:-16px;}
-.avatarRow--stacked .avatarRow-item:first-child{margin-left:0;}
-.avatarRow--stacked .avatarRow-item .avatar{border:2px solid #fff;}
-.eventCard{position:relative;min-width:330px;}
-.eventCard--link{position:absolute;top:0;bottom:0;left:0;right:0;}
-.eventCard--clickable a{position:relative;z-index:1;}
-.eventCard .eventCardHead--title{line-height:1.2;}
-.eventCard .eventCardHead--groupName{color:#212121;color:var(--color-gray-7);}
-.eventCard--attendeesLink .avatarRow-item{margin-right:0;}
-.eventCard--attendeesLink .avatarRow-item:not(:first-child){margin-left:-8px;}
-.eventCard--attendeesLink .avatarRow--attendingCount:not(:first-child){margin-left:8px;}
-.eventCard--attendeesLink .avatar--person{border:1px solid #fff;}
-.groupMember{min-height:100%;min-width:128px;padding-left:8px;padding-right:8px;}
-.groupMember-role{padding-top:2px;}
-.groupMember-name{line-height:1.2!important;}
-.pageHead{margin:24px 20px 0;}
-.pageHead .pageHead-pageTitleLabel{font-weight:500;}
-@media only screen and (min-width:640px){
-.pageHead{margin-bottom:24px;}
+@media (min-width: 768px){
+.col-md-10{-webkit-box-flex:0;-webkit-flex:0 0 83.333333%;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}
+.offset-md-1{margin-left:8.333333%;}
 }
-.eventPageHead{background:#fff;border-bottom:1px solid rgba(46,62,72,.12);}
-.eventPageHead .pageHead-pageTitleLabel{font-weight:400;}
-.eventPageHead .text--pageTitle{margin-bottom:8px;}
-.eventPageHead .pageHead--wrapper{position:relative;}
-.relatedEvents .gridList-item{min-width:330px;white-space:normal;}
-.relatedEvents .eventCard{height:100%;min-width:240px;}
-.sticky--bottom{position:-webkit-sticky;position:sticky;bottom:-1px;z-index:11;-webkit-box-shadow:0 0 2px 0 rgba(46,62,72,.12),0 2px 4px 0 rgba(46,62,72,.12);box-shadow:0 0 2px 0 rgba(46,62,72,.12),0 2px 4px 0 rgba(46,62,72,.12);}
-@media only screen and (min-width:640px){
-.sticky-ontheside{top:56px!important;top:var(--space-4);}
+@media (min-width: 992px){
+.col-lg-8{-webkit-box-flex:0;-webkit-flex:0 0 66.666667%;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+.offset-lg-2{margin-left:16.666667%;}
 }
-@media only screen and (min-width:640px){
-.sticky-ontheside{position:-webkit-sticky;position:sticky;z-index:10;}
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
+div,h4,p,strong,article{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article{display:block;}
+h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
+h4{font-size:18px;line-height:36px;}
+p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+strong{font-weight:700;color:#333;}
+article h4{font-family:'Abhaya Libre', serif;font-weight:700;color:#555555;font-size:18px;}
+article p{font-family:'Abhaya Libre', serif;line-height:1.5;margin:30px 0;color:#858686;font-size:17px;}
+article h4{font-family:'Abhaya Libre', serif;font-weight:800;}
+article.entry-content{border:20px solid #f5f5f6;padding:10% 0%;}
+article.entry-content h4{font-family:'Abhaya Libre', serif;font-weight:700;color:#555555;font-size:18px;}
+article.entry-content p{font-family:'Abhaya Libre', serif;line-height:1.5;margin:30px 0;color:#858686;font-size:17px;}
+article.entry-content h4{font-family:'Abhaya Libre', serif;font-weight:800;}
+@media only screen and (max-width: 768px){
+article.entry-content h4{padding-top:40px!important;}
+p{margin-bottom:0px!important;}
 }
-.attendees-sample{-webkit-animation:fadeIn .5s ease-out;animation:fadeIn .5s ease-out;}
-@media only screen and (min-width:840px){
-.eventContent>.section{max-width:600px;}
+.entry-content{border:20px solid #f5f5f6;padding:5% 0%;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
 }
-@media only screen and (min-width:840px){
-.event-home .eventSideBar{padding:40px 0 0;padding:calc(var(--responsive-space)*2) 0 0 0;padding-left:0;margin-left:0;}
-@media only screen and (min-width:640px){
-.event-home .eventSideBar{padding:40px 0 0;padding:calc(var(--responsive-space)*2) 0 0 0;}
+
+</style>
+
+<!--style comments-->
+
+<style media="screen">
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/bower_components/bootstrap/dist/css/bootstrap.css */
+article{display:block;}
+a{background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:active,a:hover{outline-width:0;}
+img{border-style:none;}
+button,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;}
+button{overflow:visible;}
+button{text-transform:none;}
+button,[type="submit"]{-webkit-appearance:button;}
+button::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}
+button:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}
+textarea{overflow:auto;}
+@media print{
+*,*::before,*::after,p::first-letter,div::first-letter,p::first-line,div::first-line{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a,a:visited{text-decoration:underline;}
+img{page-break-inside:avoid;}
+p{orphans:3;widows:3;}
 }
+*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;}
+h4{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+a{color:#0275d8;text-decoration:none;}
+a:focus,a:hover{color:#014c8c;text-decoration:underline;}
+img{vertical-align:middle;}
+a,button,label,textarea{-ms-touch-action:manipulation;touch-action:manipulation;}
+label{display:inline-block;margin-bottom:.5rem;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button,textarea{line-height:inherit;}
+textarea{resize:vertical;}
+fieldset{min-width:0;padding:0;margin:0;border:0;}
+h4{margin-bottom:0.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h4{font-size:1.5rem;}
+.img-fluid{max-width:100%;height:auto;}
+.container{position:relative;margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.container{padding-right:15px;padding-left:15px;}
 }
-.event-description{-webkit-transition:height .5s cubic-bezier(.215,.61,.355,1);transition:height .5s cubic-bezier(.215,.61,.355,1);overflow:hidden;}
-.event-info>.section{padding:16px 0 0;}
-.event-host-info{margin-top:16px;}
-@media only screen and (min-width:840px){
-.event-host-info{margin-top:20px;}
+@media (min-width: 768px){
+.container{padding-right:15px;padding-left:15px;}
 }
-@media only screen and (min-width:640px){
-.event-host-info{margin-top:18px;}
+@media (min-width: 992px){
+.container{padding-right:15px;padding-left:15px;}
 }
-.event-hosts-info-no-link{font-size:16px;}
-.event-group-chunk{padding-bottom:0!important;margin-bottom:16px;}
-@media only screen and (min-width:840px){
-.event-group-chunk{margin-bottom:20px;}
+@media (min-width: 1200px){
+.container{padding-right:15px;padding-left:15px;}
 }
-@media only screen and (min-width:640px){
-.event-group-chunk{margin-bottom:18px;}
+@media (min-width: 576px){
+.container{width:540px;max-width:100%;}
 }
-.event-group-photo{-o-object-fit:cover;object-fit:cover;width:56px;height:56px;border-radius:4px;}
-@media only screen and (max-width:840px){
-.event-group-chunk{margin-bottom:0;}
+@media (min-width: 768px){
+.container{width:720px;max-width:100%;}
 }
-@media only screen and (min-width:440px){
-.eventSideBar{padding-top:0;}
+@media (min-width: 992px){
+.container{width:960px;max-width:100%;}
 }
-.event-report-wrapper .event-report-button:hover{text-decoration:underline;}
-.photoCarousel--wrapper{margin-left:-16px;margin-right:-16px;}
-@media only screen and (min-width:640px){
-.photoCarousel--wrapper{margin:auto;}
+@media (min-width: 1200px){
+.container{width:1140px;max-width:100%;}
 }
-.photoCarousel{position:relative;}
-.photoCarousel-photoContainer{position:relative;background:#fff no-repeat 50%;background-size:cover;border-radius:0;width:100%;}
-@media only screen and (min-width:640px){
-.photoCarousel-photoContainer{margin:auto;overflow:hidden;}
+.row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+@media (min-width: 576px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-.eventTimeDisplay .link{cursor:pointer;color:#00a2c7;}
-.eventTimeDisplay .link:hover{text-decoration:underline;}
-.event-group-card{border:0;padding-bottom:16px !important;padding-bottom:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.event-group-card{padding-bottom:20px !important;padding-bottom:var(--responsive-space);}
+@media (min-width: 768px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-@media only screen and (min-width:640px){
-.event-group-card{padding-bottom:18px !important;padding-bottom:var(--responsive-space);}
+@media (min-width: 992px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-.event-group-name{margin-top:-5px;}
-.event-group-name span{line-height:1.45;}
-.event-group-content{-ms-flex-item-align:center;align-self:center;}
-.avatar,.avatar--person{background-repeat:no-repeat;background-position:50%;background-size:cover;}
-.buttonPersonality{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;text-decoration:none!important;}
-.bounds,.chunk{*zoom:1;}
-.bounds:after,.bounds:before,.chunk:after,.chunk:before{content:" ";display:table;}
-.bounds:after,.chunk:after{clear:both;}
-ul{margin-left:0;padding-left:0;list-style-type:none;}
-.text--pageTitle,.text--sectionTitle{color:#2e3e48;font-weight:600;line-height:1.1;}
-.text--pageTitle,.text--sectionTitle{stroke:transparent;fill:#2e3e48;}
-.text--pageTitle{font-size:32px;}
-.text--sectionTitle{font-size:20px;line-height:1.45;}
-.text--labelSecondary{color:#2e3e48;font-size:14px;font-weight:600;line-height:1.6;letter-spacing:-.02em;word-spacing:.1em;}
-.text--labelSecondary{stroke:transparent;fill:#2e3e48;}
-.text--labelSecondary{color:rgba(46,62,72,.6);font-weight:500;}
-.text--labelSecondary{stroke:transparent;fill:rgba(46,62,72,.6);}
-.text--bold{font-weight:500!important;}
-.text--secondary{color:rgba(46,62,72,.6);}
-.text--secondary,.text--secondary svg{stroke:transparent;fill:rgba(46,62,72,.6);}
-.text--small{font-size:14px;line-height:1.6;}
-.link,.runningText a,a.link{color:#00a2c7;text-decoration:none;}
-.link,.link svg,.runningText a,a.link{stroke:transparent;fill:#00a2c7;}
-.link:link,.runningText a:link{text-decoration:none;}
-.link:active,.link:focus,.link:hover,.runningText a:active,.runningText a:focus,.runningText a:hover{text-decoration:underline;}
-.runningText p{-ms-word-break:normal;word-break:break-word;word-wrap:break-word;}
-.align--center{-ms-flex-item-align:center;align-self:center;text-align:center!important;}
-.valign--middle{-ms-flex-item-align:center;align-self:center;vertical-align:middle!important;}
-.valignChildren--center{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
-.keepAspect--16-9{margin-bottom:0;}
-.keepAspect--16-9:before{content:"";display:block;padding-top:56.25%!important;}
-.border--top{border-top:1px solid rgba(46,62,72,.12);}
-.border--left{border-left:1px solid rgba(46,62,72,.12);}
-.border--none{border-width:0!important;}
-.display--block{display:block;}
-.display--inline{display:inline;}
-.display--inlineBlock{display:inline-block;}
-.display--inlineFlex{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;}
-ul{list-style:none;padding-left:0;}
-.margin--top{margin-top:16px;margin-top:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.margin--top{margin-top:20px;margin-top:var(--responsive-space);}
+@media (min-width: 1200px){
+.row{margin-right:-15px;margin-left:-15px;}
 }
-@media only screen and (min-width:640px){
-.margin--top{margin-top:18px;margin-top:var(--responsive-space);}
+.col-md-10,.col-lg-8{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-.margin--bottom{margin-bottom:16px;margin-bottom:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.margin--bottom{margin-bottom:20px;margin-bottom:var(--responsive-space);}
+@media (min-width: 768px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-@media only screen and (min-width:640px){
-.margin--bottom{margin-bottom:18px;margin-bottom:var(--responsive-space);}
+@media (min-width: 992px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-.margin--halfBottom{margin-bottom:8px;}
-.padding--top{padding-top:16px;padding-top:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.padding--top{padding-top:20px;padding-top:var(--responsive-space);}
+@media (min-width: 1200px){
+.col-md-10,.col-lg-8{padding-right:15px;padding-left:15px;}
 }
-@media only screen and (min-width:640px){
-.padding--top{padding-top:18px;padding-top:var(--responsive-space);}
+@media (min-width: 768px){
+.col-md-10{-webkit-box-flex:0;-webkit-flex:0 0 83.333333%;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}
+.offset-md-1{margin-left:8.333333%;}
 }
-.padding--right{padding-right:16px;padding-right:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.padding--right{padding-right:20px;padding-right:var(--responsive-space);}
+@media (min-width: 992px){
+.col-lg-8{-webkit-box-flex:0;-webkit-flex:0 0 66.666667%;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+.offset-lg-2{margin-left:16.666667%;}
 }
-@media only screen and (min-width:640px){
-.padding--right{padding-right:18px;padding-right:var(--responsive-space);}
+.text-center{text-align:center!important;}
+/*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.fa-comment:before{content:"\f075";}
+div,span,h4,p,a,img,i,fieldset,form,article{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article{display:block;}
+h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
+h4{font-size:18px;line-height:36px;}
+p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+a{color:#fff;text-decoration:none;outline:0;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+a:hover,a:focus,a:active{text-decoration:none;outline:0;color:#16A085!important;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;transition:0.5s all ease;}
+.kafe-btn{display:inline-block;margin-bottom:0;font-weight:normal;text-align:center;white-space:nowrap;vertical-align:middle;line-height:1.4;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;khtml-user-select:none;webkit-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+.kafe-btn-mint{font-family:'Varela Round', sans-serif;font-weight:700;font-size:14px;padding:13px 31px;color:#fff;background:#05cb95;letter-spacing:1px;}
+.kafe-btn-mint:hover{color:#fff!important;background:#0de5ab;text-decoration:none;}
+.full-width{width:100%;}
+a{cursor:pointer;outline:0;}
+a{cursor:pointer;outline:0;}
+.kafe-btn{display:inline-block;margin-bottom:0;font-weight:normal;text-align:center;white-space:nowrap;vertical-align:middle;line-height:1.4;cursor:pointer;background-image:none;border-radius:4px;khtml-user-select:none;webkit-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+.kafe-btn-mint{font-family:'Varela Round', sans-serif;font-weight:700;font-size:14px;margin-top:23px;padding:13px 31px;color:#fff;background:#05cb95;letter-spacing:1px;}
+.kafe-btn-mint:hover{color:#fff!important;background:#0de5ab;text-decoration:none;}
+.full-width{width:100%;}
+article h4{font-family:'Abhaya Libre', serif;font-weight:700;color:#555555;font-size:18px;}
+article p{font-family:'Abhaya Libre', serif;line-height:1.5;margin:30px 0;color:#858686;font-size:17px;}
+article h4{font-family:'Abhaya Libre', serif;font-weight:800;}
+article a{font-family:'Abhaya Libre', serif;color:#333333;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s;}
+article a:hover,article a:focus{color:#1ab394;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
 }
-.padding--left{padding-left:16px;padding-left:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.padding--left{padding-left:20px;padding-left:var(--responsive-space);}
-}
-@media only screen and (min-width:640px){
-.padding--left{padding-left:18px;padding-left:var(--responsive-space);}
-}
-.padding--bottom{padding-bottom:16px !important;padding-bottom:var(--responsive-space);}
-@media only screen and (min-width:840px){
-.padding--bottom{padding-bottom:20px !important;padding-bottom:var(--responsive-space);}
-}
-@media only screen and (min-width:640px){
-.padding--bottom{padding-bottom:18px!important;padding-bottom:var(--responsive-space);}
-}
-.padding--none{padding:0;}
-.sticky--bottom{bottom:0;}
-.wrap--singleLine--truncate{white-space:nowrap!important;}
-.wrap--singleLine--truncate{overflow:hidden!important;text-overflow:ellipsis!important;}
-.visibility--a11yHide{border:0;clip:rect(0 0 0 0);position:absolute;overflow:hidden;margin:-1px;padding:0;width:1px;height:1px;}
-#mupMain{background:#f6f7f8;}
-/*! CSS Used from: https://www.meetup.com/mu_static/fr-FR/global.920dcd0b.css */
-button{background:transparent;border-width:0;margin:0;padding:0;}
-h1,h2,h3,h4{font-size:var(--font-size-normal);margin:0;padding:0;}
-h1{font-weight:var(--font-weight-bold);font-size:var(--font-size-normal);}
-a,span,time{display:inline;}
-p,section,ul{display:block;margin:0;padding:0;}
-img{border:0;display:block;line-height:0;margin:0;padding:0;}
-li{margin:0;padding:0;}
-section{display:block;}
-address{display:inline;font-style:normal;}
-.runningText{line-height:var(--font-line-height-normal);}
-.runningText p{overflow-wrap:break-word;-ms-word-break:normal;word-break:break-word;word-wrap:break-word;margin-bottom:var(--space);max-width:40em;}
-.runningText p:last-child{margin-bottom:0;}
-.text--pageTitle,.text--sectionTitle{color:var(--color-gray-7);}
-.text--secondary{color:var(--color-gray-6);}
-.link,.link svg,.runningText a,a.link{color:var(--color-viridian);}
-.text--pageTitle{/*font-weight:var(--font-weight-bold);*/}
-.text--pageTitle{/*font-size:var(--font-size-display-2);line-height:var(--font-line-height-display-2);*/}
-.text--sectionTitle{/*font-size:var(--font-size-section-title);line-height:var(--font-line-height-section-title);font-weight:var(--font-weight-semi-bold);*/}
-.text--small{font-size:var(--font-size-small);line-height:var(--font-line-height-small);}
-/*! CSS Used from: https://www.meetup.com/mu_static/fr-FR/main.8b3c4395.css */
-.color-viridian{color:#0098ab;}
-[data-swarm-button]{display:inline-flex;flex-direction:row;justify-content:center;align-items:center;transition:background .15s;-webkit-appearance:none;border-radius:5px;box-sizing:border-box;font-size:var(--font-size-small);font-weight:var(--font-weight-regular);line-height:var(--font-line-height-small);outline:0;padding:10px;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;text-decoration:none!important;}
-[data-swarm-button=default]:active,[data-swarm-button=default]:focus{border:1px solid #D86000;}
-[data-swarm-button=primary]:active,[data-swarm-button=primary]:focus{border:1px solid #D86000;}
-[data-swarm-button=bordered]:active,[data-swarm-button=bordered]:focus{background-color:#D86000;color:var(--color-gray-6);border:1px solid #D86000;}
-[data-swarm-button=neutral]:active,[data-swarm-button=neutral]:focus{background-color:var(--color-gray-1);color:var(--color-gray-6);border:1px solid var(--color-gray-6);}
-[data-swarm-button=default]:hover{background-color:#D86000;color:#fff!important;fill:var(--color-white);}
-[data-swarm-button=bordered]:hover{border:1px solid #D86000;}
-[data-swarm-button=neutral]:hover{background-color:var(--color-gray-2);}
-[data-swarm-button=primary]:hover{background-color:#fff;border:1px solid #D86000; color: #000}
-[data-swarm-button=default]{background-color:var(--color-white);border:1px solid #D86000;color:var(--color-viridian);fill:var(--color-viridian);}
-[data-swarm-button=primary]{background-color:#D86000;border:1px solid #D86000;color:#fff;fill:#fff;}
-[data-swarm-button=neutral]{background-color:var(--color-gray-1);}
-[data-swarm-button=bordered],[data-swarm-button=neutral]{border:1px solid #aaa;color:var(--color-gray-6);fill:var(--color-gray-6);}
-[data-swarm-button=bordered]{background-color:var(--color-white);}
-[data-swarm-button=reset]{padding:var(--space-quarter);font-weight:var(--font-weight-normal);}
-[data-swarm-button][data-swarm-size=large]{font-size:var(--font-size-normal);line-height:32px;padding:10px 20px;}
-[data-swarm-button] [data-swarm-icon]{fill:inherit;}
-[data-swarm-button][data-icon=only]{padding:10px;}
-[data-swarm-button][data-icon=only][data-swarm-size=large]>span{height:32px;width:32px;}
-[data-swarm-button]>span{display:inline-flex;justify-content:center;align-items:center;}
-[data-swarm-icon]{fill:var(--color-gray-7);}
-[data-swarm-width=grow]{width:100%;}
-/*! CSS Used from: Embedded */
-._memberListing-module_memberListing__3dEo-{margin-left:-16px;margin-left:-var(--space-1);margin-right:-16px;margin-right:-var(--space-1);}
-._memberListing-module_gridList__3_lox{padding-left:0;margin:0;}
-._memberListing-module_gridListItem__1InAw{min-width:150px;width:150px;-webkit-box-flex:0;-ms-flex:none;flex:none;padding:0 4px 4px 0;padding:0 calc(var(--space-1)/4) calc(var(--space-1)/4) 0;}
-@media only screen and (min-width:640px){
-._memberListing-module_gridListItem__1InAw{min-width:auto;width:25%;}
-._memberListing-module_gridListItem__1InAw:nth-of-type(4n){padding:0 0 4px;padding:0 0 calc(var(--space-1)/4) 0;}
-}
-/*! CSS Used from: Embedded */
-._EventStickyFooter-module_footer__3fDH-{background:#fff!important;background:var(--c-white);margin-top:32px !important;margin-top:calc(var(--responsive-space)*2);}
-._EventStickyFooter-module_footerContent__bOcM4{padding:24px 16px!important;padding:calc(var(--responsive-space)*1.5) var(--responsive-space);}
-@media only screen and (min-width:640px){
-._EventStickyFooter-module_footerContent__bOcM4{padding:16px !important;padding:var(--responsive-space);}
-}
-._EventStickyFooter-module_eventActions__1dOQN{margin-left:32px;margin-left:calc(var(--responsive-space)*2);}
-/*! CSS Used from: Embedded */
-._saveEventButton-module_saveButton__2eemT svg{margin:2px;width:16px;height:16px;}
-._saveEventButton-module_newStyle__1WGCV._saveEventButton-module_saveButton__2eemT{background-color:#fff;background-color:var(--color-white);border-color:#c5c4c4;border-color:#aaa;}
-._saveEventButton-module_newStyle__1WGCV._saveEventButton-module_saveButton__2eemT svg{width:18px;height:18px;}
-/*! CSS Used from: chrome-extension://immhpnclomdloikkpcefncmfgjbkojmh/css/emoji.css */
-.emoji-outer{height:inherit;line-height:inherit;}
-.emoji-inner{width:1.5em;height:1.5em;display:inline-block;vertical-align:middle;}
-/*! CSS Used keyframes */
-@-webkit-keyframes fadeIn{0%{opacity:0;}to{opacity:1;}}
-@keyframes fadeIn{0%{opacity:0;}to{opacity:1;}}
-.fixed {
-	position: fixed;
-	bottom: 15px;
-	height: 70px;
-	z-index: 1;
+.post-comments{background:#f5f5f6!important;padding-top:10px;}
+.post-comments .comments-list-notification{background-color:#fff;padding:5px 8px;margin-bottom:10px;-webkit-box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);-moz-box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);}
+.post-comments .comments-list-notification h4{font-family:'Montserrat', sans-serif;font-weight:700;font-size:14px;text-align:center;}
+.post-comments .comments-list{background-color:#fff;padding:25px 30px;margin-bottom:25px;-webkit-box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);-moz-box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);}
+.post-comments .comment-body{overflow:hidden;}
+.post-comments .author-avatar{width:100px;height:100px;float:left;}
+.post-comments .comment-content{overflow:hidden;padding-left:20px;}
+.post-comments .author-name{text-transform:uppercase;font-family:'Abhaya Libre', serif;font-size:16px;font-weight:700;color:#1ab394;margin-right:15px;}
+.post-comments .author-time{font-family:'Abhaya Libre', serif;font-size:13px;font-weight:300;color:#858686;}
+.post-comments p{font-family:'Abhaya Libre', serif;line-height:1.5;margin:10px 0;color:#858686;font-size:17px;}
+.post-comments a.comment-reply-link{font-family:'Abhaya Libre', serif;color:#333333;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s;}
+.post-comments a.comment-reply-link:hover,.post-comments a.comment-reply-link:focus{text-decoration:none;color:#1ab394;}
+.post-comments #contactform{display:block;width:100%;text-align:left;}
+.post-comments #contactform label{position:relative;z-index:13;padding-left:10px;color:#2C3E50;}
+.post-comments #contactform label{line-height:50px;}
+.post-comments #contactform textarea{display:block;position:relative;overflow:hidden;min-height:50px;margin-top:-50px;line-height:50px;font-size:1em;padding-left:30px;padding-right:10px;width:100%;color:#666666;background:#ffffff;border:2px solid #eeeeee;}
+.post-comments #contactform textarea{line-height:25px;width:100%;min-height:120px;}
+.post-comments #contactform textarea:focus{border:2px solid #25E6B1;background-color:#ffffff;color:#1a1a1a;}
+@media only screen and (max-width: 768px){
+p{margin-bottom:0px!important;}
 }
 
 </style>
 
 
 
+<header class="page-post-2">
+	<div class="container">
+		<div class="row">
 
+			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+				<div class="post-heading">
+					<p class="entry-meta">
+						<span class="date updated time">
+							<time class="entry-modified-time">July 4, 2017</time>
+						</span> &nbsp; / &nbsp;
+						<span class="entry-categories">
+							<a href="http://chrislema.com/wordpress/" rel="category tag">Travel</a>
+						</span>
+					</p>
+					<h1>What it’s like to travel to Greece right now</h1>
+				</div><!-- /.post-heading -->
+			</div><!-- /.col-lg-8 -->
 
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</header>
 
+<div class="header-avatar">
+	<img alt="..." src="http://www.themashabrand.com/templates/Masha/Medium/img/users/5.jpg" class="avatar avatar-200 photo" width="200" height="200">
+	<p>Kyle Murray</p>
+</div>
 
+<article class="entry-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 
+				<h4>Becoming a better blogger is just like becoming a better guitarist</h4>
+				<p>There’s no way you become a great (or even decent) guitarist without picking up a guitar,
+					grabbing a music book, learning where the notes and positions are, and this is the most important part,
+					<strong>practicing the guitar.</strong>
+				</p>
+				<p>You don’t play the song the right way the first time.
+					You don’t play it perfectly.&nbsp;Instead, you play, and you play, and you play – again and again and again – until you get good.</p>
+				<p>And the same is true for blogging.</p>
+				<p>You want to get better at writing. You must write. Not a little. A lot. Consistently.</p>
+				<p>Because the bad stuff you do, the mistakes you make, go away after time. But you have to put in the time to make everything work.</p>
+				<h4>I delivered a 2-hour workshop on this</h4>
+				<p>This past weekend I delivered a two-hour workshop on becoming a better blogger.
+					It was enough time to dig into details, but not so long that people got bored.</p>
+				<p>After all, there are tons of questions that I normally get when talking with folks about getting better at blogging.</p>
+				<p>So I crafted the workshop around those questions:</p>
 
+			</div><!-- /col-lg-8 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+</article>
 
-<main id="mupMain" role="main">
-    <div class="eventPageHead stripe" id="eventPageHead--270355045">
-        <div class="bounds bounds--wide">
-            <div class="pageHead--wrapper">
-                <div class="pageHead">
-                    <div class="flex flex--column atMedium_flex--row flex--alignBottom pageHead-pageTitle">
-                        <div class="flex-item flex-item--2 pageHead--titleArea">
-                            <p class="pageHead-pageTitleLabel text--medium text--secondary"><time class="eventStatusLabel" datetime="1590512400000"><span>{{ Carbon\Carbon::parse($meetup->begin_date)->format('d-m-Y H:i') }} au {{ Carbon\Carbon::parse($meetup->end_date)->format('d-m-Y H:i') }}</span></time></p>
-                            <h1 class="pageHead-headline text--pageTitle">{{ucfirst($meetup->name)}}</h1>
-                            <div class="flex flex--row flex--alignCenter event-host-info">
-                                <div class="flex-item flex-item--shrink"><a class="avatar avatar--person" role="img" aria-label="Lamiaa" href="/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/"
-                                      style="background-image: url(&quot;/storage/images/users/{{$meetup->user->image}}&quot;);"><span class="visibility--a11yHide">{{$meetup->user->name}}</span>
-									  <img class="avatar-print"
-                                          src="/storage/images/users/{{$meetup->user->image}}" alt="{{$meetup->user->name}}"></a></div>
-                                <div class="flex-item event-info-hosts-text valign--middle">
-                                    <a href="#">
-                                        <span>
-                                            <span class="">Hôte de l'événement <br>
-                                                <span
-                                                  class="text--bold event-hosts-info-no-link">
-                                                  {{$meetup->user->name}}
-                                              </span>
-                                              </span>
-                                          </span>
-                                      </a>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="flex-item flex-item--shrink pageHead-pageActions"><button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
-                              data-e2e="event-header--share-btn"><span>Participer</span></button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><span style="font-size: 0px;"></span>
-    <div class="bounds bounds--wide" id="eventHome--270355045">
-        <div class="flex flex--column atLarge_flex--row atLarge_flex--rowReverse">
-            <div class="flex-item">
-                <div id="fixed"  class="sticky-ontheside">
-                    <section  class="section eventSideBar">
-                        <div class="eventActionsMenu"></div>
-                        <a class="event-group" href="#">
-                            <div class="chunk event-group-chunk">
-                                <div class="card card--initialHeight atLarge_card--flush card--flush event-group-card">
-                                    <div>
-                                        <div class="flex flex--row">
-                                            <div class="flex-item flex-item--shrink">
-                                                <img class="event-group-photo" src="/storage/images/meetups/{{$meetup->image}}" alt="{{$meetup->name}}"></div>
-                                            <div class="flex-item event-group-content">
-                                                <div class="flex flex--column event-group-photoHeight">
-                                                    <div class="flex-item flex-item--shrink event-group-name"><span class="text--bold text--small display--inlineBlock">{{$meetup->name}}</span></div>
-                                                    {{--
-                                                    <div class="flex-item flex-item--shrink">
-                                                        <span class="groupPrivacyLabelTooltip text--secondary text--small">
-                                                            <div>
-                                                                <span class="infoToggle-label"><span>Groupe public</span></span>
-                                                                <div class="popup">
-                                                                    <div class="popup-trigger" aria-labelledby="privacy-info-tooltip"><button data-swarm-button="reset" data-swarm-size="default" data-icon="left" data-swarm-width="default"
-                                                                          type="button"><span class="infoToggle-trigger align--center" role="img">?</span></button></div>
-                                                                </div>
-                                                            </div>
-                                                        </span>
-                                                    </div>
-                                                    --}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="chunk">
-                            <div class="card card--initialHeight atLarge_card--flush card--flush event-info card--flushContent">
-                                <section class="section text--small">
-                                    <div class="chunk">
-                                        <div class="flex flex--row eventDateTime">
-                                            <div class="flex-item flex-item--shrink text--secondary"><span>
-                                            	<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24px" height="24px"><path d="M 7.5 1 C 3.917969 1 1 3.917969 1 7.5 C 1 11.082031 3.917969 14 7.5 14 C 11.082031 14 14 11.082031 14 7.5 C 14 3.917969 11.082031 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 4.457031 13 2 10.542969 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 7 3 L 7 8 L 10 8 L 10 7 L 8 7 L 8 3 Z"/ class="svg svg--clock svg-icon valign--middle"></svg>
-                                            </span></div>
-                                            <div class="flex-item">
-                                                <div class="eventTimeDisplay eventDateTime--hover"><time class="" datetime="1590512400000"><span class="eventTimeDisplay-startDate"><span>{{ Carbon\Carbon::parse($meetup->begin_date)->format('d-m-Y H:i') }}</span><br><span
-                                                              class="eventTimeDisplay-startDate-time"><span>au {{ Carbon\Carbon::parse($meetup->end_date)->format('d-m-Y H:i') }}</span></span></span></time>
-                                                    <div>
-                                                        {{--
-                                                        <div class="popup">
-                                                            <div type="button" role="button" aria-label="open menu" aria-expanded="false" aria-haspopup="true" data-toggle="true" class="popup-trigger">
-                                                                <p class="link"><span>Ajouter à mon agenda</span></p>
-                                                            </div>
-                                                        </div>
-                                                        --}}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex--row">
-                                        <div class="flex-item flex-item--shrink text--secondary"><span>
-                                                <img src="https://img.icons8.com/ios/50/000000/marker.png"/ class="svg svg--location-pin svg-icon valign--middle" width="20" height="20">
-                                            </span></div>
-                                        <div class="flex-item valign--middle">
-                                            <div class="chunk">
-                                                <p class="venueDisplay venueDisplay-venue-noVenue">
-                                                    <span>
-                                                        @if($meetup->link !== null)
-                                                        Lien: {{$meetup->link}}
-                                                        @endif
-                                                        @if($meetup->place !== null)
-                                                        Lieu: {{$meetup->place}}
-                                                        @endif
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            {{--
-                            <div class="event-report-wrapper margin--top align--center"><button data-swarm-button="reset" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button"
-                                  class="event-report-button text--small"><span>Signaler cet événement</span></button>
-                              </div>
-                              --}}
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div class="flex-item flex-item--2 eventContent">
-                <div class="chunk">
-                    <div class="eventContent">
-                        <section class="section">
-                            <div class="chunk event-description--wrapper">
-                                <div class="photoCarousel--wrapper">
-                                    <div class="photoCarousel margin--bottom padding--bottom">
-                                        <div>
-                                            <div class="photoCarousel-photoContainer keepAspect--16-9" style="background-image: url(&quot;/storage/images/meetups/{{$meetup->image}}&quot;);"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h2 class="text--sectionTitle text--bold padding--bottom"><span>Détails</span></h2>
-                                <div class="event-description runningText">
-                                    @if($meetup->details !== null)
-                                    {!!$meetup->details!!}
-                                    @endif
-                                </div>
-                            </div>
-                        </section>
-                        <section class="section">
-                            <div class="attendees-sample">
-                                <div class="flex flex--row">
-                                    <div class="flex-item">
-                                        <h3 class="attendees-sample-total text--sectionTitle text--bold padding--bottom"><span>Participants ({{count($meetup->users)}})</span></h3>
-                                    </div>
-                                    {{--
-                                    <div class="flex-item flex-item--shrink">
-                                        <a class="attendees-sample-link link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/">
-                                            <span>Voir tout</span>
-                                        </a>
-                                    </div>
-                                    --}}
-                                </div>
-                                <div class="chunk">
-                                    <p class="visibility--a11yHide"><span>Voir la liste des participants</span></p>
-                                    <div class="hscrollContainer hscrollGradient--hidden memberListing _memberListing-module_memberListing__3dEo-">
-                                        <div class="hscroll atMedium_hscroll--unclip">
-                                            <div class="hscroll-content">
-                                                <ul class="flex gridList gridList--autoHeight gridList--autoHeight--has4 _memberListing-module_gridList__3_lox flex--wrap">
-                                                    @if(count($meetup->users) > 0)
-                                                    @foreach($meetup->users as $user)
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/302310282/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="Lamiaa"
-                                                                      style="background-image: url(&quot;/storage/images/users/{{$user->image}}&quot;);"><span class="visibility--a11yHide">Lamiaa</span><img
-                                                                          class="avatar-print" src="/storage/images/users/{{$user->image}}" alt="{{$user->name}}"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>{{$user->name}}</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span
-                                                                              class="member-role member-role-type-coorganizer text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span></p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    @endforeach
-                                                    @endif
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <section class="section">
-                    <div class="chunk">
-                        <div class="card card--initialHeight atLarge_card--flush card--flush seeAllMeetups padding--left padding--bottom border--none"><a href="{{url('meetups')}}">
-                                <div class="flex flex--row">
-                                    <div class="flex-item flex-item--shrink valignChildren--center"><img class="event-group-photo" src="/storage/images/users/{{$meetup->user->image}}"
-                                          alt="Le Wagon Paris - Coding Bootcamp"></div>
-                                    <div class="flex-item border--left valignChildren--center" align="left">
-                                        <p>{{$meetup->user->name}}</p>
-                                        <p class="link"><span>Voir plus d'événements</span></p>
-                                    </div>
-                                    <div class="flex-item flex-item--shrink valignChildren--center"><span class="link"><svg preserveAspectRatio="xMinYMin meet" width="24" height="24" viewBox="0 0 24 24"
-                                              class="svg svg--chevron-right svg-icon valign--middle" role="img">
-                                                <use xlink:href="#icon-chevron-right--small"></use>
-                                            </svg></span></div>
-                                </div>
-                            </a></div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        {{--
-        <div class="relatedEvents padding--bottom"><span style="font-size: 0px;"></span>
-            <div class="bounds bounds--wide margin--top">
-                <section class="section border--top">
-                    <div class="chunk">
-                        <div class="flex flex--row">
-                            <div class="flex-item">
-                                <h4 class="text--sectionTitle text--bold"><span>Événements similaires à proximité</span></h4>
-                            </div>
-                            <div class="flex-item flex-item--shrink"><a href="https://www.meetup.com/fr-FR/find/events/tech/?eventFilter=all" class="relatedEvents-seeAll link" id="relatedEvents-seeAll"><span>Voir tout</span></a></div>
-                        </div>
-                    </div>
-                    <div class="chunk">
-                        <div class="hscrollContainer hscrollGradient--hidden">
-                            <div class="hscroll">
-                                <div class="hscroll-content">
-                                    <ul class="flex gridList gridList--autoHeight gridList--autoHeight--has3">
-                                        <li class="gridList-item flex-item">
-                                            <div class="gridList-itemInner">
-                                                <div class="card card--hasHoverShadow eventCard relatedEvents-card border--none buttonPersonality" id="relatedEvents--eventCard-270825955"><a class="eventCard--link"
-                                                      href="/fr-FR/Paris-Tech-Meetups5/events/270825955/"><span class="visibility--a11yHide">Comment Trace One s'est adapté au covid19 ?</span></a>
-                                                    <div class="flex flex--column flex--spaceBetween">
-                                                        <div class="flex-item flex-item--shrink">
-                                                            <div class="eventCardHead">
-                                                                <div class="flex flex--row">
-                                                                    <div class="flex-item">
-                                                                        <div class="eventTimeDisplay text--labelSecondary text--small wrap--singleLine--truncate margin--halfBottom color-viridian"><time class="" datetime="1590505200000"><span
-                                                                                  class="eventTimeDisplay-startDate"><span>mar. 26 mai</span>, <span class="eventTimeDisplay-startDate"><span>17:00 UTC+2</span></span></span></time></div>
-                                                                        <div class="text--ellipsisTwoLines text--sectionTitle margin--halfBottom"><a class="eventCardHead--title" href="/fr-FR/Paris-Tech-Meetups5/events/270825955/">Comment Trace One
-                                                                                s'est adapté au covid19 ?</a></div><a class="eventCardHead--groupLink" href="/fr-FR/Paris-Tech-Meetups5">
-                                                                            <div class="eventCardHead--groupName wrap--singleLine--truncate text--primary margin--halfBottom">Paris Tech Meetups</div>
-                                                                        </a>
-                                                                        <div class="flex flex--row flex--noGutters flex--alignCenter margin--halfBottom">
-                                                                            <div class="flex-item flex-item--shrink text--secondary"><svg data-swarm-icon="true" height="24" width="24" viewBox="0 0 24 24" class="valign--middle">
-                                                                                    <path
-                                                                                      d="M13 5.5A1.5 1.5 0 0114.5 7v10a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 17V7A1.5 1.5 0 013 5.5zm7.168 1.12A1.5 1.5 0 0122.5 7.87v8.262a1.5 1.5 0 01-2.332 1.249L15.5 14.268V9.732zM13 6.5H3a.5.5 0 00-.5.5v10a.5.5 0 00.5.5h10a.5.5 0 00.5-.5V7a.5.5 0 00-.5-.5zm8.416 1.091a.5.5 0 00-.693-.139L16.5 10.267v3.465l4.223 2.816a.5.5 0 00.18.074l.097.01a.5.5 0 00.5-.5V7.868a.5.5 0 00-.084-.278z">
-                                                                                    </path>
-                                                                                </svg></div>
-                                                                            <div class="flex-item valign--middle">
-                                                                                <div class="venueDisplay venueDisplay-venue padding--left-half text--secondary text--small"><address>
-                                                                                        <p class="wrap--singleLine--truncate">Événement en ligne</p>
-                                                                                    </address></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex-item flex-item--shrink">
-                                                            <div class="flex flex--row flex--spaceBetween flex--alignCenter padding--top padding--bottom">
-                                                                <div class="flex-item flex-item--shrink">
-                                                                    <ul class="eventCard--attendeesLink avatarRow avatarRow--stacked padding--none">
-                                                                        <li class="avatarRow-item display--inline" style="z-index: 1;"><span class="avatar avatar--small avatar--person" role="img" aria-label="Pentalog"
-                                                                              style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/2/e/8/d/thumb_266651917.jpeg&quot;);"><span
-                                                                                  class="visibility--a11yHide">Pentalog</span><img class="avatar-print" src="https://secure.meetupstatic.com/photos/member/2/e/8/d/thumb_266651917.jpeg"
-                                                                                  alt="Pentalog"></span></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="flex-item">
-                                                                    <div class="flex flex--row flex--flexEnd flex--alignCenter">
-                                                                        <div class="flex-item flex-item--shrink eventCard--clickable"><a data-swarm-button="default" data-swarm-size="default" data-icon="left" data-swarm-width="grow"
-                                                                              class="padding--left padding--right" id="attendButton" href="/fr-FR/Paris-Tech-Meetups5/events/270825955/"><span>Participer</span></a></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="gridList-item flex-item">
-                                            <div class="gridList-itemInner">
-                                                <div class="card card--hasHoverShadow eventCard relatedEvents-card border--none buttonPersonality" id="relatedEvents--eventCard-xhwlsrybchblc"><a class="eventCard--link"
-                                                      href="/fr-FR/Silex-Labs-Aperopensource/events/xhwlsrybchblc/"><span class="visibility--a11yHide">Aperopensource</span></a>
-                                                    <div class="flex flex--column flex--spaceBetween">
-                                                        <div class="flex-item flex-item--shrink">
-                                                            <div class="eventCardHead">
-                                                                <div class="flex flex--row">
-                                                                    <div class="flex-item">
-                                                                        <div class="eventTimeDisplay text--labelSecondary text--small wrap--singleLine--truncate margin--halfBottom color-viridian"><time class="" datetime="1590685200000"><span
-                                                                                  class="eventTimeDisplay-startDate"><span>jeu. 28 mai</span>, <span class="eventTimeDisplay-startDate"><span>19:00 UTC+2</span></span></span></time></div>
-                                                                        <div class="text--ellipsisTwoLines text--sectionTitle margin--halfBottom"><a class="eventCardHead--title"
-                                                                              href="/fr-FR/Silex-Labs-Aperopensource/events/xhwlsrybchblc/">Aperopensource</a></div><a class="eventCardHead--groupLink" href="/fr-FR/Silex-Labs-Aperopensource">
-                                                                            <div class="eventCardHead--groupName wrap--singleLine--truncate text--primary margin--halfBottom">Silex Labs</div>
-                                                                        </a>
-                                                                        <div class="flex flex--row flex--noGutters flex--alignCenter margin--halfBottom">
-                                                                            <div class="flex-item flex-item--shrink text--secondary"><span><svg preserveAspectRatio="xMinYMin meet" width="20" height="20" viewBox="0 0 20 20"
-                                                                                      class="svg svg--location-pin svg-icon valign--middle" role="img">
-                                                                                        <use xlink:href="#icon-location-pin--small"></use>
-                                                                                    </svg></span></div>
-                                                                            <div class="flex-item valign--middle">
-                                                                                <div class="venueDisplay venueDisplay-venue padding--left-half text--secondary text--small"><address>
-                                                                                        <p class="wrap--singleLine--truncate">Les Frangins</p>
-                                                                                    </address></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex-item flex-item--shrink">
-                                                            <div class="flex flex--row flex--spaceBetween flex--alignCenter padding--top padding--bottom">
-                                                                <div class="flex-item flex-item--shrink">
-                                                                    <ul class="eventCard--attendeesLink avatarRow avatarRow--stacked padding--none">
-                                                                        <li class="avatarRow-item display--inline" style="z-index: 3;"><span class="avatar avatar--small avatar--person" role="img" aria-label="Silex Labs"
-                                                                              style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/d/0/6/5/thumb_244973349.jpeg&quot;);"><span class="visibility--a11yHide">Silex
-                                                                                    Labs</span><img class="avatar-print" src="https://secure.meetupstatic.com/photos/member/d/0/6/5/thumb_244973349.jpeg" alt="Silex Labs"></span></li>
-                                                                        <li class="avatarRow-item display--inline" style="z-index: 2;"><span class="avatar avatar--small avatar--person avatar--noPhoto" role="img" aria-label="Franc"><span
-                                                                                  class="visibility--a11yHide">Franc</span><span class="avatarIcon--noPhoto display--inlineFlex"><svg preserveAspectRatio="xMinYMin meet" width="36" height="36"
-                                                                                      viewBox="0 0 36 36" class="svg svg--profile svg-icon valign--middle" role="img">
-                                                                                        <use xlink:href="#icon-profile"></use>
-                                                                                    </svg></span></span></li>
-                                                                        <li class="avatarRow-item display--inline" style="z-index: 1;"><span class="avatar avatar--small avatar--person" role="img" aria-label="Antoine Smagghe"
-                                                                              style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/e/6/b/9/thumb_298439065.jpeg&quot;);"><span class="visibility--a11yHide">Antoine
-                                                                                    Smagghe</span><img class="avatar-print" src="https://secure.meetupstatic.com/photos/member/e/6/b/9/thumb_298439065.jpeg" alt="Antoine Smagghe"></span></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="flex-item">
-                                                                    <div class="flex flex--row flex--flexEnd flex--alignCenter">
-                                                                        <div class="flex-item flex-item--shrink eventCard--clickable"><a data-swarm-button="default" data-swarm-size="default" data-icon="left" data-swarm-width="grow"
-                                                                              class="padding--left padding--right" id="attendButton" href="/fr-FR/Silex-Labs-Aperopensource/events/xhwlsrybchblc/"><span>Participer</span></a></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="gridList-item flex-item">
-                                            <div class="gridList-itemInner">
-                                                <div class="card card--hasHoverShadow eventCard relatedEvents-card border--none buttonPersonality" id="relatedEvents--eventCard-270439747"><a class="eventCard--link"
-                                                      href="/fr-FR/Ironhack-Paris/events/270439747/"><span class="visibility--a11yHide">[VIRTUAL] HACKSHOW Web Development, UX/UI Design &amp; Data Analytics</span></a>
-                                                    <div class="flex flex--column flex--spaceBetween">
-                                                        <div class="flex-item flex-item--shrink">
-                                                            <div class="eventCardHead">
-                                                                <div class="flex flex--row">
-                                                                    <div class="flex-item">
-                                                                        <div class="eventTimeDisplay text--labelSecondary text--small wrap--singleLine--truncate margin--halfBottom color-viridian"><time class="" datetime="1590424200000"><span
-                                                                                  class="eventTimeDisplay-startDate"><span>lun. 25 mai</span>, <span class="eventTimeDisplay-startDate"><span>18:30 UTC+2</span></span></span></time></div>
-                                                                        <div class="text--ellipsisTwoLines text--sectionTitle margin--halfBottom"><a class="eventCardHead--title" href="/fr-FR/Ironhack-Paris/events/270439747/">[VIRTUAL] HACKSHOW Web
-                                                                                Development, UX/UI Design &amp; Data Analytics</a></div><a class="eventCardHead--groupLink" href="/fr-FR/Ironhack-Paris">
-                                                                            <div class="eventCardHead--groupName wrap--singleLine--truncate text--primary margin--halfBottom">Ironhack Paris</div>
-                                                                        </a>
-                                                                        <div class="flex flex--row flex--noGutters flex--alignCenter margin--halfBottom">
-                                                                            <div class="flex-item flex-item--shrink text--secondary"><svg data-swarm-icon="true" height="24" width="24" viewBox="0 0 24 24" class="valign--middle">
-                                                                                    <path
-                                                                                      d="M13 5.5A1.5 1.5 0 0114.5 7v10a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 17V7A1.5 1.5 0 013 5.5zm7.168 1.12A1.5 1.5 0 0122.5 7.87v8.262a1.5 1.5 0 01-2.332 1.249L15.5 14.268V9.732zM13 6.5H3a.5.5 0 00-.5.5v10a.5.5 0 00.5.5h10a.5.5 0 00.5-.5V7a.5.5 0 00-.5-.5zm8.416 1.091a.5.5 0 00-.693-.139L16.5 10.267v3.465l4.223 2.816a.5.5 0 00.18.074l.097.01a.5.5 0 00.5-.5V7.868a.5.5 0 00-.084-.278z">
-                                                                                    </path>
-                                                                                </svg></div>
-                                                                            <div class="flex-item valign--middle">
-                                                                                <div class="venueDisplay venueDisplay-venue padding--left-half text--secondary text--small"><address>
-                                                                                        <p class="wrap--singleLine--truncate">Événement en ligne</p>
-                                                                                    </address></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex-item flex-item--shrink">
-                                                            <div class="flex flex--row flex--spaceBetween flex--alignCenter padding--top padding--bottom">
-                                                                <div class="flex-item flex-item--shrink">
-                                                                    <ul class="eventCard--attendeesLink avatarRow avatarRow--stacked padding--none">
-                                                                        <li class="avatarRow-item display--inline" style="z-index: 3;"><span class="avatar avatar--small avatar--person" role="img" aria-label="Ironhack Paris - Events"
-                                                                              style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/2/b/9/thumb_296880697.jpeg&quot;);"><span class="visibility--a11yHide">Ironhack Paris -
-                                                                                    Events</span><img class="avatar-print" src="https://secure.meetupstatic.com/photos/member/2/b/9/thumb_296880697.jpeg" alt="Ironhack Paris - Events"></span></li>
-                                                                        <li class="avatarRow-item display--inline" style="z-index: 2;"><span class="avatar avatar--small avatar--person" role="img" aria-label="cloqui"
-                                                                              style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/3/9/7/c/thumb_288554716.jpeg&quot;);"><span class="visibility--a11yHide">cloqui</span><img
-                                                                                  class="avatar-print" src="https://secure.meetupstatic.com/photos/member/3/9/7/c/thumb_288554716.jpeg" alt="cloqui"></span></li>
-                                                                        <li class="avatarRow-item display--inline" style="z-index: 1;"><span class="avatar avatar--small avatar--person" role="img" aria-label="Sara Navarro Medina"
-                                                                              style="background-image: url(&quot;https://secure.meetupstatic.com/photos/member/3/9/f/a/thumb_160694842.jpeg&quot;);"><span class="visibility--a11yHide">Sara Navarro
-                                                                                    Medina</span><img class="avatar-print" src="https://secure.meetupstatic.com/photos/member/3/9/f/a/thumb_160694842.jpeg" alt="Sara Navarro Medina"></span></li>
-                                                                        <li class="avatarRow--attendingCount display--inline text--small text--secondary">
-                                                                            <div class="display--inline">+93</div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="flex-item">
-                                                                    <div class="flex flex--row flex--flexEnd flex--alignCenter">
-                                                                        <div class="flex-item flex-item--shrink eventCard--clickable"><a data-swarm-button="default" data-swarm-size="default" data-icon="left" data-swarm-width="grow"
-                                                                              class="padding--left padding--right" id="attendButton" href="/fr-FR/Ironhack-Paris/events/270439747/"><span>Participer</span></a></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        --}}
-    </div>
-    <div class="_EventStickyFooter-module_footer__3fDH- stickyHeader sticky--bottom" style="">
-        <div class="bounds bounds--wide">
-            <div class="flex flex--row flex--spaceBetween flex--alignCenter _EventStickyFooter-module_footerContent__bOcM4" data-e2e="event-footer">
-                <div class="flex-item flex-item--shrink">
-                    <div class="flex flex--column">
-                        <div class="flex-item" data-e2e="event-footer--date-time" data-e2e_timestamp="1590512400000"><span>{{ Carbon\Carbon::parse($meetup->begin_date)->format('d-m-Y H:i') }} au {{ Carbon\Carbon::parse($meetup->end_date)->format('d-m-Y H:i') }}</span></div>
-                        <div class="flex-item"><span class="text--bold">{{ucfirst($meetup->name)}}</span></div>
-                    </div>
-                </div>
-                <div class="flex-item flex-item--shrink">
-                    <div class="flex flex--row flex--spaceBetween flex--alignCenter">
-                        <div class="flex-item flex-item--shrink">
-                            <div class="flex flex--row flex--alignCenter">
-                                <div class="flex-item flex-item--shrink">
-                                    <div class="flex flex--column">
-                                        {{--
-                                        <div class="flex-item text--bold">
-                                            <span data-e2e="event-footer--price-label">
-                                                <span>GRATUIT</span>
-                                            </span>
-                                        </div>
-                                        --}}
-                                        <div class="flex-item">
-                                            <span>175 places encore disponibles</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex-item flex-item--shrink _EventStickyFooter-module_eventActions__1dOQN">
-                            <div class="flex flex--row">
-                                {{--
-                                <div class="flex-item flex-item--shrink"><button data-swarm-button="neutral" data-swarm-size="large" data-icon="only" data-swarm-width="default" type="button" aria-label="Enregistrer l'événement"
-                                      class="saveButton _saveEventButton-module_saveButton__2eemT saveButton--save _saveEventButton-module_newStyle__1WGCV gtmEventFooter--save-btn" data-e2e="event-footer--save-btn"><span><svg data-swarm-icon="true"
-                                              height="24" width="24" viewBox="0 0 24 24">
-                                                <path
-                                                  d="M5.458 22.004l1.25-7.284-5.293-5.16 7.314-1.062L12 1.87l3.271 6.628 7.314 1.063-5.292 5.159 1.249 7.284L12 18.564l-6.542 3.44zm1.328-1.828L12 17.436l5.214 2.74-.996-5.805 4.218-4.112-5.83-.847L12 4.13 9.393 9.412l-5.83.847 4.219 4.112-.996 5.805z">
-                                                </path>
-                                            </svg></span></button></div>
-                                            --}}
-                                <div class="flex-item flex-item--shrink">
-                                    <a href="/registerEvent">
-                                        <button data-swarm-button="primary" data-swarm-size="large" data-icon="left" data-swarm-width="default" type="button" data-e2e="event-footer--attend-btn"
-                                          class="gtmEventFooter--attend-btn">
-                                          <span>Participer</span>
-                                      </button>
-                                    </a>
+<article class="post-comments">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+				<div class="comments-list-notification">
+					<h4><span class="text">2 Comments</span></h4>
+				</div><!-- /.comment-list -->
 
-<!--script>
-    $(function() {
-            var offset = $(".sticky-ontheside").offset();
-            var topPadding = 15;
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > offset.top) {
-                    $(".sticky-ontheside").stop().animate({
-                        marginTop: $(window).scrollTop() - offset.top + topPadding
-                    });
-                }
-                 else {
-                    $(".sticky-ontheside").stop().animate({
-                        marginTop: 0
-                    });
-                };
-            });
-        });
-</script-->
+				<div class="comments-list">
 
-<script>
-	(function($) {
-    // var elementId = $('#follow_scroll')
-    // console.log($(window).width())
-    if($(window).width() < 700){
-    //     elementId.removeClass('follow-scroll')
-    console.log('petit ecrans ;p')
-    }else{
-    // else if((window).width() > 700)
-    // {
-        
-    var element = $('.sticky-ontheside'),
-        originalY = element.offset().top;
-    
-// Space between element and top of screen (when scrolling)
-    var topMargin = 100;
-// Should probably be set in CSS; but here just for emphasis
-    element.css('position', 'relative');
-    
-    $(window).on('scroll', function(event) {
-        var scrollTop = $(window).scrollTop();
+					<div class="comment-body">
+						<div class="author-avatar">
+							<img alt="..." src="http://www.themashabrand.com/templates/Masha/Medium/img/users/3.jpg" class="http://www.themashabrand.com/templates/Masha/Medium/img-fluid" width="100" height="100">
+						</div>
+						<div class="comment-content">
+							<span class="author-name">David Murlee</span>
+							<span class="author-time">June 13, 2017 at 2:37 pm</span>
+							<p class="author-post">Thanks, great article.</p>
+							<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Bablofil">Reply</a>
+						</div><!-- /.comment-content -->
+					</div><!-- .comment-body -->
 
-        //annalize of bottom space
-        var hT = $('#category-content').offset().top,
-        hH = $('#category-content').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-        if (wS > (300+hT+hH-wH)){
-            // stop scroll when we are over section
+				</div><!-- /.comment-list -->
 
-            scrollTop = function(e){
-                e.preventDefault();
-                e.stopPropagation();
-            }
-          
+				<div class="comments-list">
 
-            // scrollTop = this.scrollTop()
+					<div class="comment-body">
+						<div class="author-avatar">
+							<img alt="..." src="http://www.themashabrand.com/templates/Masha/Medium/img/users/4.jpg" class="http://www.themashabrand.com/templates/Masha/Medium/img-fluid" width="100" height="100">
+						</div>
+						<div class="comment-content">
+							<span class="author-name">Jonathan Smart</span>
+							<span class="author-time">June 13, 2017 at 2:37 pm</span>
+							<p class="author-post">I love the article, keep up with the good work.</p>
+							<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Bablofil">Reply</a>
+						</div><!-- /.comment-content -->
+					</div><!-- .comment-body -->
 
+				</div><!-- /.comment-list -->
 
-        //     console.log(hT+hH-wH-50)
-        // }else if(wS > (hT+hH+400-wH)){
-        //     scrollTop = function(e){
-        //         // e.preventDefault();
-        //         e.stopPropagation();
-        //     }
-        }
+				<div class="comments-list">
+					<!-- The contactform -->
+					<form method="post" name="contactform" id="contactform">
+						<fieldset>
+							<!-- Comments / Message -->
+							<label for="comments" accesskey="C"><i class="fa fa-comment"></i></label>
+							<textarea name="comments" id="comments"></textarea>
+							<!-- Send button -->
+							<div class="text-center">
+								<button type="submit" class="kafe-btn kafe-btn-mint full-width">Submit</button>
+							</div>
+						</fieldset>
+					</form>
+				</div><!-- /.comment-list -->
 
-
-        element.stop(false, false).animate({
-            top: scrollTop < originalY
-                    ? 0
-                    : scrollTop - originalY + topMargin
-        }, 210); // scroll duration
-    });
-}
-
-})(jQuery);
-
-</script>
-	
+			</div><!-- /col-lg-8 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+</article>
 
 @endsection

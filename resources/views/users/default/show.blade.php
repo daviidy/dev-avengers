@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Tableau de bord')
+@section('title', ucfirst($user->name))
 
 @section('content')
 
@@ -420,7 +420,7 @@ p{margin-bottom:0px!important;}
 
 </style>
 
-@include('includes.user_header')
+@include('includes.user_header_visit')
 
 
 <div class="ss-content-wrapper">
@@ -431,9 +431,9 @@ p{margin-bottom:0px!important;}
                 <div class="ss-flex">
                     <div class="ss-flex-item-info email">
                         <div class="ss-field-label-large">
-                            {{ucfirst(Auth::user()->name)}} </div>
+                            {{ucfirst($user->name)}} </div>
                         <div class="field-value">
-                            {{Auth::user()->email}} </div>
+                            {{$user->email}} </div>
                     </div>
 
                 </div>
@@ -455,8 +455,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de naissance:</div>
                         <div class="field-value ss-empty-value">
-                           <p> @if(Auth::user()->birth_city)
-                            {{Auth::user()->birth_city}}
+                           <p> @if($user->birth_city)
+                            {{$user->birth_city}}
                             @else
                             Aucune ville renseignée
                             @endif
@@ -466,8 +466,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de naissance</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->birth_country)
-                            {{Auth::user()->birth_country}}
+                        	@if($user->birth_country)
+                            {{$user->birth_country}}
                             @else
                             Aucun Pays renseigné
                             @endif
@@ -487,8 +487,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->living_country)
-                            {{Auth::user()->living_country}}
+                        	@if($user->living_country)
+                            {{$user->living_country}}
                             @else
                             Aucun Pays renseigné
                             @endif
@@ -497,8 +497,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Etat de résidence</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->living_state)
-                            {{Auth::user()->living_state}}
+                        	@if($user->living_state)
+                            {{$user->living_state}}
                             @else
                             Aucun Etat renseigné
                             @endif
@@ -507,8 +507,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->living_city)
-                            {{Auth::user()->living_city}}
+                        	@if($user->living_city)
+                            {{$user->living_city}}
                             @else
                             Aucune ville renseignée
                             @endif
@@ -517,8 +517,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Code Postal</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->zip_code)
-                            {{Auth::user()->zip_code}}
+                        	@if($user->zip_code)
+                            {{$user->zip_code}}
                             @else
                             Aucun Code Postal renseigné
                             @endif
@@ -527,8 +527,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Situation matrimonial</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->marital_status)
-                            {{Auth::user()->marital_status}}
+                        	@if($user->marital_status)
+                            {{$user->marital_status}}
                             @else
                             Aucune Situation matrimonial renseignée
                             @endif
@@ -537,8 +537,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->children_number)
-                            {{Auth::user()->children_number}}
+                        	@if($user->children_number)
+                            {{$user->children_number}}
                             @else
                             Aucun Nombre d'enfant renseigné
                             @endif
@@ -547,8 +547,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Numéro de téléphone</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mobile_tel)
-                            {{Auth::user()->mobile_tel}}
+                        	@if($user->mobile_tel)
+                            {{$user->mobile_tel}}
                             @else
                             Aucun Numéro renseigné
                             @endif
@@ -569,8 +569,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nom du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_traditional_first_name)
-                            {{Auth::user()->father_traditional_first_name}}
+                        	@if($user->father_traditional_first_name)
+                            {{$user->father_traditional_first_name}}
                             @else
                             Aucun Nom renseigné
                             @endif
@@ -579,8 +579,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Prénoms du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_last_name)
-                            {{Auth::user()->father_last_name}}
+                        	@if($user->father_last_name)
+                            {{$user->father_last_name}}
                             @else
                             Aucun Prénoms renseigné
                             @endif
@@ -589,8 +589,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_other_name)
-                            {{Auth::user()->father_other_name}}
+                        	@if($user->father_other_name)
+                            {{$user->father_other_name}}
                             @else
                             Aucun Autre noms renseigné
                             @endif
@@ -599,8 +599,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_birth_country)
-                            {{Auth::user()->father_birth_country}}
+                        	@if($user->father_birth_country)
+                            {{$user->father_birth_country}}
                             @else
                             Aucun Pays renseigné
                             @endif
@@ -609,8 +609,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_town)
-                            {{Auth::user()->father_town}}
+                        	@if($user->father_town)
+                            {{$user->father_town}}
                             @else
                             Aucune ville renseignée
                             @endif
@@ -619,8 +619,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant du père</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->father_children_number)
-                            {{Auth::user()->father_children_number}}
+                        	@if($user->father_children_number)
+                            {{$user->father_children_number}}
                             @else
                             Aucun Nombre d'enfant renseigné
                             @endif
@@ -635,8 +635,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nom de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_traditional_first_name)
-                            {{Auth::user()->mother_traditional_first_name}}
+                        	@if($user->mother_traditional_first_name)
+                            {{$user->mother_traditional_first_name}}
                             @else
                             Aucun Nom renseigné
                             @endif
@@ -645,8 +645,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Prénoms de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_last_name)
-                            {{Auth::user()->mother_last_name}}
+                        	@if($user->mother_last_name)
+                            {{$user->mother_last_name}}
                             @else
                             Aucun Prénoms renseigné
                             @endif
@@ -655,8 +655,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_other_name)
-                            {{Auth::user()->mother_other_name}}
+                        	@if($user->mother_other_name)
+                            {{$user->mother_other_name}}
                             @else
                             Aucun Autre noms renseigné
                             @endif
@@ -665,8 +665,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Pays de résidence de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_birth_country)
-                            {{Auth::user()->mother_birth_country}}
+                        	@if($user->mother_birth_country)
+                            {{$user->mother_birth_country}}
                             @else
                             Aucun Pays renseigné
                             @endif
@@ -675,8 +675,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_birth_city)
-                            {{Auth::user()->mother_birth_city}}
+                        	@if($user->mother_birth_city)
+                            {{$user->mother_birth_city}}
                             @else
                             Aucune ville renseignée
                             @endif
@@ -685,8 +685,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nombre d'enfant de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_children_number)
-                            {{Auth::user()->mother_children_number}}
+                        	@if($user->mother_children_number)
+                            {{$user->mother_children_number}}
                             @else
                             Aucun Nombre d'enfant renseigné
                             @endif
@@ -694,12 +694,14 @@ p{margin-bottom:0px!important;}
                     </div>
                 </div>
             </div>
-            <a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
+            {{--
+            <a class="ss-edit-profile-button" href="{{route('users.edit', $user)}}" rel="noopener">Modifier le profil</a>
+            --}}
         </div>
     </div>
 </div>
 
-@include('includes.project_event_home');
+@include('includes.project_event');
 
 
 

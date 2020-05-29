@@ -86,6 +86,16 @@ class User extends Authenticatable
          return $this->belongsToMany('App\Meetup');
      }
 
+     /**
+      * [users description]
+      * relationship one to many with Project model
+      * @return [array] [description]
+      */
+      public function projects()
+      {
+          return $this->hasMany('App\Project');
+      }
+
 
      /**
       * [users description]

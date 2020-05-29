@@ -1,4 +1,5 @@
-
+<style media="screen">
+<!--style achat et vente-->
 
 <style media="screen">
 /*! CSS Used from: http://localhost:8000/assets/main_theme/medium/bower_components/bootstrap/dist/css/bootstrap.css */
@@ -320,6 +321,7 @@ address{display:inline;font-style:normal;}
 }
 
 </style>
+</style>
 
 <section class="posts-2 followers">
     <div class="container">
@@ -345,8 +347,8 @@ address{display:inline;font-style:normal;}
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active show" id="projects" aria-expanded="true">
-                        @if(count($user->projects->where('type', 'Projet')) > 0)
-                        @foreach($user->projects->where('type', 'Projet') as $project)
+                        @if(count(Auth::user()->projects->where('type', 'Projet')) > 0)
+                        @foreach(Auth::user()->projects->where('type', 'Projet') as $project)
                         <div class="card card-profile">
                             <div class="card-block">
                                 <div class="media">
@@ -431,8 +433,8 @@ address{display:inline;font-style:normal;}
                     </div><!-- tabpanel -->
 
                     <div role="tabpanel" class="tab-pane fade" id="business" aria-expanded="true">
-                        @if(count($user->projects->where('type', 'Achat et vente')) > 0)
-                        @foreach($user->projects->where('type', 'Achat et vente') as $project)
+                        @if(count(Auth::user()->projects->where('type', 'Achat et vente')) > 0)
+                        @foreach(Auth::user()->projects->where('type', 'Achat et vente') as $project)
                         {{--
                         <div class="card card-profile">
                             <div class="card-block">
@@ -597,8 +599,8 @@ address{display:inline;font-style:normal;}
                     </div><!-- tabpanel -->
 
                     <div role="tabpanel" class="tab-pane fade" id="events" aria-expanded="true">
-                        @if(count($user->projects) > 0)
-                        @foreach($user->meetups as $meetup)
+                        @if(count(Auth::user()->projects) > 0)
+                        @foreach(Auth::user()->meetups as $meetup)
                         <div class="card card-profile">
                             <div class="card-block">
                                 <div class="media">
