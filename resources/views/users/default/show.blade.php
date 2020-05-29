@@ -424,7 +424,7 @@ p{margin-bottom:0px!important;}
 
 
 <div class="ss-content-wrapper">
-    <div class="ss-page-title">Aperçu de vos informations</div>
+    <div class="ss-page-title">Aperçu des informations de {{$user->name}}</div>
     <div class="profile-page">
         <div class="ss-profile-info">
             <div class="ss-profile-details">

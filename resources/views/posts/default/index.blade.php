@@ -137,10 +137,17 @@ p{margin-bottom:0px!important;}
 p{margin-bottom:0px!important;}
 }
 
+.fa-pencil-square-o{font-size:15px; color: #007808; margin-right: 20px;}
+.fa-trash{font-size:15px; color: #D86000; }
+.dxy-2{padding:0px !important;}
 
 </style>
 
 
+
+@if(session('status'))
+@include('includes.status')
+@endif
 
 
 <section class="posts-2">
@@ -151,215 +158,54 @@ p{margin-bottom:0px!important;}
             <div class="card-deck-wrapper">
 
                 <div class="card-deck">
+                    @foreach($posts as $post)
 
-                    <div class="card">
+                    <div class="card col-md-4 col-sm-12 dxy-2">
                         <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/12.jpg" alt="...">
+                            <img class="card-img-top img-fluid" src="/storage/images/posts/{{$post->image}}" alt="{{$post->name}}">
                         </a>
                         <div class="card-block">
-                            <h4 class="card-title"><a href="#">Family values you can teach your children</a></h4>
+                            <h4 class="card-title"><a href="{{url('posts', $post)}}">{{$post->title}}</a></h4>
+                            {{--
                             <h6 class="card-text"><a href="#">Family</a>,&nbsp; <small>5 minutes ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
+                            --}}
+                            <p class="card-text">{{$post->description}}</p>
                         </div>
                         <div class="card-footer">
                             <hr>
                             <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/12.jpg" alt="..."> &nbsp; <span> Sean</span></a></li>
+                                <li>
+                                    <a href="{{url('users', $post->user)}}">
+                                        <img class="" src="/storage/images/users/{{$post->user->image}}" alt="{{$post->user->image}}">
+                                        &nbsp;
+                                        <span> {{$post->user->name}}</span>
+                                    </a>
+                                </li>
                             </ul><!-- /.bottom_data -->
                             <ul class="bottom_data pull-right hidden-xs-down">
                                 <li><i class="fa fa-comment-o"></i>200</li>
                                 <li><i class="fa fa-heart-o"></i>30</li>
-                                <li><i class="fa fa-align-left"></i>7 Min Read</li>
+                                @if($post->user_id == Auth::user()->id)
+                                <li>
+                                    <a href="{{route('posts.edit', $post)}}">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <form class="" action="{{route('posts.destroy', $post)}}" method="post">
+                                        @csrf
+                                        {{method_field('delete')}}
+                                        <button type="submit" name="button"><i class="fa fa-trash"></i> </button>
+                                    </form>
+
+                                </li>
+                                @endif
                             </ul><!-- /.bottom_data -->
                         </div>
                     </div><!-- /.card -->
 
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/11.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">Stomach Cancer: causes, symptoms and treatment</a></h4>
-                            <h6 class="card-text"><a href="#">Health</a>,&nbsp; <small>10 minutes ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/11.jpg" alt="..."> &nbsp; <span> Amanda</span></a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>110</li>
-                                <li><i class="fa fa-heart-o"></i>14</li>
-                                <li><i class="fa fa-align-left"></i>10 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/10.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">Organize your workflow with the available tech and software</a></h4>
-                            <h6 class="card-text"><a href="#">Technology</a>,&nbsp; <small>15 minutes ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/10.jpg" alt="..."> &nbsp; <span>Charles</span> </a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>10</li>
-                                <li><i class="fa fa-heart-o"></i>3</li>
-                                <li><i class="fa fa-align-left"></i>7 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
+                    @endforeach
                 </div><!-- /.card-deck -->
-
-                <div class="card-deck">
-
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/1.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">15 tips of understanding the world of fashion</a></h4>
-                            <h6 class="card-text"><a href="#">Fashion</a>,&nbsp; <small>1 day ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" alt="..."> &nbsp; <span>Michelle</span> </a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>40</li>
-                                <li><i class="fa fa-heart-o"></i>10</li>
-                                <li><i class="fa fa-align-left"></i>8 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/2.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">Top 5 tips to have a great vacation with your friends</a></h4>
-                            <h6 class="card-text"><a href="#">Travel</a>,&nbsp; <small>1 day ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/2.jpg" alt="..."> &nbsp; <span>Alex</span> </a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>10</li>
-                                <li><i class="fa fa-heart-o"></i>3</li>
-                                <li><i class="fa fa-align-left"></i>4 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/3.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">Keeping our great veterans in our memories</a></h4>
-                            <h6 class="card-text"><a href="#">War</a>,&nbsp; <small>1 day ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/3.jpg" alt="..."> &nbsp; <span>David</span> </a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>20</li>
-                                <li><i class="fa fa-heart-o"></i>400</li>
-                                <li><i class="fa fa-align-left"></i>5 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
-                </div><!-- /.card-deck -->
-
-                <div class="card-deck">
-
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/4.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">How the cloud can improve business</a></h4>
-                            <h6 class="card-text"><a href="#">Cloud</a>,&nbsp; <small>a month ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/4.jpg" alt="..."> &nbsp; <span>Jonathan</span> </a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>400</li>
-                                <li><i class="fa fa-heart-o"></i>1.2k</li>
-                                <li><i class="fa fa-align-left"></i>7 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/5.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">What it’s like to travel to Greece right now</a></h4>
-                            <h6 class="card-text"><a href="#">Travel</a>,&nbsp; <small>2 months ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/5.jpg" alt="..."> &nbsp; <span>Kyle</span> </a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>500</li>
-                                <li><i class="fa fa-heart-o"></i>2.6k</li>
-                                <li><i class="fa fa-align-left"></i>10 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-fluid" src="http://www.themashabrand.com/templates/Masha/Medium/img/blog/6.jpg" alt="...">
-                        </a>
-                        <div class="card-block">
-                            <h4 class="card-title"><a href="#">Improve your productivity with these 10 management tools</a></h4>
-                            <h6 class="card-text"><a href="#">Entrepreneur</a>,&nbsp; <small>2 months ago</small></h6>
-                            <p class="card-text">Nunc sed magna suscipit, volutpat ipsum quis, dictum mi. Aliquam erat volutpat. Nullam tortor libero, placerat eget turpis eget, gravida consectetur lacus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <hr>
-                            <ul class="author-2">
-                                <li><a href="#"><img class="" src="http://www.themashabrand.com/templates/Masha/Medium/img/users/6.jpg" alt="..."> &nbsp; <span>Victoria</span> </a></li>
-                            </ul><!-- /.bottom_data -->
-                            <ul class="bottom_data pull-right hidden-xs-down">
-                                <li><i class="fa fa-comment-o"></i>324</li>
-                                <li><i class="fa fa-heart-o"></i>14</li>
-                                <li><i class="fa fa-align-left"></i>5 Min Read</li>
-                            </ul><!-- /.bottom_data -->
-                        </div>
-                    </div><!-- /.card -->
-
-                </div><!-- /.card-deck -->
-
             </div><!-- /.card-deck-wrapper -->
         </div><!-- /.row -->
     </div><!-- /.container -->

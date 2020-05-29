@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Vue article')
+@section('title', $post->title)
 
 @section('content')
 
@@ -93,7 +93,7 @@ a:hover,a:focus,a:active{text-decoration:none;outline:0;color:#16A085!important;
 p a,p a:visited{line-height:inherit;}
 a{cursor:pointer;outline:0;}
 a{cursor:pointer;outline:0;}
-header.page-post-2{background:linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("http://www.themashabrand.com/templates/Masha/Medium/img/blog/5.jpg") no-repeat center center fixed;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-attachment:scroll;color:#fff;height:65vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+header.page-post-2{background:linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("/storage/images/posts/{{$post->image}}") no-repeat center center fixed;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-attachment:scroll;color:#fff;height:65vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
 header.page-post-2 .post-heading{padding:100px 0 50px;color:white;}
 @media only screen and (min-width: 767px){
 header.page-post-2 .post-heading{padding:150px 0;}
@@ -394,7 +394,9 @@ p{margin-bottom:0px!important;}
 
 </style>
 
-
+@if(session('status'))
+@include('includes.status')
+@endif
 
 <header class="page-post-2">
 	<div class="container">
@@ -404,13 +406,15 @@ p{margin-bottom:0px!important;}
 				<div class="post-heading">
 					<p class="entry-meta">
 						<span class="date updated time">
-							<time class="entry-modified-time">July 4, 2017</time>
-						</span> &nbsp; / &nbsp;
+							<time class="entry-modified-time">{{ Carbon\Carbon::parse($post->created_at)->format('d-m-Y') }}</time>
+                            <!--
+                        </span> &nbsp; / &nbsp;
 						<span class="entry-categories">
 							<a href="http://chrislema.com/wordpress/" rel="category tag">Travel</a>
 						</span>
+                    -->
 					</p>
-					<h1>What it’s like to travel to Greece right now</h1>
+					<h1>{{$post->title}}</h1>
 				</div><!-- /.post-heading -->
 			</div><!-- /.col-lg-8 -->
 
@@ -419,8 +423,8 @@ p{margin-bottom:0px!important;}
 </header>
 
 <div class="header-avatar">
-	<img alt="..." src="http://www.themashabrand.com/templates/Masha/Medium/img/users/5.jpg" class="avatar avatar-200 photo" width="200" height="200">
-	<p>Kyle Murray</p>
+	<img alt="{{$post->user->name}}" src="/storage/images/users/{{$post->user->image}}" class="avatar avatar-200 photo" width="200" height="200">
+	<p>{{$post->user->name}}</p>
 </div>
 
 <article class="entry-content">
@@ -428,21 +432,7 @@ p{margin-bottom:0px!important;}
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 
-				<h4>Becoming a better blogger is just like becoming a better guitarist</h4>
-				<p>There’s no way you become a great (or even decent) guitarist without picking up a guitar,
-					grabbing a music book, learning where the notes and positions are, and this is the most important part,
-					<strong>practicing the guitar.</strong>
-				</p>
-				<p>You don’t play the song the right way the first time.
-					You don’t play it perfectly.&nbsp;Instead, you play, and you play, and you play – again and again and again – until you get good.</p>
-				<p>And the same is true for blogging.</p>
-				<p>You want to get better at writing. You must write. Not a little. A lot. Consistently.</p>
-				<p>Because the bad stuff you do, the mistakes you make, go away after time. But you have to put in the time to make everything work.</p>
-				<h4>I delivered a 2-hour workshop on this</h4>
-				<p>This past weekend I delivered a two-hour workshop on becoming a better blogger.
-					It was enough time to dig into details, but not so long that people got bored.</p>
-				<p>After all, there are tons of questions that I normally get when talking with folks about getting better at blogging.</p>
-				<p>So I crafted the workshop around those questions:</p>
+				{!!$post->content!!}
 
 			</div><!-- /col-lg-8 -->
 		</div><!-- /row -->
@@ -455,51 +445,42 @@ p{margin-bottom:0px!important;}
 			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 
 				<div class="comments-list-notification">
-					<h4><span class="text">2 Comments</span></h4>
+					<h4><span class="text">{{count($post->comments)}} Commentaires</span></h4>
 				</div><!-- /.comment-list -->
 
-				<div class="comments-list">
+                @foreach($post->comments as $comment)
+                <div class="comments-list">
 
 					<div class="comment-body">
 						<div class="author-avatar">
-							<img alt="..." src="http://www.themashabrand.com/templates/Masha/Medium/img/users/3.jpg" class="http://www.themashabrand.com/templates/Masha/Medium/img-fluid" width="100" height="100">
+							<img alt="{{$comment->user->name}}" src="/storage/images/users/{{$comment->user->image}}" class="img-fluid" width="100" height="100">
 						</div>
 						<div class="comment-content">
-							<span class="author-name">David Murlee</span>
-							<span class="author-time">June 13, 2017 at 2:37 pm</span>
-							<p class="author-post">Thanks, great article.</p>
-							<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Bablofil">Reply</a>
+							<span class="author-name">{{$comment->user->name}}</span>
+							<span class="author-time">{{ Carbon\Carbon::parse($post->created_at)->format('d-m-Y H:i') }}</span>
+							<p class="author-post">{{$comment->content}}</p>
+							<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Bablofil">Répondre</a>
 						</div><!-- /.comment-content -->
 					</div><!-- .comment-body -->
 
 				</div><!-- /.comment-list -->
+                @endforeach
 
-				<div class="comments-list">
 
-					<div class="comment-body">
-						<div class="author-avatar">
-							<img alt="..." src="http://www.themashabrand.com/templates/Masha/Medium/img/users/4.jpg" class="http://www.themashabrand.com/templates/Masha/Medium/img-fluid" width="100" height="100">
-						</div>
-						<div class="comment-content">
-							<span class="author-name">Jonathan Smart</span>
-							<span class="author-time">June 13, 2017 at 2:37 pm</span>
-							<p class="author-post">I love the article, keep up with the good work.</p>
-							<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Bablofil">Reply</a>
-						</div><!-- /.comment-content -->
-					</div><!-- .comment-body -->
-
-				</div><!-- /.comment-list -->
 
 				<div class="comments-list">
 					<!-- The contactform -->
-					<form method="post" name="contactform" id="contactform">
+					<form action="{{route('comments.store')}}" method="post" name="contactform" id="contactform">
+                        @csrf
 						<fieldset>
 							<!-- Comments / Message -->
 							<label for="comments" accesskey="C"><i class="fa fa-comment"></i></label>
-							<textarea name="comments" id="comments"></textarea>
+							<textarea name="content" id="comments"></textarea>
+                            <input type="text" hidden name="user_id" value="{{Auth::user()->id}}">
+                            <input type="text" hidden name="post_id" value="{{$post->id}}">
 							<!-- Send button -->
 							<div class="text-center">
-								<button type="submit" class="kafe-btn kafe-btn-mint full-width">Submit</button>
+								<button type="submit" class="kafe-btn kafe-btn-mint full-width">Envoyer</button>
 							</div>
 						</fieldset>
 					</form>

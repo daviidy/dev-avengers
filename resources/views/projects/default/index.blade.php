@@ -510,7 +510,7 @@ address{display:inline;font-style:normal;}
                             <div class="card-block">
                                 <div class="media">
                                     <div class="media-left">
-                                        <a href="#">
+                                        <a href="{{url('users', $project->user)}}">
                                             @if($project->user->image !== 'image.jpg')
                                                 <img class="media-object rounded-circle" src="/storage/images/users/{{$project->user->image}}" alt="">
                                             @else
@@ -525,13 +525,7 @@ address{display:inline;font-style:normal;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Auteur: {{$project->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                            -->
+
 
                                 <div class="people-info">
                                     <div class="row">
@@ -562,12 +556,7 @@ address{display:inline;font-style:normal;}
                                                 {{$project->user->mobile_tel}}
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <div class="info-group">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                                <i class="fa fa-trash"></i> 
-                                            </div>
-                                        </div>
+
                                     </div><!-- row -->
                                     {{--
                                     <div class="row">
@@ -600,7 +589,7 @@ address{display:inline;font-style:normal;}
                             <div class="card-block">
                                 <div class="media">
                                     <div class="media-left">
-                                        <a href="#">
+                                        <a href="{{url('users', $project->user)}}">
                                             @if($project->user->image !== 'image.jpg')
                                                 <img class="media-object rounded-circle" src="/storage/images/users/{{$project->user->image}}" alt="">
                                             @else
@@ -615,13 +604,6 @@ address{display:inline;font-style:normal;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Hôte: {{$project->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                                -->
 
                                 <div class="people-info">
                                     <div class="row">
@@ -764,7 +746,7 @@ address{display:inline;font-style:normal;}
                             <div class="card-block">
                                 <div class="media">
                                     <div class="media-left">
-                                        <a href="#">
+                                        <a href="{{url('users', $project->user)}}">
                                             @if($project->user->image !== 'image.jpg')
                                                 <img class="media-object rounded-circle" src="/storage/images/users/{{$project->user->image}}" alt="">
                                             @else
@@ -818,8 +800,14 @@ address{display:inline;font-style:normal;}
                                     </div>
                                     <div class="col-sm-3">
                                             <div class="info-group">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                                <i class="fa fa-trash"></i> 
+                                                <a href="{{route('projects.edit', $project)}}">
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                </a>
+                                                <form class="" action="{{route('projects.destroy', $project)}}" method="post">
+                                                    @csrf
+                                                    {{method_field('delete')}}
+                                                    <button type="submit" name="button"><i class="fa fa-trash"></i> </button>
+                                                </form>
                                             </div>
                                         </div>
                                 </div><!-- row -->

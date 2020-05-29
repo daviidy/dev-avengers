@@ -182,7 +182,7 @@ p{margin-bottom:0px!important;}
                             <div class="card-block">
                                 <div class="media">
                                     <div class="media-left">
-                                        <a href="#">
+                                        <a href="{{url('users', $meetup->user)}}">
                                         @if($meetup->user->image !== 'image.jpg')
                                             <img class="media-object rounded-circle" src="/storage/images/users/{{$meetup->user->image}}" alt="">
                                         @else
@@ -197,13 +197,6 @@ p{margin-bottom:0px!important;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Hôte: {{$meetup->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                            -->
 
                                 <div class="people-info">
                                     <div class="row">
@@ -234,16 +227,11 @@ p{margin-bottom:0px!important;}
                                                 386-7521860
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <div class="info-group">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                                <i class="fa fa-trash"></i> 
-                                            </div>
-                                        </div>
+
                                     </div><!-- row -->
 
                                     <div class="row">
-                                        
+
                                         {{--
                                         <div class="col-sm-6">
                                             <div class="info-group">
@@ -267,7 +255,7 @@ p{margin-bottom:0px!important;}
                             <div class="card-block">
                                 <div class="media">
                                     <div class="media-left">
-                                        <a href="#">
+                                        <a href="{{url('users', $meetup->user)}}">
                                             @if($meetup->user->image !== 'image.jpg')
                                                 <img class="media-object rounded-circle" src="/storage/images/users/{{$meetup->user->image}}" alt="">
                                             @else
@@ -282,13 +270,6 @@ p{margin-bottom:0px!important;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Hôte: {{$meetup->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                            -->
 
                                 <div class="people-info">
                                     <div class="row">
@@ -321,8 +302,14 @@ p{margin-bottom:0px!important;}
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="info-group">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                                <i class="fa fa-trash"></i> 
+                                                <a href="{{route('meetups.edit', $meetup)}}">
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                </a>
+                                                <form class="" action="{{route('meetups.destroy', $meetup)}}" method="post">
+                                                    @csrf
+                                                    {{method_field('delete')}}
+                                                    <button type="submit" name="button"><i class="fa fa-trash"></i> </button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div><!-- row -->

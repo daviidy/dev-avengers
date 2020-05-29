@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Modifier un événeemnt')
+@section('title', 'Modifier un article')
 
 @section('content')
 
@@ -8,7 +8,7 @@
 aside{display:block;}
 a{background-color:transparent;}
 a:active,a:hover{outline:0;}
-h1{font-size:2em;margin:.67em 0;}
+h1{font-size:2em;margin:.67em 0;color: #007808;}
 svg:not(:root){overflow:hidden;}
 hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;}
 button,input,select{color:inherit;font:inherit;margin:0;}
@@ -66,12 +66,25 @@ div,fieldset,form,h1,input,p{margin:0;padding:0;}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover{background-color:#f8f7fa;background-color:var(--eds-ui-100,#f8f7fa);border:1px solid #dbdae3;border:1px solid var(--eds-ui-300,#dbdae3);cursor:not-allowed;}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate .eds-checkbox__background,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover .eds-checkbox__background{background-color:#f8f7fa;background-color:var(--eds-ui-100,#f8f7fa);}
 .eds-checkbox__input:disabled~.eds-checkbox__delegate .eds-checkbox__checkmark i path,.eds-checkbox__input:disabled~.eds-checkbox__delegate:hover .eds-checkbox__checkmark i path{stroke:#a9a8b3!important;stroke:var(--eds-ui-500,#a9a8b3)!important;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 body{
+	font-family: 'Montserrat', sans-serif !important;
 	background-color: #ececec8f!important;
 	/*background-image: url(/assets/main_theme/medium/img/event.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;*/
 
+}
+
+.btn-primary{
+	background-color: #D86000 !important;
+	border-color: #D86000!important;
+}
+.btn-primary:hover{
+	background-color: #fff!important;
+	color: #000!important;
+	border-color:
+	border: 3px solid #D86000!important;
 }
 
 .form-1{display: none;}
@@ -80,7 +93,7 @@ body{
 body .eds-text-color--grey-700{color:#4b4d63;}
 body .eds-text-color--grey-800{color:#39364f;}
 body .eds-bg-color--grey-800{background-color:#39364f;}
-body .eds-text-color--grey-900{color:#1e0a3c;}
+body .eds-text-color--grey-900{color:#007808;}
 .eds-text-bm,.eds-text-bs,.eds-text-hm{text-rendering:optimizeLegibility;}
 .eds-text-bm{font-size:1rem;line-height:1.5rem;font-weight:400;}
 @media (min-width:960px){
@@ -431,7 +444,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
  =============================================== -->
 <div class="site-branding">
     <div class="container">
-        <h1 class="site-title"><a> Modifier l'événement "{{$meetup->name}}" </a></h1>
+        <h1 class="site-title"><a> Modifier l'article "{{$post->title}}" </a></h1>
     </div>
     <!-- /container -->
 </div>
@@ -441,45 +454,13 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 @include('includes.status')
 @endif
 
-
 <div class="eds-layout__body" data-spec="eds-layout__body">
     <div>
-        <!--div class="eds-notification-bar--has-close eds-notification-bar eds-notification-bar--neutral" role="alert" data-spec="notification-bar">
-            <div class="eds-notification-bar__icon"><i class="eds-vector-image eds-icon--small eds-vector-image--grey-700" data-spec="icon" aria-hidden="true"><svg viewBox="0 0 24 24">
-                        <defs>
-                            <path id="lock-fill_svg__a"
-                              d="M12 8V5a4.005 4.005 0 0 0-4.274-3.991C5.602 1.151 4 3.013 4 5.141V5.5a.5.5 0 1 1-1 0v-.344C3 2.558 4.917.278 7.502.024 10.473-.267 13 2.086 13 5v3h3v12H0V8h12zm-3.5 6.085a1.5 1.5 0 1 1-1 0V11.5h1v2.585z"></path>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
-                            <mask id="lock-fill_svg__b" fill="#fff">
-                                <use xlink:href="#lock-fill_svg__a"></use>
-                            </mask>
-                            <use fill="#45494E" transform="matrix(-1 0 0 1 16 0)" xlink:href="#lock-fill_svg__a"></use>
-                            <g mask="url(#lock-fill_svg__b)">
-                                <path fill="#000" d="M-4-2h24v24H-4z"></path>
-                            </g>
-                        </g>
-                    </svg></i></div>
-            <div class="eds-notification-bar__content">
-                <div class="eds-notification-bar__content-child">
-                    <div class="eds-g-grid">
-                        <div class="eds-g-group">
-                            <div class="eds-g-cell eds-g-cell-sw-9-12 eds-g-cell-12-12"><span>Vous avez débloqué nos Fonctionnalités Professional !</span></div>
-                            <div class="eds-g-cell eds-g-cell-sw-3-12 eds-g-cell-12-12"><span class="eds-align--right eds-align--sn-left eds-align--sm-left"><a href="/organizer/change-plan/" class="eds-btn--link eds-btn--anchor eds-link">Consulter
-                                        les tarifs</a></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="eds-notification-bar__close eds-l-pad-right-2 eds-l-pad-vert-1"><span class="eds-icon-button eds-icon-button--neutral" data-spec="icon-button"><button data-spec="close-button"
-                      class="eds-btn--button eds-btn--none eds-btn--icon-only" type="button"><i class="eds-vector-image eds-icon--small eds-vector-image--grey-700 eds-vector-image--block" title="Fermer" data-spec="icon"><svg viewBox="0 0 24 24">
-                                <path d="M13.4 12l3.5-3.5-1.4-1.4-3.5 3.5-3.5-3.5-1.4 1.4 3.5 3.5-3.5 3.5 1.4 1.4 3.5-3.5 3.5 3.5 1.4-1.4z"></path>
-                            </svg><span class="eds-is-hidden-accessible">Fermer</span></i></button></span></div>
-        </div-->
+
         <div class="eds-g-grid eds-l-pad-bot-12 eds-l-pad-top-5 eds-l-mar-top-5 eds-l-mar-bot-12">
-            <form id="information-container" enctype="multipart/form-data" method="post" action="{{url('meetups', $meetup)}}">
+            <form id="information-container" enctype="multipart/form-data" method="post" action="{{url('posts', $post)}}">
                 @csrf
-				{{method_field('patch')}}
+                {{method_field('patch')}}
                 <div class="eds-g-group eds-l-mar-bot-8">
                     <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" style="display: none;"><svg
                               viewBox="0 0 24 24">
@@ -492,7 +473,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                         <div>
                             <h1 class="eds-text-hm eds-text-color--grey-900">Infos de base</h1>
                             <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-lw-9-12 eds-g-cell-lg-9-12 eds-g-cell-ln-9-12 eds-g-cell-mw-9-12 eds-g-cell-md-1-1 eds-g-cell-mn-9-12 eds-g-cell-sw-9-12">
-                                <p class="eds-text-bm eds-text-color--grey-800"><span>Nommez votre événement et expliquez aux participants potentiels pourquoi ils doivent absolument venir. Ajoutez des infos soulignant son caractère unique.</span></p>
+                                <p class="eds-text-bm eds-text-color--grey-800"><span>Donnez un titre à votre article .</span></p>
                             </div>
                         </div>
                         <div class="eds-l-mar-top-5">
@@ -501,22 +482,15 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     <div class="eds-field-styled__internal">
                                         <div class="eds-field-styled__input-container">
                                             <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
-                                                  data-spec="label-label"><span class="eds-label__content">Nom de l'événement</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
+                                                  data-spec="label-label"><span class="eds-label__content">Titre de l'article</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
                                                           class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
                                                           <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
-                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="name" role="textbox" type="text" value="{{$meetup->name}}" placeholder="Soyez clair et précis.">
+                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="title" role="textbox" type="text" value="{{$post->title}}" placeholder="Soyez clair et précis.">
                                         </div>
                                     </div>
-
                                 </div>
-                                <!--div class="eds-field__sub">
-                                    <div class="eds-field__sub--left">
-                                        <aside class="eds-field-styled__annotation eds-text-bs eds-fx--fade-in eds-l-pad-top-1" data-automation="eds-field-annotation" role="alert">Le titre est obligatoire.</aside>
-                                    </div>
-                                    <div class="eds-field__sub--right">
-                                        <aside class="eds-field-styled__character-counter eds-text-bs eds-fx--fade-in eds-l-pad-top-1">0/75</aside>
-                                    </div>
-                                </div-->
+
+
                             </div>
 
                             <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
@@ -524,323 +498,41 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     <div class="eds-field-styled__internal">
                                         <div class="eds-field-styled__input-container">
                                             <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
-                                                  data-spec="label-label"><span class="eds-label__content">Type</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
-                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
-                                                        <select class="eds-field-styled__input" name="type" role="listbox">
-                                                            <option value="Conférence">Conférence</option>
-                                                            <option value="Formation">Formation</option>
-                                                        </select>
+                                                  data-spec="label-label"><span class="eds-label__content">Description courte de l'article</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
+                                                          class="eds-is-hidden-accessible"></span></span></label></div>
+                                                          <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
+                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" name="description" role="textbox" type="text" value="{{$post->description}}" placeholder="Soyez clair et précis.">
                                         </div>
                                     </div>
                                 </div>
-                                <!--div class="eds-field__sub">
-                                    <div class="eds-field__sub--left">
-                                        <aside class="eds-field-styled__annotation eds-text-bs eds-fx--fade-in eds-l-pad-top-1" data-automation="eds-field-annotation" role="alert">Le titre est obligatoire.</aside>
-                                    </div>
-                                    <div class="eds-field__sub--right">
-                                        <aside class="eds-field-styled__character-counter eds-text-bs eds-fx--fade-in eds-l-pad-top-1">0/75</aside>
-                                    </div>
-                                </div-->
+
+
                             </div>
 
-                            <!--
-                            <div class="tagging-form-field__container">
-                                <div class="tagging-form-field__tags-input eds-l-mar-bot-4">
-                                    <div class="eds-g-cell eds-g-cell-8-12 eds-l-pad-right-2">
-                                        <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="input-field-wrapper" data-spec="input-field">
-                                            <div class="eds-field-styled__border-simulation">
-                                                <div class="eds-field-styled__internal">
-                                                    <div class="eds-field-styled__input-container">
-                                                        <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary" id="tagging-form-field-label" for="tagging-form-field" data-spec="label-label"><span
-                                                                  class="eds-label__content">Saisir la balise</span></label></div><input data-spec="input-field-input-element" aria-invalid="false" class="eds-field-styled__input"
-                                                          id="tagging-form-field" maxlength="25" placeholder="Ajoutez des mots clés à votre événement" role="textbox" type="text" value="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="eds-field__sub">
-                                                <div class="eds-field__sub--left">
-                                                    <aside class="eds-field-styled__annotation eds-text-bs eds-fx--fade-in eds-l-pad-top-1" data-automation="eds-field-annotation" role="alert">0/10 tags.</aside>
-                                                </div>
-                                                <div class="eds-field__sub--right">
-                                                    <aside class="eds-field-styled__character-counter eds-text-bs eds-fx--fade-in eds-l-pad-top-1">0/25</aside>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <aside class="eds-g-cell eds-g-cell-4-12 eds-g-cell--has-overflow eds-l-pad-left-2">
-                                        <div
-                                          class="tagging-form-field__tags-aside eds-align--right eds-align--sw-space-between eds-align--mn-space-between eds-align--md-space-between eds-align--mw-space-between eds-align--ln-space-between eds-align--l-space-between eds-align--lw-space-between">
-                                            <div class="tagging-form-field__tag-button-container"><button class="eds-btn eds-btn--button eds-btn--neutral eds-btn--block" type="button">Ajouter</button></div>
-                                            <div class="eds-l-pad-left-4 eds-show-up-sw">
-                                                <div class="flow-tip__container flow-tip__container--active"><span class="eds-icon-button eds-icon-button--outline" data-spec="icon-button"><button
-                                                          class="eds-btn--button eds-btn--none eds-btn--icon-only" type="button"><i class="eds-vector-image eds-icon--small eds-vector-image--block" title="Cliquer ici pour des conseils sur les balises"
-                                                              data-spec="icon"><svg class="bolt-fill_svg__eds-icon--bolt-fill_svg" viewBox="0 0 24 24">
-                                                                    <path class="bolt-fill_svg__eds-icon--bolt-fill_base" fill-rule="evenodd" clip-rule="evenodd" d="M12 2L5 15h7v7l7-13h-7z"></path>
-                                                                </svg><span class="eds-is-hidden-accessible">Cliquer ici pour des conseils sur les balises</span></i></button></span>
-                                                    <div class="flow-tip__tooltip flow-tip__tooltip--showing">
-                                                        <div class="flow-tip__close-container"><span class="eds-icon-button eds-icon-button--neutral" data-spec="icon-button"><button class="eds-btn--button eds-btn--none eds-btn--icon-only"
-                                                                  type="button"><i class="eds-vector-image eds-icon--small eds-vector-image--block" title="Cliquez pour fermer les infobulles de conseils" data-spec="icon"><svg viewBox="0 0 24 24">
-                                                                            <path d="M13.4 12l3.5-3.5-1.4-1.4-3.5 3.5-3.5-3.5-1.4 1.4 3.5 3.5-3.5 3.5 1.4 1.4 3.5-3.5 3.5 3.5 1.4-1.4z"></path>
-                                                                        </svg><span class="eds-is-hidden-accessible">Cliquez pour fermer les infobulles de conseils</span></i></button></span></div>
-                                                        <div class="eds-text-bm eds-text-weight--heavy eds-l-mar-bot-2">Conseil professionnel</div>
-                                                        <div>Améliorez la visibilité de votre événement en ajoutant les balises pertinentes au sujet</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </aside>
-                                </div>
-                            </div>
-                        -->
-                        <!--
-                            <div>
-                                <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="input-field-wrapper" data-spec="input-field">
-                                    <div class="eds-field-styled__border-simulation">
-                                        <div class="eds-field-styled__internal">
-                                            <div class="eds-field-styled__input-container">
-                                                <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary" id="event-basicinfo-create-organizer-profile-label" for="event-basicinfo-create-organizer-profile"
-                                                      data-spec="label-label"><span class="eds-label__content">Organisateur</span></label></div><input data-spec="input-field-input-element" aria-invalid="false" class="eds-field-styled__input"
-                                                  id="event-basicinfo-create-organizer-profile" maxlength="75" name="organizerName" placeholder="Indiquez aux participants qui organisent cet événement." role="textbox" type="text" value="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p id="organizer-helper-text" class="eds-text-bs">Ce profil décrit un seul organisateur et affiche tous les événements sur une page. <a href="/myprofile" target="_blank" rel="noopener noreferrer">Voir les Infos sur
-                                        l'Organisateur</a></p>
-                            </div>
-                            <div class="eds-l-mar-bot-5">
-                                <div class="eds-text--left"><label class="eds-field-styled__label eds-is-hidden-accessible" data-spec="label-label"><span class="eds-label__content">Devise</span></label></div>
-                                <div class=""><input type="hidden" value="EUR"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            -->
-                <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
-                <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1" style="display: none;"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" ><svg
-                              viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M20 3c-1.1 0-2 .9-2 2H2v16h17.8c1.1 0 2.1-.9 2.1-2V5c.1-1.1-.8-2-1.9-2zm-.2 17H3V6h15v13h1c0-.6.4-1 1-1 .5 0 .9.4 1 .9-.1.6-.6 1.1-1.2 1.1zm1.2-2.7c-.3-.2-.6-.3-1-.3s-.7.1-1 .3V5c0-.6.4-1 1-1s1 .4 1 1v12.3z">
-                                </path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8 12.7l.7-.7-1.1-1 1.1-1-.7-.7-1.1 1-1-1-.7.7 1 1-1 1 .7.7 1-1zM12 10h2v1h-2zM15 12h1v2h-1zM12 15h2v1h-2zM8 15h2v1H8z"></path>
-                            </svg></i></div>
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-12-12 eds-g-cell-sw-10-12 eds-g-cell-lw-9-12 eds-g-cell-lg-8-12 eds-g-cell-ln-8-12 eds-g-cell-md-8-12 eds-g-offset-sw-1-12 eds-g-offset-md-0-12 eds-g-cell--has-overflow">
-                        <div>
-                            <h1 class="eds-text-hm eds-text-color--grey-900">Lieu</h1>
-                            <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-lw-9-12 eds-g-cell-lg-9-12 eds-g-cell-ln-9-12 eds-g-cell-mw-9-12 eds-g-cell-md-1-1 eds-g-cell-mn-9-12 eds-g-cell-sw-9-12">
-                                @if($meetup->place !== null)
-                                <p class="eds-text-bm eds-text-color--grey-800"><span>{{$meetup->place}}</span></p>
-                                @endif
-                                @if($meetup->link !== null)
-                                <p class="eds-text-bm eds-text-color--grey-800"><span>{{$meetup->link}}</span></p>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="eds-l-mar-top-5"><input type="hidden" value="">
-                            <div class="eds-g-grid">
-                                <div class="eds-g-group">
-                                    <div data-spec="coyote-basicinfo-location-event-picker" class="eds-g-cell eds-g-cell-1-1 eds-g-cell-md-8-12 eds-g-cell--has-overflow">
-                                        <div class="radio-selector eds-l-mar-bot-5" role="radiogroup" data-spec="radio-selector">
-                                            <div class="radio-selector-label-wrap eds-l-mar-right-4 segmented" data-spec="radio-selector-item-padding">
-                                            	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900"
-                                                  for="segmented-venueType-0">Lieu
-                                                </label>
+                            <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
 
-                                            </div>
+                                <input type="hidden" name="user_id" value="{{Auth::user()->id}}">
 
-                                            <div class="radio-selector-label-wrap eds-l-mar-right-4 segmented-2" >
-                                            	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900 segmented-venueType-1"
-                                                  for="segmented-venueType-1">Événement en ligne
-                                                  <!--input type="text" id="segmented-venueType-1" name="venueType" data-automation="segmented-venueType-1" data-spec="radio-selector-input"
-                                                      aria-checked="false" value="online"-->
-                                                  </label>
-                                              </div>
-                                            <!--div class="radio-selector-label-wrap" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm radio-selector-label--checked"
-                                                  for="segmented-venueType-2">À venir<input type="radio" id="segmented-venueType-2" name="venueType" data-automation="segmented-venueType-2" data-spec="radio-selector-input" aria-checked="true"
-                                                      value="tba"></label></div-->
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-	                                    <div class="form-1" id="form-1">
-	                                       <input type="text" class="form-control" id="uname" placeholder="Adresse du lieu" name="place">
-	                                    </div>
-	                                    <div class="form-2" id="form-2">
-	                                       <input type="url" class="form-control" id="uname1" placeholder="Lien du lieu" name="link">
-	                                    </div>
-                                    </div>
-                                </div>
-                            </div><input type="hidden" value="0">
-                        </div>
-                    </div>
-                </div>
-                <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
-                <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1" style="display: none;"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true"><svg
-                              viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 4V2h-1v2H8V2H7v2H2v18h20V4h-5zm4 17H3V9h18v12zM3 8V5h4v1h1V5h8v1h1V5h4v3H3z"></path>
-                                <g fill-rule="evenodd" clip-rule="evenodd">
-                                    <path d="M15 16h2v2h-2zM11 16h2v2h-2zM7 16h2v2H7zM15 12h2v2h-2zM11 12h2v2h-2zM7 12h2v2H7z"></path>
-                                </g>
-                            </svg></i></div>
-                    <div class="eds-g-cell eds-vertical-group eds-g-cell-12-12 eds-g-cell-sw-10-12 eds-g-cell-lw-9-12 eds-g-cell-lg-8-12 eds-g-cell-ln-8-12 eds-g-cell-md-8-12 eds-g-offset-sw-1-12 eds-g-offset-md-0-12 eds-g-cell--has-overflow">
-                        <div>
-                            <h1 class="eds-text-hm eds-text-color--grey-900">Date et heure</h1>
-                            <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-lw-9-12 eds-g-cell-lg-9-12 eds-g-cell-ln-9-12 eds-g-cell-mw-9-12 eds-g-cell-md-1-1 eds-g-cell-mn-9-12 eds-g-cell-sw-9-12">
-                                <p class="eds-text-bm eds-text-color--grey-800"><span>
-                                    Date de début: {{$meetup->begin_date}}<br>
-                                    Date de fin: {{$meetup->end_date}}
-                                </span></p>
                             </div>
-                        </div>
-                        <!--
-                        <div class="eds-g-group eds-l-mar-top-5">
-                            <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-md-1-2 eds-g-cell--has-overflow">
-                                <div class="radio-selector eds-l-mar-bot-5" role="radiogroup" data-spec="radio-selector">
-                                    <div class="radio-selector-label-wrap eds-l-mar-right-4" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm radio-selector-label--checked"
-                                          for="segmented-isSeriesParent-0">Événement unique<input type="radio" id="segmented-isSeriesParent-0" name="isSeriesParent" data-automation="segmented-isSeriesParent-0" data-spec="radio-selector-input"
-                                              aria-checked="true" value="off" checked=""></label></div>
-                                    <div class="radio-selector-label-wrap" data-spec="radio-selector-item-padding"><label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900"
-                                          for="segmented-isSeriesParent-1">Événements récurrents<input type="radio" id="segmented-isSeriesParent-1" name="isSeriesParent" data-automation="segmented-isSeriesParent-1" data-spec="radio-selector-input"
-                                              aria-checked="false" value="on"></label></div>
-                                </div>
-                            </div>
-                        </div>
-                    -->
-                        <div data-spec="event-date-time-pair">
-                            <div class="eds-g-grid eds-l-mar-top-5 eds-l-mar-bot-2">
-                                <div class="eds-g-group">
-                                    <div class="eds-g-cell eds-g-cell--has-overflow eds-l-pad-right-2 eds-g-cell-12-12 eds-g-cell-sm-6-12">
-                                        <div class="eds-date-picker eds-date-picker--split eds-date-picker--blue">
-                                            <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="input-field-wrapper" data-spec="input-field">
-                                                <div class="eds-field-styled__border-simulation">
-                                                    <div class="eds-field-styled__internal"><span class="eds-field-styled__aside eds-field-styled__aside-prefix"><i class="eds-vector-image eds-icon--small eds-vector-image--grey-800" data-spec="icon"
-                                                              aria-hidden="true"><svg viewBox="0 0 24 24">
-                                                                    <path d="M16.9 6.5v-2h-2v2h-6v-2h-2v2h-2v13h14v-13h-2zm0 11h-10v-7h10v7z"></path>
-                                                                </svg></i></span>
-                                                        <div class="eds-field-styled__input-container">
-                                                            <div class="eds-field-styled__label-wrapper">
-                                                            	<label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-startDate-label" for="event-startDate"
-                                                                  data-spec="label-label">
-                                                                  <span class="eds-label__content">Début de l'événement</span>
-                                                              </label>
-                                                          </div>
-                                                          <input
-                                                              class="eds-field-styled__input" id="event-startDate" name="begin_date" role="textbox" type="datetime-local" value="{{$meetup->begin_date}}">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--
-                                    <div class="eds-g-cell eds-g-cell--has-overflow eds-l-pad-right-2 eds-g-cell-12-12 eds-g-cell-sm-6-12">
-                                        <div class="eds-timepicker">
-                                            <div tabindex="-1">
-                                                <div class="eds-autocomplete-field" data-spec="autocompletefield-field">
-                                                    <div class="eds-autocomplete-field__dropdown-holder">
-                                                        <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="input-field-wrapper" data-spec="input-field">
-                                                            <div class="eds-field-styled__border-simulation">
-                                                                <div class="eds-field-styled__internal">
-                                                                    <div class="eds-field-styled__input-container">
-                                                                        <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary" id="event-startTime-label" for="event-startTime"
-                                                                              data-spec="label-label"><span class="eds-label__content">Date de début</span></label></div><input data-spec="input-field-input-element" aria-invalid="false"
-                                                                          class="eds-field-styled__input" id="event-startTime" name="event-startTime" role="combobox" type="text" aria-expanded="false" aria-autocomplete="list"
-                                                                          aria-owns="event-startTime-listbox" autocomplete="off" tabindex="0" value="19:00">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                -->
-                                </div>
-                            </div>
-                            <div class="eds-g-grid eds-l-mar-bot-2">
-                                <div class="eds-g-group">
-                                    <div class="eds-g-cell eds-g-cell--has-overflow eds-l-pad-right-2 eds-g-cell-12-12 eds-g-cell-sm-6-12">
-                                        <div class="eds-date-picker eds-date-picker--split eds-date-picker--blue">
-                                            <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="input-field-wrapper" data-spec="input-field">
-                                                <div class="eds-field-styled__border-simulation">
-                                                    <div class="eds-field-styled__internal"><span class="eds-field-styled__aside eds-field-styled__aside-prefix"><i class="eds-vector-image eds-icon--small eds-vector-image--grey-800" data-spec="icon"
-                                                              aria-hidden="true"><svg viewBox="0 0 24 24">
-                                                                    <path d="M16.9 6.5v-2h-2v2h-6v-2h-2v2h-2v13h14v-13h-2zm0 11h-10v-7h10v7z"></path>
-                                                                </svg></i></span>
-                                                        <div class="eds-field-styled__input-container">
-                                                            <div class="eds-field-styled__label-wrapper">
-                                                            	<label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-endDate-label" for="event-endDate"
-                                                                  data-spec="label-label">
-                                                                  <span class="eds-label__content">Fin de l'événement</span>
-                                                              </label>
-                                                          </div>
-                                                          <input
-                                                              class="eds-field-styled__input" id="event-endDate" name="end_date" role="textbox" type="datetime-local" value="{{$meetup->end_date}}">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--
-                                    <div class="eds-g-cell eds-g-cell--has-overflow eds-l-pad-right-2 eds-g-cell-12-12 eds-g-cell-sm-6-12">
-                                        <div class="eds-timepicker">
-                                            <div tabindex="-1">
-                                                <div class="eds-autocomplete-field" data-spec="autocompletefield-field">
-                                                    <div class="eds-autocomplete-field__dropdown-holder">
-                                                        <div class="eds-field-styled eds-l-mar-bot-2 eds-field-styled--static" data-automation="input-field-wrapper" data-spec="input-field">
-                                                            <div class="eds-field-styled__border-simulation">
-                                                                <div class="eds-field-styled__internal">
-                                                                    <div class="eds-field-styled__input-container">
-                                                                        <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary" id="event-endTime-label" for="event-endTime" data-spec="label-label"><span
-                                                                                  class="eds-label__content">Date de fin</span></label></div><input data-spec="input-field-input-element" aria-invalid="false" class="eds-field-styled__input"
-                                                                          id="event-endTime" name="event-endTime" role="combobox" type="text" aria-expanded="false" aria-autocomplete="list" aria-owns="event-endTime-listbox" autocomplete="off"
-                                                                          tabindex="0" value="22:00">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                -->
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
-	                       <div>
-	                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Nombre de places</h1>
 
-	                        	
-	                           <div class="eds-field-styled__border-simulation">
-	                                    <div class="eds-field-styled__internal">
-	                                        <div class="eds-field-styled__input-container">
-	                                            <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
-	                                                  data-spec="label-label"><span class="eds-label__content">Nombre de places</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
-	                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
-	                                                          <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
-	                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="nombre_place" role="textbox" type="number" value="" placeholder="25 04">
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                        </div>
-                        </div>
-                        
+                       <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true" style="margin-bottom: 15px;">
+
 
                         <div>
-                        	<h1 class="mb-3 eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'événement</h1>
-                            @if($meetup->image !== null)
-                            <img src="/storage/images/meetups/{{$meetup->image}}" alt="">
+
+                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'article</h1>
+
+                            @if($post->image !== 'image.jpg')
+                            <img class="mb-3" style="width: 50%;" src="/storage/images/posts/{{$post->image}}" alt="$post->name">
                             @endif
 
                         	<div>
                         		<input name="image" type="file" width="100" height="100">
+
                         	</div>
+
+                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Contenu de l'article</h1>
 
                             <div class="eds-expansion-panel__content" data-spec="expansion-panel-content">
                                 <div class="eds-l-mar-top-4" data-spec="advanced-settings__content">
@@ -857,10 +549,10 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                             <div class="eds-field-styled__input-container">
 
                                                                 <div class="eds-field-styled__select-wrapper">
-                                                                	<input type="hidden" name="details" value="">
-                                    									<div class="" id="editorDetails" style="height: 200px;">
-                                                                            @if($meetup->details !== null)
-                                                                            {!!$meetup->details!!}
+                                                                	<input type="hidden" name="content" value="">
+                                    									<div class="" id="editorContent" style="height: 200px;">
+                                                                            @if($post->content)
+                                                                            {!!$post->content!!}
                                                                             @endif
                                     									</div>
                                                                 </div>
@@ -875,14 +567,14 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 </div>
                             </div>
                         </div>
-
+                        <button type="submit" class="btn btn-primary">Valider</button>
                     </div>
                 </div>
                 <div class="below-the-fold-indicator eds-l-pad-all-2 eds-bg-color--grey-800 below-the-fold-indicator--moved-up" data-spec="below-the-fold"><i class="eds-vector-image eds-icon--small eds-vector-image--white" data-spec="icon"
                       aria-hidden="true"><svg class="arrow-down_svg__eds-icon--down-arrow_svg" viewBox="0 0 24 24">
                             <path class="arrow-down_svg__eds-icon--down-arrow_base" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12 20l.2-.2 5.8-5.6-.7-.8-4.8 4.7V4h-1v14.1l-4.8-4.7-.7.7z"></path>
                         </svg></i></div>
-                        <button type="submit" class="btn btn-primary">Valider</button>
+
             </form>
         </div>
     </div>
@@ -914,7 +606,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
         placeholder: 'Ecrivez ici...',
         theme: 'snow'  // or 'bubble'
         };
-        var quill = new Quill('#editorDetails', options);
+        var quill = new Quill('#editorContent', options);
 
             //a la sumissio  du formulmaire ob recupêre
             //le contenu de la div qui a le texte riche
@@ -922,7 +614,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
             var form = document.getElementById('information-container');
             form.onsubmit = function() {
               // Populate hidden form on submit
-              var text = document.querySelector('input[name=details]');
+              var text = document.querySelector('input[name=content]');
               text.value = quill.root.innerHTML;
 
             //   console.log("Submitted", $(form).serialize(), $(form).serializeArray());
@@ -932,18 +624,5 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
               return true;
             };
           </script>
-<script>
-
-
-  		$('.segmented label').click(function() {
-  			$('.form-1').toggle('slow');
-  			$('.form-2').hide();
-  		});
-  		$('.segmented-2 label').click(function() {
-  			$('.form-2').toggle('slow');
-  			$('.form-1').hide();
-  		});
-
-</script>
 
 @endsection

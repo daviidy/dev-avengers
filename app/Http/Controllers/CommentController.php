@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use Auth;
+use App\User;
+use Image;
 use Illuminate\Http\Request;
 
 class CommentController extends Controller
@@ -14,7 +17,13 @@ class CommentController extends Controller
      */
     public function index()
     {
-        //
+        if (Auth::check()) {
+            $comments = Comment::orderby('id', 'asc')->paginate(30);
+            return view('comments.default.index', ['comments' => $comments]);
+        }
+        else {
+            return redirect('home');
+        }
     }
 
     /**
@@ -24,7 +33,12 @@ class CommentController extends Controller
      */
     public function create()
     {
-        //
+        if (Auth::check()) {
+            return view('comments.default.create');
+        }
+        else {
+            return redirect('home');
+        }
     }
 
     /**
@@ -35,7 +49,15 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if (Auth::check()) {
+            $comment = Comment::create($request->all());
+
+            return redirect()->back()->with('status', 'Votre commentaire a été ajouté avec succès');
+        }
+        else {
+            return redirect('home');
+        }
+
     }
 
     /**
@@ -46,7 +68,7 @@ class CommentController extends Controller
      */
     public function show(Comment $comment)
     {
-        //
+        return view('comments.default.show', ['comment' => $comment]);
     }
 
     /**
@@ -57,7 +79,7 @@ class CommentController extends Controller
      */
     public function edit(Comment $comment)
     {
-        //
+        return view('comments.default.edit', ['comment' => $comment]);
     }
 
     /**
@@ -69,7 +91,9 @@ class CommentController extends Controller
      */
     public function update(Request $request, Comment $comment)
     {
-        //
+        $comment->update($request->all());
+
+        return redirect()->back()->with('status', 'Votre commentaire a été modifié avec succès');
     }
 
     /**
@@ -80,6 +104,7 @@ class CommentController extends Controller
      */
     public function destroy(Comment $comment)
     {
-        //
+        $comment->delete();
+        return redirect('comments')->with('status', 'Votre commentaire a été supprimé avec succès');
     }
 }
