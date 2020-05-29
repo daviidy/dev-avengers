@@ -23,6 +23,8 @@ Route::resource('users', 'UserController');
 Route::resource('meetups', 'MeetupController');
 Route::resource('projects', 'ProjectController');
 Route::resource('multimedias', 'MultimediaController');
+Route::resource('posts', 'PostController');
+Route::resource('comments', 'CommentController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

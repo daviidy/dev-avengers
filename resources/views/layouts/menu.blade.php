@@ -173,8 +173,15 @@
 
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Nouvelles <span class="sr-only">(cette page)</span></a>
+                <li class="nav-item dropdown">
+                    <a style="width: 125px;" class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
+                        Actualités
+                    </a>
+                    <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                        <a class="dropdown-item" href="{{route('posts.create')}}"><span>Créer un article</span></a>
+                        <a class="dropdown-item" href="{{route('posts.index')}}"><span>Liste des actualités</span></a>
+
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/">Chat <span class="sr-only">(cette page)</span></a>
