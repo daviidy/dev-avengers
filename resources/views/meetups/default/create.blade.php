@@ -828,7 +828,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 	                                                  data-spec="label-label"><span class="eds-label__content">Nombre de places</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
 	                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
 	                                                          <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
-	                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="nombre_place" role="textbox" type="number" value="" placeholder="25 04">
+	                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="place_number" role="textbox" type="number" value="" placeholder="25 04">
 	                                        </div>
 	                                    </div>
 	                                </div>

@@ -80,7 +80,7 @@ body{
 body .eds-text-color--grey-700{color:#4b4d63;}
 body .eds-text-color--grey-800{color:#39364f;}
 body .eds-bg-color--grey-800{background-color:#39364f;}
-body .eds-text-color--grey-900{color:#1e0a3c;}
+body .eds-text-color--grey-900{color:#007808;padding: 25px 0;}
 .eds-text-bm,.eds-text-bs,.eds-text-hm{text-rendering:optimizeLegibility;}
 .eds-text-bm{font-size:1rem;line-height:1.5rem;font-weight:400;}
 @media (min-width:960px){
@@ -424,6 +424,23 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 @keyframes fade-in-down{from{opacity:0;transform:translate(110%, -70%);}to{opacity:1;transform:translate(110%, -50%);}}
 @keyframes fade-in-right{from{opacity:0;transform:translate(95%, -50%);}to{opacity:1;transform:translate(110%, -50%);}}
 @keyframes fade-in-right{from{opacity:0;transform:translate(95%, -50%);}to{opacity:1;transform:translate(110%, -50%);}}
+.kv-upload-progress{display: none!important;}
+.input-group-btn{display: inline-block!important;}
+.btn-primary{
+	background-color: #D86000 !important;
+	border-color: #D86000!important;
+}
+.btn-primary:hover{
+	background-color: #fff!important;
+	color: #000!important;
+	border-color: 
+	border: 3px solid #D86000!important;
+}
+
+@media (max-width: 600px){
+.input-group-btn{display:flex!important;}
+}
+
 </style>
 
 <!-- ==============================================

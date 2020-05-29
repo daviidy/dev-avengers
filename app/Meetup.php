@@ -19,7 +19,7 @@ class Meetup extends Model
                            'image',
                            'details',
                            'link',
-                           'nombre_place',
+                           
                          ];
 
 

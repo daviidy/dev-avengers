@@ -501,6 +501,24 @@ address{display:inline;font-style:normal;}
 	z-index: 1;
 }
 
+.img_box{
+	padding: 25px;
+    background-color: white;
+    border: 2px solid #ebebec;
+    border-radius: 5px;
+}
+.img_box img{
+	padding: 2px;
+    border: 2px solid #cecece;
+    width: 100%;
+    transition: transform 1.8s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img_box img:hover{
+	-ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
 </style>
 
 
@@ -644,8 +662,15 @@ address{display:inline;font-style:normal;}
                             <div class="chunk event-description--wrapper">
                                 <div class="photoCarousel--wrapper">
                                     <div class="photoCarousel margin--bottom padding--bottom">
-                                        <div>
-                                            <div class="photoCarousel-photoContainer keepAspect--16-9" style="background-image: url(&quot;/storage/images/meetups/{{$project->image}}&quot;);"></div>
+                                        <div class="img_box">
+												<div class="row">
+                                            			<div class="col-md-4 col-sm-12"><img src="/assets/main_theme/medium/img/blog/6.jpg" >
+                                            			</div>
+                                            			<div class="col-md-4 col-sm-12"><img src="/assets/main_theme/medium/img/blog/6.jpg" ></div>
+                                            			<div class="col-md-4 col-sm-12"><img src="/assets/main_theme/medium/img/blog/6.jpg" ></div>
+                                            		</div>
+                                            
+                                          
                                         </div>
                                     </div>
                                 </div>

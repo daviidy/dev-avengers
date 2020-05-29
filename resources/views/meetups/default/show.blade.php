@@ -982,7 +982,6 @@ address{display:inline;font-style:normal;}
     </div>
 </main>
 
-<<<<<<< HEAD
 <!--script>
     $(function() {
             var offset = $(".sticky-ontheside").offset();
@@ -1062,7 +1061,5 @@ address{display:inline;font-style:normal;}
 
 </script>
 	
-=======
->>>>>>> b8b959fcb606b494b94ff27d670b92e3055116e7
 
 @endsection
