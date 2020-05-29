@@ -525,13 +525,7 @@ address{display:inline;font-style:normal;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Auteur: {{$project->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                            -->
+                                
 
                                 <div class="people-info">
                                     <div class="row">
@@ -615,14 +609,7 @@ address{display:inline;font-style:normal;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Hôte: {{$project->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                                -->
-
+                                
                                 <div class="people-info">
                                     <div class="row">
                                         <div class="col-sm-4">
