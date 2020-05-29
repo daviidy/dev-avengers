@@ -197,14 +197,7 @@ p{margin-bottom:0px!important;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Hôte: {{$meetup->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                            -->
-
+                                
                                 <div class="people-info">
                                     <div class="row">
                                         <div class="col-sm-3">
@@ -282,14 +275,7 @@ p{margin-bottom:0px!important;}
                                         <p class="media-usermeta"><i class="fa fa-briefcase"></i> Hôte: {{$meetup->user->name}}</p>
                                     </div>
                                 </div><!-- media -->
-                                <!--
-                                <ul class="card-options">
-                                    <li><a class="tooltips" href="" data-toggle="tooltip" title="" data-original-title="View Options">
-                                            <i class="fa fa-ellipsis-v"></i>
-                                        </a></li>
-                                </ul>
-                            -->
-
+                                
                                 <div class="people-info">
                                     <div class="row">
                                         <div class="col-sm-3">
