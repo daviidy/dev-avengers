@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Créer un événement')
+@section('title', 'Créer un article')
 
 @section('content')
 
@@ -83,7 +83,7 @@ body{
 .btn-primary:hover{
 	background-color: #fff!important;
 	color: #000!important;
-	border-color: 
+	border-color:
 	border: 3px solid #D86000!important;
 }
 
@@ -820,7 +820,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 	                       <div>
 	                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Nombre de places</h1>
 
-	                        	
+
 	                           <div class="eds-field-styled__border-simulation">
 	                                    <div class="eds-field-styled__internal">
 	                                        <div class="eds-field-styled__input-container">
@@ -834,7 +834,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 	                                </div>
 	                        </div>
                         </div -->
-                        
+
                         <div>
                         	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'article</h1>
 
@@ -883,7 +883,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                       aria-hidden="true"><svg class="arrow-down_svg__eds-icon--down-arrow_svg" viewBox="0 0 24 24">
                             <path class="arrow-down_svg__eds-icon--down-arrow_base" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12 20l.2-.2 5.8-5.6-.7-.8-4.8 4.7V4h-1v14.1l-4.8-4.7-.7.7z"></path>
                         </svg></i></div>
-                        
+
             </form>
         </div>
     </div>

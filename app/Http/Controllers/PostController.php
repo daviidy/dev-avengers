@@ -18,7 +18,7 @@ class PostController extends Controller
     public function index()
     {
         if (Auth::check()) {
-            $posts = Post::orderby('begin_date', 'asc')->paginate(30);
+            $posts = Post::orderby('id', 'asc')->paginate(30);
             return view('posts.default.index', ['posts' => $posts]);
         }
         else {
@@ -57,7 +57,7 @@ class PostController extends Controller
             $post->image = $filename;
             $post->save();
         }
-        return redirect('posts')->with('status', 'Votre événement a été crée avec succès');
+        return redirect('posts')->with('status', 'Votre article a été crée avec succès');
     }
 
     /**
@@ -99,7 +99,7 @@ class PostController extends Controller
             $post->image = $filename;
             $post->save();
         }
-        return redirect()->back()->with('status', 'Votre événement a été modifié avec succès');
+        return redirect()->back()->with('status', 'Votre article a été modifié avec succès');
     }
 
     /**
@@ -111,6 +111,6 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         $post->delete();
-        return redirect('posts')->with('status', 'Votre événement a été supprimé avec succès');
+        return redirect('posts')->with('status', 'Votre article a été supprimé avec succès');
     }
 }
