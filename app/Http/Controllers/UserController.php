@@ -48,7 +48,12 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        //
+        if (Auth::check()) {
+            return view('users.default.show', ['user' => $user,]);
+        }
+        else {
+            return redirect('home');
+        }
     }
 
     /**
