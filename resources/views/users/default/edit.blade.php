@@ -562,9 +562,9 @@ p{margin-bottom:0px!important;}
 
                             <div class="form-group">
                                 <label for="Image_cover">
-                                    Image de font
+                                    Image de fond
                                 </label>
-                                <input class="form-control" type="file" value="" name="image" id="">
+                                <input class="form-control" type="file" value="" name="cover_image" id="">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->

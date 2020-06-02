@@ -119,15 +119,15 @@ input.form-control:after {
                 <!--h3 class="mb-4 title">New<br />Account</h3-->
                 <div class="form-group"> 
                     <label class="form-control-placeholder p-0" for="name lbl">Pays de résidence</label> 
-                    <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px">                     
+                    <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="">                     
                 </div>
                 <div class="form-group"> 
                     <label class="form-control-placeholder p-0" for="name">Pays d'origine</label> 
-                    <input type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px">                    
+                    <input type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="">                    
                 </div>
                 <div class="form-group"> 
                     <label class="form-control-placeholder p-0" for="password">Pays de naissance</label> 
-                    <input type="text" id="country_6" class="form-control " required style="box-shadow: none;border-radius:0px"> 
+                    <input type="text" id="country_6" class="form-control " required style="box-shadow: none;border-radius:0px" name=""> 
                 </div> 
             </div>
             <div class="modal-footer border-0 mb-4"> 
