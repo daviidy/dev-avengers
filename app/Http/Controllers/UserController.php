@@ -20,6 +20,22 @@ class UserController extends Controller
     }
 
     /**
+     * When user wants to see jobs.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function seeJobs()
+    {
+        if (Auth::check() && Auth::user()->job !== null) {
+            $users = User::where('job', Auth::user()->job)->orderby('id', 'asc')->paginate(40);
+            return view('jobs.default.index', ['users' => $users,]);
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
