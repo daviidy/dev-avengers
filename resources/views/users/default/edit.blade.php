@@ -527,8 +527,10 @@ p{margin-bottom:0px!important;}
                                 <div class="help-block text-secondary">
                                     <p>@<strong>{{Auth::user()->name}}</strong></p>
                                 </div> <!-- close .help-block -->
+                                
                             </div>
                             </div>
+                            
 
                         </div>
 
@@ -555,6 +557,14 @@ p{margin-bottom:0px!important;}
                                     Email address
                                 </label>
                                 <input class="form-control" readonly type="email" value="{{Auth::user()->email}}" name="email" id="user_email">
+
+                            </div> <!-- close .form-group -->
+
+                            <div class="form-group">
+                                <label for="Image_cover">
+                                    Image de fond
+                                </label>
+                                <input class="form-control" type="file" value="" name="cover_image" id="">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->

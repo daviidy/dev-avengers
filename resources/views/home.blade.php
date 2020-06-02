@@ -262,7 +262,7 @@ border-bottom: 1px solid #dfdfdf;
 .ss-edit-profile-button:focus{outline:0;}
 .ss-edit-profile-button:hover{background-color:#ffffff;border: 2px solid #D86000;}
 @media (min-width:768px){
-.ss-edit-profile-button{padding-left:40px;padding-right:40px;max-width:16em;}
+.ss-edit-profile-button{padding-left:40px;padding-right:40px;/*max-width:16em;*/}
 }
 @media (min-width:992px){
 .ss-two-column-page .ss-content-wrapper{width:75%;}
@@ -417,6 +417,10 @@ p{margin-bottom:0px!important;}
 .followers .people-info .row + .row{margin-top:1px;}
 .followers .people-info h4{font-family:'Montserrat', sans-serif;margin:9px 0 8px;font-weight:500;color:#259dab;font-size:15px;}
 .nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
+.boutton{
+	text-align: center;
+	display: flex;
+}
 
 </style>
 
@@ -694,7 +698,12 @@ p{margin-bottom:0px!important;}
                     </div>
                 </div>
             </div>
-            <a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
+            <div class="boutton">
+            	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
+
+            	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Télécharger vos informations</a>
+            </div>
+            
         </div>
     </div>
 </div>
