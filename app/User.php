@@ -51,6 +51,10 @@ class User extends Authenticatable
         'mother_birth_city',
         'mother_town',
         'mother_children_number',
+        'type',
+        'job',
+        'image',
+        'cover_image',
     ];
 
     /**
