@@ -144,7 +144,7 @@
                     <a class="nav-link" href="/">Accueil <span class="sr-only">(cette page)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Pays <span class="sr-only">(cette page)</span></a>
+                    <a class="nav-link" href="/" data-toggle="modal" data-target="#exampleModal">Pays <span class="sr-only">(cette page)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/">Villages <span class="sr-only">(cette page)</span></a>
@@ -396,6 +396,8 @@
         </div>
         <!-- /navbar-collapse -->
     </nav>
+    
+
     <!-- /navbar-item -->
 
     {{--
@@ -418,7 +420,7 @@
 
     @yield('content')
 
-
+@include('includes.popup_country');
 
 
     <!-- ==============================================
