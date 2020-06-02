@@ -774,7 +774,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Pays de résidence du père
+                                    Nationalité du père
                                 </label>
                                 <input class="form-control" placeholder="Pays de résidence du père" type="text" name="father_birth_country" id="country_4" value="{{Auth::user()->father_birth_country}}">
 
@@ -786,7 +786,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Ville de résidence du père
+                                    Village du père
                                 </label>
                                 <input class="form-control" placeholder="Ville de résidence du père" type="text" name="father_town" id="user_url" value="{{Auth::user()->father_town}}">
 
@@ -857,7 +857,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Pays de résidence de la mère
+                                    Nationalité de la mère
                                 </label>
                                 <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="mother_birth_country" id="country_5" value="{{Auth::user()->mother_birth_country}}">
 
@@ -869,7 +869,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Ville de résidence de la mère
+                                    Village de la mère
                                 </label>
                                 <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="mother_birth_city" id="user_url" value="{{Auth::user()->mother_birth_city}}">
 
