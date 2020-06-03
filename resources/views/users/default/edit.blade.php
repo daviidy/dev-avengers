@@ -561,6 +561,59 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
+                                <label for="user_url">
+                                    Métier
+                                </label>
+                                
+							      <select name="job" class="form-control" id="sel1" placeholder="Métier">
+							        <option value="Aéronautique Et Espace">Aéronautique Et Espace</option>
+							        <option value="Agriculture - Agroalimentaire">Agriculture - Agroalimentaire</option>
+							        <option value="Artisanat">Artisanat</option>
+							        <option value="Audiovisuel, Cinéma">Audiovisuel, Cinéma</option>
+							        <option value="Audit, Comptabilité, Gestion">Audit, Comptabilité, Gestion</option>
+							        <option value="Automobile">Automobile</option>
+							        <option value="Banque, Assurance">Banque, Assurance</option>
+							        <option value="Bâtiment, Travaux Publics">Bâtiment, Travaux Publics</option>
+							        <option value="Biologie, Chimie, Pharmacie">Biologie, Chimie, Pharmacie</option>
+							        <option value="Commerce, Distribution">Commerce, Distribution</option>
+							        <option value="Communication">Communication</option>
+							        <option value="Création, Métiers D'art">Création, Métiers D'art</option>
+							        <option value="Culture, Patrimoine">Culture, Patrimoine</option>
+							        <option value="Défense, Sécurité, Armée">Défense, Sécurité, Armée</option>
+							        <option value="Documentation, Bibliothèque">Documentation, Bibliothèque</option>
+							        <option value="Droit">Droit</option>
+							        <option value="Edition, Livre">Edition, Livre</option>
+							        <option value="Enseignement">Enseignement</option>
+							        <option value="Environnement">Environnement</option>
+							        <option value="Ferroviaire">Ferroviaire</option>
+							        <option value="Foires, Salons Et Congrès">Foires, Salons Et Congrès</option>
+							        <option value="Fonction Publique">Fonction Publique</option>
+							        <option value="Hôtellerie, Restauration">Hôtellerie, Restauration</option>
+							        <option value="Humanitaire">Humanitaire</option>
+							        <option value="Immobilier">Immobilier</option>
+							        <option value="Industrie">Industrie</option>
+							        <option value="Informatique, Télécoms, Web">Informatique, Télécoms, Web</option>
+							        <option value="Journalisme">Journalisme</option>
+							        <option value="Langues">Langues</option>
+							        <option value="Marketing, Publicité">Marketing, Publicité</option>
+							        <option value="Médical">Médical</option>
+							        <option value="Mode-Textile">Mode-Textile</option>
+							        <option value="Paramédical">Paramédical</option>
+							        <option value="Propreté Et Services Associés">Propreté Et Services Associés</option>
+							        <option value="Psychologie">Psychologie</option>
+							        <option value="Ressources Humaines">Ressources Humaines</option>
+							        <option value="Sciences Humaines Et Sociales">Sciences Humaines Et Sociales</option>
+							        <option value="Secrétariat">Secrétariat</option>
+							        <option value="Social">Social</option>
+							        <option value="Spectacle - Métiers De La Scène">Spectacle - Métiers De La Scène</option>
+							        <option value="Sport">Sport</option>
+							        <option value="Tourisme">Tourisme</option>
+							        <option value="Transport-Logistique">Transport-Logistique</option>
+							      </select>
+
+                            </div> <!-- close .form-group -->
+
+                            <div class="form-group">
                                 <label for="Image_cover">
                                     Image de fond
                                 </label>
@@ -775,7 +828,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Pays de résidence du père
+                                    Nationalité du père
                                 </label>
                                 <input class="form-control" placeholder="Pays de résidence du père" type="text" name="father_birth_country" id="country_4" value="{{Auth::user()->father_birth_country}}">
 
@@ -787,7 +840,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Ville de résidence du père
+                                    Village du père
                                 </label>
                                 <input class="form-control" placeholder="Ville de résidence du père" type="text" name="father_town" id="user_url" value="{{Auth::user()->father_town}}">
 
@@ -858,7 +911,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Pays de résidence de la mère
+                                    Nationalité de la mère
                                 </label>
                                 <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="mother_birth_country" id="country_5" value="{{Auth::user()->mother_birth_country}}">
 
@@ -870,7 +923,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Ville de résidence de la mère
+                                    Village de la mère
                                 </label>
                                 <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="mother_birth_city" id="user_url" value="{{Auth::user()->mother_birth_city}}">
 

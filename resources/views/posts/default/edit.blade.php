@@ -524,7 +524,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                         	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'article</h1>
 
                             @if($post->image !== 'image.jpg')
-                            <img class="mb-3" style="width: 50%;" src="/storage/images/posts/{{$post->image}}" alt="$post->name">
+                            <img class="mb-3" style="width: 50%;" src="/storage/images/posts/{{$post->image}}" alt="{{$post->name}}">
                             @endif
 
                         	<div>

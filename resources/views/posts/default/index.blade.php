@@ -112,7 +112,7 @@ a{cursor:pointer;outline:0;}
 .card{margin-bottom:30px;margin-right:10px;margin-left:10px;border-radius:10px!important;box-shadow:0 1px 5px rgba(49, 58, 70, 0.4);}
 .card .card-title{font-family:'Montserrat', sans-serif;font-weight:700;letter-spacing:0px;color:#1ab394!important;font-size:16px;line-height:1!important;}
 .card .card-title a:hover{color:#858686!important;}
-.card .card-text{font-family:'Abhaya Libre', serif;color:#858686!important;}
+.card .card-text{font-family: 'Montserrat', sans-serif;color:#858686!important;}
 .card .card-text a{color:#1ab394!important;}
 .card a{text-decoration:none!important;color:inherit;}
 .card hr{padding-top:0px!important;margin-top:0px!important;height:1px;background:#eee;}
@@ -122,8 +122,8 @@ a{cursor:pointer;outline:0;}
 .card ul.bottom_data,.card ul.author-2{margin-bottom:0px;list-style:none;padding:0px;}
 .card ul.bottom_data{position:relative;top:8px;}
 .card ul.bottom_data li:first-child{padding-left:0px;border-right:none;}
-.card ul.bottom_data li{font-family:'Abhaya Libre', serif;color:#858686!important;display:block;font-size:14px;margin-bottom:0px!important;font-weight:normal;line-height:1;float:left;padding:0px 8px;}
-.card ul.author-2 li{font-family:'Abhaya Libre', serif;color:#1ab394!important;display:block;font-size:14px;margin-bottom:15px!important;font-weight:normal;line-height:1;float:left;padding:0px 5px;}
+.card ul.bottom_data li{font-family: 'Montserrat', sans-serif;color:#858686!important;display:block;font-size:14px;margin-bottom:0px!important;font-weight:normal;line-height:1;float:left;padding:0px 8px;}
+.card ul.author-2 li{font-family: 'Montserrat', sans-serif;color:#1ab394!important;display:block;font-size:14px;margin-bottom:15px!important;font-weight:normal;line-height:1;float:left;padding:0px 5px;}
 .card ul.bottom_data li .fa{margin-right:3px!important;}
 .card ul.bottom_data li:last-child{padding-right:0px;border-right:none;}
 @media only screen and (max-width: 768px){
