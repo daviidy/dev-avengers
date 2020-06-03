@@ -478,9 +478,13 @@ p{margin-bottom:0px!important;}
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Profession:</div>
+                        <div class="ss-field-label">Métier:</div>
                         <div class="field-value ss-empty-value">
-
+                        	@if(Auth::user()->job)
+                            {{Auth::user()->job}}
+                            @else
+                            Aucun Métier renseigné
+                            @endif
                         </div>
                     </div>
                     <!--div class="ss-flex-item">
