@@ -561,6 +561,60 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
+                                <label for="user_url">
+                                    Métier
+                                </label>
+                                <!--input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" -->
+
+							      <select class="form-control" id="sel1" placeholder="Etat de naissance">
+							        <option>Aéronautique Et Espace</option>
+							        <option>Agriculture - Agroalimentaire</option>
+							        <option>Artisanat</option>
+							        <option>Audiovisuel, Cinéma</option>
+							        <option>Audit, Comptabilité, Gestion</option>
+							        <option>Automobile</option>
+							        <option>Banque, Assurance</option>
+							        <option>Bâtiment, Travaux Publics</option>
+							        <option>Biologie, Chimie, Pharmacie</option>
+							        <option>Commerce, Distribution</option>
+							        <option>Communication</option>
+							        <option>Création, Métiers D'art</option>
+							        <option>Culture, Patrimoine</option>
+							        <option>Défense, Sécurité, Armée</option>
+							        <option>Documentation, Bibliothèque</option>
+							        <option>Droit</option>
+							        <option>Edition, Livre</option>
+							        <option>Enseignement</option>
+							        <option>Environnement</option>
+							        <option>Ferroviaire</option>
+							        <option>Foires, Salons Et Congrès</option>
+							        <option>Fonction Publique</option>
+							        <option>Hôtellerie, Restauration</option>
+							        <option>Humanitaire</option>
+							        <option>Immobilier</option>
+							        <option>Industrie</option>
+							        <option>Informatique, Télécoms, Web</option>
+							        <option>Journalisme</option>
+							        <option>Langues</option>
+							        <option>Marketing, Publicité</option>
+							        <option>Médical</option>
+							        <option>Mode-Textile</option>
+							        <option>Paramédical</option>
+							        <option>Propreté Et Services Associés</option>
+							        <option>Psychologie</option>
+							        <option>Ressources Humaines</option>
+							        <option>Sciences Humaines Et Sociales</option>
+							        <option>Secrétariat</option>
+							        <option>Social</option>
+							        <option>Spectacle - Métiers De La Scène</option>
+							        <option>Sport</option>
+							        <option>Tourisme</option>
+							        <option>Transport-Logistique</option>
+							      </select>
+
+                            </div> <!-- close .form-group -->
+
+                            <div class="form-group">
                                 <label for="Image_cover">
                                     Image de fond
                                 </label>
