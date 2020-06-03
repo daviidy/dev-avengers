@@ -258,11 +258,11 @@ border-bottom: 1px solid #dfdfdf;
 .ss-field-privacy-notice{border-radius:9.5px;background-color:#f5f5f5;font-size:.75rem;letter-spacing:.09px;line-height:1.417em;color:#95989d;padding:.416em .833em;}
 .ss-field-privacy-notice .ss-lock{height:.625rem;}
 .ss-icon-facebook{background-size:inherit;text-indent:1.5625em;}
-.ss-edit-profile-button{font-family: 'Montserrat', sans-serif;display:inline-block;background-color:#D86000;border-radius:91px;color:#fff;width:100%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
+.ss-edit-profile-button{font-family: 'Montserrat', sans-serif;display:inline-block;background-color:#D86000;border-radius:91px;color:#fff;width:32%;font-size:1rem;font-weight:600;letter-spacing:.4px;line-height:1em;text-align:center;padding:.9375em 0;margin-top:1.875em;margin-right:15px;cursor:pointer;}
 .ss-edit-profile-button:focus{outline:0;}
 .ss-edit-profile-button:hover{background-color:#ffffff;border: 2px solid #D86000;}
 @media (min-width:768px){
-.ss-edit-profile-button{padding-left:40px;padding-right:40px;/*max-width:16em;*/}
+.ss-edit-profile-button{/*padding-left:40px;padding-right:40px;max-width:16em;*/}
 }
 @media (min-width:992px){
 .ss-two-column-page .ss-content-wrapper{width:75%;}
@@ -419,7 +419,7 @@ p{margin-bottom:0px!important;}
 .nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
 .boutton{
 	text-align: center;
-	display: flex;
+	
 }
 
 </style>
@@ -478,9 +478,13 @@ p{margin-bottom:0px!important;}
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Profession:</div>
+                        <div class="ss-field-label">Métier:</div>
                         <div class="field-value ss-empty-value">
-
+                        	@if(Auth::user()->job)
+                            {{Auth::user()->job}}
+                            @else
+                            Aucun Métier renseigné
+                            @endif
                         </div>
                     </div>
                     <!--div class="ss-flex-item">
@@ -601,22 +605,22 @@ p{margin-bottom:0px!important;}
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Pays de résidence du père</div>
+                        <div class="ss-field-label">Nationalité du père</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->father_birth_country)
                             {{Auth::user()->father_birth_country}}
                             @else
-                            Aucun Pays renseigné
+                            Aucun Nationalité renseigné
                             @endif
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Ville de résidence du père</div>
+                        <div class="ss-field-label">Village du père</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->father_town)
                             {{Auth::user()->father_town}}
                             @else
-                            Aucune ville renseignée
+                            Aucun village renseignée
                             @endif
                         </div>
                     </div>
@@ -667,22 +671,22 @@ p{margin-bottom:0px!important;}
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Pays de résidence de la Mère</div>
+                        <div class="ss-field-label">Nationalité de la Mère</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->mother_birth_country)
                             {{Auth::user()->mother_birth_country}}
                             @else
-                            Aucun Pays renseigné
+                            Aucune Nationalité renseigné
                             @endif
                         </div>
                     </div>
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Ville de résidence de la Mère</div>
+                        <div class="ss-field-label">Village de la Mère</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->mother_birth_city)
                             {{Auth::user()->mother_birth_city}}
                             @else
-                            Aucune ville renseignée
+                            Aucun village renseignée
                             @endif
                         </div>
                     </div>
