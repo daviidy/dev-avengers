@@ -1,3 +1,20 @@
+<style media="screen">
+.profile-bg-picture {
+background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url(/storage/images/users/covers/{{Auth::user()->cover_image}}) no-repeat center center fixed;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-attachment: scroll;
+color: #fff;
+height: 55vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+</style>
+
 <header class="profile-bg-picture"></header>
 
 

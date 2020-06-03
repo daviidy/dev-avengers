@@ -13,22 +13,6 @@
     }
 </style>
 
-<style media="screen">
-.profile-bg-picture {
-background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url(../img/blog/13.jpg) no-repeat center center fixed;
-background-position: center center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-background-attachment: scroll;
-color: #fff;
-height: 55vh;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-</style>
 
 <!--user-section-->
 <style media="screen">
@@ -703,7 +687,7 @@ p{margin-bottom:0px!important;}
 
             	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Télécharger vos informations</a>
             </div>
-            
+
         </div>
     </div>
 </div>

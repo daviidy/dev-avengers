@@ -71,19 +71,20 @@ p{margin-bottom:0px!important;}
 @media only screen and (max-width: 768px){
 p{margin-bottom:0px!important;}
 }
-.following .card-box{padding:20px;box-shadow:0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);-webkit-border-radius:5px;border-radius:5px;-moz-border-radius:5px;background-clip:padding-box;margin-bottom:20px;background-color:#ffffff;}
-.following .widget-user img{height:72px;float:left;}
-.following .widget-user .wid-u-info{margin-left:90px;}
-.following .widget-user .wid-u-info p,.following .widget-user .wid-u-info h4{white-space:nowrap;display:block;overflow:hidden;text-overflow:ellipsis;}
-.following .widget-user .wid-u-info h4{font-family:'Abhaya Libre', serif;font-size:16px;color:#1ab394;}
-.following .widget-user .wid-u-info p{font-family:'Abhaya Libre', serif;font-size:14px;}
-.following .widget-user .wid-u-info small{font-family:'Abhaya Libre', serif;font-size:16px;}
-.following .font-600{font-weight:600;}
-.following .m-b-5{margin-bottom:5px!important;}
-.following .m-t-0{margin-top:0px!important;}
-.following .text-muted{color:#98a6ad!important;}
-.following .font-13{font-size:13px!important;}
-.following b{font-weight:600;}
+.card-box{padding:20px;box-shadow:0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);-webkit-border-radius:5px;border-radius:5px;-moz-border-radius:5px;background-clip:padding-box;margin-bottom:20px;background-color:#ffffff;}
+.widget-user img{height:72px;float:left;}
+.widget-user .wid-u-info{margin-left:90px;}
+.widget-user .wid-u-info p,.widget-user .wid-u-info h4{white-space:nowrap;display:block;overflow:hidden;text-overflow:ellipsis;}
+.widget-user .wid-u-info h4{font-family:'Abhaya Libre', serif;font-size:16px;color:#1ab394;}
+.widget-user .wid-u-info p{font-family:'Abhaya Libre', serif;font-size:14px;}
+.widget-user .wid-u-info small{font-family:'Abhaya Libre', serif;font-size:16px;}
+.font-600{font-weight:600;}
+.m-b-5{margin-bottom:5px!important;}
+.m-t-0{margin-top:0px!important;}
+.text-muted{color:#98a6ad!important;}
+.font-13{font-size:13px!important;}
+b{font-weight:600;}
+
 
 </style>
 
@@ -95,20 +96,42 @@ p{margin-bottom:0px!important;}
 <section class="posts-2 followers">
     <div class="container">
         <div class="row">
-            @foreach($users as $user)
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/storage/images/users/{{$user->image}}" class="img-fluid rounded-circle" alt="{{$user->name}}">
+                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
                         <div class="wid-u-info">
-                            <h4 class="m-t-0 m-b-5 font-600">{{ucfirst($user->name)}}</h4>
-                            <p class="text-muted m-b-5 font-13">{{$user->job}}</p>
-                            <small class="text-warning"><b>Envoyer un message</b></small>
+                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
+                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
+                            <small class="text-warning"><b>Follow</b></small>
                         </div>
                     </div>
                 </div>
             </div>
-            @endforeach
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
+                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
+                            <small class="text-warning"><b>Follow</b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
+                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
+                            <small class="text-warning"><b>Follow</b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div><!--fin row-->
     </div>

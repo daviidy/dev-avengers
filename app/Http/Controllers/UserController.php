@@ -26,9 +26,8 @@ class UserController extends Controller
      */
     public function seeJobs()
     {
-        if (Auth::check() && Auth::user()->job !== null) {
-            $users = User::where('job', Auth::user()->job)->orderby('id', 'asc')->paginate(40);
-            return view('jobs.default.index', ['users' => $users,]);
+        if (Auth::check()) {
+            return view('jobs.default.index');
         }
         else {
             return redirect('home');
@@ -99,7 +98,13 @@ class UserController extends Controller
     {
         if (Auth::check()) {
             $user->update($request->all());
-
+            if ($request->hasFile('cover_image') ) {
+                $image = $request->file('cover_image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                Image::make($image)->save(storage_path('app/public/images/users/covers/'.$filename));
+                $user->cover_image = $filename;
+                $user->save();
+            }
             return redirect('/users/'.$user->id.'/edit')->with('status', 'Votre profil a été modifié avec succès');
         }
         else {

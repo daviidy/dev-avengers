@@ -28,6 +28,9 @@ Route::resource('comments', 'CommentController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/seeJobs', 'UserController@seeJobs');
+Route::get('/seeVillages', 'UserController@seeJobs');
+
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')
     ->name('admin');
