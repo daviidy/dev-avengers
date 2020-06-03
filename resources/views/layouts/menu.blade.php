@@ -143,14 +143,20 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Accueil <span class="sr-only">(cette page)</span></a>
                 </li>
+                @auth
                 <li class="nav-item">
-                    <a class="nav-link" href="/" data-toggle="modal" data-target="#exampleModal">Pays <span class="sr-only">(cette page)</span></a>
+                    @if(Auth::user()->living_country !== null && Auth::user()->birth_country !== null && Auth::user()->father_birth_country !== null)
+                    <a class="nav-link" href="/seeCountries">Pays <span class="sr-only">(cette page)</span></a>
+                    @else
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Pays <span class="sr-only">(cette page)</span></a>
+                    @endif
+                </li>
+                @endauth
+                <li class="nav-item">
+                    <a class="nav-link" href="/seeVillages">Villages <span class="sr-only">(cette page)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Villages <span class="sr-only">(cette page)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Métiers <span class="sr-only">(cette page)</span></a>
+                    <a class="nav-link" href="/seeJobs">Métiers <span class="sr-only">(cette page)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a style="width: 90px;" class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
@@ -396,7 +402,7 @@
         </div>
         <!-- /navbar-collapse -->
     </nav>
-    
+
 
     <!-- /navbar-item -->
 
@@ -513,6 +519,35 @@
 @endif
 
 --}}
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyD-PY0Gr0B-Z9zzr1oU3hnH17yLjfPvPpQ"></script>
+
+<script type="text/javascript">
+
+var searchInput = 'search_input';
+
+$(document).ready(function () {
+var autocomplete;
+autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+    types: ['geocode'],
+});
+
+google.maps.event.addListener(autocomplete, 'place_changed', function () {
+    var near_place = autocomplete.getPlace();
+    document.getElementById('loc_lat').value = near_place.geometry.location.lat();
+    document.getElementById('loc_long').value = near_place.geometry.location.lng();
+
+});
+});
+
+$(document).on('change', '#'+searchInput, function () {
+document.getElementById('loc_lat').value = '';
+document.getElementById('loc_long').value = '';
+
+});
+
+</script>
+
 
 </body>
 

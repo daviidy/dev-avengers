@@ -1,5 +1,5 @@
 <style type="text/css">
-   
+
 
 .form-group {
     position: relative;
@@ -32,7 +32,7 @@ input.form-control:after {
 
 .modal-content {
     color: #000;
-    
+
 }
 
 /*.modal-title {
@@ -110,29 +110,32 @@ input.form-control:after {
     <div class="modal-dialog" role="document">
         <div class="modal-content p-4"> <button type="button" class="close x" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
             <div class="modal-header border-0 mb-2">
-                <h5 class="modal-title" id="exampleModalLabel">Veuillez renseigner les informations ci-dessous avant de continuer</h5> 
-                <!--button type="button" class="close" aria-label="Close" disabled='true'> 
-                    <span aria-hidden="true">Log in</span> 
+                <h5 class="modal-title" id="exampleModalLabel">Veuillez renseigner les informations ci-dessous avant de continuer</h5>
+                <!--button type="button" class="close" aria-label="Close" disabled='true'>
+                    <span aria-hidden="true">Log in</span>
                 </button-->
             </div>
-            <div class="modal-body">
-                <!--h3 class="mb-4 title">New<br />Account</h3-->
-                <div class="form-group"> 
-                    <label class="form-control-placeholder p-0" for="name lbl">Pays de résidence</label> 
-                    <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="">                     
+            <form class="" action="/addCountries" method="post">
+                <div class="modal-body">
+                    <!--h3 class="mb-4 title">New<br />Account</h3-->
+                    <div class="form-group">
+                        <label class="form-control-placeholder p-0" for="name lbl">Pays de résidence</label>
+                        <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-placeholder p-0" for="name">Pays d'origine</label>
+                        <input type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-placeholder p-0" for="password">Pays de naissance</label>
+                        <input type="text" id="country_6" class="form-control " required style="box-shadow: none;border-radius:0px" name="">
+                    </div>
                 </div>
-                <div class="form-group"> 
-                    <label class="form-control-placeholder p-0" for="name">Pays d'origine</label> 
-                    <input type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="">                    
+                <div class="modal-footer border-0 mb-4">
+                    <button type="submit" class="btn signup col-6 col-md-6 ss-edit-profile-button" data-dismiss="modal">Envoyer</button>
                 </div>
-                <div class="form-group"> 
-                    <label class="form-control-placeholder p-0" for="password">Pays de naissance</label> 
-                    <input type="text" id="country_6" class="form-control " required style="box-shadow: none;border-radius:0px" name=""> 
-                </div> 
-            </div>
-            <div class="modal-footer border-0 mb-4"> 
-                <button type="button" class="btn signup col-6 col-md-6 ss-edit-profile-button" data-dismiss="modal">Evoyer</button> 
-            </div>
+            </form>
+
         </div>
     </div>
 </div>

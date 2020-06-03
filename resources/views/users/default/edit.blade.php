@@ -527,10 +527,10 @@ p{margin-bottom:0px!important;}
                                 <div class="help-block text-secondary">
                                     <p>@<strong>{{Auth::user()->name}}</strong></p>
                                 </div> <!-- close .help-block -->
-                                
+
                             </div>
                             </div>
-                            
+
 
                         </div>
 
@@ -684,8 +684,9 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville de naissance
                                 </label>
-                                <input class="form-control" placeholder="Ville de naissance" type="text" value="{{Auth::user()->birth_city}}" name="birth_city" id="city" autocomplete="on" >
-
+                                <input id="search_input" class="form-control" placeholder="Ville de naissance" type="text" value="{{Auth::user()->birth_city}}" name="birth_city" id="city" autocomplete="on" >
+                                <input class="form-control" type="hidden" id="loc_lat" />
+                                <input class="form-control" type="hidden" id="loc_long" />
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 

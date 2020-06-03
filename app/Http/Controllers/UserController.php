@@ -20,6 +20,21 @@ class UserController extends Controller
     }
 
     /**
+     * When user wants to see jobs.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function seeJobs()
+    {
+        if (Auth::check()) {
+            return view('jobs.default.index');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -83,7 +98,13 @@ class UserController extends Controller
     {
         if (Auth::check()) {
             $user->update($request->all());
-
+            if ($request->hasFile('cover_image') ) {
+                $image = $request->file('cover_image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                Image::make($image)->save(storage_path('app/public/images/users/covers/'.$filename));
+                $user->cover_image = $filename;
+                $user->save();
+            }
             return redirect('/users/'.$user->id.'/edit')->with('status', 'Votre profil a été modifié avec succès');
         }
         else {
