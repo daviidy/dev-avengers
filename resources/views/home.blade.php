@@ -403,7 +403,7 @@ p{margin-bottom:0px!important;}
 .nav-tabs .nav-link{font-family:'Montserrat', sans-serif;font-size:16px;}
 .boutton{
 	text-align: center;
-	
+
 }
 
 </style>
@@ -689,7 +689,7 @@ p{margin-bottom:0px!important;}
             <div class="boutton">
             	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Modifier le profil</a>
 
-            	<a class="ss-edit-profile-button" href="{{route('users.edit', Auth::user())}}" rel="noopener">Télécharger vos informations</a>
+            	<a class="ss-edit-profile-button" href="/downloadInfos" rel="noopener">Télécharger vos informations</a>
             </div>
 
         </div>

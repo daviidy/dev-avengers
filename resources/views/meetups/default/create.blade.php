@@ -83,7 +83,7 @@ body{
 .btn-primary:hover{
 	background-color: #fff!important;
 	color: #000!important;
-	border-color: 
+	border-color:
 	border: 3px solid #D86000!important;
 }
 
@@ -453,7 +453,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 
 <div class="eds-layout__body" data-spec="eds-layout__body">
     <div>
-       
+
         <div class="eds-g-grid eds-l-pad-bot-12 eds-l-pad-top-5 eds-l-mar-top-5 eds-l-mar-bot-12">
             <form id="information-container" enctype="multipart/form-data" method="post" action="{{route('meetups.store')}}">
                 @csrf
@@ -486,7 +486,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     </div>
                                 </div>
 
-                                
+
                             </div>
 
                             <div class="eds-field-styled eds-l-mar-bot-4 eds-field-styled--static eds-field-styled--error" data-automation="coyote-basicinfo-event-title-wrapper" data-spec="coyote-basicinfo-event-title">
@@ -504,10 +504,10 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     </div>
                                 </div>
                                 <input type="hidden" name="user_id" value="{{Auth::user()->id}}">
-                                
+
                             </div>
 
-                            
+
                 <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
                 <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
                     <div class="eds-g-cell eds-vertical-group eds-g-cell-1-12 eds-g-offset-1-12 eds-show-up-md eds-l-pad-top-1" style="display: none;"><i class="eds-vector-image eds-icon--medium eds-vector-image--grey-300" data-spec="icon" aria-hidden="true" ><svg
@@ -539,10 +539,10 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             <div class="radio-selector-label-wrap eds-l-mar-right-4 segmented-2" >
                                             	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900 segmented-venueType-1"
                                                   for="segmented-venueType-1">Événement en ligne
-                                                  
+
                                                   </label>
                                               </div>
-                                            
+
                                     </div>
                                     <div class="form-group">
 	                                    <div class="form-1" id="form-1">
@@ -573,7 +573,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                 <p class="eds-text-bm eds-text-color--grey-800"><span>Indiquez aux participants potentiels quand votre événement commence et se termine pour qu'ils puissent planifier au mieux leur venue.</span></p>
                             </div>
                         </div>
-                        
+
                         <p class="eds-text-bm">Les événements uniques ont lieu une seule fois et peuvent s'étendre sur plusieurs jours</p>
                         <div data-spec="event-date-time-pair">
                             <div class="eds-g-grid eds-l-mar-top-5 eds-l-mar-bot-2">
@@ -601,7 +601,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="eds-g-grid eds-l-mar-bot-2">
@@ -629,7 +629,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -640,21 +640,21 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 	                       <div>
 	                        	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Nombre de places</h1>
 
-	                        	
+
 	                           <div class="eds-field-styled__border-simulation">
 	                                    <div class="eds-field-styled__internal">
 	                                        <div class="eds-field-styled__input-container">
 	                                            <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
 	                                                  data-spec="label-label"><span class="eds-label__content">Nombre de places</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
 	                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
-	                                                          <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
-	                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" maxlength="75" name="place_number" role="textbox" type="number" value="" placeholder="25 04">
+															  <input data-spec="input-field-input-element" aria-invalid="true" aria-required="true" class="eds-field-styled__input"
+	                                              data-automation="coyote-basicinfo-event-title" id="event-basicInfo-title" name="number_place" role="textbox" type="number" placeholder="Combien de personnes voulez-vous à cet événement ?">
 	                                        </div>
 	                                    </div>
 	                                </div>
 	                        </div>
                         </div>
-                        
+
                         <div>
                         	<h1 class="eds-text-hm eds-text-color--grey-900" style="padding:25px 0;">Image de l'événement</h1>
 

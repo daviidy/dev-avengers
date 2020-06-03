@@ -57,7 +57,26 @@ class MeetupController extends Controller
             $meetup->image = $filename;
             $meetup->save();
         }
+        $meetup->users()->attach(Auth::user());
         return redirect('meetups')->with('status', 'Votre événement a été crée avec succès');
+    }
+
+
+    /**
+     * register to an event.
+     *
+     * @param  \App\Meetup  $meetup
+     * @return \Illuminate\Http\Response
+     */
+    public function registerEvent(Meetup $meetup)
+    {
+        if (Auth::check() && !Auth::user()->meetups->contains($meetup->id)) {
+            $meetup->users()->attach(Auth::user());
+            return redirect('meetups')->with('status', 'Votre participation à l\'événement '.$meetup->name.' a bien été pris en compte.');
+        }
+        else {
+            return redirect('home');
+        }
     }
 
     /**

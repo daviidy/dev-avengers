@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Auth;
 use Image;
+use PDF;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -28,6 +29,31 @@ class UserController extends Controller
     {
         if (Auth::check()) {
             return view('jobs.default.index');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+    /**
+     * When user wants to download his informations.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function downloadInfos()
+    {
+        if (Auth::check()) {
+            $data = [
+                'username' => Auth::user()->name,
+                'image' => Auth::user()->image,
+                'birth_city' => Auth::user()->birth_city,
+
+            ];
+
+            PDF::setOptions(['dpi' => 150, 'defaultFont' => 'helvetica']);
+            $pdf = PDF::loadView('pdf.certificate', $data);
+            $pdf->setPaper('A4', 'portrait');
+            return $pdf->download('extrait_de_naissance.pdf');
         }
         else {
             return redirect('home');

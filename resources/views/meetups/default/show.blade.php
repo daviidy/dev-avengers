@@ -947,8 +947,10 @@ address{display:inline;font-style:normal;}
                                         </div>
                                         --}}
                                         <div class="flex-item">
-                                            <span>175 places encore disponibles</span>
-                                        </div>
+											@if(count($meetup->users) > 0)
+                                            <span>{{$meetup->number_place - count($meetup->users)}} places encore disponibles</span>
+											@endif
+										</div>
                                     </div>
                                 </div>
                             </div>
@@ -964,8 +966,10 @@ address{display:inline;font-style:normal;}
                                                 </path>
                                             </svg></span></button></div>
                                             --}}
+                                @auth
+                                @if(!Auth::user()->meetups->contains($meetup->id))
                                 <div class="flex-item flex-item--shrink">
-                                    <a href="/registerEvent">
+                                    <a href="/registerEvent/{{$meetup->id}}">
                                         <button data-swarm-button="primary" data-swarm-size="large" data-icon="left" data-swarm-width="default" type="button" data-e2e="event-footer--attend-btn"
                                           class="gtmEventFooter--attend-btn">
                                           <span>Participer</span>
@@ -973,6 +977,8 @@ address{display:inline;font-style:normal;}
                                     </a>
 
                               </div>
+                              @endif
+                              @endauth
                             </div>
                         </div>
                     </div>
@@ -1011,15 +1017,15 @@ address{display:inline;font-style:normal;}
     }else{
     // else if((window).width() > 700)
     // {
-        
+
     var element = $('.sticky-ontheside'),
         originalY = element.offset().top;
-    
+
 // Space between element and top of screen (when scrolling)
     var topMargin = 100;
 // Should probably be set in CSS; but here just for emphasis
     element.css('position', 'relative');
-    
+
     $(window).on('scroll', function(event) {
         var scrollTop = $(window).scrollTop();
 
@@ -1035,7 +1041,7 @@ address{display:inline;font-style:normal;}
                 e.preventDefault();
                 e.stopPropagation();
             }
-          
+
 
             // scrollTop = this.scrollTop()
 
@@ -1060,6 +1066,6 @@ address{display:inline;font-style:normal;}
 })(jQuery);
 
 </script>
-	
+
 
 @endsection
