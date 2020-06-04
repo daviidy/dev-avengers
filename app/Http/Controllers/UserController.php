@@ -245,6 +245,26 @@ class UserController extends Controller
         }
     }
 
+
+    /**
+     * add countries.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function addVillage(Request $request)
+    {
+        if (Auth::check()) {
+            $user = User::find($request->user_id);
+            $user->update($request->all());
+
+            return redirect('/seeVillages');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
     //upload avatar with ajax
     public function uploadAvatar(Request $req)
     {

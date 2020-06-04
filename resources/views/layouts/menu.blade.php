@@ -148,13 +148,20 @@
                     @if(Auth::user()->living_country !== null && Auth::user()->birth_country !== null)
                     <a class="nav-link" href="/seeCountries">Pays <span class="sr-only">(cette page)</span></a>
                     @else
-                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Pays <span class="sr-only">(cette page)</span></a>
+                    <a class="nav-link" data-toggle="modal" data-target="#countryModal">Pays <span class="sr-only">(cette page)</span></a>
                     @endif
                 </li>
                 @endauth
+                @auth
                 <li class="nav-item">
+                    @if(Auth::user()->father_birth_country !== null)
                     <a class="nav-link" href="/seeVillages">Villages <span class="sr-only">(cette page)</span></a>
+                    @else
+                    <a class="nav-link" data-toggle="modal" data-target="#villageModal">Villages <span class="sr-only">(cette page)</span></a>
+                    @endif
                 </li>
+                @endauth
+
                 <li class="nav-item">
                     <a class="nav-link" href="/seeJobs">Métiers <span class="sr-only">(cette page)</span></a>
                 </li>
@@ -427,6 +434,7 @@
     @yield('content')
 
 @include('includes.popup_country');
+@include('includes.popup_village');
 
 
     <!-- ==============================================

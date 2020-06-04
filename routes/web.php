@@ -35,6 +35,9 @@ Route::get('/villages/{village}', 'UserController@villages');
 Route::get('/seeCountries', 'UserController@seeCountries');
 Route::get('/downloadInfos', 'UserController@downloadInfos');
 Route::get('/registerEvent/{meetup}', 'MeetupController@registerEvent');
+Route::post('/addCountries', 'UserController@addCountries');
+Route::post('/addVillage', 'UserController@addVillage');
+
 
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')

@@ -106,7 +106,7 @@ input.form-control:after {
 }
 </style>
 
-<div class="modal fade" id="countryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="villageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content p-4"> <button type="button" class="close x" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
             <div class="modal-header border-0 mb-2">
@@ -115,23 +115,23 @@ input.form-control:after {
                     <span aria-hidden="true">Log in</span>
                 </button-->
             </div>
-            <form class="" action="/addCountries" method="post">
+            <form class="" action="/addVillage" method="post">
                 @csrf
                 <div class="modal-body">
                     <!--h3 class="mb-4 title">New<br />Account</h3-->
                     <div class="form-group">
-                        <label class="form-control-placeholder p-0" for="name lbl">Pays de résidence</label>
-                        <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="living_country">
+                        <label class="form-control-placeholder p-0" for="name lbl">Nationalité du père:</label>
+                        <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="father_birth_country">
                         <input type="text" hidden name="user_id" value="{{Auth::user()->id}}">
                     </div>
                     <div class="form-group">
-                        <label class="form-control-placeholder p-0" for="name">Nationalité</label>
-                        <input type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="birth_country">
+                        <label class="form-control-placeholder p-0" for="name">Village du père</label>
+                        <input value="{{Auth::user()->father_town ? Auth::user()->father_town : ''}}" type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="father_town">
                     </div>
 
                 </div>
                 <div class="modal-footer border-0 mb-4">
-                    <button type="submit" class="btn signup col-6 col-md-6 ss-edit-profile-button" data-dismiss="modal">Envoyer</button>
+                    <button type="submit" class="btn signup col-6 col-md-6 ss-edit-profile-button">Envoyer</button>
                 </div>
             </form>
 
