@@ -6,6 +6,7 @@ use App\User;
 use Auth;
 use Image;
 use PDF;
+use DB;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -29,6 +30,93 @@ class UserController extends Controller
     {
         if (Auth::check()) {
             return view('jobs.default.index');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+
+    /**
+     * When user wants to see jobs.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function jobs(Request $request)
+    {
+        if (Auth::check()) {
+            $users = User::where('job', $request->input('job'))->get();
+            return view('jobs.default.users', ['users' => $users]);
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+
+    /**
+     * When user wants to see countries.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function seeCountries()
+    {
+        if (Auth::check()) {
+            $users1 = DB::table('users')
+              ->where('living_country', 'like', '%'.Auth::user()->living_country.'%')
+              ->orderBy('id', 'asc')
+              ->get();
+              $users2 = DB::table('users')
+                ->where('birth_country', 'like', '%'.Auth::user()->birth_country.'%')
+                ->orderBy('id', 'asc')
+                ->get();
+            return view('countries.default.index', ['users1' => $users1, 'users2' => $users2]);
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+
+    /**
+     * When user wants to see villages.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function seeVillages()
+    {
+        if (Auth::check()) {
+            if (Auth::user()->father_birth_country == 'Côte d’Ivoire') {
+                return view('villages.default.ivory_coast');
+            }
+            else {
+                $users = DB::table('users')
+                  ->where('father_town', 'like', '%'.Auth::user()->father_town.'%')
+                  ->orderBy('id', 'asc')
+                  ->get();
+
+                return view('villages.default.index', ['users' => $users,]);
+            }
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+
+    /**
+     * When user wants to see village users.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function villages(Request $request)
+    {
+        if (Auth::check()) {
+            $users = DB::table('users')
+              ->where('father_birth_state', 'like', '%'.Auth::user()->father_birth_state.'%')
+              ->orderBy('id', 'asc')
+              ->get();
+            return view('villages.default.users', ['users' => $users]);
         }
         else {
             return redirect('home');
@@ -132,6 +220,25 @@ class UserController extends Controller
                 $user->save();
             }
             return redirect('/users/'.$user->id.'/edit')->with('status', 'Votre profil a été modifié avec succès');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+    /**
+     * add countries.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function addCountries(Request $request)
+    {
+        if (Auth::check()) {
+            $user = User::find($request->user_id);
+            $user->update($request->all());
+
+            return redirect('/seeCountries');
         }
         else {
             return redirect('home');

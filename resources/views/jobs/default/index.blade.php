@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Liste des événements')
+@section('title', 'Liste des métiers')
 
 @section('content')
 

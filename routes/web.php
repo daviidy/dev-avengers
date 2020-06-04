@@ -29,7 +29,10 @@ Route::resource('comments', 'CommentController');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/seeJobs', 'UserController@seeJobs');
-Route::get('/seeVillages', 'UserController@seeJobs');
+Route::get('/jobs/{job}', 'UserController@jobs');
+Route::get('/seeVillages', 'UserController@seeVillages');
+Route::get('/villages/{village}', 'UserController@villages');
+Route::get('/seeCountries', 'UserController@seeCountries');
 Route::get('/downloadInfos', 'UserController@downloadInfos');
 Route::get('/registerEvent/{meetup}', 'MeetupController@registerEvent');
 

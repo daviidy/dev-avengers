@@ -499,7 +499,7 @@ p{margin-bottom:0px!important;}
 
 
             <div class="form">
-                <form class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post">
+                <form enctype="multipart/form-data" class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post">
                     @csrf
                     {{method_field('patch')}}
                     <div class="row">
@@ -563,11 +563,9 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
-                                <label for="user_url">
-                                    Domaines d'activité
+                                <label for="">
+                                    Industrie dans laquelle vous exercez ({{Auth::user()->job}})
                                 </label>
-                                
-
 							      <select name="job" class="form-control" id="sel1" placeholder="Métier">
 							        <option value="Aéronautique Et Espace">Aéronautique Et Espace</option>
 							        <option value="Agriculture - Agroalimentaire">Agriculture - Agroalimentaire</option>
@@ -1110,15 +1108,6 @@ $(document).ready(function(){
   $("#country_2").countrySelect();
   $("#country_4").countrySelect();
   $("#country_5").countrySelect();
-</script>
-
-<script>
-	$(function() {
-		$('#country_5').click(function(){
-			
-				$('input[name=mother_birth_city]').addClass('rgsel');
-			
-	});
 </script>
 
 @include('includes.project_event');
