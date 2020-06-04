@@ -100,7 +100,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/tl.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Aéronautique Et Espace</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -112,7 +112,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/agricture.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Agriculture - Agroalimentaire</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -124,7 +124,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/artisanat.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Artisanat</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -140,7 +140,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/audio.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Audiovisuel, Cinéma</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -152,7 +152,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/audit.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Audit, Comptabilité, Gestion</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -164,7 +164,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/auto.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Automobile</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -180,7 +180,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/banque.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Banque, Assurance</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -192,7 +192,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/batiment.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Bâtiment, Travaux Publics</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -204,7 +204,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/chimie.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Biologie, Chimie, Pharmacie</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -220,7 +220,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/commerce.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Commerce, Distribution</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -232,7 +232,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/communication.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Communication</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -244,7 +244,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="/assets/main_theme/medium/img/jobs/art.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Création, Métiers D'art</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -260,7 +260,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Culture, Patrimoine</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -272,7 +272,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Défense, Sécurité, Armée</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -284,7 +284,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Documentation, Bibliothèque</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -300,7 +300,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Droit</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -312,7 +312,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Edition, Livre</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -324,7 +324,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Enseignement</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -340,7 +340,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Environnement</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -352,7 +352,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Ferroviaire</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -364,7 +364,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Foires, Salons Et Congrès</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -380,7 +380,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Fonction Publique</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -392,7 +392,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Hôtellerie, Restauration</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -404,7 +404,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Humanitaire</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -420,7 +420,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Immobilier</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -432,7 +432,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Industrie</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -444,7 +444,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Informatique, Télécoms, Web</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -460,7 +460,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Journalisme</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -472,7 +472,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Langues</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -484,7 +484,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Marketing, Publicité</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -500,7 +500,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Médical</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -512,7 +512,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Mode-Textile</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -524,7 +524,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Paramédical</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -540,7 +540,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Propreté Et Services Associés</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -552,7 +552,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Psychologie</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -564,7 +564,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Ressources Humaines</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -580,7 +580,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Sciences Humaines Et Sociales</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -592,7 +592,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Secrétariat</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -604,7 +604,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Social</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -620,7 +620,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Spectacle - Métiers De La Scène</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -632,7 +632,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Sport</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -644,7 +644,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Tourisme</h4>
                             <p class="text-muted m-b-5 font-13"></p>
@@ -660,7 +660,7 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid " alt="user">
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Transport-Logistique</h4>
                             <p class="text-muted m-b-5 font-13"></p>
