@@ -537,7 +537,9 @@ address{display:inline;font-style:normal;}
                 <div class="pageHead">
                     <div class="flex flex--column atMedium_flex--row flex--alignBottom pageHead-pageTitle">
                         <div class="flex-item flex-item--2 pageHead--titleArea">
+                            @if($project->type == 'Projet')
                             <p class="pageHead-pageTitleLabel text--medium text--secondary"><time class="eventStatusLabel" datetime="1590512400000"><span>{{ Carbon\Carbon::parse($project->begin_date)->format('d-m-Y H:i') }} au {{ Carbon\Carbon::parse($project->end_date)->format('d-m-Y H:i') }}</span></time></p>
+                            @endif
                             <h1 class="pageHead-headline text--pageTitle">{{ucfirst($project->name)}}</h1>
                             <div class="flex flex--row flex--alignCenter event-host-info">
                                 <div class="flex-item flex-item--shrink"><a class="avatar avatar--person" role="img" aria-label="Lamiaa" href="/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/"
@@ -547,7 +549,7 @@ address{display:inline;font-style:normal;}
                                 <div class="flex-item event-info-hosts-text valign--middle">
                                     <a href="#">
                                         <span>
-                                            <span class="">Auteur du projet:<br>
+                                            <span class="">Auteur:<br>
                                                 <span
                                                   class="text--bold event-hosts-info-no-link">
                                                   {{$project->user->name}}
@@ -559,7 +561,7 @@ address{display:inline;font-style:normal;}
                             </div>
                         </div>
                         <div class="flex-item flex-item--shrink pageHead-pageActions"><button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
-                              data-e2e="event-header--share-btn"><span>Participer</span></button></div>
+                              data-e2e="event-header--share-btn"><span>Contacter</span></button></div>
                     </div>
                 </div>
             </div>
@@ -610,6 +612,7 @@ address{display:inline;font-style:normal;}
                                             	<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24px" height="24px"><path d="M 7.5 1 C 3.917969 1 1 3.917969 1 7.5 C 1 11.082031 3.917969 14 7.5 14 C 11.082031 14 14 11.082031 14 7.5 C 14 3.917969 11.082031 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 4.457031 13 2 10.542969 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 7 3 L 7 8 L 10 8 L 10 7 L 8 7 L 8 3 Z"/ class="svg svg--clock svg-icon valign--middle"></svg>
                                             </span></div>
                                             <div class="flex-item">
+                                                @if($project->type == 'Projet')
                                                 <div class="eventTimeDisplay eventDateTime--hover"><time class="" datetime="1590512400000"><span class="eventTimeDisplay-startDate"><span>{{ Carbon\Carbon::parse($project->begin_date)->format('d-m-Y H:i') }}</span><br><span
                                                               class="eventTimeDisplay-startDate-time"><span>au {{ Carbon\Carbon::parse($project->end_date)->format('d-m-Y H:i') }}</span></span></span></time>
                                                     <div>
@@ -622,28 +625,16 @@ address{display:inline;font-style:normal;}
                                                         --}}
                                                     </div>
                                                 </div>
+                                                @else
+                                                <div class="eventTimeDisplay eventDateTime--hover"><time class="" datetime="1590512400000"><span class="eventTimeDisplay-startDate"><span
+                                                              class="eventTimeDisplay-startDate-time"><span>{{$project->price}} FCFA</span></span></span></time>
+
+                                                </div>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex flex--row">
-                                        <div class="flex-item flex-item--shrink text--secondary"><span>
-                                                <img src="https://img.icons8.com/ios/50/000000/marker.png"/ class="svg svg--location-pin svg-icon valign--middle" width="20" height="20">
-                                            </span></div>
-                                        <div class="flex-item valign--middle">
-                                            <div class="chunk">
-                                                <p class="venueDisplay venueDisplay-venue-noVenue">
-                                                    <span>
-                                                        @if($project->link !== null)
-                                                        Lien: {{$project->link}}
-                                                        @endif
-                                                        @if($project->place !== null)
-                                                        Lieu: {{$project->place}}
-                                                        @endif
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </section>
                             </div>
                             {{--
@@ -660,20 +651,27 @@ address{display:inline;font-style:normal;}
                     <div class="eventContent">
                         <section class="section">
                             <div class="chunk event-description--wrapper">
+                                @if(count($project->multimedias) > 0)
+
                                 <div class="photoCarousel--wrapper">
                                     <div class="photoCarousel margin--bottom padding--bottom">
                                         <div class="img_box">
 												<div class="row">
-                                            			<div class="col-md-4 col-sm-12"><img src="/assets/main_theme/medium/img/blog/6.jpg" >
+                                                    @foreach($project->multimedias as $multimedia)
+                                                    @if(strpos($multimedia->name, '.png') !== false || strpos($multimedia->name, '.jpg') !== false || strpos($multimedia->name, '.jpeg') !== false)
+                                            			<div class="col-md-4 col-sm-12">
+                                                            <img src="/storage/files/projects/{{$multimedia->name}}" >
                                             			</div>
-                                            			<div class="col-md-4 col-sm-12"><img src="/assets/main_theme/medium/img/blog/6.jpg" ></div>
-                                            			<div class="col-md-4 col-sm-12"><img src="/assets/main_theme/medium/img/blog/6.jpg" ></div>
+                                                    @endif
+                                                    @endforeach
+
                                             		</div>
-                                            
-                                          
+
+
                                         </div>
                                     </div>
                                 </div>
+                                @endif
                                 <h2 class="text--sectionTitle text--bold padding--bottom"><span>Détails</span></h2>
                                 <div class="event-description runningText">
                                     @if($project->details !== null)
@@ -682,62 +680,18 @@ address{display:inline;font-style:normal;}
                                 </div>
                             </div>
                         </section>
-                        <section class="section">
-                            <div class="attendees-sample">
-                                <div class="flex flex--row">
-                                    <div class="flex-item">
-                                        <h3 class="attendees-sample-total text--sectionTitle text--bold padding--bottom"><span>Participants ({{count($project->users)}})</span></h3>
-                                    </div>
-                                    {{--
-                                    <div class="flex-item flex-item--shrink">
-                                        <a class="attendees-sample-link link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/270355045/attendees/">
-                                            <span>Voir tout</span>
-                                        </a>
-                                    </div>
-                                    --}}
-                                </div>
-                                <div class="chunk">
-                                    <p class="visibility--a11yHide"><span>Voir la liste des participants</span></p>
-                                    <div class="hscrollContainer hscrollGradient--hidden memberListing _memberListing-module_memberListing__3dEo-">
-                                        <div class="hscroll atMedium_hscroll--unclip">
-                                            <div class="hscroll-content">
-                                                <ul class="flex gridList gridList--autoHeight gridList--autoHeight--has4 _memberListing-module_gridList__3_lox flex--wrap">
-                                                    @if(count($project->users) > 0)
-                                                    @foreach($project->users as $user)
-                                                    <li class="gridList-item flex-item _memberListing-module_gridListItem__1InAw">
-                                                        <div class="gridList-itemInner">
-                                                            <div class="card card--hasHoverShadow groupMember align--center"><a class="groupMember-link" href="/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/members/302310282/profile/"><span
-                                                                      class="avatar avatar--large avatar--person" role="img" aria-label="Lamiaa"
-                                                                      style="background-image: url(&quot;/storage/images/users/{{$user->image}}&quot;);"><span class="visibility--a11yHide">Lamiaa</span><img
-                                                                          class="avatar-print" src="/storage/images/users/{{$user->image}}" alt="{{$user->name}}"></span>
-                                                                    <p class="groupMember-name text--bold text--small padding--top text--ellipsisTwoLines"><span>{{$user->name}}</span></p>
-                                                                    <div class="chunk groupMember-content">
-                                                                        <p class="groupMember-role"><span
-                                                                              class="member-role member-role-type-coorganizer text--smaller text--secondary wrap--singleLine--truncate display--block"><span>Membre</span></span></p>
-                                                                    </div>
-                                                                </a></div>
-                                                        </div>
-                                                    </li>
-                                                    @endforeach
-                                                    @endif
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+
                     </div>
                 </div>
                 <section class="section">
                     <div class="chunk">
-                        <div class="card card--initialHeight atLarge_card--flush card--flush seeAllMeetups padding--left padding--bottom border--none"><a href="{{url('meetups')}}">
+                        <div class="card card--initialHeight atLarge_card--flush card--flush seeAllMeetups padding--left padding--bottom border--none"><a target="_blank" href="{{url('users', $project->user)}}">
                                 <div class="flex flex--row">
                                     <div class="flex-item flex-item--shrink valignChildren--center"><img class="event-group-photo" src="/storage/images/users/{{$project->user->image}}"
                                           alt="Le Wagon Paris - Coding Bootcamp"></div>
                                     <div class="flex-item border--left valignChildren--center" align="left">
-                                        <p>{{$project->user->name}}</p>
-                                        <p class="link"><span>Voir plus d'événements</span></p>
+                                        <p>Auteur: {{$project->user->name}}</p>
+                                        <p class="link"><span>Voir plus d'offres de la part de cet utilisateur</span></p>
                                     </div>
                                     <div class="flex-item flex-item--shrink valignChildren--center"><span class="link"><svg preserveAspectRatio="xMinYMin meet" width="24" height="24" viewBox="0 0 24 24"
                                               class="svg svg--chevron-right svg-icon valign--middle" role="img">
@@ -949,62 +903,7 @@ address{display:inline;font-style:normal;}
         </div>
         --}}
     </div>
-    <div class="_EventStickyFooter-module_footer__3fDH- stickyHeader sticky--bottom" style="">
-        <div class="bounds bounds--wide">
-            <div class="flex flex--row flex--spaceBetween flex--alignCenter _EventStickyFooter-module_footerContent__bOcM4" data-e2e="event-footer">
-                <div class="flex-item flex-item--shrink">
-                    <div class="flex flex--column">
-                        <div class="flex-item" data-e2e="event-footer--date-time" data-e2e_timestamp="1590512400000"><span>{{ Carbon\Carbon::parse($project->begin_date)->format('d-m-Y H:i') }} au {{ Carbon\Carbon::parse($project->end_date)->format('d-m-Y H:i') }}</span></div>
-                        <div class="flex-item"><span class="text--bold">{{ucfirst($project->name)}}</span></div>
-                    </div>
-                </div>
-                <div class="flex-item flex-item--shrink">
-                    <div class="flex flex--row flex--spaceBetween flex--alignCenter">
-                        <div class="flex-item flex-item--shrink">
-                            <div class="flex flex--row flex--alignCenter">
-                                <div class="flex-item flex-item--shrink">
-                                    <div class="flex flex--column">
-                                        {{--
-                                        <div class="flex-item text--bold">
-                                            <span data-e2e="event-footer--price-label">
-                                                <span>GRATUIT</span>
-                                            </span>
-                                        </div>
-                                        --}}
-                                        <div class="flex-item">
-                                            <span>175 places encore disponibles</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex-item flex-item--shrink _EventStickyFooter-module_eventActions__1dOQN">
-                            <div class="flex flex--row">
-                                {{--
-                                <div class="flex-item flex-item--shrink"><button data-swarm-button="neutral" data-swarm-size="large" data-icon="only" data-swarm-width="default" type="button" aria-label="Enregistrer l'événement"
-                                      class="saveButton _saveEventButton-module_saveButton__2eemT saveButton--save _saveEventButton-module_newStyle__1WGCV gtmEventFooter--save-btn" data-e2e="event-footer--save-btn"><span><svg data-swarm-icon="true"
-                                              height="24" width="24" viewBox="0 0 24 24">
-                                                <path
-                                                  d="M5.458 22.004l1.25-7.284-5.293-5.16 7.314-1.062L12 1.87l3.271 6.628 7.314 1.063-5.292 5.159 1.249 7.284L12 18.564l-6.542 3.44zm1.328-1.828L12 17.436l5.214 2.74-.996-5.805 4.218-4.112-5.83-.847L12 4.13 9.393 9.412l-5.83.847 4.219 4.112-.996 5.805z">
-                                                </path>
-                                            </svg></span></button></div>
-                                            --}}
-                                <div class="flex-item flex-item--shrink">
-                                    <a href="/registerEvent">
-                                        <button data-swarm-button="primary" data-swarm-size="large" data-icon="left" data-swarm-width="default" type="button" data-e2e="event-footer--attend-btn"
-                                          class="gtmEventFooter--attend-btn">
-                                          <span>Participer</span>
-                                      </button>
-                                    </a>
 
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
 
 

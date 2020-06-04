@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Créer un projet')
+@section('title', 'Créer une affaire')
 
 @section('content')
 
@@ -433,7 +433,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 .btn-primary:hover{
 	background-color: #fff!important;
 	color: #000!important;
-	border-color: 
+	border-color:
 	border: 3px solid #D86000!important;
 }
 

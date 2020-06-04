@@ -540,8 +540,16 @@ address{display:inline;font-style:normal;}
                                   </div>
                             </div>
                         </div>
-                        <div class="flex-item flex-item--shrink pageHead-pageActions"><button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
-                              data-e2e="event-header--share-btn"><span>Participer</span></button></div>
+						@auth
+						@if(!Auth::user()->meetups->contains($meetup->id))
+                        <div class="flex-item flex-item--shrink pageHead-pageActions">
+							<button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
+                              data-e2e="event-header--share-btn">
+							  <span>Participer</span>
+						  </button>
+					  </div>
+					  @endif
+					  @endauth
                     </div>
                 </div>
             </div>

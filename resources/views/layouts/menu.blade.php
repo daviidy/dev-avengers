@@ -159,12 +159,12 @@
                     <a class="nav-link" href="/seeJobs">Métiers <span class="sr-only">(cette page)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a style="width: 90px;" class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
-                        Projets
+                    <a style="width: 215px;" class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
+                        Opportunités d'affaires
                     </a>
                     <div class="dropdown-menu w dropdown-menu-scale pull-right">
-                        <a class="dropdown-item" href="{{route('projects.create')}}"><span>Créer un projet</span></a>
-                        <a class="dropdown-item" href="{{route('projects.index')}}"><span>Liste des projets</span></a>
+                        <a class="dropdown-item" href="{{route('projects.create')}}"><span>Créer une opportunité d'affaires</span></a>
+                        <a class="dropdown-item" href="{{route('projects.index')}}"><span>Liste des opportunités d'affaires</span></a>
 
                     </div>
                 </li>
