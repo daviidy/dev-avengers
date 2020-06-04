@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Liste des businesses')
+@section('title', 'Liste des opportunités d\'affaires')
 
 @section('content')
 

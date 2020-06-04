@@ -30,6 +30,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/seeJobs', 'UserController@seeJobs');
 Route::get('/seeVillages', 'UserController@seeJobs');
+Route::get('/downloadInfos', 'UserController@downloadInfos');
+Route::get('/registerEvent/{meetup}', 'MeetupController@registerEvent');
 
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')
