@@ -96,7 +96,7 @@ b{font-weight:600;}
 <section class="posts-2 followers">
     <div class="container">
         <div class="row">
-            @foreach($users as $users)
+            @foreach($users as $user)
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
