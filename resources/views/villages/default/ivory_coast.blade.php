@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Liste des métiers')
+@section('title', 'Liste des régions de Côte d\'Ivoire')
 
 @section('content')
 

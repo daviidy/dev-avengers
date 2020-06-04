@@ -497,7 +497,7 @@ p{margin-bottom:0px!important;}
 
 
             <div class="form">
-                <form class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post">
+                <form enctype="multipart/form-data" class="edit_user" id="edit_user_4646744" action="{{url('users', Auth::user())}}" accept-charset="UTF-8" method="post">
                     @csrf
                     {{method_field('patch')}}
                     <div class="row">
@@ -562,9 +562,9 @@ p{margin-bottom:0px!important;}
 
                             <div class="form-group">
                                 <label for="user_url">
-                                    Métier
+                                    Industrie dans laquelle vous exercez ({{Auth::user()->job}})
                                 </label>
-                                
+
 							      <select name="job" class="form-control" id="sel1" placeholder="Métier">
 							        <option value="Aéronautique Et Espace">Aéronautique Et Espace</option>
 							        <option value="Agriculture - Agroalimentaire">Agriculture - Agroalimentaire</option>

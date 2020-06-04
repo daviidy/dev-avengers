@@ -116,20 +116,19 @@ input.form-control:after {
                 </button-->
             </div>
             <form class="" action="/addCountries" method="post">
+                @csrf
                 <div class="modal-body">
                     <!--h3 class="mb-4 title">New<br />Account</h3-->
                     <div class="form-group">
                         <label class="form-control-placeholder p-0" for="name lbl">Pays de résidence</label>
-                        <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="">
+                        <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="living_country">
+                        <input type="text" hidden name="user_id" value="">
                     </div>
                     <div class="form-group">
-                        <label class="form-control-placeholder p-0" for="name">Pays d'origine</label>
-                        <input type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="">
+                        <label class="form-control-placeholder p-0" for="name">Nationalité</label>
+                        <input type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="birth_country">
                     </div>
-                    <div class="form-group">
-                        <label class="form-control-placeholder p-0" for="password">Pays de naissance</label>
-                        <input type="text" id="country_6" class="form-control " required style="box-shadow: none;border-radius:0px" name="">
-                    </div>
+
                 </div>
                 <div class="modal-footer border-0 mb-4">
                     <button type="submit" class="btn signup col-6 col-md-6 ss-edit-profile-button" data-dismiss="modal">Envoyer</button>
