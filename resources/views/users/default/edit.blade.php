@@ -450,6 +450,8 @@ p{margin-bottom:0px!important;}
 	.arch .arch-right{text-align: center; margin-bottom: 15px;}
 }
 
+.rgsel{display: none;}
+
 </style>
 
 @include('includes.user_header')
@@ -561,10 +563,9 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group -->
 
                             <div class="form-group">
-                                <label for="user_url">
+                                <label for="">
                                     Industrie dans laquelle vous exercez ({{Auth::user()->job}})
                                 </label>
-
 							      <select name="job" class="form-control" id="sel1" placeholder="Métier">
 							        <option value="Aéronautique Et Espace">Aéronautique Et Espace</option>
 							        <option value="Agriculture - Agroalimentaire">Agriculture - Agroalimentaire</option>
@@ -647,7 +648,7 @@ p{margin-bottom:0px!important;}
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-
+                        {{--
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
@@ -700,13 +701,13 @@ p{margin-bottom:0px!important;}
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-
+                        --}}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
                                     Pays de résidence
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence" type="text" name="living_country" id="country_2" value="{{Auth::user()->living_country}}">
+                                <input class="form-control" placeholder="Pays de résidence" type="text" name="living_country" id="country_2 search_input-1" value="{{Auth::user()->living_country}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -716,7 +717,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Ville de résidence
                                 </label>
-                                <input class="form-control" placeholder="Ville de résidence" type="text" name="living_city" id="user_url" value="{{Auth::user()->living_city}}">
+                                <input class="form-control" placeholder="Ville de résidence" type="text" name="living_city" id="user_url search_input-2" value="{{Auth::user()->living_city}}">
 
 
 
@@ -728,7 +729,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Etat de résidence
                                 </label>
-                                <input class="form-control" placeholder="Etat de résidence" type="text" name="living_state"  value="{{Auth::user()->living_state}}">
+                                <input class="form-control" placeholder="Etat de résidence" type="text" name="living_state"  value="{{Auth::user()->living_state}}" id="search_input-3">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -767,7 +768,7 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
-                        <div class="col-xs-12 col-sm-12">
+                        <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
                                     Numéro de téléphone
@@ -840,12 +841,23 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Village du père
+                                    Région du père
                                 </label>
                                 <input class="form-control" placeholder="Ville de résidence du père" type="text" name="father_town" id="user_url" value="{{Auth::user()->father_town}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
+
+
+                        <!--div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Village du père
+                                </label>
+                                <input class="form-control" placeholder="Ville de résidence du père" type="text" name="father_town" id="user_url" value="{{Auth::user()->father_town}}">
+
+                            </div> <!-- close .form-group ->
+                        </div--> <!-- close .col -->
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
@@ -868,7 +880,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-12">
                             <div class="form-group header_form">
                             	<hr>
-                                <h1 for="user_url" style="text-align: center;">
+                                <h1 for="" style="text-align: center;">
                                     Profil de la mère
                                 </h1>
                                 <hr>
@@ -878,7 +890,7 @@ p{margin-bottom:0px!important;}
 
                             <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
-                                <label for="user_url">
+                                <label for="">
                                     Nom de la mère
                                 </label>
                                 <input class="form-control" placeholder="Nom de la mère" type="text" name="mother_traditional_first_name" id="user_url" value="{{Auth::user()->mother_traditional_first_name}}">
@@ -888,7 +900,7 @@ p{margin-bottom:0px!important;}
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
-                                <label for="user_url">
+                                <label for="">
                                     Prénoms de la mère
                                 </label>
                                 <input class="form-control" placeholder="Prénoms de la mère" type="text" name="mother_last_name" id="user_url" value="{{Auth::user()->mother_last_name}}">
@@ -900,7 +912,7 @@ p{margin-bottom:0px!important;}
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
-                                <label for="user_url">
+                                <label for="">
                                     Autre noms de la mère
                                 </label>
                                 <input class="form-control" placeholder="Autre noms de la mère" type="text" name="mother_other_name" id="user_url" value="{{Auth::user()->mother_other_name}}">
@@ -910,7 +922,7 @@ p{margin-bottom:0px!important;}
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
-                                <label for="user_url">
+                                <label for="">
                                     Nationalité de la mère
                                 </label>
                                 <input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="mother_birth_country" id="country_5" value="{{Auth::user()->mother_birth_country}}">
@@ -922,12 +934,40 @@ p{margin-bottom:0px!important;}
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
+                                <label for="">
+                                    Région de la mère
+                                </label>
+                                <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="mother_birth_city" id="user_url region" value="{{Auth::user()->mother_birth_city}}">
+
+                                <select class="form-control rgsel" id="sel1" placeholder="Etat de naissance">
+							        <option>Abidjan</option>
+							        <option>Lacs</option>
+							        <option>Comoé</option>
+							        <option>Denguélé</option>
+							        <option>Gôh-Djiboua</option>
+							        <option>Lagunes</option>
+							        <option>Montagnes</option>
+							        <option>Sassandra-Marahoué</option>
+							        <option>Savanes</option>
+							        <option>Bas-Sassandra</option>
+							        <option>Vallée du Bandama</option>
+							        <option>Woroba</option>
+							        <option>Zanzan</option>
+							        <option>Yamoussoukro</option>
+							      </select>
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+
+
+                        <!--div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
                                 <label for="user_url">
                                     Village de la mère
                                 </label>
                                 <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="mother_birth_city" id="user_url" value="{{Auth::user()->mother_birth_city}}">
 
-                            </div> <!-- close .form-group -->
+                            </div> <!-- close .form-group ->
                         </div> <!-- close .col -->
 
                         <div class="col-xs-12 col-sm-6">
@@ -1069,7 +1109,6 @@ $(document).ready(function(){
   $("#country_4").countrySelect();
   $("#country_5").countrySelect();
 </script>
-
 
 @include('includes.project_event');
 

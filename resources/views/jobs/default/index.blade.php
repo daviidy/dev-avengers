@@ -63,7 +63,7 @@ small{font-size:80%;font-weight:normal;}
 div,h4,p,img,small,b{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 h4{font-family:'Montserrat', sans-serif;color:#2C3E50;letter-spacing:1px;}
 h4{font-size:18px;line-height:36px;}
-p{font-family:'Varela Round', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
+p{font-family:'Montserrat', sans-serif;line-height:24px;margin:0;font-size:14px;letter-spacing:1px;}
 small{font-size:80%;}
 @media only screen and (max-width: 768px){
 p{margin-bottom:0px!important;}
@@ -72,18 +72,19 @@ p{margin-bottom:0px!important;}
 p{margin-bottom:0px!important;}
 }
 .card-box{padding:20px;box-shadow:0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);-webkit-border-radius:5px;border-radius:5px;-moz-border-radius:5px;background-clip:padding-box;margin-bottom:20px;background-color:#ffffff;}
-.widget-user img{height:72px;float:left;}
+.widget-user img{height:72px;width: 72px; float:left;}
 .widget-user .wid-u-info{margin-left:90px;}
 .widget-user .wid-u-info p,.widget-user .wid-u-info h4{white-space:nowrap;display:block;overflow:hidden;text-overflow:ellipsis;}
-.widget-user .wid-u-info h4{font-family:'Abhaya Libre', serif;font-size:16px;color:#1ab394;}
-.widget-user .wid-u-info p{font-family:'Abhaya Libre', serif;font-size:14px;}
-.widget-user .wid-u-info small{font-family:'Abhaya Libre', serif;font-size:16px;}
+.widget-user .wid-u-info h4{font-family:'Montserrat', sans-serif;font-size:12px;color:#1ab394;}
+.widget-user .wid-u-info p{font-family:'Montserrat', sans-serif;font-size:14px;}
+.widget-user .wid-u-info small{font-family:'Montserrat', sans-serif;font-size:13px;}
 .font-600{font-weight:600;}
 .m-b-5{margin-bottom:5px!important;}
 .m-t-0{margin-top:0px!important;}
 .text-muted{color:#98a6ad!important;}
 .font-13{font-size:13px!important;}
 b{font-weight:600;}
+.widget-user a{color: #a9a9a9}
 
 
 </style>
@@ -99,11 +100,11 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
-                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
-                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
-                            <small class="text-warning"><b>Follow</b></small>
+                            <h4 class="m-t-0 m-b-5 font-600">Aéronautique Et Espace</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -111,11 +112,11 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
-                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
-                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
-                            <small class="text-warning"><b>Follow</b></small>
+                            <h4 class="m-t-0 m-b-5 font-600">Agriculture - Agroalimentaire</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -123,16 +124,551 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
                         <div class="wid-u-info">
-                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
-                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
-                            <small class="text-warning"><b>Follow</b></small>
+                            <h4 class="m-t-0 m-b-5 font-600">Artisanat</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
             </div>
 
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Audiovisuel, Cinéma</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Audit, Comptabilité, Gestion</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Automobile</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Banque, Assurance</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Bâtiment, Travaux Publics</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Biologie, Chimie, Pharmacie</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Commerce, Distribution</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Communication</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Création, Métiers D'art</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Culture, Patrimoine</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Défense, Sécurité, Armée</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Documentation, Bibliothèque</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Droit</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Edition, Livre</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Enseignement</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Environnement</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Ferroviaire</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Foires, Salons Et Congrès</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Fonction Publique</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Hôtellerie, Restauration</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Humanitaire</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Immobilier</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Industrie</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Informatique, Télécoms, Web</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Journalisme</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Langues</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Marketing, Publicité</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Médical</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Mode-Textile</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Paramédical</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Propreté Et Services Associés</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Psychologie</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Ressources Humaines</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Sciences Humaines Et Sociales</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Secrétariat</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Social</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Spectacle - Métiers De La Scène</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Sport</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid" alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Tourisme</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--fin row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+                        <img src="/assets/main_theme/medium/img/jobs/job.png" class="img-fluid " alt="user">
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Transport-Logistique</h4>
+                            <p class="text-muted m-b-5 font-13"></p>
+                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div><!--fin row-->
     </div>
     <!--/ container -->
