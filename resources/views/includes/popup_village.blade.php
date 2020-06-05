@@ -122,11 +122,15 @@ input.form-control:after {
                     <div class="form-group">
                         <label class="form-control-placeholder p-0" for="name lbl">Nationalité du père:</label>
                         <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="father_birth_country">
+                        @auth
                         <input type="text" hidden name="user_id" value="{{Auth::user()->id}}">
+                        @endauth
                     </div>
                     <div class="form-group">
                         <label class="form-control-placeholder p-0" for="name">Village du père</label>
+                        @auth
                         <input value="{{Auth::user()->father_town ? Auth::user()->father_town : ''}}" type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="father_town">
+                        @endauth
                     </div>
 
                 </div>
