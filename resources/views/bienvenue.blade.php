@@ -172,6 +172,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
     .jss7{
       font-size: 16px !important;
     }
+    .more{padding: 30px 0 0 0;}
 
 
 </style>
@@ -263,9 +264,10 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
                   class="col-12 MuiButton-label">Inscrivez-vous</span></button></a></div>
 </div>
 
-    {{--
+   {{-- 
     <section class="header remove-gap">
         <div class="container-fluid">
+        
             <div class="row no-gap">
 
                 <div class="col-md-4">
@@ -317,7 +319,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
                     </a>
                 </div>
                 <!-- /col-md-4 -->
-
+               
                 <div class="col-md-4">
                     <a class="post" href="#" title="Top 5 tips to have a great vacation with your friends">
                         <div class="creative-post">
@@ -424,7 +426,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
         <!-- /container-fluid -->
     </section>
     <!-- /section -->
-
+--}}
 
     <!-- ==============================================
      Posts Section
@@ -436,7 +438,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
 
                 <div class="fancy-title">
                     <div class="fancy-title-center">
-                        <h2>MOST READ ARTICLES BY VIEWS</h2>
+                        <h2>DANS LES ACTUALITES</h2>
                     </div>
                 </div>
 
@@ -489,7 +491,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
                     </a>
                 </div>
                 <!-- /col-md-4 -->
-
+                {{--
                 <div class="col-md-4 posted">
                     <a class="post" href="#" title="What it’s like to travel to Greece right now">
                         <div class="creative-post">
@@ -588,9 +590,11 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
                         <!-- Creative Post -->
                     </a>
                 </div>
+                --}}
                 <!-- /col-md-4 -->
 
             </div>
+            {{--
             <!-- row -->
             <div class="row">
 
@@ -747,11 +751,26 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
                 <!-- /col-md-4 -->
 
             </div>
+
+            --}}
+            <section class="more">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-md-2">
+                            <a href="#" class="kafe-btn kafe-btn-default"> Voir plus</a>
+                        </div>
+                        <!-- /.col-lg-8 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /container -->
+            </section>
+
             <div class="row">
 
                 <div class="fancy-title">
                     <div class="fancy-title-center">
-                        <h2>RECENT POSTS</h2>
+                        <h2>LES EVENEMENTS A LA UNE</h2>
                     </div>
                 </div>
 
@@ -804,7 +823,179 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
                     </a>
                 </div>
                 <!-- /col-md-4 -->
+                {{--
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Stomach Cancer: causes, symptoms and treatment">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="/assets/main_theme/medium/img/blog/11.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
 
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Health<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Stomach Cancer: causes, symptoms and treatment</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="/assets/main_theme/medium/img/users/11.jpg" alt="..." />
+                                    <p class="lead">Amanda Taylor</p>
+                                    <p class="read"><span class="heavy">10 minutes ago,</span>&nbsp;<span>10 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 110</li>
+                                        <li><i class="fa fa-eye"></i> 300</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Family values you can teach your children">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="/assets/main_theme/medium/img/blog/12.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Family<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Family values you can teach your children</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="/assets/main_theme/medium/img/users/12.jpg" alt="..." />
+                                    <p class="lead">Sean Hanity</p>
+                                    <p class="read"><span class="heavy">15 minutes ago,</span>&nbsp;<span>7 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 200</li>
+                                        <li><i class="fa fa-eye"></i> 1.2k</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>--}}
+                <!-- /col-md-4 -->
+            </div>
+            <section class="more">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-md-2">
+                                <a href="#" class="kafe-btn kafe-btn-default">Voir plus</a>
+                            </div>
+                            <!-- /.col-lg-8 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /container -->
+                </section>
+            <!-- /row -->
+
+               <div class="row">
+
+                <div class="fancy-title">
+                    <div class="fancy-title-center">
+                        <h2>DES OPPORTUNITES D'AFFAIRE POUR VOUS</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4 posted">
+                    <a class="post" href="#" title="Organize your workflow with the available tech and software">
+                        <div class="creative-post">
+                            <div class="creative-img">
+                                <img src="/assets/main_theme/medium/img/blog/10.jpg" class="bg" height="343" width="462" alt="...">
+                            </div>
+                            <!-- /creative-img -->
+
+                            <div class="fancy-post-overlay">
+                                <div class="t-overlay-textt small-block-padding">
+                                    <p class="t-entry-meta font-weight-700">
+                                        <span class="t-entry-category">Technology<span class="cat-comma"></span></span>
+                                    </p>
+                                </div>
+                                <!-- /t-overlay-textt -->
+                                <div class="pull-right bookmark small-block-padding">
+                                    <i class="fa fa-bookmark-o"></i>
+                                </div>
+                                <!-- /bookmark -->
+
+                                <div class="t-overlay-text single-block-padding">
+                                    <div class="t-entry">
+                                        <h3 class="t-entry-title h3 font-weight-700">Organize your workflow with the available tech and software</h3>
+                                    </div>
+                                    <!-- /t-entry -->
+                                </div>
+                                <!-- /t-overlay-text -->
+
+                                <div class="author">
+                                    <img src="/assets/main_theme/medium/img/users/10.jpg" alt="..." />
+                                    <p class="lead">Charles Travis</p>
+                                    <p class="read"><span class="heavy">5 minutes ago,</span>&nbsp;<span>7 min read</span></p>
+                                </div>
+                                <!-- /author -->
+                                <div class="author pull-right hidden-xs-down">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-comments"></i> 10</li>
+                                        <li><i class="fa fa-eye"></i> 27</li>
+                                    </ul>
+                                </div>
+                                <!-- /author -->
+
+                            </div>
+                            <!-- Fancy Post -->
+                        </div>
+                        <!-- Creative Post -->
+                    </a>
+                </div>
+                <!-- /col-md-4 -->
+                {{--
                 <div class="col-md-4 posted">
                     <a class="post" href="#" title="Stomach Cancer: causes, symptoms and treatment">
                         <div class="creative-post">
@@ -903,6 +1094,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
                         <!-- Creative Post -->
                     </a>
                 </div>
+                --}}
                 <!-- /col-md-4 -->
 
 
@@ -921,7 +1113,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-md-2">
-                    <a href="#" class="kafe-btn kafe-btn-default"><i class="fa fa-spinner"></i> Read More</a>
+                    <a href="#" class="kafe-btn kafe-btn-default">Voir plus</a>
                 </div>
                 <!-- /.col-lg-8 -->
             </div>
@@ -931,8 +1123,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
     </section>
     <!-- /w -->
 
-    --}}
-
+    
 
 
 

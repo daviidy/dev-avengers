@@ -249,21 +249,17 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Pays de naissance</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->birth_country)
-                                    {{Auth::user()->birth_country}}
-                                    @else
-                                    Aucun Pays renseigné
-                                    @endif
+                                	
+                                    {{birth_country}}
+                                   
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Métier:</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->job)
-                                    {{Auth::user()->job}}
-                                    @else
-                                    Aucun Métier renseigné
-                                    @endif
+                                	
+                                    {{job}}
+                                    
                                 </div>
                             </div>
                             <!--div class="ss-flex-item">
@@ -274,71 +270,57 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Pays de résidence</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->living_country)
-                                    {{Auth::user()->living_country}}
-                                    @else
-                                    Aucun Pays renseigné
-                                    @endif
+                                	
+                                    {{living_country}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Etat de résidence</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->living_state)
-                                    {{Auth::user()->living_state}}
-                                    @else
-                                    Aucun Etat renseigné
-                                    @endif
+                                	
+                                    {{living_state}}
+                                   
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Ville de résidence</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->living_city)
-                                    {{Auth::user()->living_city}}
-                                    @else
-                                    Aucune ville renseignée
-                                    @endif
+                                	
+                                    {{living_city}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Code Postal</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->zip_code)
-                                    {{Auth::user()->zip_code}}
-                                    @else
-                                    Aucun Code Postal renseigné
-                                    @endif
+                                	
+                                    {{zip_code}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Situation matrimonial</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->marital_status)
-                                    {{Auth::user()->marital_status}}
-                                    @else
-                                    Aucune Situation matrimonial renseignée
-                                    @endif
+                                	
+                                    {{marital_status}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nombre d'enfant</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->children_number)
-                                    {{Auth::user()->children_number}}
-                                    @else
-                                    Aucun Nombre d'enfant renseigné
-                                    @endif
+                                	
+                                    {{children_number}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Numéro de téléphone</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->mobile_tel)
-                                    {{Auth::user()->mobile_tel}}
-                                    @else
-                                    Aucun Numéro renseigné
-                                    @endif
+                                	
+                                    {{mobile_tel}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-item-flex-full">
@@ -356,61 +338,49 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nom du père</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->father_traditional_first_name)
-                                    {{Auth::user()->father_traditional_first_name}}
-                                    @else
-                                    Aucun Nom renseigné
-                                    @endif
+                                	
+                                    {{father_traditional_first_name}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Prénoms du père</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->father_last_name)
-                                    {{Auth::user()->father_last_name}}
-                                    @else
-                                    Aucun Prénoms renseigné
-                                    @endif
+                                	
+                                    {{father_last_name}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Autre noms du père</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->father_other_name)
-                                    {{Auth::user()->father_other_name}}
-                                    @else
-                                    Aucun Autre noms renseigné
-                                    @endif
+                                	
+                                    {{father_other_name}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nationalité du père</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->father_birth_country)
-                                    {{Auth::user()->father_birth_country}}
-                                    @else
-                                    Aucun Nationalité renseigné
-                                    @endif
+                                	
+                                    {{father_birth_country}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Village du père</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->father_town)
-                                    {{Auth::user()->father_town}}
-                                    @else
-                                    Aucun village renseignée
-                                    @endif
+                                	
+                                    {{father_town}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nombre d'enfant du père</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->father_children_number)
-                                    {{Auth::user()->father_children_number}}
-                                    @else
-                                    Aucun Nombre d'enfant renseigné
-                                    @endif
+                                	
+                                    {{father_children_number}}
+                                    
                                 </div>
                             </div>
                         </div>
@@ -422,61 +392,49 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nom de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->mother_traditional_first_name)
-                                    {{Auth::user()->mother_traditional_first_name}}
-                                    @else
-                                    Aucun Nom renseigné
-                                    @endif
+                                	
+                                    {{mother_traditional_first_name}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Prénoms de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->mother_last_name)
-                                    {{Auth::user()->mother_last_name}}
-                                    @else
-                                    Aucun Prénoms renseigné
-                                    @endif
+                                	
+                                    {{mother_last_name}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Autre noms de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->mother_other_name)
-                                    {{Auth::user()->mother_other_name}}
-                                    @else
-                                    Aucun Autre noms renseigné
-                                    @endif
+                                	
+                                    {{mother_other_name}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nationalité de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->mother_birth_country)
-                                    {{Auth::user()->mother_birth_country}}
-                                    @else
-                                    Aucune Nationalité renseigné
-                                    @endif
+                                	
+                                    {{mother_birth_country}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Village de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->mother_birth_city)
-                                    {{Auth::user()->mother_birth_city}}
-                                    @else
-                                    Aucun village renseignée
-                                    @endif
+                                	
+                                    {{mother_birth_city}}
+                                    
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nombre d'enfant de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	@if(Auth::user()->mother_children_number)
-                                    {{Auth::user()->mother_children_number}}
-                                    @else
-                                    Aucun Nombre d'enfant renseigné
-                                    @endif
+                                	
+                                    {{mother_children_number}}
+                                    
                                 </div>
                             </div>
                         </div>
