@@ -519,6 +519,7 @@ address{display:inline;font-style:normal;}
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
+.fa-cog{font-size: xx-large;}
 </style>
 
 
@@ -579,7 +580,9 @@ address{display:inline;font-style:normal;}
                                     <div>
                                         <div class="flex flex--row">
                                             <div class="flex-item flex-item--shrink">
-                                                <img class="event-group-photo" src="/storage/images/meetups/{{$project->image}}" alt="{{$project->name}}"></div>
+                                                <!--img class="event-group-photo" src="/storage/images/meetups/{{$project->image}}" alt="{{$project->name}}"-->
+                                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                            </div>
                                             <div class="flex-item event-group-content">
                                                 <div class="flex flex--column event-group-photoHeight">
                                                     <div class="flex-item flex-item--shrink event-group-name"><span class="text--bold text--small display--inlineBlock">{{$project->name}}</span></div>
