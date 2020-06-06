@@ -109,6 +109,8 @@
                 }
             }
 
+
+
         </style>
 
 
@@ -129,6 +131,7 @@
         <div class="navbar-collapse collapse dual-nav">
             <ul class="navbar-nav">
                 <!-- Search in right of nav -->
+                {{--
                 <li class="nav-item hidden-xs-down">
                     <form class="top_search clearfix">
                         <div class="top_search_con">
@@ -137,6 +140,11 @@
                             <input class="top_search_submit" type="submit">
                         </div>
                     </form>
+                </li>--}}
+                <li class="nav-item" style="margin-top: auto;">
+                    <a href="/">
+                        <img src="/assets/main_theme/medium/img/univoire 2.png" width="150">
+                    </a>
                 </li>
                 <!-- Search Ends -->
 
@@ -256,7 +264,7 @@
                 --}}
             </ul><!-- /ul -->
         </div><!-- /navbar-collapse -->
-        <a href="/" class="navbar-brand mr-0 hidden-md-up"> UNIVOIRE</a>
+        <a href="/" class="navbar-brand mr-0 hidden-md-up"><img src="/assets/main_theme/medium/img/univoire 2.png" width="100"></a>
         <div class="navbar-collapse collapse dual-navv">
 
             <ul class="nav navbar-nav ml-auto">
@@ -445,7 +453,7 @@
     <footer class="bottom-footer">
         <div class="container">
             <p>©<span id="year">2017</span> Univoire</p>
-
+            {{--
             <ul id="menu-footer-menu">
                 <li>
                     <a href="#">About Us</a>
@@ -465,7 +473,7 @@
                 <!-- /li -->
             </ul>
             <!-- /ul -->
-
+            --}}
         </div>
         <!-- /container -->
     </footer>

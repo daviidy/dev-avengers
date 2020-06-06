@@ -1044,9 +1044,9 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Région du père
                                 </label>
-                                <input class="form-control" placeholder="Région du père" type="text" name="father_town" id="region1" value="{{Auth::user()->father_town}}">
+                                <input class="form-control" placeholder="Région du père" type="text" name="father_birth_state" id="region1" value="{{Auth::user()->father_birth_state}}">
 
-                                <select class="form-control rgsel-1" id="region_2" placeholder="Etat de naissance" value="{{Auth::user()->father_town}}" name="father_town">
+                                <select class="form-control rgsel-1" id="region_2" placeholder="Région du père" value="{{Auth::user()->father_birth_state}}" name="father_birth_state">
 							        <option value="Abidjan">Abidjan</option>
 							        <option value="Lacs">Lacs</option>
 							        <option value="Comoé">Comoé</option>
@@ -1355,9 +1355,9 @@ p{margin-bottom:0px!important;}
                                 <label for="">
                                     Région de la mère
                                 </label>
-                                <input class="form-control" placeholder="Ville de résidence de la mère" type="text" name="mother_birth_city" id="region" value="{{Auth::user()->mother_birth_city}}">
+                                <input class="form-control" placeholder="Region de la mère" type="text" name="mother_birth_state" id="region" value="{{Auth::user()->mother_birth_state}}">
 
-                                <select class="form-control rgsel" id="region_1" placeholder="Etat de naissance">
+                                <select class="form-control rgsel" id="region_1" placeholder="Region de la mère" value="{{Auth::user()->mother_birth_state}}" name="mother_birth_state">
 							        <option value="Abidjan">Abidjan</option>
 							        <option value="Lacs">Lacs</option>
 							        <option value="Comoé">Comoé</option>
@@ -1530,17 +1530,36 @@ $(document).ready(function(){
 
 <script>
 	$(document).ready(function(){
-		var x =$("#nationalite").val('CIV');
-	    $(x).change(function(){	    
-	    		$('#region_1').removeClass('rgsel');
-	        	$('#region').addClass('rgsel');	    			    	
-	    });
+		
+		var x = $('#nationalite');
+		$(x).change(function(){
+			if(x.val()=='CIV'){
+				$('#region_1').removeClass('rgsel');
+	        	$('#region').addClass('rgsel');
+			}
+			else{
+				$('#region').removeClass('rgsel');
+	        	$('#region_1').addClass('rgsel');
+			}
+		});
 
+		var y = $('#nationalite_1');
+		$(y).change(function(){
+			if(y.val()=='CIV'){
+				$('#region_2').removeClass('rgsel-1');
+	        	$('#region1').addClass('rgsel-1');
+			}
+			else{
+				$('#region1').removeClass('rgsel-1');
+	        	$('#region_2').addClass('rgsel-1');
+			}
+		});
+		/*
 	    var x =$("#nationalite_1").val('CIV');
 	    $(x).click(function(){	    
 	    		$('#region_2').removeClass('rgsel-1');
 	        	$('#region1').addClass('rgsel-1');	    			    	
-	    });
+	    });*/
 	});
 </script>
 
