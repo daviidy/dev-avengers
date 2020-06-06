@@ -86,7 +86,7 @@ class UserController extends Controller
     public function seeVillages()
     {
         if (Auth::check()) {
-            if (Auth::user()->father_birth_country == 'Côte d’Ivoire') {
+            if (Auth::user()->father_birth_country == 'CIV') {
                 return view('villages.default.ivory_coast');
             }
             else {

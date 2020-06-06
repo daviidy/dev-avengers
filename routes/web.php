@@ -38,6 +38,10 @@ Route::get('/registerEvent/{meetup}', 'MeetupController@registerEvent');
 Route::post('/addCountries', 'UserController@addCountries');
 Route::post('/addVillage', 'UserController@addVillage');
 
+//chat routes
+Route::get('/messages', 'MessageController@index')->name('message');
+Route::get('/message/{id}', 'MessageController@getMessage')->name('message');
+Route::post('message', 'MessageController@sendMessage');
 
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')
