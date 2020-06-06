@@ -4919,13 +4919,13 @@ li p {
 /* line 169, ../scss/_base.scss */
 
 .kafe-btn-default {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
-    color: #fff;
+    color: #D86000;
     border-width: 1px;
     border-style: solid;
     background-color: transparent;
-    border-color: #fff;
+    border-color: #D86000;
     margin-top: 10px;
     padding: 13px 31px;
 }
@@ -4957,7 +4957,7 @@ li p {
 /* line 202, ../scss/_base.scss */
 
 .kafe-btn-default:hover {
-    background-color: #fff;
+    background-color: #D86000;
     color: #2C3E50 !important;
     text-decoration: none;
 }
@@ -6722,13 +6722,13 @@ a {
 /* line 89, ../scss/_footer.scss */
 
 .kafe-btn-default {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
-    color: #1ab394;
+    color: #D86000;
     border-width: 1px;
     border-style: solid;
     background-color: transparent;
-    border: 1px solid #1ab394;
+    border: 1px solid #D86000;
     margin-top: 10px;
     padding: 13px 31px;
 }
@@ -6736,7 +6736,7 @@ a {
 /* line 101, ../scss/_footer.scss */
 
 .kafe-btn-default:hover {
-    background-color: #1ab394;
+    background-color: #D86000;
     color: #fff !important;
     text-decoration: none;
 }
