@@ -43,6 +43,7 @@ Route::get('/chat/{user}', 'MessageController@one')->name('message');
 Route::get('/chat/message/{id}', 'MessageController@getMessage')->name('message');
 Route::get('/message/{id}', 'MessageController@getMessage')->name('message');
 Route::post('message', 'MessageController@sendMessage');
+Route::post('/chat/message', 'MessageController@sendMessage');
 
 Route::get('/admin', 'AdminController@admin')
     ->middleware('is_admin')
