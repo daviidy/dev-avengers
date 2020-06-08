@@ -216,7 +216,7 @@ p{display:block;margin:0;padding:0;}
                         <div class="ss-flex">
                             <div class="ss-flex-item-info email">
                                 <div class="ss-field-label-large">
-                                    {{$username)}} </div>
+                                    {{$username}} </div>
                                 <div class="field-value">
                                     <img width="100" src="{{storage_path('app/public/images/users/'.$image)}}" alt="">
                                 </div>
@@ -249,17 +249,17 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Pays de naissance</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{birth_country}}
-                                   
+
+                                    {{$birth_country}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Métier:</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{job}}
-                                    
+
+                                    {{$job}}
+
                                 </div>
                             </div>
                             <!--div class="ss-flex-item">
@@ -270,57 +270,57 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Pays de résidence</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{living_country}}
-                                    
+
+                                    {{$living_country}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Etat de résidence</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{living_state}}
-                                   
+
+                                    {{$living_state}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Ville de résidence</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{living_city}}
-                                    
+
+                                    {{$living_city}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Code Postal</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{zip_code}}
-                                    
+
+                                    {{$zip_code}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Situation matrimonial</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{marital_status}}
-                                    
+
+                                    {{$marital_status}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nombre d'enfant</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{children_number}}
-                                    
+
+                                    {{$children_number}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Numéro de téléphone</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{mobile_tel}}
-                                    
+
+                                    {{$mobile_tel}}
+
                                 </div>
                             </div>
                             <div class="ss-item-flex-full">
@@ -338,49 +338,49 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nom du père</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{father_traditional_first_name}}
-                                    
+
+                                    {{$father_traditional_first_name}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Prénoms du père</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{father_last_name}}
-                                    
+
+                                    {{$father_last_name}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Autre noms du père</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{father_other_name}}
-                                    
+
+                                    {{$father_other_name}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nationalité du père</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{father_birth_country}}
-                                    
+
+                                    {{$father_birth_country}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Village du père</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{father_town}}
-                                    
+
+                                    {{$father_town}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nombre d'enfant du père</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{father_children_number}}
-                                    
+
+                                    {{$father_children_number}}
+
                                 </div>
                             </div>
                         </div>
@@ -392,49 +392,49 @@ p{display:block;margin:0;padding:0;}
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nom de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{mother_traditional_first_name}}
-                                    
+
+                                    {{$mother_traditional_first_name}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Prénoms de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{mother_last_name}}
-                                    
+
+                                    {{$mother_last_name}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Autre noms de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{mother_other_name}}
-                                    
+
+                                    {{$mother_other_name}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nationalité de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{mother_birth_country}}
-                                    
+
+                                    {{$mother_birth_country}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Village de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{mother_birth_city}}
-                                    
+
+                                    {{$mother_birth_city}}
+
                                 </div>
                             </div>
                             <div class="ss-flex-item">
                                 <div class="ss-field-label">Nombre d'enfant de la Mère</div>
                                 <div class="field-value ss-empty-value">
-                                	
-                                    {{mother_children_number}}
-                                    
+
+                                    {{$mother_children_number}}
+
                                 </div>
                             </div>
                         </div>
