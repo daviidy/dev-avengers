@@ -628,7 +628,7 @@ address{display:inline;font-style:normal;}
 
                                 <div class="people-info">
                                     <div class="row">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             @if($meetup->link !== null)
                                             <div class="info-group">
                                                 <label>Lien</label>
@@ -643,35 +643,52 @@ address{display:inline;font-style:normal;}
                                             @endif
 
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="info-group">
                                                 <label>Email</label>
                                                 {{$meetup->user->email}}
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="info-group">
                                                 <label>Phone</label>
                                                 386-7521860
                                             </div>
                                         </div>
-                                    </div><!-- row -->
-
-                                    <div class="row">
-                                        <div class="col-sm-6 del">
+                                        <div class="col-sm-3 del">
                                             <div class="info-group ">
+                                                
                                                 <a href="#">
-                                                    <button class="btn btn-success"><i class="fa fa-pencil-square-o"></i> Modifier</button>
+                                                    <i class="fa fa-pencil-square-o"></i>
                                                 </a>
                                             </div>
                                             <div class="info-group">
                                                 <form action="">
                                                     @csrf
                                                     {{ method_field('delete') }}
-                                                    <button class="btn btn-danger"><i class="fa fa-trash"></i> Supprimer</button>
+                                                    <button type="submit" name="button"><i class="fa fa-trash"></i></button>
                                                 </form>
                                             </div>
                                         </div>
+                                    </div><!-- row -->
+                                    {{--
+                                    <div class="row">
+                                        <div class="col-sm-6 del">
+                                            <div class="info-group ">
+                                                
+                                                <a href="#">
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                </a>
+                                            </div>
+                                            <div class="info-group">
+                                                <form action="">
+                                                    @csrf
+                                                    {{ method_field('delete') }}
+                                                    <button type="submit" name="button"><i class="fa fa-trash"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        --}}
                                         {{--
                                         <div class="col-sm-6">
                                             <div class="info-group">

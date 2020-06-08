@@ -45,6 +45,15 @@
 
     <link rel="stylesheet" type="text/css" href="/admin_dashboard/files/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/admin_dashboard/files/assets/css/widget.css">
+
+    <!-- ==============================================
+        Favicons
+        =============================================== -->
+
+    <link rel="shortcut icon" href="/assets/main_theme/medium/img/univoire.png">
+    <link rel="apple-touch-icon" href="/assets/main_theme/medium/img/univoire.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/main_theme/medium/img/univoire.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/main_theme/medium/img/univoire.png">
 </head>
 
 <body>

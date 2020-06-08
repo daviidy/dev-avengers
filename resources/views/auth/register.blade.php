@@ -12,7 +12,7 @@
         <div class="container">
             <div class="banner-content">
                 <a href="/">
-                    <img src="/assets/main_theme/medium/img/logo.png" width="200">
+                    <img src="/assets/main_theme/medium/img/univoire.png" width="100">
                 </a>
 
                 <form method="POST" action="{{ route('register') }}" class="form-signin">
