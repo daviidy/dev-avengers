@@ -116,7 +116,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Agriculture - Agroalimentaire</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Agriculture - Agroalimentaire')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Artisanat</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Artisanat')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Audiovisuel, Cinéma</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Audiovisuel, Cinéma')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Audit, Comptabilité, Gestion</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Audit, Comptabilité, Gestion')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Automobile</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Automobile')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Banque, Assurance</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Banque, Assurance')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Bâtiment, Travaux Publics</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Bâtiment, Travaux Publics')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Biologie, Chimie, Pharmacie</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Biologie, Chimie, Pharmacie')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Commerce, Distribution</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Commerce, Distribution')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -236,7 +236,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Communication</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Communication')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Création, Métiers D'art</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Création, Métiers D art')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Culture, Patrimoine</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Culture, Patrimoine')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Défense, Sécurité, Armée</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Défense, Sécurité, Armée')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -288,7 +288,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Documentation, Bibliothèque</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Documentation, Bibliothèque')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -304,7 +304,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Droit</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Droit')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -316,7 +316,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Edition, Livre</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Edition, Livre')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Enseignement</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Enseignement')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -344,7 +344,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Environnement</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Environnement')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -356,7 +356,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Ferroviaire</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Ferroviaire')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -368,7 +368,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Foires, Salons Et Congrès</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Foires, Salons Et Congrès')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -384,7 +384,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Fonction Publique</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Fonction Publique')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -396,7 +396,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Hôtellerie, Restauration</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Hôtellerie, Restauration')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -408,7 +408,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Humanitaire</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Humanitaire')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -424,7 +424,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Immobilier</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Immobilier')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -436,7 +436,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Industrie</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Industrie')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -448,7 +448,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Informatique, Télécoms, Web</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Informatique, Télécoms, Web')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -464,7 +464,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Journalisme</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Journalisme')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -476,7 +476,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Langues</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Langues')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -488,7 +488,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Marketing, Publicité</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Marketing, Publicité')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -504,7 +504,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Médical</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Médical')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -516,7 +516,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Mode-Textile</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Mode-Textile')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -528,7 +528,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Paramédical</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Paramédical')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -544,7 +544,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Propreté Et Services Associés</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Propreté Et Services Associés')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -556,7 +556,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Psychologie</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Psychologie')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -568,7 +568,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Ressources Humaines</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Ressources Humaines')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -584,7 +584,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Sciences Humaines Et Sociales</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Sciences Humaines Et Sociales')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -596,7 +596,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Secrétariat</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Secrétariat')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -608,7 +608,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Social</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Social')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -624,7 +624,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Spectacle - Métiers De La Scène</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Spectacle - Métiers De La Scène')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -636,7 +636,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Sport</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Sport')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -648,7 +648,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Tourisme</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Tourisme')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
@@ -664,7 +664,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Transport-Logistique</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Transport-Logistique')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>
