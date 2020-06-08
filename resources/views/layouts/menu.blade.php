@@ -19,10 +19,10 @@
     <!-- ==============================================
 		Favicons
 		=============================================== -->
-    <link rel="shortcut icon" href="/assets/main_theme/medium/img/favicons/favicon.ico">
-    <link rel="apple-touch-icon" href="/assets/main_theme/medium/img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/main_theme/medium/img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/main_theme/medium/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/assets/main_theme/medium/img/univoire.png">
+    <link rel="apple-touch-icon" href="/assets/main_theme/medium/img/univoire.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/main_theme/medium/img/univoire.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/main_theme/medium/img/univoire.png">
 
     <!-- ==============================================
 		CSS
@@ -143,7 +143,7 @@
                 </li>--}}
                 <li class="nav-item" style="margin-top: auto;">
                     <a href="/">
-                        <img src="/assets/main_theme/medium/img/univoire 2.png" width="150">
+                        <img src="/assets/main_theme/medium/img/logo_0.png" width="150">
                     </a>
                 </li>
                 <!-- Search Ends -->
@@ -270,7 +270,7 @@
                 --}}
             </ul><!-- /ul -->
         </div><!-- /navbar-collapse -->
-        <a href="/" class="navbar-brand mr-0 hidden-md-up"><img src="/assets/main_theme/medium/img/univoire 2.png" width="100"></a>
+        <a href="/" class="navbar-brand mr-0 hidden-md-up"><img src="/assets/main_theme/medium/img/logo_0.png" width="100"></a>
         <div class="navbar-collapse collapse dual-navv">
 
             <ul class="nav navbar-nav ml-auto">

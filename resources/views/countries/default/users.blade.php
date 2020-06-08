@@ -107,7 +107,10 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">{{$user->name}}</h4>
                             <p class="text-muted m-b-5 font-13">Nationalité: {{$user->birth_country}}</p>
-                            <small class="text-warning"><b>Contacter</b></small>
+                            <a href="/chat/{{$user->id}}">
+                                <small class="text-warning"><b>Contacter</b></small>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
