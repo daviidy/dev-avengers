@@ -562,7 +562,7 @@ address{display:inline;font-style:normal;}
                             </div>
                         </div>
                         <div class="flex-item flex-item--shrink pageHead-pageActions">
-                            <a target="_blank" href="/messages">
+                            <a target="_blank" href="/chat/{{$project->user->id}}">
                             <button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
                               data-e2e="event-header--share-btn">
                               <span>Contacter</span>

@@ -53,7 +53,7 @@ class MessageController extends Controller
             where users.id != " . Auth::id() . "
             group by users.id, users.name, users.image, users.email");
 
-            return view('chat', ['users' => $users]);
+            return view('chatOne', ['users' => $users]);
         }
         else {
             return redirect('home');

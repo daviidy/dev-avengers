@@ -178,7 +178,9 @@
                         Opportunités d'affaires
                     </a>
                     <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                        @auth
                         <a class="dropdown-item" href="{{route('projects.create')}}"><span>Créer une opportunité d'affaires</span></a>
+                        @endauth
                         <a class="dropdown-item" href="{{route('projects.index')}}"><span>Liste des opportunités d'affaires</span></a>
 
                     </div>
@@ -189,7 +191,9 @@
                         Evenements
                     </a>
                     <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                        @auth
                         <a class="dropdown-item" href="{{route('meetups.create')}}"><span>Créer un événement</span></a>
+                        @endauth
                         <a class="dropdown-item" href="{{route('meetups.index')}}"><span>Liste des événements</span></a>
 
                     </div>
@@ -199,7 +203,9 @@
                         Actualités
                     </a>
                     <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                        @auth
                         <a class="dropdown-item" href="{{route('posts.create')}}"><span>Créer un article</span></a>
+                        @endauth
                         <a class="dropdown-item" href="{{route('posts.index')}}"><span>Liste des actualités</span></a>
 
                     </div>
