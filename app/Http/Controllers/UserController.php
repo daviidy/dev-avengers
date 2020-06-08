@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Post;
+use App\Meetup;
+use App\Project;
 use Auth;
 use Image;
 use PDF;
@@ -11,6 +14,16 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
+  public function bienvenue()
+    {
+        $posts = Post::orderby('id', 'asc')->paginate(30);
+        $meetups = Meetup::orderby('id', 'asc')->paginate(30);
+        $projects = Project::orderby('id', 'asc')->paginate(30);
+        return view('bienvenue', ['posts' => $posts, 'meetups' => $meetups, 'projects' => $projects]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *

@@ -122,7 +122,9 @@ input.form-control:after {
                     <div class="form-group">
                         <label class="form-control-placeholder p-0" for="name lbl">Pays de résidence</label>
                         <input type="text" id="country_1" class="form-control " required style="box-shadow: none;border-radius:0px" name="living_country">
+                        @auth
                         <input type="text" hidden name="user_id" value="{{Auth::user()->id}}">
+                        @endauth
                     </div>
                     <div class="form-group">
                         <label class="form-control-placeholder p-0" for="name">Nationalité</label>

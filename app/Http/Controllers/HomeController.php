@@ -31,11 +31,5 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function bienvenue()
-    {
-        $posts = Post::orderby('id', 'asc')->paginate(30);
-        $meetups = Meetup::orderby('id', 'asc')->paginate(30);
-        $projects = Project::orderby('id', 'asc')->paginate(30);
-        return view('bienvenue', ['posts' => $posts, 'meetups' => $meetups, 'projects' => $projects]);
-    }
+
 }
