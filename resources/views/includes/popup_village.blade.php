@@ -329,7 +329,7 @@ input.form-control:after {
                     <div class="form-group">
                         <label class="form-control-placeholder p-0" for="name">Village du père</label>
                         @auth
-                        <input value="{{Auth::user()->father_town ? Auth::user()->father_town : ''}}" type="text" id="country_3" class="form-control " required style="box-shadow: none;border-radius:0px" name="father_town">
+                        <input value="{{Auth::user()->father_town ? Auth::user()->father_town : ''}}" type="text" class="form-control " required style="box-shadow: none;border-radius:0px" name="father_town">
                         @endauth
                     </div>
 

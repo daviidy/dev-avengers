@@ -42,11 +42,12 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function jobs(Request $request)
+    public function jobs($job)
     {
         if (Auth::check()) {
-            $users = User::where('job', $request->input('job'))->get();
-            return view('jobs.default.users', ['users' => $users]);
+            $job_db = str_replace("+", " ", $job);
+            $users = User::where('job', $job_db)->get();
+            return view('jobs.default.users', ['users' => $users, 'job' => $job_db]);
         }
         else {
             return redirect('home');
@@ -62,6 +63,7 @@ class UserController extends Controller
     public function seeCountries()
     {
         if (Auth::check()) {
+            /*
             $users1 = DB::table('users')
               ->where('living_country', 'like', '%'.Auth::user()->living_country.'%')
               ->orderBy('id', 'asc')
@@ -70,7 +72,25 @@ class UserController extends Controller
                 ->where('birth_country', 'like', '%'.Auth::user()->birth_country.'%')
                 ->orderBy('id', 'asc')
                 ->get();
-            return view('countries.default.index', ['users1' => $users1, 'users2' => $users2]);
+                */
+            return view('countries.default.index');
+        }
+        else {
+            return redirect('home');
+        }
+    }
+
+
+    public function countries($country)
+    {
+        if (Auth::check()) {
+            $country_db = str_replace("+", " ", $country);
+            $users = DB::table('users')
+              ->where('living_country', 'like', '%'.$country_db.'%')
+              ->orderBy('id', 'asc')
+              ->get();
+            //$users = User::where('living_country', $country_db)->get();
+            return view('countries.default.users', ['users' => $users, 'country' => $country_db]);
         }
         else {
             return redirect('home');
@@ -90,10 +110,13 @@ class UserController extends Controller
                 return view('villages.default.ivory_coast');
             }
             else {
+                /*
                 $users = DB::table('users')
                   ->where('father_town', 'like', '%'.Auth::user()->father_town.'%')
                   ->orderBy('id', 'asc')
                   ->get();
+                  */
+                 $users = User::orderby('id', 'asc')->get();
 
                 return view('villages.default.index', ['users' => $users,]);
             }
@@ -109,14 +132,13 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function villages(Request $request)
+    public function villages($village)
     {
         if (Auth::check()) {
-            $users = DB::table('users')
-              ->where('father_birth_state', 'like', '%'.Auth::user()->father_birth_state.'%')
-              ->orderBy('id', 'asc')
-              ->get();
-            return view('villages.default.users', ['users' => $users]);
+            $region = str_replace("+", " ", $village);
+            $users = User::where('father_birth_state', $region)->get();
+            return view('villages.default.users', ['users' => $users, 'region' => $region]);
+
         }
         else {
             return redirect('home');

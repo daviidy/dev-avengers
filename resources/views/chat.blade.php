@@ -1,4 +1,5 @@
 @extends('layouts.menu')
+@section('title', 'Discussion instantanée')
 
 @section('content')
 
@@ -118,7 +119,7 @@
 </style>
 
 
-<div class="container-fluid">
+<div class="container-fluid" style="padding: 1rem;">
     <div class="row">
         <div class="col-md-4">
             <div class="user-wrapper">

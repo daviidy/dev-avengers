@@ -111,4 +111,9 @@ class User extends Authenticatable
       {
           return $this->hasMany('App\Meetup');
       }
+
+      public function users()
+    {
+      return $this->belongsToMany('App\User', 'related_users', 'related_id', 'user_id');
+    }
 }

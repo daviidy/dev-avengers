@@ -18,16 +18,47 @@ class MessageController extends Controller
      */
     public function index()
     {
-        // select all users except logged in user
-        // $users = User::where('id', '!=', Auth::id())->get();
+        if (Auth::check()) {
+            // select all users except logged in user
+            // $users = User::where('id', '!=', Auth::id())->get();
 
-        // count how many message are unread from the selected user
-        $users = DB::select("select users.id, users.name, users.image, users.email, count(is_read) as unread
-        from users LEFT  JOIN  messages ON users.id = messages.from and is_read = 0 and messages.to = " . Auth::id() . "
-        where users.id != " . Auth::id() . "
-        group by users.id, users.name, users.image, users.email");
+            // count how many message are unread from the selected user
+            $users = DB::select("select users.id, users.name, users.image, users.email, count(is_read) as unread
+            from users LEFT  JOIN  messages ON users.id = messages.from and is_read = 0 and messages.to = " . Auth::id() . "
+            where users.id != " . Auth::id() . "
+            group by users.id, users.name, users.image, users.email");
 
-        return view('chat', ['users' => $users]);
+            return view('chat', ['users' => $users]);
+        }
+        else {
+            return redirect('home');
+        }
+
+    }
+
+    public function one($user)
+    {
+        if (Auth::check()) {
+            $user = User::find($user);
+            if (!Auth::user()->users->contains($user->id)) {
+
+                Auth::user()->users()->attach($user);
+            }
+            // select all users except logged in user
+            // $users = User::where('id', '!=', Auth::id())->get();
+
+            // count how many message are unread from the selected user
+            $users = DB::select("select users.id, users.name, users.image, users.email, count(is_read) as unread
+            from users LEFT  JOIN  messages ON users.id = messages.from and is_read = 0 and messages.to = " . Auth::id() . "
+            where users.id != " . Auth::id() . "
+            group by users.id, users.name, users.image, users.email");
+
+            return view('chat', ['users' => $users]);
+        }
+        else {
+            return redirect('home');
+        }
+
     }
 
     public function getMessage($user_id)

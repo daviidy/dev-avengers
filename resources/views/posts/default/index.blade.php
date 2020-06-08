@@ -183,8 +183,10 @@ p{margin-bottom:0px!important;}
                                 </li>
                             </ul><!-- /.bottom_data -->
                             <ul class="bottom_data pull-right hidden-xs-down">
+                                <!--
                                 <li><i class="fa fa-comment-o"></i>200</li>
                                 <li><i class="fa fa-heart-o"></i>30</li>
+                            -->
                                 @if($post->user_id == Auth::user()->id)
                                 <li>
                                     <a href="{{route('posts.edit', $post)}}">

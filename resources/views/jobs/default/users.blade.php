@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Liste des utilisateurs exercant dans')
+@section('title', 'Liste des utilisateurs exercant dans '.$job)
 
 @section('content')
 
@@ -94,6 +94,7 @@ b{font-weight:600;}
 
 
 <section class="posts-2 followers">
+    <h2 class="text-center mb-4">Liste des utilisateurs exerçant dans {{$job}}</h2>
     <div class="container">
         <div class="row">
             @foreach($users as $user)

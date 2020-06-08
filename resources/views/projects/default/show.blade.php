@@ -561,8 +561,14 @@ address{display:inline;font-style:normal;}
                                   </div>
                             </div>
                         </div>
-                        <div class="flex-item flex-item--shrink pageHead-pageActions"><button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
-                              data-e2e="event-header--share-btn"><span>Contacter</span></button></div>
+                        <div class="flex-item flex-item--shrink pageHead-pageActions">
+                            <a target="_blank" href="/messages">
+                            <button data-swarm-button="bordered" data-swarm-size="default" data-icon="left" data-swarm-width="default" type="button" class="btn btn-danger"
+                              data-e2e="event-header--share-btn">
+                              <span>Contacter</span>
+                          </button>
+                      </a>
+                      </div>
                     </div>
                 </div>
             </div>

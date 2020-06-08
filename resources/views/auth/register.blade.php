@@ -24,7 +24,7 @@
 
                     @error('name')
                     <div class="alert alert-danger">
-                        <strong>{{message}}</strong>
+                        <strong>{{$message}}</strong>
                     </div>
                     @enderror
                     <div class="form-group">
@@ -33,7 +33,7 @@
 
                     @error('email')
                     <div class="alert alert-danger">
-                        <strong>{{message}}</strong>
+                        <strong>{{$message}}</strong>
                     </div>
                     @enderror
                     <div class="form-group">
@@ -41,7 +41,7 @@
                     </div>
                     @error('password')
                     <div class="alert alert-danger">
-                        <strong>{{message}}</strong>
+                        <strong>{{$message}}</strong>
                     </div>
                     @enderror
                     <div class="form-group">

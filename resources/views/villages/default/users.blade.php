@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Liste des utilisateurs vivant dans la région')
+@section('title', 'Liste des utilisateurs vivant dans la région '.$region)
 
 @section('content')
 
@@ -93,10 +93,13 @@ b{font-weight:600;}
 @endif
 
 
+
+
 <section class="posts-2 followers">
+    <h2 class="text-center mb-4">Liste des utilisateurs venant de la région {{$region}}</h2>
     <div class="container">
         <div class="row">
-            @foreach($users as $users)
+            @foreach($users as $user)
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>

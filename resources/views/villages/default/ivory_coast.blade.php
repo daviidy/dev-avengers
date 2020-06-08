@@ -56,7 +56,7 @@ small{font-size:80%;font-weight:normal;}
 @media (min-width: 992px){
 .col-lg-4{-webkit-box-flex:0;-webkit-flex:0 0 33.333333%;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
 }
-.rounded-circle{border-radius:50%;}
+.{border-radius:50%;}
 .text-muted{color:#636c72!important;}
 .text-warning{color:#f0ad4e!important;}
 /*! CSS Used from: http://www.themashabrand.com/templates/Masha/Medium/css/app.css */
@@ -73,7 +73,7 @@ p{margin-bottom:0px!important;}
 }
 .card-box{padding:20px;box-shadow:0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);-webkit-border-radius:5px;border-radius:5px;-moz-border-radius:5px;background-clip:padding-box;margin-bottom:20px;background-color:#ffffff;}
 .widget-user img{height:72px;float:left;}
-.widget-user .wid-u-info{margin-left:90px;}
+.widget-user .wid-u-info{margin-left:0px;}
 .widget-user .wid-u-info p,.widget-user .wid-u-info h4{white-space:nowrap;display:block;overflow:hidden;text-overflow:ellipsis;}
 .widget-user .wid-u-info h4{font-family:'Abhaya Libre', serif;font-size:16px;color:#1ab394;}
 .widget-user .wid-u-info p{font-family:'Abhaya Libre', serif;font-size:14px;}
@@ -94,16 +94,18 @@ b{font-weight:600;}
 
 
 <section class="posts-2 followers">
+    <h2 class="text-center mb-4">Liste des régions de Côte d'Ivoire</h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+
                         <div class="wid-u-info">
-                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
-                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
-                            <small class="text-warning"><b>Follow</b></small>
+                            <h4 class="m-t-0 m-b-5 font-600">Abidjan</h4>
+                            <a href="/villages/{{urlencode('Abidjan')}}">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -111,11 +113,12 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+
                         <div class="wid-u-info">
-                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
-                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
-                            <small class="text-warning"><b>Follow</b></small>
+                            <h4 class="m-t-0 m-b-5 font-600">Lacs</h4>
+                            <a href="/villages/Lacs">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -123,15 +126,172 @@ b{font-weight:600;}
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">
                     <div>
-                        <img src="http://www.themashabrand.com/templates/Masha/Medium/img/users/1.jpg" class="img-fluid rounded-circle" alt="user">
+
                         <div class="wid-u-info">
-                            <h4 class="m-t-0 m-b-5 font-600">Michelle Kate</h4>
-                            <p class="text-muted m-b-5 font-13">www.themashabrand.com</p>
-                            <small class="text-warning"><b>Follow</b></small>
+                            <h4 class="m-t-0 m-b-5 font-600">Comoé</h4>
+                            <a href="/villages/Comoé">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Denguélé</h4>
+                            <a href="/villages/Denguélé">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Gôh-Djiboua</h4>
+                            <a href="/villages/Gôh-Djiboua">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Lagunes</h4>
+                            <a href="/villages/Lagunes">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Montagnes</h4>
+                            <a href="/villages/Montagnes">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Sassandra-Marahoué</h4>
+                            <a href="/villages/Sassandra-Marahoué">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Savanes</h4>
+                            <a href="/villages/Savanes">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Bas-Sassandra</h4>
+                            <a href="/villages/Bas-Sassandra">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Vallée du Bandama</h4>
+                            <a href="/villages/Vallée du Bandama">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Woroba</h4>
+                            <a href="/villages/Woroba">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Zanzan</h4>
+                            <a href="/villages/Zanzan">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Yamoussoukro</h4>
+                            <a href="/villages/Yamoussoukro">
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card-box widget-user">
+                    <div>
+
+                        <div class="wid-u-info">
+                            <h4 class="m-t-0 m-b-5 font-600">Abidjan</h4>
+                            <a href="/villages/Abidjan"></a>
+                            <small class="text-warning"><b>Voir les utilisateurs vivant dans cette région</b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div><!--fin row-->
     </div>

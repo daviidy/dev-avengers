@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('bienvenue');
-})->name('welcome');
+Route::get('/', 'HomeController@bienvenue')->name('welcome');
 
 Auth::routes();
 
@@ -33,6 +31,7 @@ Route::get('/jobs/{job}', 'UserController@jobs');
 Route::get('/seeVillages', 'UserController@seeVillages');
 Route::get('/villages/{village}', 'UserController@villages');
 Route::get('/seeCountries', 'UserController@seeCountries');
+Route::get('/countries/{country}', 'UserController@countries');
 Route::get('/downloadInfos', 'UserController@downloadInfos');
 Route::get('/registerEvent/{meetup}', 'MeetupController@registerEvent');
 Route::post('/addCountries', 'UserController@addCountries');
@@ -40,6 +39,8 @@ Route::post('/addVillage', 'UserController@addVillage');
 
 //chat routes
 Route::get('/messages', 'MessageController@index')->name('message');
+Route::get('/chat/{user}', 'MessageController@one')->name('message');
+Route::get('/chat/message/{id}', 'MessageController@getMessage')->name('message');
 Route::get('/message/{id}', 'MessageController@getMessage')->name('message');
 Route::post('message', 'MessageController@sendMessage');
 

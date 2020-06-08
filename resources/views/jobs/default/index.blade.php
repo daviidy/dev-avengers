@@ -104,7 +104,7 @@ b{font-weight:600;}
                         <div class="wid-u-info">
                             <h4 class="m-t-0 m-b-5 font-600">Aéronautique Et Espace</h4>
                             <p class="text-muted m-b-5 font-13"></p>
-                            <small class="text-warning"><b><a href="#">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
+                            <small class="text-warning"><b><a href="/jobs/{{urlencode('Aéronautique Et Espace')}}">Voir les utilisateurs qui exercent dans ce secteur</a></b></small>
                         </div>
                     </div>
                 </div>

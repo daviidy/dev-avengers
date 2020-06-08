@@ -23,7 +23,7 @@
                     </div>
                     @error('email')
                     <div class="alert alert-danger">
-                        <strong>{{message}}</strong>
+                        <strong>{{$message}}</strong>
                     </div>
                     @enderror
                     <div class="form-group">
@@ -31,7 +31,7 @@
                     </div>
                     @error('password')
                     <div class="alert alert-danger">
-                        <strong>{{message}}</strong>
+                        <strong>{{$message}}</strong>
                     </div>
                     @enderror
                     <button class="kafe-btn kafe-btn-mint btn-block" type="submit" name="subm">Se connecter</button>

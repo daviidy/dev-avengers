@@ -708,7 +708,7 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de résidence
                                 </label>
-                                <input class="form-control" placeholder="Pays de résidence" type="text" name="living_country" id="country_2 search_input-1" value="{{Auth::user()->living_country}}">
+                                <input id="country_2" class="form-control" placeholder="Pays de résidence" type="text" name="living_country" id="country_2 search_input-1" value="{{Auth::user()->living_country}}">
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -834,7 +834,7 @@ p{margin-bottom:0px!important;}
                                 </label>
                                 <!--input class="form-control" placeholder="Pays de résidence du père" type="text" name="father_birth_country" id="country_4" value="{{Auth::user()->father_birth_country}}"-->
 
-                                <select id="nationalite_1" class="form-control" placeholder="Nationalité du père" value="{{Auth::user()->father_birth_country}}" name="father_birth_country">
+                                <select id="nationalite_1" class="form-control" placeholder="Nationalité du père" name="father_birth_country">
 							        <option value="AFG">Afghane (Afghanistan)</option>
 							        <option value="ALB">Albanaise (Albanie)</option>
 							        <option value="DZA">Algérienne (Algérie)</option>
@@ -1044,9 +1044,9 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Région du père
                                 </label>
-                                <input class="form-control" placeholder="Région du père" type="text" name="father_birth_state" id="region1" value="{{Auth::user()->father_birth_state}}">
+                                <input class="form-control" placeholder="Région du père" type="text" name="father_birth_state" id="region1">
 
-                                <select class="form-control rgsel-1" id="region_2" placeholder="Région du père" value="{{Auth::user()->father_birth_state}}" name="father_birth_state">
+                                <select class="form-control rgsel-1" id="region_2" placeholder="Région du père" name="father_birth_state">
 							        <option value="Abidjan">Abidjan</option>
 							        <option value="Lacs">Lacs</option>
 							        <option value="Comoé">Comoé</option>
@@ -1145,7 +1145,7 @@ p{margin-bottom:0px!important;}
                                 </label>
                                 <!--input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="mother_birth_country" id="country_5" value="{{Auth::user()->mother_birth_country}}"-->
 
-                                <select id="nationalite" class="form-control" placeholder="Etat de naissance" value="{{Auth::user()->mother_birth_country}}" name="mother_birth_country">
+                                <select id="nationalite" class="form-control" placeholder="Etat de naissance" name="mother_birth_country">
 							        <option value="AFG">Afghane (Afghanistan)</option>
 							        <option value="ALB">Albanaise (Albanie)</option>
 							        <option value="DZA">Algérienne (Algérie)</option>
@@ -1530,7 +1530,7 @@ $(document).ready(function(){
 
 <script>
 	$(document).ready(function(){
-		
+
 		var x = $('#nationalite');
 		$(x).change(function(){
 			if(x.val()=='CIV'){
@@ -1556,9 +1556,9 @@ $(document).ready(function(){
 		});
 		/*
 	    var x =$("#nationalite_1").val('CIV');
-	    $(x).click(function(){	    
+	    $(x).click(function(){
 	    		$('#region_2').removeClass('rgsel-1');
-	        	$('#region1').addClass('rgsel-1');	    			    	
+	        	$('#region1').addClass('rgsel-1');
 	    });*/
 	});
 </script>

@@ -148,7 +148,7 @@
                 </li>
                 <!-- Search Ends -->
 
-                <li class="nav-item active">
+                <li class="nav-item active" style="background: none;">
                     <a class="nav-link" href="/">Accueil <span class="sr-only">(cette page)</span></a>
                 </li>
                 @auth
@@ -162,7 +162,7 @@
                 @endauth
                 @auth
                 <li class="nav-item">
-                    @if(Auth::user()->father_birth_country !== null)
+                    @if(Auth::user()->father_birth_country !== null && Auth::user()->father_town !== null)
                     <a class="nav-link" href="/seeVillages">Villages <span class="sr-only">(cette page)</span></a>
                     @else
                     <a class="nav-link" data-toggle="modal" data-target="#villageModal">Villages <span class="sr-only">(cette page)</span></a>
@@ -269,6 +269,7 @@
 
             <ul class="nav navbar-nav ml-auto">
                 @auth
+                {{--
                 <li class="nav-item dropdown mega-pills">
                     <a href="" class="nav-link" data-toggle="dropdown" aria-expanded="true">
                         <i class="fa fa-th"></i>
@@ -371,7 +372,7 @@
                     <!-- /dropdown-menu -->
                 </li>
                 <!-- /navbar-item -->
-
+                --}}
                 <li class="nav-item dropdown mega-avatar">
                     <a class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
                         <span class="avatar w-32">
@@ -388,12 +389,14 @@
                         </span>
                     </a>
                     <div class="dropdown-menu w dropdown-menu-scale pull-right">
-                        <a class="dropdown-item" href="#"><span>Créer un projet</span></a>
-                        <a class="dropdown-item" href="#"><span>Créer un événement</span></a>
+                        @if(Auth::user()->type == 'admin')
+                        <a class="dropdown-item" href="/admin"><span>Tableau de bord admin</span></a>
+                        @endif
+                        <a class="dropdown-item" href="{{route('projects.create')}}"><span>Créer un projet</span></a>
+                        <a class="dropdown-item" href="{{route('meetups.create')}}"><span>Créer un événement</span></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/home"><span>Profil</span></a>
                         <a class="dropdown-item" href="{{route('users.edit', Auth::user())}}"><span>Paramètres</span></a>
-                        <a class="dropdown-item" href="#">Need help?</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
