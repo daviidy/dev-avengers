@@ -519,7 +519,7 @@ address{display:inline;font-style:normal;}
 
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
          <div class="post-heading">
-		  <h1>UNIVOIRE</h1>
+          <img src="/assets/main_theme/medium/img/logo_01.png"  alt="UNIVOIRE" style="display: inline-block;">
 		 <p>Plateforme de la communauté ivoirienne</p>
          <!--
 		  <sup>
