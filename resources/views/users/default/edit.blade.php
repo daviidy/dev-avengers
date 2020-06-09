@@ -450,7 +450,7 @@ p{margin-bottom:0px!important;}
 	.arch .arch-right{text-align: center; margin-bottom: 15px;}
 }
 
-.rgsel, .rgsel-1{display: none;}
+.rgsel, .rgsel-1, .commune_0{display: none;}
 
 
 </style>
@@ -625,19 +625,6 @@ p{margin-bottom:0px!important;}
                         </div> <!-- close .col -->
                     </div> <!-- close .row -->
 
-                    <!--div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <label for="user_username">
-                                    Username <span class="text-secondary">(only letters, numbers, and underscores)</span>
-                                </label>
-                                <input class="form-control" type="text" value="daviidy" name="user[username]" id="user_username">
-
-                                <div class="help-block text-secondary">
-                                    <p>https://unsplash.com/@<strong>daviidy</strong></p>
-                                </div> <!-- close .help-block ->
-                            </div> <!-- close .form-group ->
-                        </div--> <!-- close .col -->
                     <div class="row">
 
                         <div class="col-xs-12 col-sm-6">
@@ -645,7 +632,264 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Pays de naissance
                                 </label>
-                                <input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country">
+                                <!--input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country"-->
+                                <select name="birth_country" class="form-control" value="{{Auth::user()->birth_country}}" id="pays">
+									<option value="France" selected="selected">France </option>
+
+									<option value="Afghanistan">Afghanistan </option>
+									<option value="Afrique_Centrale">Afrique_Centrale </option>
+									<option value="Afrique_du_sud">Afrique_du_Sud </option>
+									<option value="Albanie">Albanie </option>
+									<option value="Algerie">Algerie </option>
+									<option value="Allemagne">Allemagne </option>
+									<option value="Andorre">Andorre </option>
+									<option value="Angola">Angola </option>
+									<option value="Anguilla">Anguilla </option>
+									<option value="Arabie_Saoudite">Arabie_Saoudite </option>
+									<option value="Argentine">Argentine </option>
+									<option value="Armenie">Armenie </option>
+									<option value="Australie">Australie </option>
+									<option value="Autriche">Autriche </option>
+									<option value="Azerbaidjan">Azerbaidjan </option>
+
+									<option value="Bahamas">Bahamas </option>
+									<option value="Bangladesh">Bangladesh </option>
+									<option value="Barbade">Barbade </option>
+									<option value="Bahrein">Bahrein </option>
+									<option value="Belgique">Belgique </option>
+									<option value="Belize">Belize </option>
+									<option value="Benin">Benin </option>
+									<option value="Bermudes">Bermudes </option>
+									<option value="Bielorussie">Bielorussie </option>
+									<option value="Bolivie">Bolivie </option>
+									<option value="Botswana">Botswana </option>
+									<option value="Bhoutan">Bhoutan </option>
+									<option value="Boznie_Herzegovine">Boznie_Herzegovine </option>
+									<option value="Bresil">Bresil </option>
+									<option value="Brunei">Brunei </option>
+									<option value="Bulgarie">Bulgarie </option>
+									<option value="Burkina_Faso">Burkina_Faso </option>
+									<option value="Burundi">Burundi </option>
+
+									<option value="Caiman">Caiman </option>
+									<option value="Cambodge">Cambodge </option>
+									<option value="Cameroun">Cameroun </option>
+									<option value="Canada">Canada </option>
+									<option value="Canaries">Canaries </option>
+									<option value="Cap_vert">Cap_Vert </option>
+									<option value="Chili">Chili </option>
+									<option value="Chine">Chine </option>
+									<option value="Chypre">Chypre </option>
+									<option value="Colombie">Colombie </option>
+									<option value="Comores">Colombie </option>
+									<option value="Congo">Congo </option>
+									<option value="Congo_democratique">Congo_democratique </option>
+									<option value="Cook">Cook </option>
+									<option value="Coree_du_Nord">Coree_du_Nord </option>
+									<option value="Coree_du_Sud">Coree_du_Sud </option>
+									<option value="Costa_Rica">Costa_Rica </option>
+									<option value="Cote_d_Ivoire">Côte d'Ivoire </option>
+									<option value="Croatie">Croatie </option>
+									<option value="Cuba">Cuba </option>
+
+									<option value="Danemark">Danemark </option>
+									<option value="Djibouti">Djibouti </option>
+									<option value="Dominique">Dominique </option>
+
+									<option value="Egypte">Egypte </option>
+									<option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
+									<option value="Equateur">Equateur </option>
+									<option value="Erythree">Erythree </option>
+									<option value="Espagne">Espagne </option>
+									<option value="Estonie">Estonie </option>
+									<option value="Etats_Unis">Etats_Unis </option>
+									<option value="Ethiopie">Ethiopie </option>
+
+									<option value="Falkland">Falkland </option>
+									<option value="Feroe">Feroe </option>
+									<option value="Fidji">Fidji </option>
+									<option value="Finlande">Finlande </option>
+									<option value="France">France </option>
+
+									<option value="Gabon">Gabon </option>
+									<option value="Gambie">Gambie </option>
+									<option value="Georgie">Georgie </option>
+									<option value="Ghana">Ghana </option>
+									<option value="Gibraltar">Gibraltar </option>
+									<option value="Grece">Grece </option>
+									<option value="Grenade">Grenade </option>
+									<option value="Groenland">Groenland </option>
+									<option value="Guadeloupe">Guadeloupe </option>
+									<option value="Guam">Guam </option>
+									<option value="Guatemala">Guatemala</option>
+									<option value="Guernesey">Guernesey </option>
+									<option value="Guinee">Guinee </option>
+									<option value="Guinee_Bissau">Guinee_Bissau </option>
+									<option value="Guinee equatoriale">Guinee_Equatoriale </option>
+									<option value="Guyana">Guyana </option>
+									<option value="Guyane_Francaise ">Guyane_Francaise </option>
+
+									<option value="Haiti">Haiti </option>
+									<option value="Hawaii">Hawaii </option>
+									<option value="Honduras">Honduras </option>
+									<option value="Hong_Kong">Hong_Kong </option>
+									<option value="Hongrie">Hongrie </option>
+
+									<option value="Inde">Inde </option>
+									<option value="Indonesie">Indonesie </option>
+									<option value="Iran">Iran </option>
+									<option value="Iraq">Iraq </option>
+									<option value="Irlande">Irlande </option>
+									<option value="Islande">Islande </option>
+									<option value="Israel">Israel </option>
+									<option value="Italie">italie </option>
+
+									<option value="Jamaique">Jamaique </option>
+									<option value="Jan Mayen">Jan Mayen </option>
+									<option value="Japon">Japon </option>
+									<option value="Jersey">Jersey </option>
+									<option value="Jordanie">Jordanie </option>
+
+									<option value="Kazakhstan">Kazakhstan </option>
+									<option value="Kenya">Kenya </option>
+									<option value="Kirghizstan">Kirghizistan </option>
+									<option value="Kiribati">Kiribati </option>
+									<option value="Koweit">Koweit </option>
+
+									<option value="Laos">Laos </option>
+									<option value="Lesotho">Lesotho </option>
+									<option value="Lettonie">Lettonie </option>
+									<option value="Liban">Liban </option>
+									<option value="Liberia">Liberia </option>
+									<option value="Liechtenstein">Liechtenstein </option>
+									<option value="Lituanie">Lituanie </option>
+									<option value="Luxembourg">Luxembourg </option>
+									<option value="Lybie">Lybie </option>
+
+									<option value="Macao">Macao </option>
+									<option value="Macedoine">Macedoine </option>
+									<option value="Madagascar">Madagascar </option>
+									<option value="Madère">Madère </option>
+									<option value="Malaisie">Malaisie </option>
+									<option value="Malawi">Malawi </option>
+									<option value="Maldives">Maldives </option>
+									<option value="Mali">Mali </option>
+									<option value="Malte">Malte </option>
+									<option value="Man">Man </option>
+									<option value="Mariannes du Nord">Mariannes du Nord </option>
+									<option value="Maroc">Maroc </option>
+									<option value="Marshall">Marshall </option>
+									<option value="Martinique">Martinique </option>
+									<option value="Maurice">Maurice </option>
+									<option value="Mauritanie">Mauritanie </option>
+									<option value="Mayotte">Mayotte </option>
+									<option value="Mexique">Mexique </option>
+									<option value="Micronesie">Micronesie </option>
+									<option value="Midway">Midway </option>
+									<option value="Moldavie">Moldavie </option>
+									<option value="Monaco">Monaco </option>
+									<option value="Mongolie">Mongolie </option>
+									<option value="Montserrat">Montserrat </option>
+									<option value="Mozambique">Mozambique </option>
+
+									<option value="Namibie">Namibie </option>
+									<option value="Nauru">Nauru </option>
+									<option value="Nepal">Nepal </option>
+									<option value="Nicaragua">Nicaragua </option>
+									<option value="Niger">Niger </option>
+									<option value="Nigeria">Nigeria </option>
+									<option value="Niue">Niue </option>
+									<option value="Norfolk">Norfolk </option>
+									<option value="Norvege">Norvege </option>
+									<option value="Nouvelle_Caledonie">Nouvelle_Caledonie </option>
+									<option value="Nouvelle_Zelande">Nouvelle_Zelande </option>
+
+									<option value="Oman">Oman </option>
+									<option value="Ouganda">Ouganda </option>
+									<option value="Ouzbekistan">Ouzbekistan </option>
+
+									<option value="Pakistan">Pakistan </option>
+									<option value="Palau">Palau </option>
+									<option value="Palestine">Palestine </option>
+									<option value="Panama">Panama </option>
+									<option value="Papouasie_Nouvelle_Guinee">Papouasie_Nouvelle_Guinee </option>
+									<option value="Paraguay">Paraguay </option>
+									<option value="Pays_Bas">Pays_Bas </option>
+									<option value="Perou">Perou </option>
+									<option value="Philippines">Philippines </option>
+									<option value="Pologne">Pologne </option>
+									<option value="Polynesie">Polynesie </option>
+									<option value="Porto_Rico">Porto_Rico </option>
+									<option value="Portugal">Portugal </option>
+
+									<option value="Qatar">Qatar </option>
+
+									<option value="Republique_Dominicaine">Republique_Dominicaine </option>
+									<option value="Republique_Tcheque">Republique_Tcheque </option>
+									<option value="Reunion">Reunion </option>
+									<option value="Roumanie">Roumanie </option>
+									<option value="Royaume_Uni">Royaume_Uni </option>
+									<option value="Russie">Russie </option>
+									<option value="Rwanda">Rwanda </option>
+
+									<option value="Sahara Occidental">Sahara Occidental </option>
+									<option value="Sainte_Lucie">Sainte_Lucie </option>
+									<option value="Saint_Marin">Saint_Marin </option>
+									<option value="Salomon">Salomon </option>
+									<option value="Salvador">Salvador </option>
+									<option value="Samoa_Occidentales">Samoa_Occidentales</option>
+									<option value="Samoa_Americaine">Samoa_Americaine </option>
+									<option value="Sao_Tome_et_Principe">Sao_Tome_et_Principe </option>
+									<option value="Senegal">Senegal </option>
+									<option value="Seychelles">Seychelles </option>
+									<option value="Sierra Leone">Sierra Leone </option>
+									<option value="Singapour">Singapour </option>
+									<option value="Slovaquie">Slovaquie </option>
+									<option value="Slovenie">Slovenie</option>
+									<option value="Somalie">Somalie </option>
+									<option value="Soudan">Soudan </option>
+									<option value="Sri_Lanka">Sri_Lanka </option>
+									<option value="Suede">Suede </option>
+									<option value="Suisse">Suisse </option>
+									<option value="Surinam">Surinam </option>
+									<option value="Swaziland">Swaziland </option>
+									<option value="Syrie">Syrie </option>
+
+									<option value="Tadjikistan">Tadjikistan </option>
+									<option value="Taiwan">Taiwan </option>
+									<option value="Tonga">Tonga </option>
+									<option value="Tanzanie">Tanzanie </option>
+									<option value="Tchad">Tchad </option>
+									<option value="Thailande">Thailande </option>
+									<option value="Tibet">Tibet </option>
+									<option value="Timor_Oriental">Timor_Oriental </option>
+									<option value="Togo">Togo </option>
+									<option value="Trinite_et_Tobago">Trinite_et_Tobago </option>
+									<option value="Tristan da cunha">Tristan de cuncha </option>
+									<option value="Tunisie">Tunisie </option>
+									<option value="Turkmenistan">Turmenistan </option>
+									<option value="Turquie">Turquie </option>
+
+									<option value="Ukraine">Ukraine </option>
+									<option value="Uruguay">Uruguay </option>
+
+									<option value="Vanuatu">Vanuatu </option>
+									<option value="Vatican">Vatican </option>
+									<option value="Venezuela">Venezuela </option>
+									<option value="Vierges_Americaines">Vierges_Americaines </option>
+									<option value="Vierges_Britanniques">Vierges_Britanniques </option>
+									<option value="Vietnam">Vietnam </option>
+
+									<option value="Wake">Wake </option>
+									<option value="Wallis et Futuma">Wallis et Futuma </option>
+
+									<option value="Yemen">Yemen </option>
+									<option value="Yougoslavie">Yougoslavie </option>
+
+									<option value="Zambie">Zambie </option>
+									<option value="Zimbabwe">Zimbabwe </option>
+
+								</select>
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
@@ -657,7 +901,7 @@ p{margin-bottom:0px!important;}
                                 </label>
                                 <!--input class="form-control" placeholder="Etat de naissance" type="text" name="user[url]" -->
 
-							      <select class="form-control" id="sel1" placeholder="Etat de naissance">
+							    <select class="form-control" id="sel1" placeholder="Etat de naissance">
 							        <option>Abidjan</option>
 							        <option>Lacs</option>
 							        <option>Comoé</option>
@@ -672,11 +916,7 @@ p{margin-bottom:0px!important;}
 							        <option>Woroba</option>
 							        <option>Zanzan</option>
 							        <option>Yamoussoukro</option>
-
-							      </select>
-
-
-
+							    </select>
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
@@ -712,6 +952,221 @@ p{margin-bottom:0px!important;}
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
+                        <div class="col-xs-12 col-sm-6 commune_0" id="commune">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Commune
+                                </label>
+                                
+                                <select class="form-control"  value="{{Auth::user()->father_birth_state}}" name="father_birth_state">
+							        <option value="Abengourou">Abengourou</option>
+							        <option value="Abobo">Abobo</option>
+							        <option value="Aboisso">Aboisso</option>
+							        <option value="Adiaké">Adiaké</option>
+							        <option value="Adjamé">Adjamé</option>
+							        <option value="Adzopé">Adzopé</option>
+							        <option value="Afféry">Afféry</option>
+							        <option value="Agboville">Agboville</option>
+							        <option value="Agnibilékrou">Agnibilékrou</option>
+							        <option value="Agou">Agou</option>
+							        <option value="Akoupé">Akoupé</option>
+							        <option value="Alépé">Alépé</option>
+							        <option value="Anoumaba">Anoumaba</option>
+							        <option value="Anyama">Anyama</option>
+							        <option value="Arrah">Arrah</option>
+							        <option value="Assinie">Assinie</option>
+							        <option value="Assuéffry">Assuéffry</option>
+							        <option value="Attécoubé">Attécoubé</option>
+							        <option value="Attiegouakro">Attiegouakro</option>
+							        <option value="Ayamé">Ayamé</option>
+							        <option value="Azaguié">Azaguié</option>
+							        <option value="Bako">Bako</option>
+							        <option value="Bangolo">Bangolo</option>
+							        <option value="Bassawa">Bassawa</option>
+							        <option value="Bédiala">Bédiala</option>
+							        <option value="Béoumi">Béoumi</option>
+							        <option value="Béttié">Béttié</option>
+							        <option value="Biankouma">Biankouma</option>
+							        <option value="Bin-Houyé">Bin-Houyé</option>
+							        <option value="Bingerville">Bingerville</option>
+							        <option value="Bloléquin">Bloléquin</option>
+							        <option value="Bocanda">Bocanda</option>
+							        <option value="Bodokro">Bodokro</option>
+							        <option value="Bondoukou">Bondoukou</option>
+							        <option value="Bongouanou">Bongouanou</option>
+							        <option value="Boniérédougou">Boniérédougou</option>
+							        <option value="Bonon">Bonon</option>
+							        <option value="Bonoua">Bonoua</option>
+							        <option value="Booko">Booko</option>
+							        <option value="Borotou">Borotou</option>
+							        <option value="Botro">Botro</option>
+							        <option value="Bouaflé">Bouaflé</option>
+							        <option value="Bouaké">Bouaké</option>
+							        <option value="Bouna">Bouna</option>
+							        <option value="Boundiali">Boundiali</option>
+							        <option value="Brobo">Brobo</option>
+							        <option value="Buyo">Buyo</option>
+							        <option value="Cocody">Cocody</option>
+							        <option value="Dabakala">Dabakala</option>
+							        <option value="Dabou">Dabou</option>
+							        <option value="Daloa">Daloa</option>
+							        <option value="Danané">Danané</option>
+							        <option value="Daoukro">Daoukro</option>
+							        <option value="Diabo">Diabo</option>
+							        <option value="Dianra">Dianra</option>
+							        <option value="Diawala">Diawala</option>
+							        <option value="Didiévi">Didiévi</option>
+							        <option value="Diégonéfla">Diégonéfla</option>
+							        <option value="Dikodougou">Dikodougou</option>
+							        <option value="Dimbokro">Dimbokro</option>
+							        <option value="Dioulatiédougou">Dioulatiédougou</option>
+							        <option value="Divo">Divo</option>
+							        <option value="Djebonoua">Djebonoua</option>
+							        <option value="Djèkanou">Djèkanou</option>
+							        <option value="Djibrosso">Djibrosso</option>
+							        <option value="Doropo">Doropo</option>
+							        <option value="Dualla">Dualla</option>
+							        <option value="Duékoué">Duékoué</option>
+							        <option value="Ettrokro">Ettrokro</option>
+							        <option value="Facobly">Facobly</option>
+							        <option value="Ferkessédougou">Ferkessédougou</option>
+							        <option value="Foumbolo">Foumbolo</option>
+							        <option value="Fresco">Fresco</option>
+							        <option value="Fronan">Fronan</option>
+							        <option value="Gagnoa">Gagnoa</option>
+							        <option value="Gbeleban">Gbeleban</option>
+							        <option value="Gboguhé">Gboguhé</option>
+							        <option value="Gbon">Gbon</option>
+							        <option value="Gbonné">Gbonné</option>
+							        <option value="Gohitafla">Gohitafla</option>
+							        <option value="Goulia">Goulia</option>
+							        <option value="Grabo">Grabo</option>
+							        <option value="Grand-Bassam">Grand-Bassam</option>
+							        <option value="Grand-Béréby">Grand-Béréby</option>
+							        <option value="Grand-Lahou">Grand-Lahou</option>
+							        <option value="Grand-Zattry">Grand-Zattry</option>
+							        <option value="Guéyo">Guéyo</option>
+							        <option value="Guibéroua">Guibéroua</option>
+							        <option value="Guiembé">Guiembé</option>
+							        <option value="Guiglo">Guiglo</option>
+							        <option value="Guintéguéla">Guintéguéla</option>
+							        <option value="Guitry">Guitry</option>
+							        <option value="Hiré">Hiré</option>
+							        <option value="Issia">Issia</option>
+							        <option value="Jacqueville">Jacqueville</option>
+							        <option value="Kanakono">Kanakono</option>
+							        <option value="Kani">Kani</option>
+							        <option value="Kaniasso">Kaniasso</option>
+							        <option value="Karakoro">Karakoro</option>
+							        <option value="Kasséré">Kasséré</option>
+							        <option value="Katiola">Katiola</option>
+							        <option value="Kokoumbo">Kokoumbo</option>
+							        <option value="Kolia">Kolia</option>
+							        <option value="Komborodougou">Komborodougou</option>
+							        <option value="Kong">Kong</option>
+							        <option value="Kongasso">Kongasso</option>
+							        <option value="Koonan">Koonan</option>
+							        <option value="Korhogo">Korhogo</option>
+							        <option value="Koro">Koro</option>
+							        <option value="Kouassi-Datékro">Kouassi-Datékro</option>
+							        <option value="Kouassi-Kouassikro">Kouassi-Kouassikro</option>
+							        <option value="Kouibly">Kouibly</option>
+							        <option value="Koumassi">Koumassi</option>
+							        <option value="Koumbala">Koumbala</option>
+							        <option value="Koun-Fao">Koun-Fao</option>
+							        <option value="Kounahiri">Kounahiri</option>
+							        <option value="Kouto">Kouto</option>
+							        <option value="Lakota">Lakota</option>
+							        <option value="Logoualé">Logoualé</option>
+							        <option value="M'bahiakro">M'bahiakro</option>
+							        <option value="M'batto">M'batto</option>
+							        <option value="M'bengué">M'bengué</option>
+							        <option value="Madinani">Madinani</option>
+							        <option value="Maféré">Maféré</option>
+							        <option value="Man">Man</option>
+							        <option value="Mankono">Mankono</option>
+							        <option value="Marcory">Marcory</option>
+							        <option value="Massala">Massala</option>
+							        <option value="Mayo">Mayo</option>
+							        <option value="Méagui">Méagui</option>
+							        <option value="Minignan">Minignan</option>
+							        <option value="Morondo">Morondo</option>
+							        <option value="N'douci">N'douci</option>
+							        <option value="Napié">Napié</option>
+							        <option value="Nassian">Nassian</option>
+							        <option value="Niablé">Niablé</option>
+							        <option value="Niakaramandougou">Niakaramandougou</option>
+							        <option value="Niéllé">Niéllé</option>
+							        <option value="Niofoin">Niofoin</option>
+							        <option value="Odienné">Odienné</option>
+							        <option value="Ouangolodougou">Ouangolodougou</option>
+							        <option value="Ouaninou">Ouaninou</option>
+							        <option value="Ouellé">Ouellé</option>
+							        <option value="Oumé">Oumé</option>
+							        <option value="Ouragahio">Ouragahio</option>
+							        <option value="Plateau">Plateau</option>
+							        <option value="Port-bouët">Port-bouët</option>
+							        <option value="Prikro">Prikro</option>
+							        <option value="Rubino">Rubino</option>
+							        <option value="Saïoua">Saïoua</option>
+							        <option value="Sakassou">Sakassou</option>
+							        <option value="Samatiguila">Samatiguila</option>
+							        <option value="San Pedro">San Pedro</option>
+							        <option value="Sandégué">Sandégué</option>
+							        <option value="Sangouiné">Sangouiné</option>
+							        <option value="Sarhala">Sarhala</option>
+							        <option value="Sassandra">Sassandra</option>
+							        <option value="Satama-Sokoro">Satama-Sokoro</option>
+							        <option value="Satama-Sokoura">Satama-Sokoura</option>
+							        <option value="Séguéla">Séguéla</option>
+							        <option value="Séguelon">Séguelon</option>
+							        <option value="Seydougou">Seydougou</option>
+							        <option value="Sifié">Sifié</option>
+							        <option value="Sikensi">Sikensi</option>
+							        <option value="Sinématiali">Sinématiali</option>
+							        <option value="Sinfra">Sinfra</option>
+							        <option value="Sipilou">Sipilou</option>
+							        <option value="Sirasso">Sirasso</option>
+							        <option value="Songon">Songon</option>
+							        <option value="Soubré">Soubré</option>
+							        <option value="Taabo">Taabo</option>
+							        <option value="Tabou">Tabou</option>
+							        <option value="Tafiré">Tafiré</option>
+							        <option value="Taï">Taï</option>
+							        <option value="Tanda">Tanda</option>
+							        <option value="Téhini">Téhini</option>
+							        <option value="Tengréla">Tengréla</option>
+							        <option value="Tiapoum">Tiapoum</option>
+							        <option value="Tiassalé">Tiassalé</option>
+							        <option value="Tie-n'diekro">Tie-n'diekro</option>
+							        <option value="Tiébissou">Tiébissou</option>
+							        <option value="Tiémé">Tiémé</option>
+							        <option value="Tiémélékro">Tiémélékro</option>
+							        <option value="Tiéningboué">Tiéningboué</option>
+							        <option value="Tienko">Tienko</option>
+							        <option value="Tioroniaradougou">Tioroniaradougou</option>
+							        <option value="Tortiya">Tortiya</option>
+							        <option value="Touba">Touba</option>
+							        <option value="Toulépleu">Toulépleu</option>
+							        <option value="Toumodi">Toumodi</option>
+							        <option value="Transua">Transua</option>
+							        <option value="Treichville">Treichville</option>
+							        <option value="Vavoua">Vavoua</option>
+							        <option value="Worofla">Worofla</option>
+							        <option value="Yakassé-Attobrou">Yakassé-Attobrou</option>
+							        <option value="Yamoussoukro">Yamoussoukro</option>
+							        <option value="Yopougon">Yopougon</option>
+							        <option value="Zikisso">Zikisso</option>
+							        <option value="Zouan-Hounien">Zouan-Hounien</option>
+							        <option value="Zoukougbeu">Zoukougbeu</option>
+							        <option value="Zuénoula">Zuénoula</option>
+
+							    </select>
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
@@ -719,6 +1174,17 @@ p{margin-bottom:0px!important;}
                                     Ville de résidence
                                 </label>
                                 <input class="form-control" placeholder="Ville de résidence" type="text" name="living_city" id="user_url search_input-2" value="{{Auth::user()->living_city}}">
+
+
+
+                            </div> <!-- close .form-group -->
+                        </div> <!-- close .col -->
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="user_url">
+                                    Votre village
+                                </label>
+                                <input class="form-control" placeholder="Votre village" type="text" name="father_birth_town" id="user_url search_input-25" value="{{Auth::user()->father_birth_town}}">
 
 
 
@@ -1039,7 +1505,7 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
 
-                        <div class="col-xs-12 col-sm-6">
+                        <!--div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
                                     Région du père
@@ -1063,8 +1529,8 @@ p{margin-bottom:0px!important;}
 							        <option value="Yamoussoukro">Yamoussoukro</option>
 							      </select>
 
-                            </div> <!-- close .form-group -->
-                        </div> <!-- close .col -->
+                            </div> < close .form-group ->
+                        </div> < close .col -->
 
 
                         <!--div class="col-xs-12 col-sm-6">
@@ -1531,15 +1997,13 @@ $(document).ready(function(){
 <script>
 	$(document).ready(function(){
 
-		var x = $('#nationalite');
+		var x = $('#pays');
 		$(x).change(function(){
-			if(x.val()=='CIV'){
-				$('#region_1').removeClass('rgsel');
-	        	$('#region').addClass('rgsel');
+			if(x.val()=='Cote_d_Ivoire'){
+				$('#commune').removeClass('commune_0');
 			}
 			else{
-				$('#region').removeClass('rgsel');
-	        	$('#region_1').addClass('rgsel');
+	        	$('#commune').addClass('commune_0');
 			}
 		});
 

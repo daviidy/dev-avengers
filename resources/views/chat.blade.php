@@ -116,12 +116,37 @@
     input[type=text]:focus {
         border: 1px solid #aaaaaa;
     }
+
+
+    .users_box_2{
+        display: none;
+    }
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        .mr-auto_1{
+            display: block;
+        }
+       .mr-auto{
+        width: 300px;
+        height: 400px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+        } 
+        .users_box{
+            display: none;
+        }
+        .users_box_2{
+            display: block;
+        }
+    }
+
 </style>
 
 
 <div class="container-fluid" style="padding: 1rem;">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 users_box">
             <div class="user-wrapper">
                 <ul class="users">
                     @foreach($users as $user)
@@ -147,6 +172,37 @@
                 </ul>
             </div>
         </div>
+
+        <nav class="navbar navbar-light bg-light navbar-expand-lg users_box_2">
+  
+              <button class="navbar-toggler mr-auto_1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="users">
+                    @foreach($users as $user)
+                            <li class="user" id="{{ $user->id }}">
+                                {{--will show unread count notification--}}
+                                @if($user->unread)
+                                    <span class="pending">{{ $user->unread }}</span>
+                                @endif
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img src="/storage/images/users/{{ $user->image }}" alt="" class="media-object">
+                                    </div>
+
+                                    <div class="media-body">
+                                        <p class="name">{{ $user->name }}</p>
+                                        <p class="email">{{ $user->email }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        @endforeach
+
+                </ul>
+              </div>
+            </nav>
 
         <div class="col-md-8" id="messages">
 
