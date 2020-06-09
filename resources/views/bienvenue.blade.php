@@ -928,7 +928,7 @@ address{display:inline;font-style:normal;}
                 </section>
             <!-- /row -->
 
-               <div class="row">
+               <div class="row" style="justify-content: center;">
 
                 <div class="fancy-title">
                     <div class="fancy-title-center">
