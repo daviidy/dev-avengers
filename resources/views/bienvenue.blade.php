@@ -153,7 +153,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
     header.masha{background:linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("https://images.unsplash.com/photo-1537344845089-c7f47b3210ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;background-size:cover;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;color:#fff;height:65vh;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
     header.masha .post-heading{padding:100px 0 50px;color:white;}
     @media only screen and (min-width: 767px){
-    header.masha .post-heading{padding:150px 0;}
+    header.masha .post-heading{padding:50px 0;}
     }
     header.masha h1{font-family:'Montserrat', sans-serif;font-weight:700;font-size:60px;color:#fff;}
     header.masha p{font-family:'Montserrat', sans-serif;color:#fff;font-size:16px;text-align:center;letter-spacing:1px;}
@@ -519,13 +519,13 @@ address{display:inline;font-style:normal;}
 
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
          <div class="post-heading">
-          <img src="/assets/main_theme/medium/img/logo_1..png" width="300"  alt="UNIVOIRE" style="display: inline-block;">
+          <img src="/assets/main_theme/medium/img/logo00.png" width="300"  alt="UNIVOIRE" style="display: inline-block;">
 		 <p>Plateforme de la communauté ivoirienne</p>
          <!--
 		  <sup>
 		   <span class="badge badge-pill badge-danger">version 1.0</span>
 		  </sup>
-      -->
+        -->
          </div><!-- /.post-heading -->
         </div><!-- /.col-lg-8 -->
 
