@@ -50,10 +50,10 @@
         Favicons
         =============================================== -->
 
-    <link rel="shortcut icon" href="/assets/main_theme/medium/img/univoire.png">
-    <link rel="apple-touch-icon" href="/assets/main_theme/medium/img/univoire.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/main_theme/medium/img/univoire.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/main_theme/medium/img/univoire.png">
+    <link rel="shortcut icon" href="/assets/main_theme/medium/img/logo_1.jpeg">
+    <link rel="apple-touch-icon" href="/assets/main_theme/medium/img/logo_1.jpeg">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/main_theme/medium/img/logo_1.jpeg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/main_theme/medium/img/logo_1.jpeg">
 </head>
 
 <body>
