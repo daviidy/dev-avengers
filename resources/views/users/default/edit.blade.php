@@ -2007,15 +2007,15 @@ $(document).ready(function(){
 			}
 		});
 
-		var y = $('#nationalite_1');
+		var y = $('#nationalite');
 		$(y).change(function(){
 			if(y.val()=='CIV'){
-				$('#region_2').removeClass('rgsel-1');
-	        	$('#region1').addClass('rgsel-1');
+				$('#region_1').removeClass('rgsel');
+	        	$('#region').addClass('rgsel');
 			}
 			else{
-				$('#region1').removeClass('rgsel-1');
-	        	$('#region_2').addClass('rgsel-1');
+				$('#region').removeClass('rgsel');
+	        	$('#region_1').addClass('rgsel');
 			}
 		});
 		/*
