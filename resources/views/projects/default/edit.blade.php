@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Modifier une affaire')
+@section('title', 'Modifier un business')
 
 @section('content')
 
@@ -1109,7 +1109,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
  =============================================== -->
 <div class="site-branding">
     <div class="container">
-        <h1 class="site-title"><a> Modifier le projet "{{$project->name}}"</a></h1>
+        <h1 class="site-title"><a> Modifier le business "{{$project->name}}"</a></h1>
     </div>
     <!-- /container -->
 </div>

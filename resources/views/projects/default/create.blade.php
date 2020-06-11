@@ -1,5 +1,5 @@
 @extends('layouts.menu')
-@section('title', 'Créer une affaire')
+@section('title', 'Créer un business')
 
 @section('content')
 
@@ -448,7 +448,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
  =============================================== -->
 <div class="site-branding">
     <div class="container">
-        <h1 class="site-title"><a> Créer un projet </a></h1>
+        <h1 class="site-title"><a> Créer un business </a></h1>
     </div>
     <!-- /container -->
 </div>

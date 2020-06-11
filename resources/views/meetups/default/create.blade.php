@@ -494,12 +494,37 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     <div class="eds-field-styled__internal">
                                         <div class="eds-field-styled__input-container">
                                             <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
-                                                  data-spec="label-label"><span class="eds-label__content">Type</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
-                                                          class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
-                                                        <select class="eds-field-styled__input" name="type" role="listbox">
-                                                            <option value="Conférence">Conférence</option>
-                                                            <option value="Formation">Formation</option>
-                                                        </select>
+                                                  data-spec="label-label">
+                                                  <span class="eds-label__content">Type</span>
+                                                  <span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator">
+                                                  	<span> *</span>
+                                                  	<span class="eds-is-hidden-accessible">(obligatoire)</span>
+                                                  </span>
+                                              </label>
+                                          </div>
+                                                <select class="eds-field-styled__input" name="type" role="listbox">          
+                                                        <option value="Type" >Type</option>
+                                                        <option value="Attraction" >Attraction</option>
+                                                        <option value="Autre">Autre</option>
+                                                        <option value="Camp, voyage ou retraite">Camp, voyage ou retraite</option>
+                                                        <option value="Concert ou spectacle">Concert ou spectacle</option>
+                                                        <option value="Conférence">Conférence</option>
+                                                        <option value="Convention">Convention</option>
+                                                        <option value="Course ou compétition d'endurance">Course ou compétition d'endurance</option>
+                                                        <option value="Dîner ou gala">Dîner ou gala</option>
+                                                        <option value="Festival ou foire">Festival ou foire</option>
+                                                        <option value="Formation, cours ou atelier">Formation, cours ou atelier</option>
+                                                        <option value="Jeu ou compétition">Jeu ou compétition</option>
+                                                        <option value="Projection">Projection</option>
+                                                        <option value="Rally">Rally</option>
+                                                        <option value="Rencontre ou événement social">Rencontre ou événement social</option>
+                                                        <option value="Salon professionnel, grand public ou exposition">Salon professionnel, grand public ou exposition</option>
+                                                        <option value="Soirée ou activité sociale">Soirée ou activité sociale</option>
+                                                        <option value="Séance de dédicaces">Séance de dédicaces</option>
+                                                        <option value="Séminaire ou entretien">Séminaire ou entretien</option>
+                                                        <option value="Tournoi">Tournoi</option>
+                                                        <option value="Visite">Visite</option>
+                                                </select>
                                         </div>
                                     </div>
                                 </div>
