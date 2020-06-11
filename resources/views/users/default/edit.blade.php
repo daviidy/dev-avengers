@@ -630,7 +630,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Pays de naissance
+                                    Pays d'origine
                                 </label>
                                 <!--input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country"-->
                                 <select name="birth_country" class="form-control" value="{{Auth::user()->birth_country}}" id="pays">

@@ -503,7 +503,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                               </label>
                                           </div>
                                                 <select class="eds-field-styled__input" name="type" role="listbox">          
-                                                        <option value="Type" >Type</option>
+                                                        
                                                         <option value="Attraction" >Attraction</option>
                                                         <option value="Autre">Autre</option>
                                                         <option value="Camp, voyage ou retraite">Camp, voyage ou retraite</option>

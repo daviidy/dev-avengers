@@ -527,7 +527,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                                   data-spec="label-label"><span class="eds-label__content">Type</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
                                                           class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
                                                     <select class="eds-field-styled__input" name="type" role="listbox">
-                                                            <option value="Type" >Type</option>
+                                                         
                                                         <option value="Attraction" >Attraction</option>
                                                         <option value="Autre">Autre</option>
                                                         <option value="Camp, voyage ou retraite">Camp, voyage ou retraite</option>

@@ -81,6 +81,7 @@ body .eds-text-color--grey-700{color:#4b4d63;}
 body .eds-text-color--grey-800{color:#39364f;}
 body .eds-bg-color--grey-800{background-color:#39364f;}
 body .eds-text-color--grey-900{color:#007808;padding: 25px 0;}
+body .eds-text-color--grey-910{padding: 15px 0 !important;}
 .eds-text-bm,.eds-text-bs,.eds-text-hm{text-rendering:optimizeLegibility;}
 .eds-text-bm{font-size:1rem;line-height:1.5rem;font-weight:400;}
 @media (min-width:960px){
@@ -441,6 +442,8 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 .input-group-btn{display:flex!important;}
 }
 
+.link-0{display: none;}
+
 </style>
 
 <!-- ==============================================
@@ -538,7 +541,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                             <div class="eds-field-styled__label-wrapper"><label class="eds-field-styled__label eds-label-primary eds-field-styled__label--required" id="event-basicInfo-title-label" for="event-basicInfo-title"
                                                   data-spec="label-label"><span class="eds-label__content">Type</span><span class="eds-label__required-indicator eds-text-bs" data-spec="required-indicator"><span> *</span><span
                                                           class="eds-is-hidden-accessible">(obligatoire)</span></span></label></div>
-                                                        <select class="eds-field-styled__input" name="type" role="listbox">
+                                                        <select class="eds-field-styled__input" name="type" role="listbox" id="type">
                                                             <option value="Projet">Projet</option>
                                                             <option value="Achat et vente">Achat et vente</option>
                                                         </select>
@@ -603,6 +606,47 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     </div>
                                 </div-->
                             </div>
+
+                            <div class="eds-g-cell eds-vertical-group eds-g-cell-12-12 eds-g-cell-sw-10-12 eds-g-cell-lw-9-12 eds-g-cell-lg-8-12 eds-g-cell-ln-8-12 eds-g-cell-md-8-12 eds-g-offset-sw-1-12 eds-g-offset-md-0-12 eds-g-cell--has-overflow" id="link-c">
+                        <div>
+                            <h1 class="eds-text-hm eds-text-color--grey-900">Lieu</h1>
+                            <div class="eds-g-cell eds-g-cell-1-1 eds-g-cell-lw-9-12 eds-g-cell-lg-9-12 eds-g-cell-ln-9-12 eds-g-cell-mw-9-12 eds-g-cell-md-1-1 eds-g-cell-mn-9-12 eds-g-cell-sw-9-12">
+                                <p class="eds-text-bm eds-text-color--grey-800"><span>Faites découvrir votre événement aux personnes de la région et faites-leur savoir où cela se passe.</span></p>
+                            </div>
+                        </div>
+                        <div class="eds-l-mar-top-5"><input type="hidden" value="">
+                            <div class="eds-g-grid">
+                                <div class="eds-g-group">
+                                    <div data-spec="coyote-basicinfo-location-event-picker" class="eds-g-cell eds-g-cell-1-1 eds-g-cell-md-8-12 eds-g-cell--has-overflow">
+                                        <div class="radio-selector eds-l-mar-bot-5" role="radiogroup" data-spec="radio-selector">
+                                            <div class="radio-selector-label-wrap eds-l-mar-right-4 segmented" data-spec="radio-selector-item-padding">
+                                            	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900 eds-text-color--grey-910"
+                                                  for="segmented-venueType-0">Lieu
+                                                </label>
+
+                                            </div>
+
+                                            <div class="radio-selector-label-wrap eds-l-mar-right-4 segmented-2" >
+                                            	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900 segmented-venueType-1 eds-text-color--grey-910"
+                                                  for="segmented-venueType-1">Événement en ligne
+
+                                                  </label>
+                                              </div>
+
+                                    </div>
+                                    <div class="form-group">
+	                                    <div class="form-1" id="form-1">
+	                                       <input type="text" class="form-control" id="uname" placeholder="Adresse du lieu" name="place">
+	                                    </div>
+	                                    <div class="form-2" id="form-2">
+	                                       <input type="url" class="form-control" id="uname1" placeholder="Lien du lieu" name="link">
+	                                    </div>
+                                    </div>
+                                </div>
+                            </div><input type="hidden" value="0">
+                        </div>
+                    </div>
+                </div>
 
                             <!--
                             <div class="tagging-form-field__container">
@@ -677,6 +721,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                     </div>
                 </div>
             -->
+
 
                 <hr class="eds-divider__hr eds-bg-color--ui-200 eds-divider--horizontal" data-spec="divider-hr" aria-hidden="true">
                 <div class="eds-l-mar-top-10 eds-g-group eds-l-mar-bot-8">
@@ -927,6 +972,23 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
   			$('.form-1').hide();
   		});
 
+</script>
+<script>
+	$(document).ready(function(){
+		
+		var y = $('#type');
+		$(y).change(function(){
+			if(y.val()=='Projet'){
+				$('#link-c').removeClass('link-0');
+	        	
+			}
+			else{
+				
+	        	$('#link-c').addClass('link-0');
+			}
+		});
+		
+	});
 </script>
 
 @endsection
