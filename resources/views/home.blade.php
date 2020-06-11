@@ -440,7 +440,7 @@ p{margin-bottom:0px!important;}
                         <div class="field-value">
                         </div>
                     </div-->
-                    <div class="ss-flex-item">
+                    <!--div class="ss-flex-item">
                         <div class="ss-field-label">Ville de naissance:</div>
                         <div class="field-value ss-empty-value">
                            <p> @if(Auth::user()->birth_city)
@@ -450,12 +450,22 @@ p{margin-bottom:0px!important;}
                             @endif
                             </p>
                         </div>
-                    </div>
+                    </div-->
                     <div class="ss-flex-item">
-                        <div class="ss-field-label">Pays de naissance</div>
+                        <div class="ss-field-label">Pays d'origine</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->birth_country)
                             {{Auth::user()->birth_country}}
+                            @else
+                            Aucun Pays renseigné
+                            @endif
+                        </div>
+                    </div>
+                    <div class="ss-flex-item">
+                        <div class="ss-field-label">Votre village</div>
+                        <div class="field-value ss-empty-value">
+                        	@if(Auth::user()->town)
+                            {{Auth::user()->town}}
                             @else
                             Aucun Pays renseigné
                             @endif
@@ -486,7 +496,8 @@ p{margin-bottom:0px!important;}
                             @endif
                         </div>
                     </div>
-                    <div class="ss-flex-item">
+
+                    <!--div class="ss-flex-item">
                         <div class="ss-field-label">Etat de résidence</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->living_state)
@@ -495,7 +506,7 @@ p{margin-bottom:0px!important;}
                             Aucun Etat renseigné
                             @endif
                         </div>
-                    </div>
+                    </div-->
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Ville de résidence</div>
                         <div class="field-value ss-empty-value">
@@ -578,7 +589,7 @@ p{margin-bottom:0px!important;}
                             @endif
                         </div>
                     </div>
-                    <div class="ss-flex-item">
+                    <!--div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms du père</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->father_other_name)
@@ -587,7 +598,7 @@ p{margin-bottom:0px!important;}
                             Aucun Autre noms renseigné
                             @endif
                         </div>
-                    </div>
+                    </div-->
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nationalité du père</div>
                         <div class="field-value ss-empty-value">
@@ -644,7 +655,7 @@ p{margin-bottom:0px!important;}
                             @endif
                         </div>
                     </div>
-                    <div class="ss-flex-item">
+                    <!--div class="ss-flex-item">
                         <div class="ss-field-label">Autre noms de la Mère</div>
                         <div class="field-value ss-empty-value">
                         	@if(Auth::user()->mother_other_name)
@@ -653,7 +664,7 @@ p{margin-bottom:0px!important;}
                             Aucun Autre noms renseigné
                             @endif
                         </div>
-                    </div>
+                    </div-->
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Nationalité de la Mère</div>
                         <div class="field-value ss-empty-value">
@@ -667,8 +678,8 @@ p{margin-bottom:0px!important;}
                     <div class="ss-flex-item">
                         <div class="ss-field-label">Village de la Mère</div>
                         <div class="field-value ss-empty-value">
-                        	@if(Auth::user()->mother_birth_city)
-                            {{Auth::user()->mother_birth_city}}
+                        	@if(Auth::user()->mother_town)
+                            {{Auth::user()->mother_town}}
                             @else
                             Aucun village renseignée
                             @endif

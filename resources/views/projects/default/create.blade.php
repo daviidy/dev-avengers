@@ -628,7 +628,7 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
 
                                             <div class="radio-selector-label-wrap eds-l-mar-right-4 segmented-2" >
                                             	<label class="radio-selector-label eds-l-pad-hor-2 eds-l-pad-vert-3 eds-text-bm eds-text-color--grey-900 segmented-venueType-1 eds-text-color--grey-910"
-                                                  for="segmented-venueType-1">Événement en ligne
+                                                  for="segmented-venueType-1">Url du projet
 
                                                   </label>
                                               </div>
@@ -636,10 +636,10 @@ body .eds-bg-color--ui-200{background-color:#eeedf2;background-color:var(--eds-u
                                     </div>
                                     <div class="form-group">
 	                                    <div class="form-1" id="form-1">
-	                                       <input type="text" class="form-control" id="uname" placeholder="Adresse du lieu" name="place">
+	                                       <input type="text" class="form-control" id="uname" placeholder="Adresse du projet" name="place">
 	                                    </div>
 	                                    <div class="form-2" id="form-2">
-	                                       <input type="url" class="form-control" id="uname1" placeholder="Lien du lieu" name="link">
+	                                       <input type="url" class="form-control" id="uname1" placeholder="Url du projet" name="link">
 	                                    </div>
                                     </div>
                                 </div>

@@ -634,7 +634,7 @@ p{margin-bottom:0px!important;}
                                 </label>
                                 <!--input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country"-->
                                 <select name="birth_country" class="form-control" value="{{Auth::user()->birth_country}}" id="pays">
-									<option value="France" selected="selected">France </option>
+									
 
 									<option value="Afghanistan">Afghanistan </option>
 									<option value="Afrique_Centrale">Afrique_Centrale </option>
@@ -683,12 +683,12 @@ p{margin-bottom:0px!important;}
 									<option value="Colombie">Colombie </option>
 									<option value="Comores">Colombie </option>
 									<option value="Congo">Congo </option>
-									<option value="Congo_democratique">Congo_democratique </option>
+									<option value="Congo democratique">Congo_democratique </option>
 									<option value="Cook">Cook </option>
-									<option value="Coree_du_Nord">Coree_du_Nord </option>
-									<option value="Coree_du_Sud">Coree_du_Sud </option>
-									<option value="Costa_Rica">Costa_Rica </option>
-									<option value="Cote_d_Ivoire">Côte d'Ivoire </option>
+									<option value="Coree du_Nord">Coree_du_Nord </option>
+									<option value="Coree du Sud">Coree du_Sud </option>
+									<option value="Costa Rica">Costa Rica </option>
+									<option value="Côte d'Ivoire">Côte d'Ivoire </option>
 									<option value="Croatie">Croatie </option>
 									<option value="Cuba">Cuba </option>
 
@@ -2008,7 +2008,7 @@ p{margin-bottom:0px!important;}
                                 <label for="">
                                     Village de la mère
                                 </label>
-                                <input class="form-control" placeholder="Region de la mère" type="text" name="mother_town" id="region" value="{{Auth::user()->mother_birth_state}}">
+                                <input class="form-control" placeholder="Region de la mère" type="text" name="mother_town" id="region" value="{{Auth::user()->mother_town}}">
 
                                 <select class="form-control rgsel" id="region_1" placeholder="Region de la mère" value="" name="mother_town">
 							        <option value="Abengourou">Abengourou</option>
@@ -2373,7 +2373,7 @@ $(document).ready(function(){
 
 		var x = $('#pays');
 		$(x).change(function(){
-			if(x.val()=='Cote_d_Ivoire'){
+			if(x.val()=="Côte d'Ivoire"){
 				$('#commune').removeClass('commune_0');
 				$('#commune0').addClass('commune_0');
 			}

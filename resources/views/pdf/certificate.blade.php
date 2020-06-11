@@ -13,7 +13,7 @@
     height: 200px;
     background: #aaa;
   }
-  .text-center{padding: 15px; background-color: #007808; color: #fff;}
+  .text-center{padding: 15px; background-color: #007808; color: #fff;border-radius: 50%;}
   .text-center img{border-radius: 50%; margin-top: 15px; }
   .info{padding: 15px; margin-bottom: 15px}
   </style>
@@ -30,13 +30,14 @@
           <img class="" width="100" src="{{storage_path('app/public/images/users/'.$image)}}" alt="">
           <br>
           <p>{{$username}}</p>
+          <p>{{Auth::user()->email}}</p>
         </div>
 
 
-      <div class="info">
+      <!--div class="info">
           <h5>Ville de naissance:</h5>
           <p> {{$birth_city}}</p>
-      </div>
+      </div-->
 
       <div class="info">
             <h5>Pays d'origine:</h5>
@@ -53,10 +54,10 @@
             <p> {{$living_country}}</p>
       </div>
 
-      <div class="info">
+      <!--div class="info">
           <h5>Etat de résidence:</h5>
           <p> {{$living_state}}</p>
-      </div>
+      </div-->
 
       <div class="info">
           <h5>Ville de résidence:</h5>
@@ -97,10 +98,10 @@
           <p> {{$father_last_name}}</p>
       </div>
 
-      <div class="info">
+      <!--div class="info">
           <h5>Autre noms du père:</h5>
           <p> {{$father_other_name}}</p>
-      </div>
+      </div-->
 
       <div class="info">
           <h5>Nationalité du père:</h5>
@@ -130,10 +131,10 @@
           <p> {{$mother_last_name}}</p>
       </div>
 
-      <div class="info">
+      <!--div class="info">
           <h5>Autre noms de la Mère:</h5>
           <p> {{$mother_other_name}}</p>
-      </div>
+      </div-->
 
       <div class="info">
           <h5>Nationalité de la Mère:</h5>
@@ -142,7 +143,7 @@
 
       <div class="info">
           <h5>Village de la Mère:</h5>
-          <p> {{$mother_birth_city}}</p>
+          <p> {{$mother_town}}</p>
       </div>
 
       <div class="info">
