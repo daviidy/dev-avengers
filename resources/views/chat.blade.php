@@ -76,9 +76,11 @@
     }
     .messages .message {
         margin-bottom: 15px;
+        
     }
     .messages .message:last-child {
         margin-bottom: 0;
+        
     }
     .received, .sent {
         width: 45%;
@@ -87,11 +89,15 @@
     }
     .received {
         background: #ffffff;
+        float: left;
+        text-align: left;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     }
     .sent {
         background: #3bebff;
         float: right;
         text-align: right;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
     }
     .message p {
         margin: 5px 0;
@@ -102,6 +108,19 @@
     }
     .active {
         background: #eeeeee;
+    }
+    .chat_img img{
+        width: 90px; 
+        height:90px; 
+        padding: 10px
+    }
+    .sent .chat_img {
+        float: right;
+        position: relative;
+    }
+    .received .chat_img {
+        float: left;
+        position: relative;
     }
     input[type=text] {
         width: 100%;
@@ -138,6 +157,9 @@
         }
         .users_box_2{
             display: block;
+        }
+        .received, .sent{
+            width: 100%;
         }
     }
 

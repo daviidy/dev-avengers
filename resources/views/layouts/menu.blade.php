@@ -452,8 +452,8 @@
 
     @yield('content')
 
-@include('includes.popup_country');
-@include('includes.popup_village');
+@include('includes.popup_country')
+@include('includes.popup_village')
 
 
     <!-- ==============================================
