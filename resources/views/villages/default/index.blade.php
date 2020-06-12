@@ -98,8 +98,8 @@ b{font-weight:600;}
     <div class="container">
         <div class="row">
             @foreach($users as $user)
-            @if($user->father_town !== null)
-            @if(strpos($user->father_town, Auth::user()->father_town) !== false || strpos(Auth::user()->father_town, $user->father_town) !== false)
+            @if($user->town !== null)
+            @if(strpos($user->town, Auth::user()->town) !== false || strpos(Auth::user()->town, $user->town) !== false)
             @if($user->id !== Auth::user()->id)
             <div class="col-lg-4 col-md-6">
                 <div class="card-box widget-user">

@@ -149,7 +149,7 @@ class UserController extends Controller
     {
         if (Auth::check()) {
             $region = str_replace("+", " ", $village);
-            $users = User::where('father_birth_state', $region)->get();
+            $users = User::where('town', $region)->get();
             return view('villages.default.users', ['users' => $users, 'region' => $region]);
 
         }

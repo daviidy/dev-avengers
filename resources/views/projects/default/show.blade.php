@@ -636,7 +636,7 @@ address{display:inline;font-style:normal;}
                                                 </div>
                                                 @else
                                                 <div class="eventTimeDisplay eventDateTime--hover"><time class="" datetime="1590512400000"><span class="eventTimeDisplay-startDate"><span
-                                                              class="eventTimeDisplay-startDate-time"><span>{{$project->price}} FCFA</span></span></span></time>
+                                                              class="eventTimeDisplay-startDate-time"><span>{{number_format($project->price,2,",",".")}} FCFA</span></span></span></time>
 
                                                 </div>
                                                 @endif

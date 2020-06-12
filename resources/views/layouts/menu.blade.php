@@ -174,7 +174,7 @@
                     <a class="nav-link" href="/seeJobs">Métiers <span class="sr-only">(cette page)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a style="width: 125px;"  class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
+                    <a style="width: 95px;"  class="nav-link dropdown-toggle clear" data-toggle="dropdown" aria-expanded="true">
                         Business
                     </a>
                     <div class="dropdown-menu w dropdown-menu-scale pull-right">

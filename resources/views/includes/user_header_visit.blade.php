@@ -32,7 +32,7 @@ justify-content: center;
                 </div><!-- /col-sm-6 -->
                 <div class="col-sm-6">
                     <div class="text-right float-right">
-                        <a href="#">
+                        <a href="/chat/{{$user->id}}">
                             <button type="button" class="btn btn-success waves-effect waves-light">
                                 <i class="fa fa-comment m-r-5"></i>
 

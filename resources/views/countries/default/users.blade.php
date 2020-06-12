@@ -96,7 +96,14 @@ b{font-weight:600;}
 
 
 <section class="posts-2 followers">
-    <h2 class="text-center mb-4">Liste des utilisateurs vivant en {{$country}}</h2>
+    <h2 class="text-center mb-4">
+        Liste des utilisateurs vivant en
+        @if(strpos($country, 'Côte') !== false)
+        Côte d'Ivoire
+        @else
+         {{$country}}
+         @endif
+    </h2>
     <div class="container">
         <div class="row">
             @foreach($users as $user)
@@ -110,7 +117,7 @@ b{font-weight:600;}
                             <a href="/chat/{{$user->id}}">
                                 <small class="text-warning"><b>Contacter</b></small>
                             </a>
-                            
+
                         </div>
                     </div>
                 </div>

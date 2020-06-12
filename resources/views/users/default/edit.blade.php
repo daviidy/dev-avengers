@@ -568,6 +568,9 @@ p{margin-bottom:0px!important;}
                                     Industrie dans laquelle vous exercez ({{Auth::user()->job}})
                                 </label>
 							      <select name="job" class="form-control" id="sel1" placeholder="Métier">
+                                      @if(Auth::user()->job !== null)
+                                      <option selected value="{{Auth::user()->job}}">{{Auth::user()->job}}</option>
+                                      @endif
 							        <option value="Aéronautique Et Espace">Aéronautique Et Espace</option>
 							        <option value="Agriculture - Agroalimentaire">Agriculture - Agroalimentaire</option>
 							        <option value="Artisanat">Artisanat</option>
@@ -634,8 +637,10 @@ p{margin-bottom:0px!important;}
                                 </label>
                                 <!--input class="form-control" placeholder="Pays de naissance" value="{{Auth::user()->birth_country}}" type="text" name="birth_country"  id="country"-->
                                 <select name="birth_country" class="form-control" value="{{Auth::user()->birth_country}}" id="pays">
-									
 
+                                    @if(Auth::user()->birth_country !== null)
+                                    <option selected value="{{Auth::user()->birth_country}}">{{Auth::user()->birth_country}}</option>
+                                    @endif
 									<option value="Afghanistan">Afghanistan </option>
 									<option value="Afrique_Centrale">Afrique_Centrale </option>
 									<option value="Afrique_du_sud">Afrique_du_Sud </option>
@@ -965,8 +970,11 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Votre village
                                 </label>
-                                
+
                                 <select class="form-control"  value="" name="town">
+                                    @if(Auth::user()->town !== null)
+                                    <option value="{{Auth::user()->town}}">{{Auth::user()->town}}</option>
+                                    @endif
 							        <option value="Abengourou">Abengourou</option>
 							        <option value="Abobo">Abobo</option>
 							        <option value="Aboisso">Aboisso</option>
@@ -1187,7 +1195,7 @@ p{margin-bottom:0px!important;}
 
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
-                        
+
                         {{--
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
@@ -1199,12 +1207,12 @@ p{margin-bottom:0px!important;}
                             </div> <!-- close .form-group -->
                         </div> <!-- close .col -->
                         --}}
-                        
+
 
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Situation matrimonial
+                                    Situation matrimoniale
                                 </label>
                                 <input class="form-control" placeholder="Situation matrimonial" type="text" name="marital_status" id="user_url" value="{{Auth::user()->marital_status}}">
 
@@ -1226,7 +1234,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Nombre d'enfant
+                                    Nombre d'enfants
                                 </label>
                                 <input class="form-control" placeholder="Nombre d'enfant" type="number" name="children_number" id="user_url" value="{{Auth::user()->children_number}}">
 
@@ -1301,6 +1309,9 @@ p{margin-bottom:0px!important;}
                                 <!--input class="form-control" placeholder="Pays de résidence du père" type="text" name="father_birth_country" id="country_4" value="{{Auth::user()->father_birth_country}}"-->
 
                                 <select id="nationalite_1" class="form-control" placeholder="Nationalité du père" name="father_birth_country">
+                                    @if(Auth::user()->father_birth_country !== null)
+                                    <option value="{{Auth::user()->father_birth_country}}">{{Auth::user()->father_birth_country}}</option>
+                                    @endif
 							        <option value="AFG">Afghane (Afghanistan)</option>
 							        <option value="ALB">Albanaise (Albanie)</option>
 							        <option value="DZA">Algérienne (Algérie)</option>
@@ -1510,9 +1521,12 @@ p{margin-bottom:0px!important;}
                                 <label for="user_url">
                                     Village du père
                                 </label>
-                                <input class="form-control" placeholder="Village du père" type="text" name="father_town" id="region1">
+                                <input class="form-control" value="{{Auth::user()->father_town}}" placeholder="Village du père" type="text" name="father_town" id="region1">
 
                                 <select class="form-control rgsel-1" id="region_2" placeholder="Village du père" name="father_town">
+                                    @if(Auth::user()->father_town !== null)
+                                    <option value="{{Auth::user()->father_town}}">{{Auth::user()->father_town}}</option>
+                                    @endif
 							        <option value="Abengourou">Abengourou</option>
 							        <option value="Abobo">Abobo</option>
 							        <option value="Aboisso">Aboisso</option>
@@ -1733,7 +1747,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Nombre d'enfant du père
+                                    Nombre d'enfants du père
                                 </label>
                                 <input class="form-control" placeholder="Nombre d'enfant du père" type="number" name="father_children_number" id="user_url" value="{{Auth::user()->father_children_number}}">
 
@@ -1799,6 +1813,9 @@ p{margin-bottom:0px!important;}
                                 <!--input class="form-control" placeholder="Pays de résidence de la mère" type="text" name="mother_birth_country" id="country_5" value="{{Auth::user()->mother_birth_country}}"-->
 
                                 <select id="nationalite" class="form-control" placeholder="Etat de naissance" name="mother_birth_country">
+                                    @if(Auth::user()->mother_birth_country !== null)
+                                    <option value="{{Auth::user()->mother_birth_country}}">{{Auth::user()->mother_birth_country}}</option>
+                                    @endif
 							        <option value="AFG">Afghane (Afghanistan)</option>
 							        <option value="ALB">Albanaise (Albanie)</option>
 							        <option value="DZA">Algérienne (Algérie)</option>
@@ -2011,6 +2028,9 @@ p{margin-bottom:0px!important;}
                                 <input class="form-control" placeholder="Region de la mère" type="text" name="mother_town" id="region" value="{{Auth::user()->mother_town}}">
 
                                 <select class="form-control rgsel" id="region_1" placeholder="Region de la mère" value="" name="mother_town">
+                                    @if(Auth::user()->mother_town !== null)
+                                    <option value="{{Auth::user()->mother_town}}">{{Auth::user()->mother_town}}</option>
+                                    @endif
 							        <option value="Abengourou">Abengourou</option>
 							        <option value="Abobo">Abobo</option>
 							        <option value="Aboisso">Aboisso</option>
@@ -2231,7 +2251,7 @@ p{margin-bottom:0px!important;}
                         <div class="col-xs-12 col-sm-6">
                             <div class="form-group">
                                 <label for="user_url">
-                                    Nombre d'enfant de la mère
+                                    Nombre d'enfants de la mère
                                 </label>
                                 <input class="form-control" placeholder="Nombre d'enfant de la mère" type="number" name="mother_children_number" id="user_url" value="{{Auth::user()->mother_children_number}}">
 

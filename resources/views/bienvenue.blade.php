@@ -963,7 +963,7 @@ address{display:inline;font-style:normal;}
                                                                                     </a>
                                                                                 </div>
                                                                                 <a class="eventCardHead--groupLink" href="#">
-                                                                                    <div class="eventCardHead--groupName wrap--singleLine--truncate text--primary margin--halfBottom">{{$project->price}} FCFA</div>
+                                                                                    <div class="eventCardHead--groupName wrap--singleLine--truncate text--primary margin--halfBottom">{{number_format($project->price,2,",",".")}} FCFA</div>
                                                                                 </a>
                                                                                 <div class="flex flex--row flex--noGutters flex--alignCenter margin--halfBottom">
                                                                                     {{--
