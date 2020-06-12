@@ -75,7 +75,9 @@ class MessageController extends Controller
             $query->where('from', $my_id)->where('to', $user_id);
         })->get();
 
-        return view('messages.index', ['messages' => $messages]);
+        $users = User::orderby('id', 'asc')->get();
+
+        return view('messages.index', ['messages' => $messages, 'users' => $users]);
     }
 
     public function sendMessage(Request $request)
