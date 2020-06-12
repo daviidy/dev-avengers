@@ -150,7 +150,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
     .badge-pill{padding-right:0.6em;padding-left:0.6em;border-radius:10rem;}
     .badge-danger{background-color:#d9534f;}
     /*! CSS Used from: http://www.themashabrand.com/templates/Masha/css/app.css */
-    header.masha{background:linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("https://images.unsplash.com/photo-1537344845089-c7f47b3210ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;background-size:cover;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;color:#fff;height:65vh;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+    header.masha{background:linear-gradient(rgba(34, 34, 34, 0.25), rgba(34, 34, 34, 0.25)), url("https://images.unsplash.com/photo-1537344845089-c7f47b3210ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;background-size:cover;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;color:#fff;height:65vh;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
     header.masha .post-heading{padding:100px 0 50px;color:white;}
     @media only screen and (min-width: 767px){
     header.masha .post-heading{padding:50px 0;}
@@ -172,7 +172,7 @@ a:hover{color:inherit;border-bottom:none;text-decoration:none;}
     .jss7{
       font-size: 16px !important;
     }
-    .more{padding: 30px 0 0 0;}
+    .more{padding: 30px 0 ;}
 
 
 </style>
