@@ -20,7 +20,7 @@ class UserController extends Controller
         $posts = Post::orderby('id', 'asc')->paginate(30);
         $meetups = Meetup::orderby('id', 'asc')->paginate(30);
         $projects = Project::orderby('id', 'asc')->paginate(30);
-        return view('bienvenue', ['posts' => $posts, 'meetups' => $meetups, 'projects' => $projects]);
+        return view('maintenance', ['posts' => $posts, 'meetups' => $meetups, 'projects' => $projects]);
     }
 
 
