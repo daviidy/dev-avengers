@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="/maintenance/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/maintenance/vendor/animate/animate.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/maintenance/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
@@ -37,11 +38,11 @@
 	<div class="size1 overlay1">
 		<!--  -->
 		<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
-			<h3 class="l1-txt1 txt-center p-b-25">
+			<h3 class="l1-txt1 txt-center p-b-25" style="font-family:Montserrat;">
 				Ce site est en maintenance.
 			</h3>
 
-			<p class="m2-txt1 txt-center p-b-48">
+			<p class="m2-txt1 txt-center p-b-48" style="font-family:Montserrat;">
 				Notre site Web est en construction, suivez-nous pour une mise à jour maintenant!
 			</p>
 
